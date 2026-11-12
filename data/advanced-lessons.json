@@ -1,0 +1,989 @@
+[
+  {
+    "moduleId": "advanced-22",
+    "overview": "Pada conventional drilling, tekanan hidrostatik kolom lumpur menjadi barrier utama. UBD sengaja mempertahankan BHP di bawah tekanan formasi sehingga influx dapat terjadi dan harus ditangani sistem permukaan. MPD mengatur profil tekanan annulus untuk mencegah influx yang tidak direncanakan. Kondisi mud weight pada skema soal adalah contoh, bukan definisi universal MPD.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 22 - MPD & UBD Fundamentals - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-22-concept-1",
+        "title": "BHP, MPD, dan UBD",
+        "explanation": "Pada conventional drilling, tekanan hidrostatik kolom lumpur menjadi barrier utama. UBD sengaja mempertahankan BHP di bawah tekanan formasi sehingga influx dapat terjadi dan harus ditangani sistem permukaan. MPD mengatur profil tekanan annulus untuk mencegah influx yang tidak direncanakan. Kondisi mud weight pada skema soal adalah contoh, bukan definisi universal MPD.",
+        "questionIds": [
+          "advanced-22-01",
+          "advanced-22-02",
+          "advanced-22-03",
+          "advanced-22-04",
+          "advanced-22-05",
+          "advanced-22-16"
+        ]
+      },
+      {
+        "id": "advanced-22-concept-2",
+        "title": "Fluida, manfaat, dan risiko",
+        "explanation": "Dalam klasifikasi fluida di materi, gas berada pada kelas 1. Menurunkan overbalance dapat meningkatkan ROP, mengurangi kerusakan dan memperpanjang umur bit, tetapi manfaat biaya bergantung kondisi sumur. UBD membawa risiko fluida mudah terbakar, korosi, dan ketidakstabilan lubang; berkurangnya differential sticking tidak menghilangkan semua jenis stuck pipe.",
+        "questionIds": [
+          "advanced-22-06",
+          "advanced-22-07",
+          "advanced-22-08",
+          "advanced-22-09",
+          "advanced-22-12"
+        ]
+      },
+      {
+        "id": "advanced-22-concept-3",
+        "title": "Peralatan dan pemisahan return",
+        "explanation": "Materi menggunakan tiga NRV sebagai minimum pada rancangan yang dibahas dan menyebut Varco Shaffer PCWD pada contoh rotating equipment. Ini adalah rujukan materi, bukan bukti sertifikasi semua model saat ini. Separator empat fase memisahkan padatan, gas, minyak, dan air melalui jalur terpisah. Rancangan aktual tetap bergantung rating dan konfigurasi yang dipilih.",
+        "questionIds": [
+          "advanced-22-10",
+          "advanced-22-13",
+          "advanced-22-14"
+        ]
+      },
+      {
+        "id": "advanced-22-concept-4",
+        "title": "Telemetry dan deteksi influx",
+        "explanation": "Gas membuat fluida kompresibel dan mengganggu transmisi pulsa tekanan; angka sekitar 28% berasal dari contoh materi, bukan batas semua alat MWD. Pada UBD, perubahan laju return permukaan lebih informatif untuk mendeteksi tambahan influx dibanding drillpipe pressure saja. Interpretasikan bersama baseline aliran dan parameter lain.",
+        "questionIds": [
+          "advanced-22-11",
+          "advanced-22-15",
+          "advanced-22-17"
+        ]
+      },
+      {
+        "id": "advanced-22-concept-5",
+        "title": "Kontrol tekanan dan PMCD",
+        "explanation": "MPD membantu menjaga BHP di antara tekanan pori dan batas rekah, sehingga mengurangi kick, losses, dan masalah terkait sticking. Pivot point pada grafik materi adalah perpotongan garis static dan dynamic mud weight. Pada PMCD, light annular fluid mengisi annulus dan membantu mengendalikan migrasi gas; fungsi ini berbeda dari fluida yang dipompa melalui drillstring.",
+        "questionIds": [
+          "advanced-22-18",
+          "advanced-22-19",
+          "advanced-22-20"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-22a",
+    "overview": "UBD mempertahankan BHP di bawah tekanan formasi; zona permeabel dapat mengalir ke sumur. Rotating control head, choke, dan sistem penanganan return menjalankan kontrol aliran selama operasi. BOP disiapkan sebagai kontrol sekunder pada skenario materi, bukan pengganti desain barrier yang sesuai.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 22A - UBD - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-22a-concept-1",
+        "title": "Barrier UBD",
+        "explanation": "UBD mempertahankan BHP di bawah tekanan formasi; zona permeabel dapat mengalir ke sumur. Rotating control head, choke, dan sistem penanganan return menjalankan kontrol aliran selama operasi. BOP disiapkan sebagai kontrol sekunder pada skenario materi, bukan pengganti desain barrier yang sesuai.",
+        "questionIds": [
+          "advanced-22a-01",
+          "advanced-22a-02",
+          "advanced-22a-03",
+          "advanced-22a-04"
+        ]
+      },
+      {
+        "id": "advanced-22a-concept-2",
+        "title": "Manfaat dan keterbatasan",
+        "explanation": "Berkurangnya beda tekanan formasi–sumur dapat mengurangi differential sticking serta membantu ROP dan umur bit. Namun UBD dapat meningkatkan risiko lubang tidak stabil, korosi, dan return yang mudah terbakar. Gas dikategorikan kelas 1 dan foam kelas 3 pada klasifikasi fluida yang dipakai soal.",
+        "questionIds": [
+          "advanced-22a-05",
+          "advanced-22a-06",
+          "advanced-22a-07",
+          "advanced-22a-08",
+          "advanced-22a-09"
+        ]
+      },
+      {
+        "id": "advanced-22a-concept-3",
+        "title": "Konfigurasi dan redundansi",
+        "explanation": "Materi menyebut minimum tiga NRV dan dua choke untuk redundansi terhadap erosi. Float valve konvensional tidak otomatis memenuhi persyaratan NRV untuk UBD. Conveyance dapat memakai drillpipe, coiled tubing, atau hydraulic workover unit; pilihan sistem return meliputi open/blooey line, semi-closed, dan closed system.",
+        "questionIds": [
+          "advanced-22a-10",
+          "advanced-22a-11",
+          "advanced-22a-13",
+          "advanced-22a-19",
+          "advanced-22a-20"
+        ]
+      },
+      {
+        "id": "advanced-22a-concept-4",
+        "title": "Indikator kick dan telemetry",
+        "explanation": "Kenaikan flow rate permukaan merupakan indikator utama pada materi UBD. Kenaikan ROP, pit gain, atau choke pressure tanpa perubahan setting merupakan indikator tambahan yang perlu dikorelasikan. Drillpipe pressure saja lemah sebagai pendeteksi kick. Gas mengganggu mud-pulse telemetry; sekitar 28% adalah angka contoh materi, bukan spesifikasi universal alat.",
+        "questionIds": [
+          "advanced-22a-12",
+          "advanced-22a-14",
+          "advanced-22a-15",
+          "advanced-22a-17"
+        ]
+      },
+      {
+        "id": "advanced-22a-concept-5",
+        "title": "Kecepatan angkut dan rating alat",
+        "explanation": "Angka sekitar 180 fpm adalah rekomendasi liquid velocity pada vertical aerated/mist hole dalam materi ini. Kebutuhan hole cleaning aktual juga bergantung cuttings, ukuran annulus, serta regime aliran. Nama Varco Shaffer PCWD merupakan contoh perangkat pada materi; verifikasi rating dan sertifikasi harus merujuk model yang digunakan.",
+        "questionIds": [
+          "advanced-22a-16",
+          "advanced-22a-18"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-23",
+    "overview": "Aerated liquid memiliki cairan sebagai fase kontinu; mist memiliki gas sebagai fase kontinu. Saat fraksi gas naik, sistem bergeser dari liquid ke foam, mist, lalu gas. Foam quality lokal adalah Vg/(Vg+Vl), dengan kedua volume dihitung pada tekanan dan temperatur lokal yang sama.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 23 - Aerated Drilling - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-23-concept-1",
+        "title": "Fase kontinu dan foam quality",
+        "explanation": "Aerated liquid memiliki cairan sebagai fase kontinu; mist memiliki gas sebagai fase kontinu. Saat fraksi gas naik, sistem bergeser dari liquid ke foam, mist, lalu gas. Foam quality lokal adalah Vg/(Vg+Vl), dengan kedua volume dihitung pada tekanan dan temperatur lokal yang sama.",
+        "questionIds": [
+          "advanced-23-01",
+          "advanced-23-02",
+          "advanced-23-03",
+          "advanced-23-04"
+        ]
+      },
+      {
+        "id": "advanced-23-concept-2",
+        "title": "Hidraulika dan transport cuttings",
+        "explanation": "Penambahan gas dapat menurunkan densitas campuran, tetapi friksi dan percepatan yang meningkat bisa menaikkan BHP. Transport cuttings bergantung kecepatan aliran ke atas relatif terhadap slip velocity. Equivalent Liquid Velocity dipakai untuk membandingkan throughflow motor dengan kondisi cairan, bukan menggantikan seluruh evaluasi annulus.",
+        "questionIds": [
+          "advanced-23-05",
+          "advanced-23-06",
+          "advanced-23-07"
+        ]
+      },
+      {
+        "id": "advanced-23-concept-3",
+        "title": "Peralatan permukaan",
+        "explanation": "RCD membentuk seal di sekitar pipe bergerak dan mengalihkan return ke jalur terkontrol. Banjo Box mengarahkan return yang abrasif pada konfigurasi geothermal. Kapasitas compressor harus dinilai sebagai pasangan flow dan pressure; flow nameplate saja tidak menjamin kebutuhan downhole terpenuhi.",
+        "questionIds": [
+          "advanced-23-08",
+          "advanced-23-09",
+          "advanced-23-10"
+        ]
+      },
+      {
+        "id": "advanced-23-concept-4",
+        "title": "Model dan operating window",
+        "explanation": "Ketika water level dipakai sebagai permukaan referensi baru, datum nol berada di water level. Operating window ditentukan bersama oleh tekanan sumur, transport cuttings, batas peralatan, dan penanganan permukaan. Herschel–Bulkley menggambarkan rheology fluida, sedangkan model Guo pada materi dipakai untuk aerated hydraulics.",
+        "questionIds": [
+          "advanced-23-11",
+          "advanced-23-12",
+          "advanced-23-13"
+        ]
+      },
+      {
+        "id": "advanced-23-concept-5",
+        "title": "Tren abnormal dan H₂S",
+        "explanation": "Saat tren abnormal muncul, stabilkan kondisi, periksa validitas pengukuran, lalu ubah satu kontrol agar respons bisa ditafsirkan. H₂S harus dideteksi dengan detektor yang terkalibrasi; bau tidak dapat diandalkan karena kepekaan penciuman dapat hilang.",
+        "questionIds": [
+          "advanced-23-14",
+          "advanced-23-15"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-25",
+    "overview": "Mud logging menghubungkan parameter drilling dengan depth dan waktu untuk memberi early warning. Pit gain dan peningkatan gas perlu diselidiki sebagai indikasi influx. Sensor depth pada drawworks melacak gerak block, RPM sensor mengukur kecepatan rotasi, dan tren torque dapat membantu mengenali hambatan atau sticking; satu parameter saja bukan diagnosis akhir.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 25 - Mud Logging - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-25-concept-1",
+        "title": "Sensor dan early warning",
+        "explanation": "Mud logging menghubungkan parameter drilling dengan depth dan waktu untuk memberi early warning. Pit gain dan peningkatan gas perlu diselidiki sebagai indikasi influx. Sensor depth pada drawworks melacak gerak block, RPM sensor mengukur kecepatan rotasi, dan tren torque dapat membantu mengenali hambatan atau sticking; satu parameter saja bukan diagnosis akhir.",
+        "questionIds": [
+          "advanced-25-01",
+          "advanced-25-02",
+          "advanced-25-03",
+          "advanced-25-04",
+          "advanced-25-05"
+        ]
+      },
+      {
+        "id": "advanced-25-concept-2",
+        "title": "Gas trap dan lag",
+        "explanation": "Gas trap mengekstrak gas dari lumpur return untuk dianalisis. Data cuttings dan gas tertunda oleh waktu perjalanan dari bit ke permukaan. Pada flow rate yang sama, volume annulus lebih besar memperpanjang bottoms-up time, karena waktu sirkulasi kira-kira volume dibagi flow rate.",
+        "questionIds": [
+          "advanced-25-06",
+          "advanced-25-07",
+          "advanced-25-08"
+        ]
+      },
+      {
+        "id": "advanced-25-concept-3",
+        "title": "Kualitas sampel",
+        "explanation": "Sampel washed dibersihkan, dikeringkan, dan dikemas sesuai prosedur; materi menyebut sekitar 100–200 g. Area pengambilan dibersihkan antarsampel untuk mencegah carryover dari interval sebelumnya. UV box membantu pengamatan fluorescence, tetapi indikasi fluorescence perlu diinterpretasi bersama kontaminasi dan data lain.",
+        "questionIds": [
+          "advanced-25-09",
+          "advanced-25-10",
+          "advanced-25-11"
+        ]
+      },
+      {
+        "id": "advanced-25-concept-4",
+        "title": "Facies dan gas baseline",
+        "explanation": "Central/vent facies dapat mengandung agglomerate yang kasar dekat pusat erupsi; material pada medial facies cenderung lebih halus dan dapat tertransport ulang. Background gas adalah baseline selama drilling dan bisa muncul pada shale/claystone maupun sandstone tanpa akumulasi gas hidrokarbon yang produktif. Connection gas terlihat sebagai kenaikan di atas baseline setelah connection, dengan memperhitungkan lag.",
+        "questionIds": [
+          "advanced-25-12",
+          "advanced-25-13",
+          "advanced-25-14",
+          "advanced-25-15"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-26",
+    "overview": "Materi mengategorikan stuck pipe sebagai drillstring tidak dapat diambil dan operasi terhenti setidaknya satu jam; ketidakmampuan bergerak sendiri tetap perlu segera ditangani. Gradien normal sekitar 0.433–0.465 psi/ft merepresentasikan variasi densitas air formasi. MW terlalu rendah dapat kehilangan support terhadap batuan sehingga terjadi collapse atau shear cavings.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 26 - Stuck Pipe Prevention - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-26-concept-1",
+        "title": "Tekanan dan kestabilan lubang",
+        "explanation": "Materi mengategorikan stuck pipe sebagai drillstring tidak dapat diambil dan operasi terhenti setidaknya satu jam; ketidakmampuan bergerak sendiri tetap perlu segera ditangani. Gradien normal sekitar 0.433–0.465 psi/ft merepresentasikan variasi densitas air formasi. MW terlalu rendah dapat kehilangan support terhadap batuan sehingga terjadi collapse atau shear cavings.",
+        "questionIds": [
+          "advanced-26-01",
+          "advanced-26-02",
+          "advanced-26-03",
+          "advanced-26-10"
+        ]
+      },
+      {
+        "id": "advanced-26-concept-2",
+        "title": "Shale dan filtration",
+        "explanation": "Smectite sangat reaktif terhadap air karena struktur mineralnya dapat mengembang. Pengujian API low-pressure filtration pada materi memakai beda tekanan 100 psi selama 30 menit. Filtration dan mudcake memengaruhi interaksi fluida–formasi serta risiko differential sticking.",
+        "questionIds": [
+          "advanced-26-04",
+          "advanced-26-05"
+        ]
+      },
+      {
+        "id": "advanced-26-concept-3",
+        "title": "Mekanisme stuck pipe",
+        "explanation": "Overbalance tinggi menambah gaya yang menekan pipe ke mudcake pada zona permeabel. Spiral drill collar mengurangi luas kontak sehingga membantu mengurangi differential sticking. Pipe yang tidak bisa bergerak/berputar tetapi masih bisa disirkulasikan tidak otomatis berarti lost circulation; differential sticking merupakan salah satu kemungkinan. Hole cleaning yang baik mengurangi akumulasi cuttings dan memudahkan lewatnya drillstring maupun casing.",
+        "questionIds": [
+          "advanced-26-06",
+          "advanced-26-07",
+          "advanced-26-08",
+          "advanced-26-09"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-27",
+    "overview": "Model T&D menaksir kebutuhan hookload, torque, dan stress agar rig serta tubular bekerja dalam batasnya. Input yang buruk menghasilkan output yang tidak dapat dipercaya. Friction factor model adalah parameter efektif yang dikalibrasi terhadap pengamatan dan dapat mewakili kondisi selain friksi material murni; ia tidak selalu identik dengan koefisien µ hasil laboratorium.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 27 - Torque and Drag in Drilling Operations - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-27-concept-1",
+        "title": "Tujuan dan asumsi model",
+        "explanation": "Model T&D menaksir kebutuhan hookload, torque, dan stress agar rig serta tubular bekerja dalam batasnya. Input yang buruk menghasilkan output yang tidak dapat dipercaya. Friction factor model adalah parameter efektif yang dikalibrasi terhadap pengamatan dan dapat mewakili kondisi selain friksi material murni; ia tidak selalu identik dengan koefisien µ hasil laboratorium.",
+        "questionIds": [
+          "advanced-27-01",
+          "advanced-27-02",
+          "advanced-27-03",
+          "advanced-27-04"
+        ]
+      },
+      {
+        "id": "advanced-27-concept-2",
+        "title": "Kontak, friksi, dan side force",
+        "explanation": "Soft-string mengasumsikan string lentur mengikuti lintasan dan kontak yang dimodelkan; stiff-string mempertimbangkan kekakuan lentur yang dapat meningkatkan side force. Gaya friksi secara sederhana F=µN. Saat tripping out, friksi melawan gerak ke atas sehingga pickup load meningkat. T pada hubungan side force dan dogleg menunjukkan tension; bit size bukan komponen gaya secara langsung.",
+        "questionIds": [
+          "advanced-27-05",
+          "advanced-27-06",
+          "advanced-27-07",
+          "advanced-27-09",
+          "advanced-27-10",
+          "advanced-27-13"
+        ]
+      },
+      {
+        "id": "advanced-27-concept-3",
+        "title": "Input, output, dan tegangan gabungan",
+        "explanation": "Trajectory, geometri wellbore, sifat mud, dan BHA adalah input model. Axial load, side force, serta stresses adalah output. String dapat mengalami bending, shear, dan torsion; equivalent von Mises stress dipakai untuk mengevaluasi kombinasi normal dan shear stress, bukan sekadar menjumlahkan angka tegangan.",
+        "questionIds": [
+          "advanced-27-08",
+          "advanced-27-11",
+          "advanced-27-12",
+          "advanced-27-14"
+        ]
+      },
+      {
+        "id": "advanced-27-concept-4",
+        "title": "Monitoring dan kalibrasi",
+        "explanation": "Pickup, slackoff, dan rotating-off-bottom hookload membantu memisahkan berat efektif dari friksi. Tortuosity membuat lintasan model lebih mewakili belokan kecil yang tidak terlihat pada lintasan halus; manfaatnya bergantung kualitas data. Materi menyebut monitoring drag setiap 3–5 joint saat casing running sebagai contoh interval, bukan pengganti program operasional.",
+        "questionIds": [
+          "advanced-27-15",
+          "advanced-27-16",
+          "advanced-27-17"
+        ]
+      },
+      {
+        "id": "advanced-27-concept-5",
+        "title": "Sifat material dan sensitivitas",
+        "explanation": "Grade E pada drillpipe memiliki minimum yield strength 75,000 psi. Normal stress adalah gaya per satuan luas yang tegak lurus penampang; shear stress sejajar penampang. Menaikkan friction factor biasanya menaikkan prediksi torque dan drag karena hambatan kontak bertambah.",
+        "questionIds": [
+          "advanced-27-18",
+          "advanced-27-19",
+          "advanced-27-20"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-28",
+    "overview": "Slim-core-hole memberi core, data temperatur, dan informasi subsurface pada tahap eksplorasi dengan footprint kecil. Temperatur-gradient well membantu mengonfirmasi kondisi panas bawah permukaan, tetapi tidak sendirian membuktikan kapasitas produksi komersial. Klasifikasi cadangan pada materi mengacu SNI 6009:2017.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 28 - Slim Core Hole Geothermal Drilling - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-28-concept-1",
+        "title": "Tujuan slim-core-hole",
+        "explanation": "Slim-core-hole memberi core, data temperatur, dan informasi subsurface pada tahap eksplorasi dengan footprint kecil. Temperatur-gradient well membantu mengonfirmasi kondisi panas bawah permukaan, tetapi tidak sendirian membuktikan kapasitas produksi komersial. Klasifikasi cadangan pada materi mengacu SNI 6009:2017.",
+        "questionIds": [
+          "advanced-28-01",
+          "advanced-28-06",
+          "advanced-28-10",
+          "advanced-28-16",
+          "advanced-28-20"
+        ]
+      },
+      {
+        "id": "advanced-28-concept-2",
+        "title": "Casing, rig, dan lokasi",
+        "explanation": "Susunan casing mengikuti conductor, surface, production casing, lalu perforated liner pada contoh materi. Cellar atau elevated sub-base menyediakan clearance untuk stack BOP. Pemilihan lokasi perlu menilai akses, geoteknik, logistik, dan batas lingkungan secara kasus per kasus; tidak ada satu pad layout yang cocok untuk semua lokasi.",
+        "questionIds": [
+          "advanced-28-02",
+          "advanced-28-09",
+          "advanced-28-14",
+          "advanced-28-18"
+        ]
+      },
+      {
+        "id": "advanced-28-concept-3",
+        "title": "Parameter dan pemeliharaan coring",
+        "explanation": "Dibanding rotary drilling, contoh coring memakai RPM tinggi dan WOB lebih rendah agar core head memotong stabil. Inspection koneksi rod mengurangi fatigue/failure yang dapat memicu fishing. Bila core head berhenti maju, hentikan pemaksaan parameter dan evaluasi/retrieve core barrel sesuai kondisi. Kru berpengalaman membantu mengenali gejala dini dan mengurangi NPT.",
+        "questionIds": [
+          "advanced-28-03",
+          "advanced-28-05",
+          "advanced-28-08",
+          "advanced-28-12",
+          "advanced-28-17"
+        ]
+      },
+      {
+        "id": "advanced-28-concept-4",
+        "title": "Perencanaan resource dan bahaya",
+        "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage mendukung blind drilling saat fluida hilang; kapasitas 12 jam adalah target contoh soal. Payload Bell 407 sebesar 600–750 kg pada materi adalah angka perencanaan yang bergantung kondisi terbang, bukan jaminan kapasitas setiap lokasi. Pekerjaan dapat overlap hanya jika dependency dan kondisi aman memungkinkan.",
+        "questionIds": [
+          "advanced-28-04",
+          "advanced-28-07",
+          "advanced-28-11",
+          "advanced-28-13",
+          "advanced-28-15"
+        ]
+      },
+      {
+        "id": "advanced-28-concept-5",
+        "title": "Membaca konteks anggaran",
+        "explanation": "Proporsi civil work terhadap drilling dan well testing bergantung scope, kondisi pad, dan logistik. Tidak ada aturan umum yang menetapkan salah satunya selalu lebih mahal. Kunci False pada PDF tidak dilengkapi tabel anggaran pendukung, sehingga soal ini ditahan dari sesi penilaian sampai diverifikasi.",
+        "questionIds": [
+          "advanced-28-19"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-29",
+    "overview": "Coiled tubing adalah pipa kontinu tanpa sambungan ulir per joint. Reel menyimpan CT; gooseneck mengarahkannya menuju injector head yang memberi gaya masuk/keluar; power pack memasok tenaga hidraulik. Jalur sederhananya reel → gooseneck → injector → wellhead.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 29 - Coiled Tubing for Well Intervention - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-29-concept-1",
+        "title": "Jalur dan tenaga CT",
+        "explanation": "Coiled tubing adalah pipa kontinu tanpa sambungan ulir per joint. Reel menyimpan CT; gooseneck mengarahkannya menuju injector head yang memberi gaya masuk/keluar; power pack memasok tenaga hidraulik. Jalur sederhananya reel → gooseneck → injector → wellhead.",
+        "questionIds": [
+          "advanced-29-01",
+          "advanced-29-02",
+          "advanced-29-03",
+          "advanced-29-04",
+          "advanced-29-14"
+        ]
+      },
+      {
+        "id": "advanced-29-concept-2",
+        "title": "Pressure control CT",
+        "explanation": "Stripper membentuk dynamic seal saat CT bergerak. Slip ram menahan tubing; shear ram memotong tubing; blind ram menutup ketika tidak ada tubing pada bidang seal. Urutan stripper → blind ram → shear ram → kill-line inlet adalah susunan pada ilustrasi materi, bukan konfigurasi universal setiap CT stack.",
+        "questionIds": [
+          "advanced-29-05",
+          "advanced-29-06",
+          "advanced-29-10",
+          "advanced-29-11",
+          "advanced-29-15"
+        ]
+      },
+      {
+        "id": "advanced-29-concept-3",
+        "title": "Aplikasi dan batas tekanan",
+        "explanation": "Nitrogen unloading menurunkan densitas kolom fluida agar hydrostatic head berkurang dan fluida terangkat. Matrix acidizing dilakukan di bawah fracture pressure agar treatment menuju matriks, bukan sengaja membuat fracture. Untuk operasi, tekanan permukaan yang diperkirakan harus berada dalam maximum allowable operating pressure yang disetujui; klaim bahwa MAOP harus selalu lebih rendah dari MASP tidak tepat tanpa definisi dan konteks desain.",
+        "questionIds": [
+          "advanced-29-07",
+          "advanced-29-08",
+          "advanced-29-12"
+        ]
+      },
+      {
+        "id": "advanced-29-concept-4",
+        "title": "Spesifikasi unit dan integrasi",
+        "explanation": "Kapasitas pull 60,000 lb berlaku pada NESR CT Unit #1 yang dicontohkan, bukan semua injector. Light Intervention Unit mengintegrasikan beberapa fungsi untuk mengurangi paket terpisah dan footprint; kesesuaian tetap bergantung scope serta rating peralatan.",
+        "questionIds": [
+          "advanced-29-09",
+          "advanced-29-13"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-30",
+    "overview": "Completion memasang jalur dan peralatan agar fluida reservoir dapat diproduksikan dengan aman dan terkontrol. Tubing berada di dalam production casing, packer menyekat annulus tubing–casing, dan Christmas tree mengendalikan aliran di permukaan. Reservoir properties memengaruhi pemilihan konfigurasi.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 30 - Well Completion - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-30-concept-1",
+        "title": "Tujuan completion",
+        "explanation": "Completion memasang jalur dan peralatan agar fluida reservoir dapat diproduksikan dengan aman dan terkontrol. Tubing berada di dalam production casing, packer menyekat annulus tubing–casing, dan Christmas tree mengendalikan aliran di permukaan. Reservoir properties memengaruhi pemilihan konfigurasi.",
+        "questionIds": [
+          "advanced-30-01",
+          "advanced-30-02",
+          "advanced-30-03",
+          "advanced-30-04",
+          "advanced-30-05",
+          "advanced-30-10"
+        ]
+      },
+      {
+        "id": "advanced-30-concept-2",
+        "title": "Single-string dan intelligent completion",
+        "explanation": "Single-string completion adalah susunan sederhana satu tubing untuk satu zona. Bila beberapa zona di-commingle, pemisahan kontribusi tiap reservoir menjadi lebih sulit. Intelligent completion menggunakan sensor permanen tekanan, temperatur, dan flow beserta kontrol yang relevan untuk memantau kondisi downhole.",
+        "questionIds": [
+          "advanced-30-06",
+          "advanced-30-07",
+          "advanced-30-12"
+        ]
+      },
+      {
+        "id": "advanced-30-concept-3",
+        "title": "SCSSV, packer, dan akses ESP",
+        "explanation": "SCSSV bersifat fail-safe closed: hydraulic control pressure mempertahankan valve terbuka pada konfigurasi yang dibahas; hilangnya tekanan membuatnya menutup. Packer dapat diset secara mekanis atau hidraulik. Y-tool menyediakan jalur bypass sehingga alat intervensi dapat melewati ESP tanpa menarik seluruh completion.",
+        "questionIds": [
+          "advanced-30-08",
+          "advanced-30-09",
+          "advanced-30-11",
+          "advanced-30-13"
+        ]
+      },
+      {
+        "id": "advanced-30-concept-4",
+        "title": "Urutan completion",
+        "explanation": "Dalam alur sederhana materi, production casing dipasang dan disemen sebelum tubing/packer serta tree. Operasi cleanout menyiapkan lubang, perforasi membuka komunikasi reservoir, lalu completion string dipasang. Urutan ini adalah skenario latihan; detail nyata dapat berbeda menurut completion design dan barrier plan.",
+        "questionIds": [
+          "advanced-30-14",
+          "advanced-30-15"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-31",
+    "overview": "Stress adalah beban pada batuan, pore pressure mengurangi effective stress, dan strength adalah ketahanan terhadap failure. Untuk normal faulting Andersonian, Sv > SHmax > Shmin. Mechanical Earth Model menyatukan bukti dan ketidakpastian untuk keputusan drilling, bukan menghasilkan satu angka pasti tanpa validasi.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 31 - Drilling Geomechanics - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-31-concept-1",
+        "title": "Stress, tekanan, dan kekuatan batuan",
+        "explanation": "Stress adalah beban pada batuan, pore pressure mengurangi effective stress, dan strength adalah ketahanan terhadap failure. Untuk normal faulting Andersonian, Sv > SHmax > Shmin. Mechanical Earth Model menyatukan bukti dan ketidakpastian untuk keputusan drilling, bukan menghasilkan satu angka pasti tanpa validasi.",
+        "questionIds": [
+          "advanced-31-01",
+          "advanced-31-02",
+          "advanced-31-03",
+          "advanced-31-15"
+        ]
+      },
+      {
+        "id": "advanced-31-concept-2",
+        "title": "Batas operating window",
+        "explanation": "Mud pressure memberi dukungan pada wellbore, tetapi terlalu tinggi dapat menyebabkan tensile failure atau losses. Batas bawah adalah yang lebih besar antara pore pressure plus margin dan collapse pressure. Batas atas dipilih dari kejadian tak dapat diterima yang muncul lebih dulu, termasuk fracture/loss dan integrity limit. Dynamic BHP memasukkan ECD, surge, dan swab sesuai tahap operasi.",
+        "questionIds": [
+          "advanced-31-04",
+          "advanced-31-06",
+          "advanced-31-07",
+          "advanced-31-11"
+        ]
+      },
+      {
+        "id": "advanced-31-concept-3",
+        "title": "Bukti dan pengujian",
+        "explanation": "Pada vertical well dengan asumsi principal stresses sederhana, breakouts berpusat pada arah Shmin dan drilling-induced tensile fractures searah SHmax. Formation-pressure measurement yang dikontrol kualitasnya memberi bukti tekanan pori yang lebih langsung. FIT menguji integritas sampai target; LOT mencari leakoff; XLOT mengevaluasi perilaku fracture lebih lanjut.",
+        "questionIds": [
+          "advanced-31-05",
+          "advanced-31-08",
+          "advanced-31-09"
+        ]
+      },
+      {
+        "id": "advanced-31-concept-4",
+        "title": "Diagnosis tidak tunggal",
+        "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Mineralogi AMICS memberi konteks batuan tetapi tidak menggantikan mechanical testing untuk menghitung kekuatan dan collapse pressure.",
+        "questionIds": [
+          "advanced-31-10",
+          "advanced-31-12",
+          "advanced-31-13",
+          "advanced-31-14"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-32",
+    "overview": "Coring mengambil silinder batuan yang lebih kontinu daripada cuttings sehingga struktur, sifat batuan, dan orientasi dapat dipelajari. Targetnya recovery tinggi dengan alteration minimal serta retrieval aman. Porosity menggambarkan fraksi ruang pori atau kapasitas penyimpanan, sedangkan permeability menggambarkan kemampuan mengalirkan fluida. Core dapat mengkalibrasi interpretasi log.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 32 - Well Coring - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-32-concept-1",
+        "title": "Tujuan dan nilai core",
+        "explanation": "Coring mengambil silinder batuan yang lebih kontinu daripada cuttings sehingga struktur, sifat batuan, dan orientasi dapat dipelajari. Targetnya recovery tinggi dengan alteration minimal serta retrieval aman. Porosity menggambarkan fraksi ruang pori atau kapasitas penyimpanan, sedangkan permeability menggambarkan kemampuan mengalirkan fluida. Core dapat mengkalibrasi interpretasi log.",
+        "questionIds": [
+          "advanced-32-01",
+          "advanced-32-02",
+          "advanced-32-03",
+          "advanced-32-04",
+          "advanced-32-12"
+        ]
+      },
+      {
+        "id": "advanced-32-concept-2",
+        "title": "Sistem coring",
+        "explanation": "Wireline coring mengambil inner barrel tanpa selalu menarik seluruh drillstring. Oriented coring menjaga referensi arah dan posisi sampel. Swivel memisahkan rotasi outer barrel dari inner barrel; core catcher menahan core agar tidak jatuh saat retrieval. Vibrasi tinggi dan parameter agresif justru meningkatkan kerusakan atau jamming.",
+        "questionIds": [
+          "advanced-32-05",
+          "advanced-32-06",
+          "advanced-32-07",
+          "advanced-32-08",
+          "advanced-32-11"
+        ]
+      },
+      {
+        "id": "advanced-32-concept-3",
+        "title": "Material dan preservasi",
+        "explanation": "Materi merekomendasikan steel inner barrel untuk temperatur di atas 205 °C; rating produk aktual tetap perlu dipastikan. Fiberglass inner tube dapat menjadi kemasan selama penanganan sampai laboratorium. Pressure coring berusaha mempertahankan tekanan dan fluida, bukan membiarkan seluruh gas serta fluida mengembang bebas.",
+        "questionIds": [
+          "advanced-32-09",
+          "advanced-32-13",
+          "advanced-32-14"
+        ]
+      },
+      {
+        "id": "advanced-32-concept-4",
+        "title": "Alur kerja dan chain of custody",
+        "explanation": "Tahap umum adalah preparation → coring → safe retrieval → surface processing. Pada proses sampel yang dicontohkan: clean → measure/mark → cut/cap → preserve/package. Penandaan depth dan orientasi sebelum pemotongan menjaga keterlacakan dan mencegah sampel tertukar.",
+        "questionIds": [
+          "advanced-32-10",
+          "advanced-32-15"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-33a",
+    "overview": "Wireline membawa sensor dengan kabel ke open hole maupun cased hole untuk evaluasi dan monitoring. Lubricator menampung toolstring saat transisi masuk/keluar sumur bertekanan. PCE menjaga pressure containment selama transisi tersebut; konfigurasi harus sesuai tool, tekanan, serta metode conveyance.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 33A - Geothermal Wireline Logging Services - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-33a-concept-1",
+        "title": "Logging dan pressure control",
+        "explanation": "Wireline membawa sensor dengan kabel ke open hole maupun cased hole untuk evaluasi dan monitoring. Lubricator menampung toolstring saat transisi masuk/keluar sumur bertekanan. PCE menjaga pressure containment selama transisi tersebut; konfigurasi harus sesuai tool, tekanan, serta metode conveyance.",
+        "questionIds": [
+          "advanced-33a-01",
+          "advanced-33a-02",
+          "advanced-33a-03",
+          "advanced-33a-10"
+        ]
+      },
+      {
+        "id": "advanced-33a-concept-2",
+        "title": "Geometri dan feed zones",
+        "explanation": "Caliper mengukur diameter untuk mengenali washout dan membantu estimasi volume cement. Borehole image memberi informasi orientasi fracture. PTS (pressure–temperature–spinner) membantu mengenali tekanan, temperatur, fluid level, dan feed/entry zones melalui perubahan profil sepanjang depth.",
+        "questionIds": [
+          "advanced-33a-04",
+          "advanced-33a-05",
+          "advanced-33a-11"
+        ]
+      },
+      {
+        "id": "advanced-33a-concept-3",
+        "title": "Injectivity dan fall-off",
+        "explanation": "Gross Permeability Test pada materi mengevaluasi injectivity serta mass flow. Pressure fall-off setelah perubahan aliran digunakan untuk menilai transmissivity dan skin/kerusakan sekitar sumur; interpretasinya memerlukan kondisi batas dan riwayat rate yang sesuai.",
+        "questionIds": [
+          "advanced-33a-06",
+          "advanced-33a-07"
+        ]
+      },
+      {
+        "id": "advanced-33a-concept-4",
+        "title": "Integritas pipe dan semen",
+        "explanation": "Multi-finger caliper menelusuri permukaan internal pipe. Magnetic Thickness Detector mengevaluasi respons elektromagnetik dan dapat menilai beberapa lapisan pipe; metal yang lebih tebal umumnya memperlambat decay, bukan mempercepatnya. Persentase scale pada plot bukan otomatis persentase blockage. Conventional CBL memberi indikasi bonding tetapi tidak memetakan lokasi azimuth channel secara rinci.",
+        "questionIds": [
+          "advanced-33a-08",
+          "advanced-33a-09",
+          "advanced-33a-12",
+          "advanced-33a-13",
+          "advanced-33a-14"
+        ]
+      },
+      {
+        "id": "advanced-33a-concept-5",
+        "title": "Keterlacakan survey",
+        "explanation": "Set zero-depth reference sebelum menjalankan tool. Run ke total depth, rekam survey dan repeat section untuk quality control, lalu pull out dan rig down. Repeat section membantu melihat repeatability pengukuran; ia bukan sekadar pengulangan tanpa tujuan.",
+        "questionIds": [
+          "advanced-33a-15"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-33b",
+    "overview": "Well testing digunakan pada exploration dan development untuk menilai karakter reservoir serta performa sumur. Informasi mencakup permeable zones, permeability/transmissivity, flow rate, enthalpy, dan fluid chemistry. Flow test mengevaluasi kemampuan discharge dan memberi input plant design serta operating conditions.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 33B - Well Testing - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-33b-concept-1",
+        "title": "Tujuan dan tahapan well testing",
+        "explanation": "Well testing digunakan pada exploration dan development untuk menilai karakter reservoir serta performa sumur. Informasi mencakup permeable zones, permeability/transmissivity, flow rate, enthalpy, dan fluid chemistry. Flow test mengevaluasi kemampuan discharge dan memberi input plant design serta operating conditions.",
+        "questionIds": [
+          "advanced-33b-01",
+          "advanced-33b-04",
+          "advanced-33b-05",
+          "advanced-33b-07",
+          "advanced-33b-09"
+        ]
+      },
+      {
+        "id": "advanced-33b-concept-2",
+        "title": "Deliverability dan pengukuran flow",
+        "explanation": "Deliverability curve menghubungkan wellhead pressure dengan laju produksi, sehingga membantu memilih operating pressure dan kapasitas plant. Mass flow, enthalpy, serta chemistry dapat berubah terhadap WHP dan waktu. Lip-pressure measurement menggunakan korelasi discharge dengan geometri dan asumsi aliran yang sesuai; bukan sekadar membaca sembarang pressure gauge.",
+        "questionIds": [
+          "advanced-33b-02",
+          "advanced-33b-08",
+          "advanced-33b-11"
+        ]
+      },
+      {
+        "id": "advanced-33b-concept-3",
+        "title": "Completion test dan transien",
+        "explanation": "Dalam materi ini, water-loss test, injectivity test, dan pressure fall-off termasuk completion testing geothermal. Water-loss dan injectivity mengevaluasi penerimaan fluida, sedangkan fall-off menganalisis respons tekanan setelah perubahan rate. Production logging adalah metode diagnostik lain yang tidak menjadi pilihan kunci pada soal ini.",
+        "questionIds": [
+          "advanced-33b-06"
+        ]
+      },
+      {
+        "id": "advanced-33b-concept-4",
+        "title": "Sampling dan separation",
+        "explanation": "Chemical flow test menganalisis sampel steam dan water, termasuk tracer bila digunakan. Sampel geochemistry membantu menilai condensate composition dan non-condensable gas (NCG) untuk operasi serta plant design. Pilihan containerized muffler dibanding cyclone harus dinilai dari atribut pada studi materi, bukan dianggap unggul untuk setiap flow dan tekanan.",
+        "questionIds": [
+          "advanced-33b-03",
+          "advanced-33b-10",
+          "advanced-33b-12"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-35",
+    "overview": "Definisikan masalah, kumpulkan bukti, tetapkan sasaran terukur, baru pilih metode. Lima tujuan yang dikelompokkan dalam materi bukan taksonomi universal; abandonment dibahas sebagai scope berbeda. A-annulus pressure adalah indikasi yang perlu diverifikasi, bukan bukti otomatis satu jenis kebocoran.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 35 - Well Intervention & Workover - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-35-concept-1",
+        "title": "Problem → evidence → objective → method",
+        "explanation": "Definisikan masalah, kumpulkan bukti, tetapkan sasaran terukur, baru pilih metode. Lima tujuan yang dikelompokkan dalam materi bukan taksonomi universal; abandonment dibahas sebagai scope berbeda. A-annulus pressure adalah indikasi yang perlu diverifikasi, bukan bukti otomatis satu jenis kebocoran.",
+        "questionIds": [
+          "advanced-35-01",
+          "advanced-35-02",
+          "advanced-35-03",
+          "advanced-35-04"
+        ]
+      },
+      {
+        "id": "advanced-35-concept-2",
+        "title": "Memilih conveyance dan scope",
+        "explanation": "CT cocok untuk circulation dan cleanout melalui tubing kontinu. E-line/wireline kuat pada logging seperti PLT, temperature, noise, dan integrity diagnostics. Pulling/rerunning tubing merupakan contoh workover yang lebih invasif; workover tetap bagian dari spektrum well intervention.",
+        "questionIds": [
+          "advanced-35-05",
+          "advanced-35-06",
+          "advanced-35-07",
+          "advanced-35-12"
+        ]
+      },
+      {
+        "id": "advanced-35-concept-3",
+        "title": "Barrier dan hold point",
+        "explanation": "Barrier baru dapat dikreditkan jika defined, accepted, verified, dan monitored. Sebelum opening well, verifikasi barrier serta PCE. Sumur yang telah dikill masih bisa mengalami losses, influx, atau barrier degradation. Bila status barrier, kemampuan pressure control, atau contingency belum jelas, pekerjaan belum siap dimulai.",
+        "questionIds": [
+          "advanced-35-08",
+          "advanced-35-09",
+          "advanced-35-10",
+          "advanced-35-14"
+        ]
+      },
+      {
+        "id": "advanced-35-concept-4",
+        "title": "Mengendalikan exposure",
+        "explanation": "Pada stuck tool atau unexpected pressure, hentikan peningkatan exposure dan amankan kondisi terlebih dahulu sebelum diagnosis lebih lanjut. Jangan menambah gaya atau melanjutkan pembukaan hanya demi mencari penyebab. PCE harus sesuai metode dan kondisi pekerjaan; satu stack tidak otomatis cocok untuk semua intervensi.",
+        "questionIds": [
+          "advanced-35-11",
+          "advanced-35-13",
+          "advanced-35-15"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-36",
+    "overview": "Bundled/Semi-IPM menggabungkan dua atau lebih drilling services, sedangkan discrete memisahkan paket. Pada pembagian risiko IPM dalam studi, company tetap menanggung drilling risk; turnkey memakai lump-sum per well sesuai kontrak. Nama skema saja tidak cukup: pembagian risiko, pengecualian, dan insentif harus dibaca dalam ketentuan kontrak.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 36 - Drilling Cost Optimization - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-36-concept-1",
+        "title": "Struktur kontrak dan risiko",
+        "explanation": "Bundled/Semi-IPM menggabungkan dua atau lebih drilling services, sedangkan discrete memisahkan paket. Pada pembagian risiko IPM dalam studi, company tetap menanggung drilling risk; turnkey memakai lump-sum per well sesuai kontrak. Nama skema saja tidak cukup: pembagian risiko, pengecualian, dan insentif harus dibaca dalam ketentuan kontrak.",
+        "questionIds": [
+          "advanced-36-01",
+          "advanced-36-02",
+          "advanced-36-10"
+        ]
+      },
+      {
+        "id": "advanced-36-concept-2",
+        "title": "Angka studi kasus, bukan benchmark umum",
+        "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal.",
+        "questionIds": [
+          "advanced-36-03",
+          "advanced-36-04",
+          "advanced-36-05",
+          "advanced-36-06"
+        ]
+      },
+      {
+        "id": "advanced-36-concept-3",
+        "title": "Cost exposure dan procurement",
+        "explanation": "Pada IPM contoh, melewati capped maximum drilling days menimbulkan daily rate. Competitive bidding disebut memerlukan 12–25 minggu; casing, wellhead, liner adapter, dan drilling rig diprioritaskan karena lead/delivery time. Perencanaan tender perlu menghitung dependency jadwal, bukan hanya nilai kontrak.",
+        "questionIds": [
+          "advanced-36-07",
+          "advanced-36-08",
+          "advanced-36-09"
+        ]
+      },
+      {
+        "id": "advanced-36-concept-4",
+        "title": "Tata kelola kontrak",
+        "explanation": "Pernyataan promosi IPM dan penetapan contract owner pada materi harus dibaca dalam konteks organisasi/studi tersebut, bukan aturan semua operator. Monthly progress meeting dan service quality meeting membantu meninjau deliverable, tren kinerja, serta tindakan perbaikan. Pemilik kontrak harus sesuai tanggung jawab yang benar, bukan otomatis semuanya drilling engineer.",
+        "questionIds": [
+          "advanced-36-11",
+          "advanced-36-12",
+          "advanced-36-13"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-37",
+    "overview": "Penolakan proyek perlu ditanggapi dengan mendengarkan kekhawatiran, memverifikasi fakta, dan membuka dialog dua arah. Solusi teknis yang baik belum otomatis menjawab kekhawatiran lingkungan atau keselamatan. Komunikasi yang jernih menerjemahkan konsep teknis ke bahasa yang dipahami tanpa menyembunyikan ketidakpastian.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 37 - Beyond the Steam - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-37-concept-1",
+        "title": "Mendengarkan sebelum menjelaskan",
+        "explanation": "Penolakan proyek perlu ditanggapi dengan mendengarkan kekhawatiran, memverifikasi fakta, dan membuka dialog dua arah. Solusi teknis yang baik belum otomatis menjawab kekhawatiran lingkungan atau keselamatan. Komunikasi yang jernih menerjemahkan konsep teknis ke bahasa yang dipahami tanpa menyembunyikan ketidakpastian.",
+        "questionIds": [
+          "advanced-37-01",
+          "advanced-37-02",
+          "advanced-37-03"
+        ]
+      },
+      {
+        "id": "advanced-37-concept-2",
+        "title": "Stakeholder dan social acceptance",
+        "explanation": "Stakeholder meliputi pemerintah, masyarakat, tokoh lokal, perusahaan, akademisi, dan media. Izin formal tidak menggantikan kepercayaan dan penerimaan sosial. CSR seharusnya bertumpu pada kebutuhan masyarakat serta manfaat yang dapat diukur, bukan hanya aktivitas simbolis.",
+        "questionIds": [
+          "advanced-37-04",
+          "advanced-37-05",
+          "advanced-37-06"
+        ]
+      },
+      {
+        "id": "advanced-37-concept-3",
+        "title": "Science–society sebagai proses dua arah",
+        "explanation": "Fungsi sosial menerjemahkan informasi teknis sekaligus membawa aspirasi masyarakat ke tim teknis. Kepatuhan sosial/lingkungan dan kepercayaan mendukung keberlanjutan proyek. Mulai dari pemetaan stakeholder, pahami kepentingan, verifikasi isu dengan data, lalu bangun dialog dan kolaborasi; teknologi serta produksi listrik saja tidak cukup.",
+        "questionIds": [
+          "advanced-37-07",
+          "advanced-37-08",
+          "advanced-37-09",
+          "advanced-37-10"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-38",
+    "overview": "Survey mendefinisikan serta mengendalikan well path memakai measured depth, inclination, dan azimuth. Accelerometer merujuk gravitasi; magnetometer memakai medan magnet bumi. Non-magnetic collar mengurangi gangguan BHA/drillpipe. Gyro mengurangi ketergantungan pada referensi magnetik, tetapi memory gyro menyimpan data untuk diunduh dan tidak otomatis mengirim real-time ke permukaan.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 38 - Drilling Operation & Wellbore Positioning - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-38-concept-1",
+        "title": "Survey dan sensor",
+        "explanation": "Survey mendefinisikan serta mengendalikan well path memakai measured depth, inclination, dan azimuth. Accelerometer merujuk gravitasi; magnetometer memakai medan magnet bumi. Non-magnetic collar mengurangi gangguan BHA/drillpipe. Gyro mengurangi ketergantungan pada referensi magnetik, tetapi memory gyro menyimpan data untuk diunduh dan tidak otomatis mengirim real-time ke permukaan.",
+        "questionIds": [
+          "advanced-38-03",
+          "advanced-38-04",
+          "advanced-38-05",
+          "advanced-38-06",
+          "advanced-38-07",
+          "advanced-38-08",
+          "advanced-38-09"
+        ]
+      },
+      {
+        "id": "advanced-38-concept-2",
+        "title": "Telemetry dan casing handling",
+        "explanation": "Electromagnetic MWD dapat berguna saat total mud loss karena tidak membutuhkan transmisi mud pulse yang stabil, tetapi tetap bergantung formasi dan kemampuan sistem. Pada program contoh, 26-inch hole dilanjutkan 20-inch casing serta cementing. Integral-upset casing pada materi memakai slip-type elevator; elevator harus cocok dengan connection dan rating beban.",
+        "questionIds": [
+          "advanced-38-01",
+          "advanced-38-02",
+          "advanced-38-10"
+        ]
+      },
+      {
+        "id": "advanced-38-concept-3",
+        "title": "Batas pengujian dan kesiapan lokasi",
+        "explanation": "Test pressure tidak boleh melampaui batas terendah yang berlaku pada casing, wellhead, atau BOP. Cellar 3×3 m adalah contoh umum materi; kedalamannya mengikuti clearance stack. Pre-driven conductor tidak otomatis sesuai hard formation. BOP function/pressure test memastikan kesiapan sebelum section berikutnya, sesuai program dan kriteria uji yang berlaku.",
+        "questionIds": [
+          "advanced-38-11",
+          "advanced-38-12",
+          "advanced-38-13",
+          "advanced-38-14"
+        ]
+      },
+      {
+        "id": "advanced-38-concept-4",
+        "title": "Dari engineering ke eksekusi",
+        "explanation": "Urutan logisnya pilih surface location → rancang well-pad/rig layout → bangun site → mobilisasi dan rig up. Layout harus ditetapkan sebelum konstruksi agar akses, foundation, cellar, serta posisi peralatan konsisten.",
+        "questionIds": [
+          "advanced-38-15"
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": "advanced-39",
+    "overview": "Materi menggunakan batas deepwater di atas 600 m dan shallow water di bawah 100 m pada klasifikasi yang dikutip; batas kategori dapat berbeda menurut referensi. Wet tree berada subsea dengan remote electro-hydraulic control; dry tree memiliki akses permukaan. Umbilical dan production control system menghubungkan daya, sinyal, serta fungsi kendali subsea.",
+    "sourceKind": "bank-soal",
+    "sources": [
+      "Quiz 39 - Offshore & Deepwater Well Systems - Details - Kahoot!.pdf"
+    ],
+    "concepts": [
+      {
+        "id": "advanced-39-concept-1",
+        "title": "Sistem offshore dan kontrol",
+        "explanation": "Materi menggunakan batas deepwater di atas 600 m dan shallow water di bawah 100 m pada klasifikasi yang dikutip; batas kategori dapat berbeda menurut referensi. Wet tree berada subsea dengan remote electro-hydraulic control; dry tree memiliki akses permukaan. Umbilical dan production control system menghubungkan daya, sinyal, serta fungsi kendali subsea.",
+        "questionIds": [
+          "advanced-39-01",
+          "advanced-39-02",
+          "advanced-39-05",
+          "advanced-39-11",
+          "advanced-39-12"
+        ]
+      },
+      {
+        "id": "advanced-39-concept-2",
+        "title": "Kompleksitas dan station keeping",
+        "explanation": "Subsea BOP, marine riser, dan ketergantungan ROV menambah kompleksitas offshore. Dynamic positioning mempertahankan posisi vessel terhadap angin, gelombang, dan arus agar offset dan beban sistem tetap terkontrol. Materi menyoroti BOSIET dan well-control certification sebagai kompetensi yang relevan.",
+        "questionIds": [
+          "advanced-39-03",
+          "advanced-39-04",
+          "advanced-39-10",
+          "advanced-39-13"
+        ]
+      },
+      {
+        "id": "advanced-39-concept-3",
+        "title": "Urutan dan desain riser",
+        "explanation": "Pada urutan contoh, surface casing dipasang/disemen sebelum BOP stack. Re-entry mendahului tahap upper completion yang dibahas. Analisis drilling riser mengacu API 16Q, sedangkan TBIRS/completion-workover riser mengacu API 17G pada studi; pemilihan standar mengikuti jenis serta scope sistem.",
+        "questionIds": [
+          "advanced-39-06",
+          "advanced-39-07",
+          "advanced-39-14"
+        ]
+      },
+      {
+        "id": "advanced-39-concept-4",
+        "title": "Studi sidetrack dan acidizing",
+        "explanation": "Kasus SPE-217910-MS menargetkan flow tinggi meski bore kecil. IWOCS adalah sistem kontrol sementara selama pekerjaan installation/workover. Acidizing dalam kasus memakai bullheading melalui annulus pada horizontal X-tree loop; metode tersebut adalah konfigurasi studi, bukan pilihan otomatis untuk setiap sumur.",
+        "questionIds": [
+          "advanced-39-08",
+          "advanced-39-09",
+          "advanced-39-15"
+        ]
+      }
+    ]
+  }
+]
