@@ -5,11 +5,11 @@ const fs=require('node:fs');
 const path=require('node:path');
 const {chromium}=require('playwright');
 const load=name=>JSON.parse(fs.readFileSync(path.join(__dirname,'../data',name),'utf8'));
-const foundation=load('foundation.json').bank,advanced=load('advanced.json');
+const foundation=load('foundation.json').bank,advanced=load('advanced.json'),reasoning=load('reasoning.json');
 const byId=new Map([...foundation.questions,...advanced.questions].map(q=>[q.id,q]));
 const url=process.env.DRILLING_TEST_URL||'http://127.0.0.1:8000/drilling-mastery-100/';
 const readState=p=>p.evaluate(()=>JSON.parse(localStorage.getItem('drilling-mastery-v2')));
-async function answer(p,q,correct=true,confidence='sure'){
+async function answer(p,q,correct=true){
   if(['single','multiple','boolean'].includes(q.type)){
     let ids=q.correctOptionIds;
     if(!correct){const wrong=q.options.find(o=>!ids.includes(o.id));ids=wrong?[wrong.id]:ids.slice(1);}
@@ -21,11 +21,13 @@ async function answer(p,q,correct=true,confidence='sure'){
     }
   }else if(q.type==='slider')await p.locator('#answer-number').fill(String(correct?q.slider.answer:q.slider.answer===q.slider.min?q.slider.max:q.slider.min));
   else if(q.type==='pin')for(const axis of ['x','y'])await p.locator(`[data-pin-axis="${axis}"]`).fill(String(correct?Math.round(q.pin.target[axis]*100):0));
-  await p.locator(`[data-action="${confidence}"]`).click();
+  assert.equal(await p.locator('.confidence-picker').count(),0);
   assert.equal(await p.locator('[data-action="submit"]').isEnabled(),true,q.id);
   await p.locator('[data-action="submit"]').click();
   assert.equal(await p.locator('.feedback-correct').count(),Number(correct),q.id);
   assert.equal(await p.locator('#answer-feedback').count(),1);
+  assert.equal(await p.locator('.reason-why').innerText(),reasoning[q.id].why,q.id);
+  if(reasoning[q.id].compare)assert.equal(await p.locator('.reason-compare').innerText(),reasoning[q.id].compare,q.id);
 }
 async function noOverflow(p){assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true,'horizontal overflow');}
 (async()=>{
@@ -39,7 +41,7 @@ try{
  await p.reload();await p.locator('[data-action="resume"]').first().click();assert.match(await p.locator('.question-counter').innerText(),/1 DARI 100/);
  console.log('PASS a brand-new unanswered session persists on reload');
  for(let i=0;i<100;i++){
-   const q=byId.get(initial.questionIds[i]);await answer(p,q,i!==0,i===1?'unsure':'sure');
+   const q=byId.get(initial.questionIds[i]);await answer(p,q,i!==0);
    if(i===0){await p.locator('.reflection summary').click();await p.locator('#reflection-note').fill('Ini catatan pemahaman saya.');assert.equal(await p.locator('.answer-option:not(:disabled)').count(),0);}
    if(i===42){await p.reload();await p.locator('[data-action="resume"]').first().click();assert.match(await p.locator('.question-counter').innerText(),/43 DARI 100/);assert.equal(await p.locator('#answer-feedback').count(),1);}
    await p.locator('[data-action="next"]').click();
@@ -47,17 +49,17 @@ try{
  state=await readState(p);assert.equal(Object.keys(state.sessions.advanced.answers).length,100);assert.ok(state.sessions.advanced.completedAt);
  assert.equal(state.history.length,1);assert.equal(state.history[0].score,99);assert.equal(state.stats.advanced.totalAttempts,1);assert.equal(state.stats.advanced.bestScore,99);assert.equal(state.sessions.advanced.drafts[initial.questionIds[0]].reflection,'Ini catatan pemahaman saya.');
  await p.screenshot({path:'/tmp/drilling-results.png',fullPage:true});
- console.log('PASS complete 100-question session, 99/100 score, confidence, locking, notes, resume, results');
- const reviewIds=Object.entries(state.mastery).filter(([,m])=>m.needsReview).map(([id])=>id);assert.equal(reviewIds.length,2);
+ console.log('PASS complete 100-question session, 99/100 score, direct answer submission, reasoning, locking, notes, resume, results');
+ const reviewIds=Object.entries(state.mastery).filter(([,m])=>m.needsReview).map(([id])=>id);assert.equal(reviewIds.length,1);
  await p.locator('[data-action="review"]').last().click();await p.locator('[data-action="start-review"]').click();
  for(let pass=0;pass<2;pass++){
-   state=await readState(p);const r=state.reviews.advanced;assert.equal(r.questionIds.length,2);
+   state=await readState(p);const r=state.reviews.advanced;assert.equal(r.questionIds.length,1);
    for(const id of r.questionIds){assert.equal(await p.locator('#answer-feedback').count(),0);await answer(p,byId.get(id));await p.locator('[data-action="next"]').click();}
-   state=await readState(p);assert.equal(reviewIds.filter(id=>state.mastery[id].needsReview).length,pass===0?2:0);
+   state=await readState(p);assert.equal(reviewIds.filter(id=>state.mastery[id].needsReview).length,pass===0?1:0);
    assert.equal(state.sessions.advanced.id,initial.id,'review must preserve main session');
    if(pass===0){await p.locator('[data-action="review"]').last().click();await p.locator('[data-action="start-review"]').click();}
  }
- console.log('PASS shuffled review, no pre-shown key, two confident successes, main session preserved');
+ console.log('PASS shuffled review, no pre-shown key, two correct successes, main session preserved');
  await p.locator('[data-action="new"]').first().click();state=await readState(p);const second=state.sessions.advanced;
  assert.notDeepEqual(second.questionIds,initial.questionIds);assert.notDeepEqual([...second.questionIds].sort(),[...initial.questionIds].sort());
  await p.locator('[data-action="home"]').first().click();await p.locator('[data-action="new"]').first().click();assert.equal(await p.locator('dialog[open]').count(),1);

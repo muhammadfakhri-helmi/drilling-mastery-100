@@ -221,7 +221,9 @@
         ],
         "correctOptionIds": [
           "d"
-        ]
+        ],
+        "reviewRequired": true,
+        "reviewNote": "Pertanyaan meminta informasi dalam Technical Proposal, tetapi beberapa pilihan dapat benar; kunci tunggal pada arsip belum cukup didukung konteks."
       },
       {
         "id": "afe-05",
@@ -8216,7 +8218,9 @@
         ],
         "correctOptionIds": [
           "a"
-        ]
+        ],
+        "reviewRequired": true,
+        "reviewNote": "Teks hanya HAZARD tanpa pernyataan atau gambar yang dapat dinilai True/False."
       },
       {
         "id": "subsurface-01",
@@ -8855,7 +8859,9 @@
         ],
         "correctOptionIds": [
           "b"
-        ]
+        ],
+        "reviewRequired": true,
+        "reviewNote": "Kunci False tidak konsisten dengan isi gambar yang menjelaskan koordinat/target/depth sebagai scope; perlu klarifikasi sumber."
       },
       {
         "id": "casing-depth-01",
@@ -9207,7 +9213,6 @@
             "afe-01",
             "afe-02",
             "afe-03",
-            "afe-04",
             "afe-05",
             "afe-06",
             "afe-11"
@@ -10050,8 +10055,7 @@
             "hse-13",
             "hse-14",
             "hse-15",
-            "hse-17",
-            "hse-20"
+            "hse-17"
           ]
         }
       ]
@@ -10129,8 +10133,7 @@
           "questionIds": [
             "dpm-04",
             "dpm-05",
-            "dpm-09",
-            "dpm-10"
+            "dpm-09"
           ]
         },
         {

@@ -1,4 +1,4 @@
-import { createSession, grade, correctText, answerText, updateMastery, summarize, isValidSession, isEligible, refreshSession } from './quiz-engine.mjs?v=concepts-2';
+import { createSession, grade, correctText, answerText, updateMastery, summarize, isValidSession, isEligible, refreshSession } from './quiz-engine.mjs?v=reasoning-3';
 
 const root = document.getElementById('root');
 const STORAGE_KEY = 'drilling-mastery-v2';
@@ -6,7 +6,7 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;',
 const btn = (label, action, attrs = '', style = 'secondary-button') => `<button type="button" class="${style}" data-action="${action}" ${attrs}>${label}</button>`;
 const types = { single: 'Pilihan ganda', multiple: 'Pilih semua yang benar', boolean: 'Benar / salah', order: 'Susun urutan', slider: 'Jawaban angka', pin: 'Tandai gambar' };
 const hints = { single: 'Pilih satu jawaban paling tepat.', multiple: 'Pilih semua jawaban yang benar, tanpa pilihan tambahan.', boolean: 'Tentukan apakah pernyataan benar atau salah.', order: 'Gunakan tombol naik/turun untuk menyusun urutan.', slider: 'Geser atau ketik nilai jawabanmu.', pin: 'Tandai titik pada gambar atau atur koordinat dengan tombol panah pada slider.' };
-let banks, lessons, concepts, allQuestions, packNames;
+let banks, lessons, concepts, allQuestions, packNames, reasoning;
 let state = { version: 2, packId: 'advanced', sessions: {}, reviews: {}, mastery: {}, history: [], stats: {}, legacyStats: null };
 let view = 'home', activeMode = 'quiz', activeModule = '', modal = null, modalReturnFocus = null, storageWarning = '', notice = '';
 
@@ -28,7 +28,7 @@ function draftFor(q = question()) {
   const s = session();
   s.drafts ||= {};
   const answer = s.answers[q.id];
-  s.drafts[q.id] ||= { value: answer ? structuredClone(answer.value) : q.type === 'order' ? [...s.orderStates[q.id]] : q.type === 'slider' ? null : q.type === 'pin' ? null : [], confidence: answer?.confidence || null, reflection: '' };
+  s.drafts[q.id] ||= { value: answer ? structuredClone(answer.value) : q.type === 'order' ? [...s.orderStates[q.id]] : q.type === 'slider' ? null : q.type === 'pin' ? null : [], reflection: '' };
   return s.drafts[q.id];
 }
 function queue(packId = state.packId) {
@@ -75,14 +75,13 @@ function finish() {
 function submit() {
   const s = session(), q = question(), d = draftFor(q);
   if (s.answers[q.id] || !canSubmit(q, d)) return;
-  const answer = { value: structuredClone(d.value), confidence: d.confidence, correct: Boolean(grade(q, d.value)), answeredAt: Date.now() };
+  const answer = { value: structuredClone(d.value), correct: Boolean(grade(q, d.value)), answeredAt: Date.now() };
   s.answers[q.id] = answer;
   state.mastery[q.id] = updateMastery(state.mastery[q.id], answer);
   save(); render();
   document.getElementById('answer-feedback')?.focus({ preventScroll: true });
 }
 function canSubmit(q, d) {
-  if (!['sure', 'unsure'].includes(d.confidence)) return false;
   if (['single','multiple','boolean'].includes(q.type)) return d.value?.length > 0;
   if (q.type === 'slider') return typeof d.value === 'number' && Number.isFinite(d.value) && d.value >= q.slider.min && d.value <= q.slider.max;
   return Boolean(d.value);
@@ -99,7 +98,6 @@ function source(q) {
   if (q.sourceKind === 'concept-extension') return 'Soal konsep tambahan · prinsip cost engineering dan administrasi kontrak';
   return q.sourceFile ? `${q.sourceFile.replace(' - Details - Kahoot!.pdf','')} · halaman ${q.sourcePage}, soal ${q.sourceNumber}` : `Paket dasar · ${q.moduleTitle} · soal ${q.sourceNumber}`;
 }
-function explanation(q) { return concepts.get(q.id)?.explanation || q.explanation; }
 function heading(eyebrow, title, copy = '') {
   return `<div class="section-heading compact"><div><p class="eyebrow">${eyebrow}</p><h2>${title}</h2></div>${copy ? `<p>${copy}</p>` : ''}</div>`;
 }
@@ -133,15 +131,15 @@ function home() {
     <div class="hero-visual" aria-label="100 soal per sesi, materi seimbang, dan pembahasan langsung">
       <div class="depth-scale" aria-hidden="true"><span>START</span><span>LEARN</span><span>RECALL</span><span>REPEAT</span></div><div class="well-path" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
       <div class="hero-score-card"><span>One session. Full coverage.</span><strong>100</strong><p>Keputusan untuk dipahami</p></div>
-      <div class="learning-loop"><span>01 · Jawab & nilai keyakinan</span><span>02 · Pahami pembahasan</span><span>03 · Ulangi tanpa melihat kunci</span></div>
+      <div class="learning-loop"><span>01 · Pilih & periksa jawaban</span><span>02 · Pahami pembahasan</span><span>03 · Ulangi tanpa melihat kunci</span></div>
       <div class="hero-stats"><div><strong>${count}</strong><span>soal siap latihan</span></div><div><strong>${b.modules.length}</strong><span>materi tercakup</span></div><div><strong>${base}–${base+1}</strong><span>soal per materi</span></div></div>
     </div></section>
     <section class="overview-section">${heading('Proporsi sesi', 'Semua materi punya tempat.', `${base} soal dari setiap materi + 1 soal tambahan untuk ${extra} materi yang dipilih acak = tepat 100 soal unik. Materi penerima tambahan ikut berubah setiap sesi.`)}
       <div class="distribution-note"><strong>Paket ${esc(packNames[state.packId])}</strong><span>Setiap materi ${base}–${base+1}% dari sesi · soal dan pilihan jawaban diacak · soal di luar sesi terakhir diprioritaskan</span></div>
       <div class="module-grid">${b.modules.map((m,i)=> `<button class="module-card" type="button" data-action="module" data-id="${m.id}"><span>${String(i+1).padStart(2,'0')} <b class="quota-label">${base}–${base+1} soal / sesi</b></span><h3>${esc(m.title)}</h3><p>${b.questions.filter(q=>q.moduleId===m.id&&isEligible(q)).length} soal tersedia · Pelajari materi →</p></button>`).join('')}</div>
-      ${b.questions.some(q=>q.reviewRequired) ? '<details class="editorial-note"><summary>Catatan kualitas bank soal</summary><p>ZIP berisi 275 soal. Satu soal perbandingan anggaran (Quiz 28, nomor 19) ditahan dari penilaian karena kunci pada PDF belum memiliki konteks angka yang cukup. Soal merek, sponsor, pencapaian, spesifikasi unit tertentu, dan hafalan studi kasus dikeluarkan dari latihan. Proporsi 100 soal tetap dipertahankan dengan soal konsep umum.</p></details>' : ''}
+      <details class="editorial-note"><summary>Catatan kualitas bank soal</summary><p>Soal merek, sponsor, pencapaian, spesifikasi unit tertentu, dan hafalan studi kasus dikeluarkan dari latihan. ${b.questions.filter(q=>q.reviewRequired).length} soal lain ditahan karena teks, kunci, atau konteksnya belum jelas. Sesi tetap berisi 100 soal dari materi yang tersedia.</p></details>
     </section>
-    <section class="performance-section"><div><p class="eyebrow">Progres paket ini</p><h2>Pelajari. Coba lagi. Lihat kemajuannya.</h2></div><div><div class="performance-cards"><div><span>Skor terbaik</span><strong>${best}%</strong></div><div><span>Sesi 100 soal selesai</span><strong>${stats.totalAttempts}</strong></div><div><span>Perlu diulang</span><strong>${queue().length}</strong></div></div>${queue().length ? btn('Latih jawaban salah & ragu →','review','', 'secondary-button') : '<p class="local-note">Jawaban salah dan jawaban benar yang masih ragu akan masuk antrean latihan.</p>'}</div></section></div>`;
+    <section class="performance-section"><div><p class="eyebrow">Progres paket ini</p><h2>Pelajari. Coba lagi. Lihat kemajuannya.</h2></div><div><div class="performance-cards"><div><span>Skor terbaik</span><strong>${best}%</strong></div><div><span>Sesi 100 soal selesai</span><strong>${stats.totalAttempts}</strong></div><div><span>Perlu diulang</span><strong>${queue().length}</strong></div></div>${queue().length ? btn('Latih jawaban yang belum tepat →','review','', 'secondary-button') : '<p class="local-note">Jawaban salah akan masuk antrean latihan ulang.</p>'}</div></section></div>`;
 }
 
 function answerInput(q, s, answer, d) {
@@ -159,8 +157,13 @@ function answerInput(q, s, answer, d) {
   return `<div class="pin-wrapper"><button type="button" class="pin-stage" data-action="pin" aria-label="Pilih titik pada gambar" ${locked?'disabled':''}><img src="${esc(mediaURL(q.media))}" alt="Gambar sayatan tipis sampel A dan B"><span class="pin-marker" ${point?`style="left:${point.x*100}%;top:${point.y*100}%"`:'hidden'}></span>${locked?`<span class="pin-target" style="left:${q.pin.target.x*100}%;top:${q.pin.target.y*100}%;width:${q.pin.target.radius*200}%;height:${q.pin.target.radius*200}%"></span>`:''}</button><div class="pin-coordinates"><label>Posisi horizontal <input type="range" data-pin-axis="x" aria-label="Posisi horizontal titik" min="0" max="100" value="${(point?.x??.5)*100}" ${locked?'disabled':''}></label><label>Posisi vertikal <input type="range" data-pin-axis="y" aria-label="Posisi vertikal titik" min="0" max="100" value="${(point?.y??.5)*100}" ${locked?'disabled':''}></label></div></div>`;
 }
 function mediaURL(path) { return new URL('../'+path.replace(/^\/+/,''), import.meta.url).href; }
+function answerReasoning(q) {
+  const reason = reasoning[q.id];
+  if (!reason) return '';
+  return `<div class="answer-reasoning"><div class="reason-block"><span>Alasan jawaban</span><p class="reason-why">${esc(reason.why)}</p></div>${reason.compare ? `<div class="reason-comparison"><strong>Pembeda dengan pilihan lain</strong><p class="reason-compare">${esc(reason.compare)}</p></div>` : ''}</div>`;
+}
 function feedback(q, a, d) {
-  return `<section id="answer-feedback" tabindex="-1" class="feedback-panel ${a.correct?'feedback-correct':'feedback-wrong'}" aria-label="Hasil jawaban"><div class="feedback-heading"><span aria-hidden="true">${a.correct?'✓':'×'}</span><strong>${a.correct ? (a.confidence==='sure'?'Tepat! Sekarang cek alasanmu.':'Benar, tapi masih ragu? Kita ulangi nanti.') : (a.confidence==='sure'?'Belum tepat — cek kembali asumsi yang kamu pakai.':'Belum tepat. Ini kesempatan memperjelas konsepnya.')}</strong></div><p><b>Jawabanmu:</b> ${esc(answerText(q,a.value))}</p><p><b>Jawaban benar:</b> ${esc(correctText(q))}</p><div class="reason-block"><span>Mengapa? · ${esc(concepts.get(q.id)?.title || 'Konsep kunci')}</span><p>${esc(explanation(q))}</p>${btn('Pelajari materi ini →','module',`data-id="${q.moduleId}"`,'reason-link')}</div><details class="reflection"><summary>Uji pemahamanmu, bukan hanya ingatanmu</summary><p>Tutup pembahasan, lalu jelaskan dengan kata-katamu sendiri: prinsip apa yang membuat jawaban itu tepat, dan mengapa pilihan lain kurang sesuai?</p><label for="reflection-note">Catatan penjelasanmu (opsional, tersimpan di browser ini)</label><textarea id="reflection-note" maxlength="2000" rows="3" placeholder="Menurutku, alasannya adalah…">${esc(d.reflection)}</textarea><p class="local-note">Catatan ini tidak dinilai otomatis. Bandingkan penalaranmu dengan pembahasan dan coba jawab lagi tanpa melihat kunci.</p></details><p class="source-reference">Sumber kunci: ${esc(source(q))}. Penjelasan tambahan dirangkum untuk belajar.</p></section>`;
+  return `<section id="answer-feedback" tabindex="-1" class="feedback-panel ${a.correct?'feedback-correct':'feedback-wrong'}" aria-label="Hasil jawaban"><div class="feedback-heading"><span aria-hidden="true">${a.correct?'✓':'×'}</span><strong>${a.correct ? 'Tepat! Mari pahami alasannya.' : 'Belum tepat. Mari lihat alasannya.'}</strong></div><p><b>Jawabanmu:</b> ${esc(answerText(q,a.value))}</p><p><b>Jawaban benar:</b> ${esc(correctText(q))}</p>${answerReasoning(q)}${btn('Pelajari konsep terkait →','module',`data-id="${q.moduleId}"`,'reason-link')}<details class="reflection"><summary>Coba jelaskan kembali dengan kata-katamu</summary><p>Gunakan alasan di atas, lalu coba jelaskan prinsip yang membuat jawaban tepat dan letak kekeliruan pilihan lainnya.</p><label for="reflection-note">Catatan penjelasanmu (opsional, tersimpan di browser ini)</label><textarea id="reflection-note" maxlength="2000" rows="3" placeholder="Menurutku, alasannya adalah…">${esc(d.reflection)}</textarea><p class="local-note">Catatan ini tidak dinilai otomatis. Bandingkan penalaranmu dengan pembahasan dan coba jawab lagi tanpa melihat kunci.</p></details><p class="source-reference">Sumber kunci: ${esc(source(q))}. Penjelasan tambahan dirangkum untuk belajar.</p></section>`;
 }
 function quiz() {
   const s = session(), q = question();
@@ -169,21 +172,21 @@ function quiz() {
   return `<section class="quiz-layout" id="main-content"><aside class="quiz-rail" aria-label="Progres sesi"><p class="eyebrow">${s.mode==='review'?'Latihan ulang':'Sesi 100 soal'}</p><div class="rail-number"><strong>${s.currentIndex+1}</strong><span>/ ${s.questionIds.length}</span></div><div class="rail-progress" role="progressbar" aria-valuenow="${answered}" aria-valuemin="0" aria-valuemax="${s.questionIds.length}" aria-label="Soal terjawab"><span style="height:${answered/s.questionIds.length*100}%"></span></div><div class="rail-score"><span>Benar</span><strong>${Object.values(s.answers).filter(a=>a.correct).length}</strong></div>${btn('Beranda','home','','rail-home')}</aside>
     <article class="question-card"><div class="question-meta"><span class="topic-chip">${esc(q.moduleTitle)}</span><span class="type-chip">${types[q.type]}</span></div><p class="question-counter">Soal ${s.currentIndex+1} dari ${s.questionIds.length}${s.mode==='review'?' · latihan ulang':''}</p><h1 tabindex="-1">${esc(q.prompt)}</h1><p class="question-hint">${hints[q.type]}</p>${q.media && q.type!=='pin' ? `<figure class="media-frame"><img src="${esc(mediaURL(q.media))}" alt="Gambar pendukung untuk soal ${esc(q.moduleTitle)}"></figure>`:''}
     ${answerInput(q,s,answer,d)}
-    <fieldset class="confidence-picker" ${answer?'disabled':''}><legend>Seberapa yakin kamu dengan jawabanmu?</legend>${btn('Yakin, aku tahu alasannya','sure',`aria-pressed="${d.confidence==='sure'}"`,'confidence-button')}${btn('Masih ragu / menebak','unsure',`aria-pressed="${d.confidence==='unsure'}"`,'confidence-button')}</fieldset>
-    ${answer?feedback(q,answer,d):'<p class="local-note">Pilih jawaban dan tingkat keyakinan sebelum memeriksa. Jawaban yang sudah diperiksa dikunci.</p>'}
+
+    ${answer?feedback(q,answer,d):'<p class="local-note">Pilih jawaban, lalu tekan Periksa jawaban untuk melihat alasan dan pembahasannya. Jawaban yang sudah diperiksa dikunci.</p>'}
     <div class="question-actions">${answer?btn(s.currentIndex===s.questionIds.length-1?'Selesaikan & lihat hasil →':'Soal berikutnya →','next','','primary-button'):btn('Periksa jawaban','submit',canSubmit(q,d)?'':'disabled','primary-button')}</div>
     </article></section>`;
 }
 
 function results() {
   const s=session(); if(!s?.completedAt) return quiz();
-  const r=summarize(s,bank()), reviewIds=s.questionIds.filter(id=>isEligible(allQuestions.get(id))&&(!s.answers[id]?.correct||s.answers[id]?.confidence==='unsure'));
+  const r=summarize(s,bank()), reviewIds=s.questionIds.filter(id=>isEligible(allQuestions.get(id))&&!s.answers[id]?.correct);
   const remaining=queue();
-  return `<section class="results-page" id="main-content"><div class="result-hero"><div><p class="eyebrow">${s.mode==='review'?'Latihan ulang selesai':'100 keputusan. Satu langkah maju.'}</p><h1 tabindex="-1">Lihat yang sudah kuat.<br>Latih yang belum mantap.</h1><p>${r.correct} dari ${r.total} jawaban benar. ${r.uncertain} jawaban masih kamu ragukan. Skor ini mengukur sesi ini; pemahaman dibangun lewat alasan yang benar dan latihan terpisah.</p><div class="hero-actions">${btn('Mulai 100 soal baru →','new','','primary-button')}${remaining.length?btn(`Latihan ulang (${remaining.length})`,'review') : btn('Pelajari materi','learn')}</div></div><div class="score-dial" style="--score:${r.score}%" aria-label="Skor ${r.score} persen"><div><strong>${r.score}</strong><span>/100</span></div></div></div>
-    <div class="result-summary"><div><span>Jawaban benar</span><strong>${r.correct}/${r.total}</strong></div><div><span>Masih ragu di sesi ini</span><strong>${r.uncertain}</strong></div><div><span>Antrean latihan paket ini</span><strong>${remaining.length}</strong></div></div>
-    <section class="topic-results">${heading('Peta pemahaman','Nilai per materi','Mulai dari materi dengan nilai terendah. Dua jawaban benar dan yakin pada dua percobaan berturut-turut mengeluarkan soal dari antrean latihan.')}
+  return `<section class="results-page" id="main-content"><div class="result-hero"><div><p class="eyebrow">${s.mode==='review'?'Latihan ulang selesai':'100 keputusan. Satu langkah maju.'}</p><h1 tabindex="-1">Lihat yang sudah kuat.<br>Latih yang belum mantap.</h1><p>${r.correct} dari ${r.total} jawaban benar. ${r.incorrect} jawaban belum tepat. Skor ini mengukur sesi ini; pemahaman dibangun lewat alasan yang benar dan latihan terpisah.</p><div class="hero-actions">${btn('Mulai 100 soal baru →','new','','primary-button')}${remaining.length?btn(`Latihan ulang (${remaining.length})`,'review') : btn('Pelajari materi','learn')}</div></div><div class="score-dial" style="--score:${r.score}%" aria-label="Skor ${r.score} persen"><div><strong>${r.score}</strong><span>/100</span></div></div></div>
+    <div class="result-summary"><div><span>Jawaban benar</span><strong>${r.correct}/${r.total}</strong></div><div><span>Jawaban belum tepat</span><strong>${r.incorrect}</strong></div><div><span>Antrean latihan paket ini</span><strong>${remaining.length}</strong></div></div>
+    <section class="topic-results">${heading('Peta pemahaman','Nilai per materi','Mulai dari materi dengan nilai terendah. Dua jawaban benar pada dua percobaan berturut-turut mengeluarkan soal dari antrean latihan.')}
       <div class="topic-result-grid">${[...r.topics].sort((a,b)=>a.score-b.score).map(m=>`<article><div><h3 title="${esc(m.title)}">${esc(m.title)}</h3><span>${m.correct}/${m.total} benar · ${btn('Pelajari','module',`data-id="${m.id}"`,'text-button')}</span></div><div class="topic-bar" role="img" aria-label="${m.score}% benar"><span style="width:${m.score}%"></span></div><strong>${m.score}%</strong></article>`).join('')}</div></section>
-    <section class="review-section">${heading('Tinjau & ingat kembali','Jawaban salah dan yang masih ragu',`${reviewIds.length} soal dari sesi ini. Latihan ulang menyajikan soal tanpa kunci lebih dulu dan mengacak pilihannya kembali.`)}${reviewIds.length?`<div class="review-list">${reviewIds.map((id,i)=>{const q=allQuestions.get(id),a=s.answers[id];return `<details><summary><span>${String(i+1).padStart(2,'0')}</span><div><small>${esc(q.moduleTitle)} · ${a.correct?'Benar, masih ragu':a.confidence==='sure'?'Salah, tadinya yakin':'Belum tepat'}</small><strong>${esc(q.prompt)}</strong></div><i aria-hidden="true">+</i></summary><div class="review-body"><p><b>Jawabanmu:</b> ${esc(answerText(q,a.value))}</p><p><b>Jawaban benar:</b> ${esc(correctText(q))}</p><div class="review-reason"><strong>Alasan & konsep</strong><p>${esc(explanation(q))}</p>${s.drafts[id]?.reflection?`<p><b>Catatanmu:</b> ${esc(s.drafts[id].reflection)}</p>`:''}${btn('Pelajari materi →','module',`data-id="${q.moduleId}"`,'reason-link')}</div></div></details>`}).join('')}</div>`:'<div class="perfect-card"><strong>Benar dan yakin untuk seluruh sesi.</strong><p>Coba sesi baru dengan soal berbeda. Menjawab lagi setelah jeda membantu memeriksa apakah konsepnya masih kamu ingat.</p></div>'}</section>
+    <section class="review-section">${heading('Tinjau & ingat kembali','Tinjau jawaban yang belum tepat',`${reviewIds.length} soal dari sesi ini. Latihan ulang menyajikan soal tanpa kunci lebih dulu dan mengacak pilihannya kembali.`)}${reviewIds.length?`<div class="review-list">${reviewIds.map((id,i)=>{const q=allQuestions.get(id),a=s.answers[id];return `<details><summary><span>${String(i+1).padStart(2,'0')}</span><div><small>${esc(q.moduleTitle)} · Belum tepat</small><strong>${esc(q.prompt)}</strong></div><i aria-hidden="true">+</i></summary><div class="review-body"><p><b>Jawabanmu:</b> ${esc(answerText(q,a.value))}</p><p><b>Jawaban benar:</b> ${esc(correctText(q))}</p><div class="review-reason">${answerReasoning(q)}${s.drafts[id]?.reflection?`<p><b>Catatanmu:</b> ${esc(s.drafts[id].reflection)}</p>`:''}${btn('Pelajari materi →','module',`data-id="${q.moduleId}"`,'reason-link')}</div></div></details>`}).join('')}</div>`:'<div class="perfect-card"><strong>Seluruh jawaban sesi ini benar.</strong><p>Coba sesi baru dengan soal berbeda. Menjawab lagi setelah jeda membantu memeriksa apakah konsepnya masih kamu ingat.</p></div>'}</section>
     <section class="review-section">${heading('Riwayat lokal','Bandingkan dengan percobaan sebelumnya')}<ol class="history-list">${state.history.filter(h=>h.packId===state.packId).slice(0,8).map(h=>`<li><span>${new Date(h.completedAt).toLocaleString('id-ID',{dateStyle:'medium',timeStyle:'short'})} · ${h.mode==='review'?'Latihan ulang':'Sesi 100 soal'}</span><strong>${h.correct}/${h.total} · ${h.score}%</strong></li>`).join('')}</ol></section></section>`;
 }
 function learning() {
@@ -194,12 +197,12 @@ function learning() {
   const active=state.sessions[state.packId];
   return `<section class="learning-page" id="main-content"><div class="learning-hero"><div><p class="eyebrow">Learn the reason. Recall the concept.</p><h1 tabindex="-1">Pahami prinsipnya.<br>Jawaban akan mengikuti.</h1><p>Baca konsep, tutup materi, lalu coba jelaskan kembali. Gunakan soal untuk menguji alasanmu, bukan menghafal posisi pilihan.</p></div><div class="learning-actions">${active&&!active.completedAt?btn('Lanjutkan sesi →','resume','','primary-button'):btn('Mulai 100 soal →','new','','primary-button')}${btn('Kembali ke beranda','home')}</div></div>
     <div class="learning-layout"><nav class="learning-nav" aria-label="Daftar materi"><p class="eyebrow">${esc(packNames[state.packId])}</p>${b.modules.map((mod,i)=>`<button type="button" class="learning-nav-button ${mod.id===m.id?'is-active':''}" data-action="module" data-id="${mod.id}" ${mod.id===m.id?'aria-current="page"':''}><span>${String(i+1).padStart(2,'0')}</span>${esc(mod.title)}</button>`).join('')}</nav><article class="learning-content"><div class="learning-title"><div><p class="eyebrow">Modul belajar</p><h2>${esc(m.title)}</h2></div><span class="source-badge" data-kind="bank-soal">${qs.filter(isEligible).length} soal latihan</span></div>
-    <p class="learning-overview">${esc(lesson?.overview || '')}</p><div class="module-progress"><strong>${answered.length}/${qs.filter(isEligible).length} soal pernah dicoba</strong><span>${strong.length} soal benar & yakin setidaknya dua kali berturut-turut.</span></div>
+    <p class="learning-overview">${esc(lesson?.overview || '')}</p><div class="module-progress"><strong>${answered.length}/${qs.filter(isEligible).length} soal pernah dicoba</strong><span>${strong.length} soal dijawab benar setidaknya dua kali berturut-turut.</span></div>
     <div class="concept-list">${(lesson?.concepts || []).map((c,i)=>`<section class="concept-card"><div><span>Konsep ${String(i+1).padStart(2,'0')}</span><small>${c.questionIds.length} soal terkait</small></div><h3>${esc(c.title)}</h3><p>${esc(c.explanation)}</p><details class="recall-prompt"><summary>Cek pemahamanmu</summary><p>Tanpa melihat paragraf di atas, jelaskan prinsip “${esc(c.title)}” dan berikan satu contoh penerapannya. Jika belum bisa menjelaskan alasannya, baca kembali lalu coba setelah jeda.</p></details></section>`).join('')}</div><div class="source-note"><strong>Rujukan materi & konteks</strong><ul>${(lesson?.sources||[]).map(s=>`<li>${esc(s)}</li>`).join('')}</ul><p class="local-note">Pembahasan berfokus pada konsep dan prinsip yang dapat diterapkan lintas proyek. Merek, sponsor, pencapaian, dan hafalan kejadian proyek tidak diujikan.</p></div>${qs.some(q=>q.reviewRequired)?`<details class="editorial-note"><summary>Soal yang menunggu verifikasi</summary>${qs.filter(q=>q.reviewRequired).map(q=>`<p>${esc(q.prompt)}</p><p>${esc(q.reviewNote)}</p>`).join('')}</details>`:''}</article></div></section>`;
 }
 function reviewPage() {
   const ids=queue(), pending=state.reviews[state.packId];
-  return `<section class="learning-page review-intro" id="main-content"><p class="eyebrow">Recall, bukan membaca ulang kunci</p><h1 tabindex="-1">${ids.length ? `${ids.length} soal untuk dimantapkan.` : 'Belum ada soal dalam antrean.'}</h1><p>Jawaban salah atau jawaban benar yang masih ragu masuk ke sini. Jawab benar dan yakin pada dua percobaan berturut-turut untuk mengeluarkannya dari antrean. Ini indikator latihan, bukan jaminan penguasaan.</p><div class="hero-actions">${pending&&!pending.completedAt?btn('Lanjutkan latihan ulang →','resume-review','','primary-button'):ids.length?btn(`Mulai latihan ulang · ${ids.length} soal →`,'start-review','','primary-button'):btn('Mulai 100 soal →','new','','primary-button')}${pending&&!pending.completedAt&&ids.length?btn('Susun ulang latihan','start-review'):btn('Pelajari materi','learn')}</div><p class="local-note">Latihan ulang mengikuti jumlah soal dalam antrean. Sesi utama selalu 100 soal dengan proporsi semua materi.</p><div class="review-queue">${bank().modules.map(m=>({m,count:ids.filter(id=>allQuestions.get(id).moduleId===m.id).length})).filter(x=>x.count).map(({m,count})=>`<div><strong>${esc(m.title)}</strong><span>${count} soal</span>${btn('Pelajari','module',`data-id="${m.id}"`,'text-button')}</div>`).join('')}</div></section>`;
+  return `<section class="learning-page review-intro" id="main-content"><p class="eyebrow">Recall, bukan membaca ulang kunci</p><h1 tabindex="-1">${ids.length ? `${ids.length} soal untuk dimantapkan.` : 'Belum ada soal dalam antrean.'}</h1><p>Jawaban salah masuk ke sini. Jawab benar pada dua percobaan berturut-turut untuk mengeluarkannya dari antrean. Ini indikator latihan, bukan jaminan penguasaan.</p><div class="hero-actions">${pending&&!pending.completedAt?btn('Lanjutkan latihan ulang →','resume-review','','primary-button'):ids.length?btn(`Mulai latihan ulang · ${ids.length} soal →`,'start-review','','primary-button'):btn('Mulai 100 soal →','new','','primary-button')}${pending&&!pending.completedAt&&ids.length?btn('Susun ulang latihan','start-review'):btn('Pelajari materi','learn')}</div><p class="local-note">Latihan ulang mengikuti jumlah soal dalam antrean. Sesi utama selalu 100 soal dengan proporsi semua materi.</p><div class="review-queue">${bank().modules.map(m=>({m,count:ids.filter(id=>allQuestions.get(id).moduleId===m.id).length})).filter(x=>x.count).map(({m,count})=>`<div><strong>${esc(m.title)}</strong><span>${count} soal</span>${btn('Pelajari','module',`data-id="${m.id}"`,'text-button')}</div>`).join('')}</div></section>`;
 }
 function render() {
   root.innerHTML = `<main class="app-shell">${header()}<p id="storage-status" class="storage-warning" role="status" ${storageWarning?'':'hidden'}>${esc(storageWarning)}</p>${notice?`<p class="notice" role="status">${esc(notice)}</p>`:''}${({home,quiz,results,learning,review:reviewPage}[view] || home)()}<footer class="site-footer"><p>${bank().modules.length} materi · Progres disimpan di perangkat ini · Latih lagi setelah jeda</p><span>Drilling Mastery 100</span></footer></main>`;
@@ -233,7 +236,6 @@ root.addEventListener('click', e => {
   const s=session(),q=question();if(s.answers[q.id])return;
   const d=draftFor(q);
   if(action==='option') {const id=target.dataset.id;d.value=q.type==='multiple'?(d.value.includes(id)?d.value.filter(x=>x!==id):[...d.value,id]):[id];}
-  if(action==='sure'||action==='unsure') d.confidence=action;
   if(action==='up'||action==='down') {const index=d.value.indexOf(target.dataset.id),to=index+(action==='up'?-1:1);if(to>=0&&to<d.value.length)[d.value[index],d.value[to]]=[d.value[to],d.value[index]];s.orderStates[q.id]=[...d.value];}
   if(action==='pin') {const rect=target.getBoundingClientRect();d.value=e.detail===0?{x:.5,y:.5}:{x:Math.max(0,Math.min(1,(e.clientX-rect.left)/rect.width)),y:Math.max(0,Math.min(1,(e.clientY-rect.top)/rect.height))};}
   save();render();
@@ -261,9 +263,10 @@ root.addEventListener('input',e=>{
 });
 
 async function init() {
-  const [foundation,advanced,advancedLessons]=await Promise.all(['foundation.json','advanced.json','advanced-lessons.json'].map(async name=>{
-    const response=await fetch(new URL('../data/'+name+'?v=concepts-2',import.meta.url));if(!response.ok)throw new Error(`Tidak dapat memuat ${name}`);return response.json();
+  const [foundation,advanced,advancedLessons,reasoningData]=await Promise.all(['foundation.json','advanced.json','advanced-lessons.json','reasoning.json'].map(async name=>{
+    const response=await fetch(new URL('../data/'+name+'?v=reasoning-3',import.meta.url));if(!response.ok)throw new Error(`Tidak dapat memuat ${name}`);return response.json();
   }));
+  reasoning=reasoningData;
   banks={advanced,foundation:foundation.bank,combined:{modules:[...foundation.bank.modules,...advanced.modules],questions:[...foundation.bank.questions,...advanced.questions]}};
   packNames={advanced:'Lanjutan · dari ZIP baru',foundation:'Dasar · paket sebelumnya',combined:'Gabungan · semua materi'};
   lessons=new Map([...foundation.lessons,...advancedLessons].map(l=>[l.moduleId,l]));
@@ -291,7 +294,6 @@ async function init() {
     const legacy=readJSON('drilling-mastery-session-v1');
     if(legacy){
       const migrated={...legacy,version:2,packId:'foundation',mode:'quiz',drafts:{}};
-      for(const a of Object.values(migrated.answers||{}))a.confidence='unsure';
       if(isValidSession(migrated,banks.foundation)){
         state.sessions.foundation=migrated;
         for(const [id,a]of Object.entries(migrated.answers))state.mastery[id]=updateMastery(null,a);
@@ -299,6 +301,10 @@ async function init() {
       }
     }
   }
+  if (stored?.answerFlowVersion !== 3) {
+    for (const m of Object.values(state.mastery)) if (m.attempts > 0 && m.correct === m.attempts) { m.needsReview=false; m.streak=Math.max(m.streak,m.attempts); }
+  }
+  state.answerFlowVersion=3;
   for (const id of Object.keys(banks)) {
     if (validLegacyStats(stored?.stats?.[id])) state.stats[id] = stored.stats[id];
     else {
@@ -311,7 +317,7 @@ async function init() {
       if (refreshed.changed) {
         if (refreshed.session) state[key][id] = refreshed.session;
         else delete state[key][id];
-        notice = 'Soal merek, pencapaian, dan hafalan studi kasus sudah dikeluarkan. Sesi aktif diperbarui; jawaban lain dan riwayat skor tetap tersimpan.';
+        notice = 'Sesi aktif diperbarui mengikuti bank soal terbaru. Soal yang tidak lagi diujikan sudah diganti; jawaban lain dan riwayat skor tetap tersimpan.';
       }
     }
   }

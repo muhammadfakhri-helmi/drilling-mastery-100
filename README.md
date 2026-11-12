@@ -9,8 +9,8 @@ sesi baru. Situs tetap statis, tanpa backend, API key, atau proses build.
 | Paket | Materi | Soal siap latihan | Proporsi sesi 100 soal |
 | --- | ---: | ---: | --- |
 | Lanjutan (default, ZIP 12 November 2026) | 18 | 263 | 5 soal/materi + 1 untuk 10 materi acak |
-| Dasar (paket sebelumnya) | 18 | 274 | 5 soal/materi + 1 untuk 10 materi acak |
-| Gabungan | 36 | 537 | 2 soal/materi + 1 untuk 28 materi acak |
+| Dasar (paket sebelumnya) | 18 | 271 | 5 soal/materi + 1 untuk 10 materi acak |
+| Gabungan | 36 | 534 | 2 soal/materi + 1 untuk 28 materi acak |
 
 ZIP sumber sebenarnya memuat **275 soal**. Quiz 28 nomor 19 mengenai perbandingan
 anggaran ditandai `reviewRequired` dan tidak dinilai karena konteks angka tidak
@@ -20,6 +20,9 @@ Sebanyak 27 soal sumber ditandai `excluded` (6 dasar dan 21 lanjutan).
 Paket lanjutan menambahkan 10 soal konsep umum cost engineering agar proporsi
 materi tetap terpenuhi. Soal tambahan ditandai `sourceKind: concept-extension`;
 soal ini tidak diklaim sebagai kutipan/kunci dari PDF.
+Tiga soal dasar lain juga ditahan: `afe-04` (beberapa opsi mungkin benar),
+`hse-20` (tidak ada pernyataan yang dapat dinilai), dan `dpm-10` (kunci tidak
+konsisten dengan isi gambar). Alasan untuk kunci ambigu tidak direkayasa.
 Metadata file PDF, halaman, dan nomor soal tersimpan pada paket lanjutan.
 PDF asli tidak disertakan dalam situs yang diterbitkan.
 
@@ -27,15 +30,17 @@ PDF asli tidak disertakan dalam situs yang diterbitkan.
 
 1. Pilih paket, lalu mulai 100 soal. Soal di luar sesi sebelumnya diprioritaskan;
    sebagian soal boleh muncul kembali bila diperlukan untuk memenuhi proporsi.
-2. Jawab dan pilih tingkat keyakinan. Setelah diperiksa, jawaban dikunci dan
-   pembahasan ditampilkan. Ada catatan opsional untuk menjelaskan alasan sendiri.
+2. Pilih jawaban, lalu tekan **Periksa jawaban**. Tidak ada pilihan atau gerbang
+   tingkat keyakinan. Setelah diperiksa, jawaban dikunci dan alasan khusus soal
+   ditampilkan, berikut pembeda pilihan lain serta rumus/substitusi pada hitungan.
+   Catatan penjelasan sendiri bersifat opsional.
 3. Selesaikan semua soal untuk melihat skor, nilai per materi, dan review.
-4. Latihan ulang memuat soal salah atau benar tetapi masih ragu, tanpa membuka
-   kunci terlebih dulu. Dua jawaban benar dan yakin berturut-turut mengeluarkan
+4. Latihan ulang memuat soal salah, tanpa membuka kunci terlebih dulu.
+   Dua jawaban benar berturut-turut mengeluarkan
    soal dari antrean; ini indikator latihan, bukan jaminan penguasaan.
 
 Latihan ulang mengikuti jumlah soal dalam antrean; sesi utama selalu 100.
-Progres, pilihan yang belum dikirim, keyakinan, catatan, dan statistik tersimpan
+Progres, pilihan yang belum dikirim, catatan, dan statistik tersimpan
 di `localStorage` browser perangkat ini. Penyimpanan tidak tersinkron antardevice.
 Mode privat, penghapusan data browser, atau perubahan domain dapat menghilangkan
 akses ke progres. Kegagalan penyimpanan ditampilkan pada halaman.
@@ -44,7 +49,10 @@ Jika sesi aktif lama memuat soal yang dikeluarkan, soal diganti dengan konsep
 lain dalam materi yang sama. Jumlah 100 dan proporsinya tetap, sementara jawaban
 dan catatan soal lain dipertahankan. Antrean ulang lama juga disaring. Hasil sesi
 yang sudah selesai tetap menjadi riwayat; soal yang dikeluarkan tidak muncul
-dalam review jawaban atau latihan baru.
+dalam review jawaban atau latihan baru. Record lama yang masih berisi field
+confidence tetap dapat dibaca, tetapi field itu tidak lagi memengaruhi penilaian
+atau streak. Antrean lama yang hanya disebabkan keraguan pada jawaban yang
+selalu benar dibersihkan sekali saat migrasi alur jawaban.
 
 ## Jalankan lokal
 
@@ -87,6 +95,8 @@ atas seluruh kunci materi.
 - `data/foundation.json`: bank dan modul belajar paket dasar yang dipertahankan.
 - `data/advanced.json`: soal PDF baru, kunci, konteks, sumber, dan catatan editorial.
 - `data/advanced-lessons.json`: ringkasan konsep yang terhubung ke soal.
+- `data/reasoning.json`: alasan dan pembeda pilihan untuk seluruh 534 soal aktif;
+  ditampilkan setelah jawaban diperiksa dan di review hasil.
 - `media/advanced-*.webp`: gambar dari PDF yang diperlukan soal; dioptimalkan untuk web.
 
 Bundle lama dipertahankan sebagai arsip; entrypoint aktif adalah `assets/app.mjs`.

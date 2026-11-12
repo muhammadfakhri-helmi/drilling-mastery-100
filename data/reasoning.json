@@ -1,0 +1,2138 @@
+{
+  "afe-01": {
+    "why": "AFE mengotorisasi anggaran untuk sebuah proyek atau lingkup pekerjaan. Satu proyek dapat menggunakan beberapa kontrak; karena itu basis proyek tidak sama dengan basis satu kontrak.",
+    "compare": "Jangan menyamakan dokumen persetujuan anggaran dengan kontrak pengadaan."
+  },
+  "afe-02": {
+    "why": "Evaluasi AFE menilai kelayakan teknis dan kewajaran biaya sebelum keputusan persetujuan. Ketiga kegiatan itu berhubungan langsung dengan usulan proyek.",
+    "compare": "Rekrutmen pegawai bukan kegiatan evaluasi AFE pada daftar ini."
+  },
+  "afe-03": {
+    "why": "Usulan bundling perlu menjadi masukan sebelum pembahasan Work Program & Budget agar lingkup dan anggarannya dapat dipertimbangkan bersama.",
+    "compare": "Mengajukan setelah pekerjaan berjalan membalik urutan perencanaan dan persetujuan."
+  },
+  "afe-05": {
+    "why": "Proposal diajukan lebih dulu, kelengkapannya diverifikasi, isi teknisnya dievaluasi, lalu keputusan persetujuan diberikan.",
+    "compare": "Persetujuan tidak semestinya mendahului pemeriksaan atas dokumen yang disetujui."
+  },
+  "afe-06": {
+    "why": "Pada matriks kewenangan yang dipakai materi, AFE di atas US$100 juta memerlukan persetujuan Kepala SKK Migas.",
+    "compare": "Ini soal membaca batas kewenangan dalam rujukan, bukan aturan yang berlaku untuk setiap organisasi atau periode."
+  },
+  "afe-07": {
+    "why": "Kata EXCEPT meminta item yang bukan kelompok studi. BS 18F, 18G, dan 18H pada pilihan adalah studi, sedangkan BS 23 adalah daftar komponen.",
+    "compare": "Perhatikan negasi: item yang benar justru yang tidak termasuk kategori dalam pertanyaan."
+  },
+  "afe-09": {
+    "why": "Dalam pemetaan Budget Schedule di materi, lifting forecast tercantum pada BS 16. Forecast menggambarkan rencana volume lifting, bukan biaya administrasi.",
+    "compare": "Nomor BS adalah indeks dokumen; angka tersebut bukan hasil perhitungan teknik."
+  },
+  "afe-10": {
+    "why": "BS 11 pada pemetaan materi digunakan untuk administrative expenses. Cara membedakannya adalah fungsi dokumen, bukan kemiripan nomor.",
+    "compare": "Lifting forecast merupakan kelompok berbeda dari biaya administrasi."
+  },
+  "afe-11": {
+    "why": "Dokumen tidak lengkap dikembalikan agar data yang diperlukan tersedia sebelum evaluasi dan keputusan.",
+    "compare": "Kelengkapan tidak dapat diganti dengan persetujuan otomatis atau perubahan jenis anggaran."
+  },
+  "afe-12": {
+    "why": "Dalam pengelompokan biaya pada soal, drill bit diperlakukan sebagai consumable/intangible, sedangkan casing, tubing, dan wellhead merupakan barang atau aset terpasang.",
+    "compare": "Tangible dalam klasifikasi biaya tidak berarti setiap benda yang dapat disentuh selalu masuk kategori yang sama."
+  },
+  "afe-13": {
+    "why": "Dalam pemisahan biaya AFE pada materi, cased-hole electric wireline logging tidak dimasukkan ke dry-hole basis yang dinyatakan soal.",
+    "compare": "Klasifikasi tahap pekerjaan berbeda dari sekadar apakah alat logging dipakai di sebuah sumur."
+  },
+  "afe-14": {
+    "why": "Persiapan lokasi dan jalan menghasilkan pekerjaan pengembangan lokasi, bukan pembelian tubular atau wellhead sebagai aset terpasang.",
+    "compare": "Karena itu biaya pekerjaan tersebut ditempatkan sebagai intangible pada klasifikasi materi."
+  },
+  "afe-15": {
+    "why": "Kontrak rig, mud logging, dan directional survey adalah jasa atau kegiatan operasi. Wellhead merupakan peralatan fisik yang terpasang.",
+    "compare": "Untuk multiple select, pilih semua jasa tersebut tanpa menambahkan wellhead."
+  },
+  "jds-02": {
+    "why": "Spud adalah istilah untuk dimulainya pengeboran sumur, bukan istilah umum bagi seluruh pelaksanaan proyek.",
+    "compare": "Execute atau begin tidak menggantikan istilah teknis spud."
+  },
+  "jds-03": {
+    "why": "Company Man mewakili operator di lokasi dan mengoordinasikan pelaksanaan sesuai program operator.",
+    "compare": "Rig superintendent umumnya berada pada organisasi kontraktor rig, bukan otomatis wakil operator."
+  },
+  "jds-04": {
+    "why": "Pengeboran petroleum menargetkan akumulasi hidrokarbon berupa minyak dan gas.",
+    "compare": "Air dapat ikut terproduksi, tetapi bukan target hidrokarbon pada soal ini."
+  },
+  "jds-05": {
+    "why": "Sumber energi geothermal adalah panas bumi. Air atau steam berperan sebagai fluida pembawa energi panas tersebut.",
+    "compare": "Bedakan sumber energi dengan fluida yang mengangkut energinya."
+  },
+  "jds-06": {
+    "why": "BOP berarti Blowout Preventer, rangkaian peralatan untuk pengendalian tekanan sumur.",
+    "compare": "Nama tersebut berkaitan dengan well control, bukan rencana operasi atau arah bit."
+  },
+  "jds-07": {
+    "why": "H₂S sangat toksik dan dapat menimbulkan paparan fatal; bau tidak boleh dipakai sebagai alat deteksi.",
+    "compare": "O₂ bukan gas toksik yang dimaksud, sedangkan CO₂ terutama menimbulkan bahaya asphyxiation pada konteks ini."
+  },
+  "jds-09": {
+    "why": "Casing adalah pipa berdiameter besar yang dipasang di lubang bor dan umumnya disemen untuk dukungan serta isolasi.",
+    "compare": "Drillpipe menyalurkan putaran dan fluida saat drilling; tubing terutama menjadi jalur produksi."
+  },
+  "jds-10": {
+    "why": "Claystone dapat bereaksi dengan air, mengembang, dan melepaskan material ke sumur sehingga memicu masalah kestabilan.",
+    "compare": "Risiko tetap bergantung mineralogi dan fluida; bukan berarti semua claystone selalu paling bermasalah pada setiap sumur."
+  },
+  "jds-11": {
+    "why": "Blowout berarti pelepasan fluida formasi yang tidak terkendali setelah pengendalian tekanan tidak lagi efektif.",
+    "compare": "Kick adalah influx yang masih dapat ditangani; kick dan blowout bukan sinonim."
+  },
+  "jds-12": {
+    "why": "Rig perlu dimobilisasi dan dirakit sebelum drilling. Setelah drilling, sumur diselesaikan atau diuji, kemudian rig dibongkar dan dipindahkan.",
+    "compare": "Setiap tahap menyediakan kesiapan yang diperlukan tahap sesudahnya."
+  },
+  "jds-13": {
+    "why": "Kick adalah masuknya fluida formasi yang tidak diinginkan ke dalam wellbore.",
+    "compare": "Swab dapat menjadi penyebab influx; blowout merupakan kondisi aliran tak terkendali yang lebih lanjut."
+  },
+  "casing-design-01": {
+    "why": "Saat menangani kick, tekanan pada shoe sebelumnya harus tetap di bawah batas kekuatan formasi. Memecahkan formasi di sana dapat menyebabkan losses dan memperumit pengendalian influx.",
+    "compare": "Titik lemah yang dinilai adalah formasi di casing shoe, bukan hanya rating alat permukaan."
+  },
+  "casing-design-02": {
+    "why": "Pada asumsi lain yang setara, annulus lebih besar menampung volume influx lebih besar untuk tinggi kolom influx yang sama. Karena itu pilihan hole 23 inci memberi volume tolerance terbesar pada soal.",
+    "compare": "Diameter saja tidak menentukan kick tolerance aktual; kekuatan shoe, tekanan, dan densitas influx juga berperan."
+  },
+  "casing-design-03": {
+    "why": "Lapisan berpermeabilitas rendah dapat menghambat disipasi tekanan dan mendukung terbentuknya tekanan abnormal.",
+    "compare": "Mud weight adalah tekanan dari operasi, bukan penyebab geologi tekanan formasi asal."
+  },
+  "casing-design-04": {
+    "why": "Spacer ring pada konfigurasi connection yang ditampilkan dimaksudkan mengatur posisi make-up sehingga memenuhi kondisi no-gap yang dijelaskan gambar.",
+    "compare": "Jawaban berlaku pada konfigurasi pada gambar, bukan klaim bahwa semua BTC mempunyai fitur spacer ring."
+  },
+  "casing-design-05": {
+    "why": "Buttress thread standar tidak otomatis memberikan gas-tight seal untuk setiap kondisi gas well. Sealability perlu dibuktikan untuk tekanan, temperatur, dan beban yang dirancang.",
+    "compare": "Kekuatan thread tidak sama dengan kemampuan penyekatan gas."
+  },
+  "casing-design-06": {
+    "why": "L-80 menunjukkan minimum yield strength 80.000 psi. Angka 13-3/8 adalah OD dan 68 ppf adalah berat per satuan panjang.",
+    "compare": "Jangan membaca angka berat atau diameter sebagai kekuatan material."
+  },
+  "casing-design-07": {
+    "why": "R-3 adalah kategori panjang joint, bukan satu panjang persis untuk semua joint. Pada pilihan soal, 34 dan 40 ft masuk rentang yang dipakai materi.",
+    "compare": "OD, ppf, dan grade tidak memberi satu nilai panjang joint yang pasti."
+  },
+  "casing-design-08": {
+    "why": "Crossover menyediakan transisi pin/box dengan tipe atau ukuran thread yang berbeda agar dua komponen yang tidak langsung kompatibel dapat tersambung.",
+    "compare": "Crossover bukan sekadar spacer dan tidak membuat sembarang connection menjadi setara ratingnya."
+  },
+  "casing-design-09": {
+    "why": "Pada gambar, B memperlihatkan integral connection dengan diameter sambungan yang relatif flush terhadap badan pipa.",
+    "compare": "Identifikasi geometri sambungan, bukan huruf yang kebetulan berada pada posisi pilihan tertentu."
+  },
+  "casing-design-10": {
+    "why": "Pada gambar, C menunjukkan integral-upset connection: bagian sambungan menebal atau berubah diameter dari badan pipa.",
+    "compare": "Flush connection tidak mempunyai profil upset yang sama."
+  },
+  "casing-design-11": {
+    "why": "Side-door elevator memerlukan profil shoulder/coupling yang sesuai untuk menopang beban. Pada gambar, profil itu ditunjukkan oleh A.",
+    "compare": "Untuk profil integral-upset tertentu digunakan elevator slip-type yang sesuai, bukan asumsi semua profil dapat ditopang side-door."
+  },
+  "casing-design-12": {
+    "why": "Burst diperiksa terhadap tekanan internal relatif terhadap tekanan luar. Cementing, pressure test, packer setting, dan LOT dapat menjadi kasus pembebanan tekanan internal.",
+    "compare": "Overpull terutama adalah kasus beban tarik aksial, bukan sumber tekanan burst pada daftar ini."
+  },
+  "casing-design-13": {
+    "why": "Long string tidak selalu merupakan pilihan terbaik untuk geothermal; beban termal, trapping fluida, kondisi formasi, dan konfigurasi liner harus diperhitungkan.",
+    "compare": "Rekomendasi desain tidak dapat ditentukan hanya dari label geothermal."
+  },
+  "casing-design-14": {
+    "why": "Kick tolerance menjadi pemeriksaan penting dalam pendekatan bottom-up agar casing shoe sebelumnya dapat menahan skenario influx yang direncanakan.",
+    "compare": "Rig capacity dan bit selection bukan ukuran kemampuan formasi menahan tekanan saat kick."
+  },
+  "casing-design-15": {
+    "why": "Hole 12-1/4 inci memberi ruang untuk casing 9-5/8 inci. Setelah casing itu terpasang, hole 8-1/2 inci menyediakan ruang untuk liner 7 inci.",
+    "compare": "Ukuran mengecil ke bawah karena string dan peralatan berikutnya harus dapat melewati bagian di atasnya."
+  },
+  "casing-design-16": {
+    "why": "Casing slip menjepit dan menyangga string pada rotary table saat running casing.",
+    "compare": "Stabbing guide membantu penyelarasan sambungan; elevator menopang saat pengangkatan, bukan fungsi slip di rotary table yang ditanya."
+  },
+  "casing-design-17": {
+    "why": "Identitas casing mencakup OD, nominal weight per foot, steel grade, dan connection/thread. Kombinasi ini menentukan geometri, kekuatan, serta kompatibilitas.",
+    "compare": "Satu parameter saja tidak cukup untuk menyatakan spesifikasi sebuah joint."
+  },
+  "casing-design-18": {
+    "why": "Pore pressure dan shallow hazards menentukan kebutuhan isolasi; kick tolerance memeriksa kemampuan shoe sebelumnya menghadapi influx.",
+    "compare": "Setting point dipilih dari kebutuhan integritas sumur, bukan hanya kedalaman yang praktis untuk logistik."
+  },
+  "casing-design-19": {
+    "why": "Prediksi pore pressure membantu memilih mud weight dan menentukan kapan interval perlu diisolasi dengan casing agar operating window tetap tersedia.",
+    "compare": "Tanpa prediksi tekanan, casing setting depth bisa gagal melindungi interval lemah di atasnya."
+  },
+  "casing-design-20": {
+    "why": "API 5CT membahas spesifikasi casing dan tubing seperti dimensi serta grade yang relevan untuk pemilihan tubular.",
+    "compare": "Standar komponen lain tidak otomatis menggantikan spesifikasi produk casing/tubing."
+  },
+  "pscm-01": {
+    "why": "Supply chain mencakup rangkaian proses dan perpindahan material/informasi dari sumber sampai kebutuhan pelanggan terpenuhi.",
+    "compare": "Purchasing hanyalah salah satu bagian, bukan seluruh rantai pasok."
+  },
+  "pscm-02": {
+    "why": "SCM menyelaraskan kegiatan agar barang/jasa tersedia efektif dengan mutu yang dibutuhkan dan biaya yang terkendali.",
+    "compare": "Menurunkan biaya tanpa menjaga mutu atau ketepatan kebutuhan bukan tujuan lengkap SCM."
+  },
+  "pscm-03": {
+    "why": "Material management menangani pembelian, persediaan, penyimpanan, dan transportasi. Marketing strategy berfokus pada pasar dan penjualan.",
+    "compare": "Kata NOT meminta fungsi yang berada di luar kelompok pengelolaan material tersebut."
+  },
+  "pscm-04": {
+    "why": "Purchasing musts menghubungkan kebutuhan dengan mutu/jumlah, sumber, harga, waktu, lokasi, dan proses pembelian yang sesuai.",
+    "compare": "Daftar pilihan pada materi menggambarkan unsur yang saling melengkapi, bukan tujuan speed/cost yang boleh mengabaikan mutu."
+  },
+  "pscm-05": {
+    "why": "Kebutuhan perlu didefinisikan sebelum mencari pemasok, meminta penawaran, atau memesan barang.",
+    "compare": "Tanpa identifikasi kebutuhan, pilihan pemasok dan spesifikasi belum mempunyai dasar."
+  },
+  "pscm-06": {
+    "why": "Contract administration mengelola pelaksanaan kontrak sejak award sampai closeout, termasuk kewajiban, perubahan, pembayaran, dan kinerja.",
+    "compare": "Negosiasi atau drafting saja belum mencakup administrasi seluruh masa kontrak."
+  },
+  "pscm-07": {
+    "why": "Retroactive pricing menetapkan harga setelah pekerjaan dilaksanakan berdasarkan ketentuan yang disepakati.",
+    "compare": "Ini berbeda dari firm fixed price yang disepakati di awal untuk scope tertentu."
+  },
+  "pscm-08": {
+    "why": "Untuk scope yang telah ditetapkan pada firm fixed price, pemasok menanggung risiko biaya pelaksanaan melebihi harga tetap, kecuali perubahan/pengecualian yang diatur kontrak.",
+    "compare": "Harga tetap tidak berarti operator bebas dari semua risiko proyek di luar scope kontrak."
+  },
+  "pscm-09": {
+    "why": "Cost reimbursement mengakomodasi pekerjaan yang biaya akhirnya sulit dipastikan karena pembayaran mengikuti allowable cost dan ketentuan fee.",
+    "compare": "Risiko ketidakpastian tidak hilang; pengawasan biaya dan definisi allowable cost menjadi penting."
+  },
+  "pscm-10": {
+    "why": "Win-win negotiation mencari solusi yang memenuhi kepentingan kedua pihak melalui pemecahan masalah bersama.",
+    "compare": "Menang dengan merugikan pihak lain tidak memenuhi prinsip mutual benefit."
+  },
+  "pscm-11": {
+    "why": "Fokus mutual problem solving membuka kemungkinan paket kesepakatan yang bermanfaat bagi kedua pihak.",
+    "compare": "Kompromi angka semata belum tentu menjawab kepentingan yang mendasari negosiasi."
+  },
+  "pscm-12": {
+    "why": "Operational support, maintenance, logistik/supply, dan cost control bersama-sama menyediakan kesiapan serta dukungan bagi drilling.",
+    "compare": "Drilling support bukan hanya pengiriman peralatan."
+  },
+  "pscm-13": {
+    "why": "Integrasi mengurangi pekerjaan antarmuka yang berulang dan menggabungkan pengetahuan tim sehingga pemecahan masalah lebih cepat.",
+    "compare": "Mengurangi inovasi atau memisahkan kepemilikan keputusan justru melawan manfaat integrasi."
+  },
+  "pscm-14": {
+    "why": "Dalam pembagian peran materi, procurement menangani proses contract award karena tahap tersebut berkaitan dengan seleksi dan pengesahan pengadaan.",
+    "compare": "Peran ini berbeda dari mendefinisikan kebutuhan teknis barang/jasa."
+  },
+  "pscm-15": {
+    "why": "Tim drilling mengetahui kebutuhan operasional sehingga menjadi input utama untuk menyusun procurement list.",
+    "compare": "Daftar pembelian tidak semestinya disusun tanpa spesifikasi dari pengguna teknis."
+  },
+  "pscm-16": {
+    "why": "Scope of Work memerlukan definisi teknis dari tim pemilik kebutuhan, dengan procurement membantu proses komersial dan pengadaannya.",
+    "compare": "Procurement tidak otomatis menjadi satu-satunya pihak yang menentukan seluruh isi teknis scope."
+  },
+  "pscm-17": {
+    "why": "BATNA adalah alternatif terbaik bila kesepakatan tidak tercapai. Mengetahuinya membantu menentukan batas penerimaan tawaran.",
+    "compare": "BATNA bukan tawaran pembuka atau hasil kesepakatan yang sudah dicapai."
+  },
+  "pscm-18": {
+    "why": "ZOPA adalah rentang kondisi yang masih dapat diterima kedua pihak sehingga kesepakatan mungkin terjadi.",
+    "compare": "Jika batas penerimaan kedua pihak tidak beririsan, tidak ada ZOPA pada kondisi saat itu."
+  },
+  "directional-01": {
+    "why": "Inclination diukur dari vertikal: sekitar 0° berarti vertikal dan sekitar 90° mendekati horizontal. Batas lebih dari 86° adalah kategori yang dipakai pada soal.",
+    "compare": "Batas kategori bisa mengikuti program; azimuth tidak menyatakan kemiringan."
+  },
+  "directional-02": {
+    "why": "Azimuth adalah arah proyeksi lintasan terhadap referensi utara. Inclination menyatakan sudut dari vertikal.",
+    "compare": "Arah dan kemiringan merupakan dua besaran berbeda dalam survey."
+  },
+  "directional-03": {
+    "why": "Nudge adalah deviasi yang sengaja dibuat pada kedalaman dangkal, misalnya untuk memisahkan lintasan awal sumur.",
+    "compare": "Pernyataan pada gambar benar karena menekankan deviasi terencana di bagian dangkal, bukan perubahan arah tanpa rencana."
+  },
+  "directional-04": {
+    "why": "ECD dan standpipe pressure berkaitan dengan kehilangan tekanan serta respons hidraulika saat sirkulasi.",
+    "compare": "Keduanya bukan ukuran langsung kapasitas tarik rig atau orientasi geologi."
+  },
+  "directional-05": {
+    "why": "Curvature lebih tinggi menambah dogleg dan kontak string dengan wellbore, sehingga dapat meningkatkan fatigue, side force, torque, dan drag.",
+    "compare": "Lintasan yang lebih halus mengurangi risiko mekanis, selama target dan batas geologi tetap terpenuhi."
+  },
+  "directional-06": {
+    "why": "Slip velocity adalah kecenderungan cuttings turun relatif terhadap fluida karena gravitasi.",
+    "compare": "Kecepatan angkut bersih ke atas perlu mempertimbangkan annular velocity dikurangi efek slip, bukan sekadar pump rate."
+  },
+  "directional-07": {
+    "why": "Metal atau cement cuttings pada return dapat memberi bukti tambahan adanya kontak dengan sumur/konstruksi lain. Bottoms-up mengantar material itu ke permukaan.",
+    "compare": "Ini langkah verifikasi dalam skenario materi; rough drilling saja belum membuktikan collision."
+  },
+  "directional-08": {
+    "why": "Gangguan magnetik dapat membias magnetometer sehingga hasil arah survey MWD menjadi tidak konsisten.",
+    "compare": "Perubahan mud weight atau torque saja bukan pengukuran langsung kesalahan referensi magnetik."
+  },
+  "directional-09": {
+    "why": "Posisi hasil survey dihitung dari MD, inclination, dan azimuth; error ketiganya merambat menjadi ketidakpastian posisi tiga dimensi.",
+    "compare": "Hookload dan mud pressure tidak menggantikan tiga komponen geometri survey tersebut."
+  },
+  "directional-10": {
+    "why": "Pada rotary BHA, seluruh drillstring berputar untuk menyampaikan rotasi ke bit dan memengaruhi respons directional sesuai konfigurasi BHA.",
+    "compare": "Ini berbeda dari pembelokan dengan toolface yang ditahan saat sliding."
+  },
+  "directional-11": {
+    "why": "Static friction terjadi sebelum dua permukaan mulai bergerak relatif. Setelah terjadi sliding, yang relevan adalah sliding/kinetic friction.",
+    "compare": "Klasifikasi mengikuti kondisi gerak relatif, bukan hanya besar gaya."
+  },
+  "directional-12": {
+    "why": "Hambatan torsional melawan putaran pipe. Vektor torque dinyatakan sepanjang sumbu rotasi, sedangkan arah gaya gesek lokal bersifat tangensial.",
+    "compare": "Jangan mencampur vektor torque sepanjang sumbu dengan axial drag yang melawan gerak naik/turun pipe."
+  },
+  "directional-13": {
+    "why": "Cased hole cenderung lebih halus dan OBM memberi lubricity yang dapat menurunkan friksi dibanding kondisi open-hole/WBM sebanding.",
+    "compare": "Ini kecenderungan, bukan satu friction factor tetap untuk semua sumur."
+  },
+  "directional-14": {
+    "why": "Ketika kompresi meningkat, string dapat mengalami sinusoidal buckling lalu helical buckling; kontak/friksi yang makin besar dapat berujung lock-up.",
+    "compare": "Urutan menggambarkan peningkatan deformasi dan hambatan, bukan mode yang saling bebas tanpa perkembangan beban."
+  },
+  "directional-15": {
+    "why": "Kekakuan lentur lebih tinggi meningkatkan ketahanan terhadap deformasi akibat beban kompresi pada kondisi sebanding.",
+    "compare": "Kekakuan tidak menghilangkan buckling bila kompresi dan kondisi penyanggaan tetap melampaui batas."
+  },
+  "directional-16": {
+    "why": "Rentang 0,30–0,35 adalah friction-factor contoh untuk open hole dengan WBM dalam materi.",
+    "compare": "Friction factor aktual dikalibrasi terhadap kondisi lubang dan pengamatan, bukan diambil universal dari satu rentang."
+  },
+  "directional-17": {
+    "why": "Lubricant mengurangi friksi dan kebutuhan gaya dorong untuk menggerakkan string, sehingga dapat mengurangi penumpukan kompresi pemicu buckling.",
+    "compare": "Lubrikasi membantu mekanisme tersebut tetapi tidak menggantikan desain BHA dan kontrol beban."
+  },
+  "directional-18": {
+    "why": "T&D menghitung beban, friksi, torque, dan kemampuan conveyance. Ia bukan metode langsung memilih formulasi kimia lumpur.",
+    "compare": "Sifat lumpur adalah input yang dapat memengaruhi model, bukan berarti semua keputusan mud formulation menjadi output T&D."
+  },
+  "directional-19": {
+    "why": "MWD memberi data directional/toolface selama drilling sehingga arah dapat dipantau dan dikoreksi saat operasi.",
+    "compare": "Manfaat utamanya berbeda dari hanya menyimpan data untuk dibaca setelah tool ditarik."
+  },
+  "directional-20": {
+    "why": "T&D juga dipakai saat operasi untuk membandingkan pickup/slackoff/rotating loads dengan prediksi dan mengenali deviasi.",
+    "compare": "Model bukan hanya dokumen perencanaan yang berhenti dipakai setelah spud."
+  },
+  "rig-01": {
+    "why": "Skidding system memindahkan rig di lokasi tanpa membongkar seluruh instalasi; mekanisme pada materi meliputi rack-and-pinion, walker, dan claw-and-jack.",
+    "compare": "Kenali mekanisme perpindahan, bukan hanya apakah suatu komponen berbentuk beam."
+  },
+  "rig-02": {
+    "why": "Diverter mengalihkan aliran ke jalur yang ditentukan, terutama pada kondisi dangkal yang tidak mendukung shut-in biasa.",
+    "compare": "Mengalihkan return tidak sama dengan menutup sumur menggunakan BOP yang sesuai."
+  },
+  "rig-03": {
+    "why": "AC–DC, DC–DC, dan AC–AC menggambarkan variasi sumber/konversi listrik serta drive pada electric rig.",
+    "compare": "Karena semua konfigurasi yang disebut masuk kelompok tersebut, pilihan gabungan menjadi tepat."
+  },
+  "rig-04": {
+    "why": "Semi-submersible dan drillship bekerja sebagai unit terapung, sedangkan submersible pada konteks rig bertumpu di dasar saat operasi.",
+    "compare": "Kategori floater ditentukan cara menopang rig saat beroperasi, bukan hanya kemampuannya mengapung saat dipindah."
+  },
+  "rig-05": {
+    "why": "Gambar memperlihatkan dua struktur derrick untuk mendukung rangkaian aktivitas penanganan/drilling yang lebih paralel.",
+    "compare": "Identifikasi jumlah dan bentuk struktur, bukan jenis hull kapal yang tidak ditunjukkan."
+  },
+  "rig-06": {
+    "why": "Class I berkaitan dengan gas/uap mudah terbakar. Zone 2 pada materi menggambarkan area yang atmosfer eksplosifnya tidak lazim ada dalam operasi normal.",
+    "compare": "Batas area aktual mengikuti sumber pelepasan dan standar klasifikasi, bukan radius tunggal untuk setiap kondisi."
+  },
+  "rig-07": {
+    "why": "Blind ram menutup bore kosong; shear ram yang memiliki fungsi sealing dapat memotong lalu menyekat; annular tertentu dapat menutup bore sesuai desain/rating.",
+    "compare": "VBR dirancang menyekat rentang diameter pipe dan tidak otomatis menutup open bore tanpa string."
+  },
+  "rig-08": {
+    "why": "Nitrile dipilih pada materi karena kompatibilitasnya terhadap fluida berbasis minyak dibanding natural rubber biasa.",
+    "compare": "Kompatibilitas elastomer juga bergantung temperatur dan kimia fluida; jangan memilih hanya dari nama lokasi."
+  },
+  "rig-09": {
+    "why": "Alat pada gambar merekam parameter drilling secara kontinu sehingga disebut drilling recorder.",
+    "compare": "Data unit atau drilling instrument merupakan istilah lebih luas daripada fungsi pencatat yang ditunjukkan."
+  },
+  "rig-10": {
+    "why": "Tong torque menunjukkan torque saat make-up/break-out connection sehingga relevan untuk mengendalikan pengencangan tubular.",
+    "compare": "RPM mengukur kecepatan putar, sedangkan weight indicator mengukur beban; keduanya bukan torque sambungan."
+  },
+  "rig-11": {
+    "why": "Kategori critical pada inspeksi menekankan temuan yang dapat menimbulkan konsekuensi keselamatan berat seperti kehilangan nyawa atau kerusakan lingkungan.",
+    "compare": "Kerusakan alat dan NPT juga penting, tetapi tidak otomatis setara kategori critical pada matriks materi."
+  },
+  "rig-12": {
+    "why": "DS-1 Category 3 merupakan kategori inspeksi yang dipasangkan dengan kondisi contoh di materi.",
+    "compare": "Pemilihan kategori aktual mempertimbangkan risiko dan tuntutan pekerjaan, bukan kedalaman saja."
+  },
+  "rig-13": {
+    "why": "Rule-of-thumb pada materi memasangkan contoh sumur 8.500 ft dengan kelas rig 1.000 HP.",
+    "compare": "Pemilihan rig nyata tetap memerlukan hookload, hidraulika, torque, dan kondisi operasi; angka HP bukan jaminan rated depth universal."
+  },
+  "rig-14": {
+    "why": "NC-50 adalah pilihan ekuivalensi connection yang dipakai pada soal drillpipe 4-1/2 inci.",
+    "compare": "Connection perlu dicocokkan dengan geometri/tipe ulir dan spesifikasi tubular, bukan menyamakan OD badan pipe dengan ukuran ulir."
+  },
+  "rig-15": {
+    "why": "API, NORSOK, SNI, dan NZS merupakan keluarga rujukan standar yang disebut dalam materi drilling.",
+    "compare": "Standar yang dipakai harus sesuai komponen, scope, dan ketentuan proyek; daftar ini tidak menjadikan semua standar saling menggantikan."
+  },
+  "geothermal-01": {
+    "why": "Top drive harus mampu memberi surface drilling torque dan make-up torque yang diperlukan sambungan.",
+    "compare": "Torque drilling dan torque pengencangan adalah tuntutan berbeda; keduanya perlu dicek terhadap rating."
+  },
+  "geothermal-02": {
+    "why": "Crane membantu pengangkatan/penempatan BOP, tetapi tidak secara langsung mempersingkat holding period dan kriteria pressure test.",
+    "compare": "Bedakan waktu handling dari durasi pengujian tekanan itu sendiri."
+  },
+  "geothermal-03": {
+    "why": "Rig dua-joint dapat memiliki struktur dan logistik pemindahan lebih ringkas daripada rig lebih tinggi yang sebanding.",
+    "compare": "Keuntungan footprint/moving time perlu dibedakan dari kecepatan handling semua string yang tidak selalu lebih tinggi."
+  },
+  "geothermal-04": {
+    "why": "Hookload menentukan kemampuan beban; fuel consumption dan kebutuhan kru memengaruhi dukungan operasi serta biaya rig.",
+    "compare": "Pemilihan ukuran rig mencakup kapabilitas dan konsekuensi operasional, bukan hanya horsepower pada nameplate."
+  },
+  "geothermal-05": {
+    "why": "Horsepower lebih besar biasanya menuntut kapasitas serta biaya peralatan lebih tinggi; tidak ada hubungan terbalik wajib terhadap harga.",
+    "compare": "Harga juga dipengaruhi spesifikasi dan kondisi pasar sehingga tidak dapat disimpulkan hanya dari satu besaran."
+  },
+  "geothermal-06": {
+    "why": "Technical data sheet merangkum rated depth, horsepower, top drive, dan mud-pump capability agar kebutuhan dapat dibandingkan dengan kapasitas.",
+    "compare": "Tidak ada satu item data sheet yang mewakili semua batas operasi rig."
+  },
+  "geothermal-07": {
+    "why": "Pickup load harus tetap dalam kapasitas tarik drillpipe dengan margin yang sesuai, selain batas komponen lain pada load path.",
+    "compare": "Kapasitas angkat rig tidak boleh dipakai untuk membenarkan pembebanan drillpipe di atas tensile limit."
+  },
+  "geothermal-08": {
+    "why": "Hookload yang diizinkan dibatasi komponen terlemah dalam jalur beban, termasuk drillpipe, top drive, dan traveling block.",
+    "compare": "Rating terbesar salah satu komponen tidak menaikkan rating komponen lain."
+  },
+  "geothermal-09": {
+    "why": "Kemampuan pickup berhubungan dengan berat efektif string yang dapat ditangani, sehingga membantu memperkirakan depth capability.",
+    "compare": "Rated drilling depth tetap bergantung jenis string, mud, BHA, dan drag, bukan kedalaman tetap untuk semua konfigurasi."
+  },
+  "geothermal-10": {
+    "why": "Gunakan buoyancy factor baja BF ≈ 1 − 10,3/65,5 = 0,843. Berat BHA terendam ≈ 120 × 0,843 = 101 klb; tambahkan TDS 17 dan traveling block 22 klb: sekitar 140 klb.",
+    "compare": "Komponen di permukaan tidak dikalikan buoyancy factor lumpur seperti BHA yang terendam."
+  },
+  "geothermal-11": {
+    "why": "Kumpulkan pickup load terhadap depth, pilih envelope beban terbesar, lalu ekstrapolasi secara hati-hati untuk kedalaman rencana.",
+    "compare": "Menggunakan hanya titik beban terkecil akan mengabaikan kondisi pengangkatan yang paling menuntut."
+  },
+  "geothermal-12": {
+    "why": "Dalam metode sizing yang dipakai materi, kebutuhan daya hoisting ditinjau untuk mengangkat beban; gerak turun tidak dihitung sebagai lifting power yang sama.",
+    "compare": "Bukan berarti saat turun tidak ada kebutuhan braking atau kontrol energi."
+  },
+  "geothermal-13": {
+    "why": "Melebihi tensile strength, melewati yield torque, dan kerusakan thread masing-masing dapat menyebabkan kegagalan pipe/connection.",
+    "compare": "Bekerja di bawah yield torque tidak dengan sendirinya merupakan penyebab kegagalan yang ditanya."
+  },
+  "geothermal-14": {
+    "why": "Section besar dapat memerlukan flow rate tinggi untuk memenuhi annular velocity, sehingga menjadi pemeriksaan kapasitas mud pump.",
+    "compare": "Pressure losses dan kebutuhan motor/nozzle tetap diperiksa pada semua section, bukan flow rate saja."
+  },
+  "geothermal-15": {
+    "why": "Top drive memberikan surface torque untuk memutar drillstring. Ini pasangan fungsi–spesifikasi yang konsisten.",
+    "compare": "Derrick bukan sumber flow rate dan horsepower bukan satuan tensile strength drillpipe."
+  },
+  "cementing-01": {
+    "why": "Semen mengisolasi zona, menopang casing, dan membantu melindungi tubular serta formasi di sekitar lubang.",
+    "compare": "Tujuan utamanya bukan sekadar mengisi ruang annulus tanpa kriteria isolasi."
+  },
+  "cementing-02": {
+    "why": "Survey/caliper menentukan geometri dan volume; temperatur/tekanan memengaruhi perilaku slurry; mud properties memengaruhi displacement serta kompatibilitas.",
+    "compare": "Mengabaikan salah satu kelompok data dapat menghasilkan volume atau formulasi yang tidak sesuai."
+  },
+  "cementing-03": {
+    "why": "Temperatur memengaruhi hidrasi/thickening time, sedangkan tekanan memengaruhi stabilitas dan rancangan densitas/placement.",
+    "compare": "Data salah dapat membuat semen set terlalu cepat atau strength berkembang terlalu lambat."
+  },
+  "cementing-04": {
+    "why": "Stab-in/stinger lazim dipakai untuk casing besar seperti conductor agar slurry dipompa melalui inner string.",
+    "compare": "Ini berbeda dari mengisi seluruh volume internal casing besar sebagai jalur pemompaan biasa."
+  },
+  "cementing-05": {
+    "why": "Temperatur dangkal yang lebih rendah dapat memperlambat perkembangan kekuatan semen dan memperpanjang waiting-on-cement.",
+    "compare": "Slurry perlu didesain untuk temperatur aktual; kondisi dangkal tidak otomatis membuat hidrasi lebih cepat."
+  },
+  "cementing-06": {
+    "why": "Staged cementing membagi kolom placement sehingga tekanan hidrostatik dan losses dapat dikendalikan, serta membantu penempatan di atas loss zone.",
+    "compare": "Dua stage bukan hanya memecah pekerjaan tanpa alasan hidraulika dan integritas."
+  },
+  "cementing-07": {
+    "why": "Float shoe dan float collar menyediakan fungsi non-return untuk mengurangi aliran balik setelah displacement serta mendukung placement.",
+    "compare": "Fungsi float berbeda dari centralizer yang menjaga posisi casing di lubang."
+  },
+  "cementing-08": {
+    "why": "Wiper plug memisahkan fluida dan membantu menyapu dinding casing selama displacement.",
+    "compare": "Pemisahan ini mengurangi pencampuran; plug bukan bahan kimia pengatur densitas slurry."
+  },
+  "cementing-09": {
+    "why": "Bottom plug mendahului slurry, top plug mengikuti slurry, lalu displacement fluid mendorong rangkaian menuju posisi desain.",
+    "compare": "Menukar plug dan slurry akan menghilangkan fungsi pemisahan yang direncanakan."
+  },
+  "cementing-10": {
+    "why": "Spacer ditempatkan antara mud dan slurry untuk membantu displacement serta mengurangi kontaminasi campuran yang tidak kompatibel.",
+    "compare": "Spacer bukan pengganti seluruh cement slurry atau semua fluida displacement."
+  },
+  "cementing-11": {
+    "why": "Tail slurry dipompa setelah lead slurry dan ditujukan untuk interval bawah sesuai desain.",
+    "compare": "Kata terakhir merujuk urutan slurry; setelah tail masih dapat dipompa displacement fluid."
+  },
+  "cementing-12": {
+    "why": "Lead slurry sering dibuat lebih ringan untuk membatasi hidrostatik, sedangkan tail memberi sifat mekanis yang dibutuhkan di interval kritis.",
+    "compare": "Densitas/strength tetap mengikuti desain; urutan bukan berarti semua lead wajib memiliki komposisi yang sama."
+  },
+  "cementing-13": {
+    "why": "G dan H adalah class cement yang sah pada pilihan API di soal dan banyak dipakai sebagai base well cement.",
+    "compare": "API mempunyai kelas lain juga; jangan menyimpulkan G dan H satu-satunya kelas yang pernah ada."
+  },
+  "cementing-14": {
+    "why": "Retarder memperlambat setting/thickening sehingga tersedia waktu pemompaan dan placement.",
+    "compare": "Accelerator bekerja ke arah sebaliknya, yakni mempercepat perkembangan reaksi atau strength sesuai formulasi."
+  },
+  "cementing-15": {
+    "why": "Jika slurry kehilangan pumpability sebelum placement selesai, semen dapat tertinggal di casing dan tidak mencapai interval annulus target.",
+    "compare": "Thickening time harus lebih panjang dari waktu operasi dengan margin yang sesuai."
+  },
+  "cementing-16": {
+    "why": "Dispersant membantu mengatur rheology dan menurunkan tahanan aliran; gelling agent pada formulasi tertentu mengatur suspensi/stabilitas. Kombinasi dipilih sesuai tujuan slurry di materi.",
+    "compare": "Efek kimia perlu diuji sebagai sistem; tidak semua additive selalu menurunkan friction pada setiap konsentrasi."
+  },
+  "cementing-17": {
+    "why": "Open hole dapat membesar atau tidak beraturan, sehingga volume aktual annulus melebihi volume silinder nominal.",
+    "compare": "Excess volume mengompensasi ketidakpastian geometri, bukan mengganti evaluasi losses dan kapasitas formasi."
+  },
+  "cementing-18": {
+    "why": "Fluid-loss control agent membatasi keluarnya fase cair slurry ke formasi sehingga sifat slurry lebih terjaga.",
+    "compare": "Retarder mengatur waktu reaksi, bukan fungsi utama pengendalian filtrasi."
+  },
+  "cementing-19": {
+    "why": "Wash fluid membantu pembersihan awal, spacer memisahkan mud/semen, lalu lead dan tail slurry ditempatkan sesuai zonanya.",
+    "compare": "Urutan menjaga kompatibilitas dan fungsi masing-masing fluida selama displacement."
+  },
+  "bit-01": {
+    "why": "Cutter PDC yang tetap pada blade memotong batuan terutama melalui shearing saat bit berputar.",
+    "compare": "Roller-cone terutama memecah melalui indentasi/crushing dan mekanisme gigi yang berputar."
+  },
+  "bit-02": {
+    "why": "Aliran melalui bit mendinginkan cutter, membersihkan muka bit, dan mengangkut cuttings agar tidak terus tergerus ulang.",
+    "compare": "Hidraulika tidak menggantikan gaya mekanis pemotongan, tetapi mendukung prosesnya."
+  },
+  "bit-03": {
+    "why": "Ukuran 16 mm adalah pilihan umum yang dipakai materi sebagai kompromi aggressiveness dan durability cutter.",
+    "compare": "Ukuran aktual dipilih sesuai formasi serta desain bit, bukan satu ukuran wajib untuk semua PDC."
+  },
+  "bit-04": {
+    "why": "Blade adalah elemen badan fixed-cutter/PDC, bukan komponen dasar roller-cone yang memakai cone dan bearing/journal.",
+    "compare": "Soal NOT meminta elemen yang berasal dari keluarga bit berbeda."
+  },
+  "bit-05": {
+    "why": "Pada skenario clay lunak dan interval panjang, PDC dengan cutter besar dapat memberi cutting action yang agresif dan efektif.",
+    "compare": "Kelayakan tetap dipengaruhi cleaning dan balling; rekomendasi tidak berarti setiap soft clay harus memakai desain yang sama."
+  },
+  "bit-06": {
+    "why": "Roller-cone dan fixed-cutter/PDC merupakan dua keluarga bit utama pada pilihan soal.",
+    "compare": "Mud motor adalah penggerak downhole dan core barrel adalah sistem pengambilan sampel, bukan keluarga drill bit utama tersebut."
+  },
+  "bit-07": {
+    "why": "Lebih banyak cutter membagi beban dan cutter lebih kecil dapat meningkatkan ketahanan terhadap kerusakan pada kondisi sebanding.",
+    "compare": "Peningkatan durability dapat memiliki trade-off dengan aggressiveness atau kemampuan membersihkan cuttings."
+  },
+  "bit-08": {
+    "why": "Bit record memberi hasil kinerja/dull grading, sedangkan master log memberi konteks formasi dari sumur offset.",
+    "compare": "Data konsumsi bahan bakar rig bukan indikator langsung kecocokan cutter dengan batuan."
+  },
+  "bit-09": {
+    "why": "Plugged nozzle menghambat aliran hidraulik dan balling menutupi permukaan cutting sehingga cleaning terganggu.",
+    "compare": "Keduanya berbeda dari kode yang terutama menunjukkan patahan mekanis gigi."
+  },
+  "bit-10": {
+    "why": "Steel-body tidak secara umum selalu lebih mahal daripada matrix-body PDC; biaya bergantung desain dan manufaktur.",
+    "compare": "Pernyataan perbandingan harga yang mutlak tidak dapat diturunkan hanya dari label material badan bit."
+  },
+  "bit-11": {
+    "why": "Mekanisme utama PDC adalah shearing melalui fixed cutters, bukan mengandalkan cone berputar untuk crushing.",
+    "compare": "Membedakan mekanisme ini membantu memilih bit sesuai respons batuan."
+  },
+  "bit-12": {
+    "why": "Dengan asumsi desain lain sebanding, tambahan cutter dapat membagi beban pemotongan dan menyediakan cadangan cutting surface.",
+    "compare": "Jumlah cutter bukan satu-satunya penentu umur bit; vibrasi, temperatur, dan cleaning juga berpengaruh."
+  },
+  "bit-13": {
+    "why": "Journal angle berhubungan dengan geometri kerja roller-cone; pernyataan bahwa sudut lebih besar umumnya dipilih untuk softer formations tidak sesuai arah pemilihan pada materi.",
+    "compare": "Jangan menyamakan ukuran cone atau aggressiveness dengan satu aturan sudut yang dibalik."
+  },
+  "bit-14": {
+    "why": "Bit selection memakai sifat formasi, offset performance, hidraulika, dan batas BHA. Visibility bukan parameter utama cutting performance pada daftar ini.",
+    "compare": "Penampilan visual saja tidak menggantikan data teknis pemilihan bit."
+  },
+  "bit-15": {
+    "why": "BU berarti balled up, ER erosion, BT broken teeth, dan PN plugged nozzle. Setiap kode menamai mekanisme/temuan berbeda.",
+    "compare": "Baca gejala kerusakan dulu; jangan menukar kode balling dengan sumbatan nozzle."
+  },
+  "well-control-01": {
+    "why": "Hydrostatic pressure = 0,052 × MW(ppg) × TVD(ft). Substitusi 0,052 × 10 × 500 menghasilkan 260 psi.",
+    "compare": "Gunakan tinggi vertikal kolom fluida, bukan panjang lintasan atau angka MW saja."
+  },
+  "well-control-02": {
+    "why": "Pressure gradient = 0,052 × 9 = 0,468 psi/ft. Kedalaman tidak perlu dikalikan karena yang diminta tekanan per satuan kedalaman.",
+    "compare": "Mengalikan lagi dengan 500 ft akan menghasilkan total tekanan, bukan gradient."
+  },
+  "well-control-03": {
+    "why": "Gambar menyatakan level fluida 9 ppg turun 1.000 ft. Tekanan hidrostatik yang hilang = 0,052 × 9 × 1.000 = 468 psi.",
+    "compare": "Gunakan tinggi kolom yang hilang, bukan total kedalaman sumur atau densitas yang diasumsikan berbeda."
+  },
+  "well-control-04": {
+    "why": "Short fill-up menunjukkan lubang tidak menerima volume fluida yang diperkirakan selama POOH dan memerlukan investigasi. Satu flow check tanpa aliran tidak otomatis menjelaskan ketidakseimbangan volume.",
+    "compare": "Melanjutkan tripping tanpa menyelesaikan indikasi volume dapat membiarkan underbalance atau influx tidak terdeteksi."
+  },
+  "well-control-05": {
+    "why": "BHP dijaga setara atau sedikit di atas formation/pore pressure agar fluida formasi tidak masuk secara tidak terkendali.",
+    "compare": "Terlalu tinggi hingga melampaui fracture limit dapat menimbulkan losses, jadi bukan semakin tinggi selalu semakin baik."
+  },
+  "well-control-06": {
+    "why": "Dalam model gas bermigrasi dengan volume tertahan pada closed well, tekanan gas tidak turun lewat ekspansi seperti pada open system; tekanan permukaan dan dasar dapat naik.",
+    "compare": "Asumsi volume konstan penting. Bila gas mengembang atau ada kebocoran, responsnya berbeda."
+  },
+  "well-control-07": {
+    "why": "Pada skenario kick saat tripping di materi, full-opening safety valve dipasang dan ditutup sebagai langkah mengamankan jalur internal drillstring.",
+    "compare": "Tindakan operasional lengkap mengikuti prosedur shut-in dan barrier plan yang berlaku, bukan hanya menunggu influx berhenti."
+  },
+  "well-control-08": {
+    "why": "Driller's Method memakai sirkulasi pertama untuk mengeluarkan influx dengan mud yang tersedia; kill mud disirkulasikan pada tahap berikutnya.",
+    "compare": "Jadi pernyataan bahwa kill fluid sudah membunuh sumur pada sirkulasi pertama tidak sesuai urutan metode."
+  },
+  "well-control-09": {
+    "why": "Tekanan shut-in pada drillpipe dan casing yang nol merupakan pemeriksaan pada soal setelah killing.",
+    "compare": "Kondisi no-flow, keseimbangan fluida, dan verifikasi barrier tetap diperlukan; angka nol tunggal bukan jaminan semua risiko hilang."
+  },
+  "well-control-10": {
+    "why": "Stripping adalah memindahkan pipe masuk/keluar melalui elemen penyekat ketika sumur bertekanan.",
+    "compare": "Fungsi ini berbeda dari sekadar menutup blind ram atau mensirkulasikan lumpur tanpa pergerakan pipe."
+  },
+  "well-control-11": {
+    "why": "Valve 3-position/4-way mengarahkan fluida hidraulik ke sisi open/close actuator dan menyediakan posisi kontrol yang sesuai.",
+    "compare": "Valve proses di jalur return bukan pengganti directional-control valve hidraulik BOP."
+  },
+  "well-control-12": {
+    "why": "Rotating head/RCD menyekat sekitar pipe bergerak dan mengarahkan return ke sistem penanganan terkontrol pada MPD/aerated setup.",
+    "compare": "Perangkat ini tidak otomatis menggantikan fungsi secondary well-control BOP."
+  },
+  "well-construction-01": {
+    "why": "Desain trajectory memerlukan target, posisi, kedalaman, dan batas geometri/subsurface. Weather bukan input geometri lintasan yang diminta pada daftar ini.",
+    "compare": "Cuaca tetap penting untuk operasi/logistik, tetapi kategorinya berbeda dari definisi lintasan bawah tanah."
+  },
+  "well-construction-02": {
+    "why": "Vertical, J/slant, S, dan horizontal mendeskripsikan bentuk lintasan sumur.",
+    "compare": "Klasifikasi berdasarkan geometri berbeda dari klasifikasi tujuan eksplorasi/produksi."
+  },
+  "well-construction-03": {
+    "why": "Kick-off point adalah titik awal perubahan lintasan yang direncanakan dari arah vertikal.",
+    "compare": "KOP bukan otomatis total depth atau titik sumur pertama kali mencapai 90°."
+  },
+  "well-construction-04": {
+    "why": "MD mengukur panjang sepanjang well path; TVD mengukur proyeksi vertikal. Pada deviated well, MD umumnya lebih besar daripada TVD.",
+    "compare": "TVD tidak dapat melebihi panjang lintasan yang membentuk proyeksinya."
+  },
+  "well-construction-05": {
+    "why": "P = 0,052 × 12,7 × 6.562 = 4.333,5 psi, dibulatkan sekitar 4.334 psi.",
+    "compare": "Konstanta 0,052 berlaku untuk ppg dan ft; mengganti ft dengan meter tanpa konversi memberi hasil salah."
+  },
+  "well-construction-06": {
+    "why": "Gradient = 0,052 × 9,0 = 0,468 psi/ft.",
+    "compare": "Gradient tidak bergantung pada panjang kolom; total pressure baru diperoleh setelah dikalikan TVD."
+  },
+  "well-construction-07": {
+    "why": "Wellbore pressure di atas pore pressure membantu mencegah influx, sedangkan tetap di bawah fracture pressure menghindari losses akibat rekah.",
+    "compare": "Operating window berada di antara kedua batas; overbalance bukan izin melampaui fracture limit."
+  },
+  "well-construction-08": {
+    "why": "Casing 13-3/8 inci memberi jalur untuk hole 12-1/4 inci, dilanjutkan casing 9-5/8 inci lalu hole 8-1/2 inci.",
+    "compare": "Setiap tahap berikutnya harus dapat melewati internal diameter string sebelumnya."
+  },
+  "well-construction-09": {
+    "why": "K-55 adalah steel grade; angka 18-5/8 menyatakan diameter, 115 ppf berat nominal, R-3 range panjang, dan BTC tipe connection.",
+    "compare": "Pertanyaan meminta grade material, bukan dimensi atau jenis ulir."
+  },
+  "well-construction-10": {
+    "why": "Burst terjadi ketika beda tekanan internal terhadap eksternal membebani tubular ke arah luar melebihi kapasitasnya.",
+    "compare": "Collapse adalah pembebanan ke arah dalam akibat dominasi tekanan luar, jadi arah mekanismenya berlawanan."
+  },
+  "well-construction-11": {
+    "why": "Casing head merupakan bagian dasar wellhead assembly yang menopang/menyegel casing sesuai desain.",
+    "compare": "Tubing head dan tree berada pada fungsi/lokasi lebih atas dalam susunan umum."
+  },
+  "well-construction-12": {
+    "why": "Deskripsi antara surface casing dan tubing-head adapter merujuk area wellhead assembly, bukan definisi Christmas tree.",
+    "compare": "Tree mengendalikan aliran produksi di atas wellhead, bukan seluruh rangkaian penopang casing."
+  },
+  "well-construction-13": {
+    "why": "Cement sheath menyediakan zonal isolation, dukungan casing, dan perlindungan sistem tubular/formasi.",
+    "compare": "Hanya mengisi volume tanpa tercapainya isolasi bukan tujuan cementing yang lengkap."
+  },
+  "well-construction-14": {
+    "why": "Top plug mengikuti slurry dan memisahkannya dari displacement fluid, sehingga merupakan plug terakhir pada urutan konvensional yang ditanya.",
+    "compare": "Bottom plug berada di depan slurry; keduanya tidak mempunyai posisi yang dapat ditukar begitu saja."
+  },
+  "well-construction-15": {
+    "why": "Volume annulus = (12,25² − 9,625²) × 492 / 1.029,4 ≈ 27,44 bbl menggunakan diameter dalam inci dan panjang ft.",
+    "compare": "Kurangi kuadrat diameter, bukan mengkuadratkan selisih diameter; hasil belum memasukkan excess open hole."
+  },
+  "well-construction-16": {
+    "why": "Truck-mounted rig adalah konfigurasi darat pada pilihan, berbeda dari drillship, platform, atau jenis rig offshore.",
+    "compare": "Cara unit dipindahkan di darat tidak menjadikannya unit offshore."
+  },
+  "well-construction-17": {
+    "why": "Hoisting system mengangkat, menurunkan, dan menggantung drillstring/peralatan melalui load path derrick, block, dan line.",
+    "compare": "Rotating system memberi putaran; circulating system mengalirkan fluida."
+  },
+  "well-construction-18": {
+    "why": "Derrick/mast adalah struktur penopang hoisting, bukan alat memisahkan padatan dari mud.",
+    "compare": "Shaker, desander, dan alat sejenis menjalankan fungsi solids control."
+  },
+  "well-construction-19": {
+    "why": "Mud mengangkut cuttings, memberi tekanan hidrostatik, membantu stabilitas lubang, serta mendinginkan/melumasi bit.",
+    "compare": "Karena beberapa fungsi berlaku bersamaan, memilih hanya satu tidak lengkap untuk multiple select."
+  },
+  "well-construction-20": {
+    "why": "Hydrostatic pressure = 0,59 psi/ft × 8.250 ft TVD = 4.867,5 psi.",
+    "compare": "MD 9.890 ft tidak dipakai karena hidrostatik bergantung beda elevasi vertikal."
+  },
+  "bha-01": {
+    "why": "BHA berarti Bottom Hole Assembly, rangkaian bagian bawah drillstring yang menjalankan fungsi drilling serta pengendalian respons lintasan.",
+    "compare": "Istilah ini bukan keseluruhan rig atau semua surface equipment."
+  },
+  "bha-02": {
+    "why": "BHA berada dari bit hingga transisi ke drillpipe, termasuk komponen seperti collars, stabilizer, motor, dan measurement tools.",
+    "compare": "Drillpipe utama di atasnya tidak seluruhnya disebut BHA."
+  },
+  "bha-03": {
+    "why": "PDM mengubah energi hidraulik aliran/pressure drop menjadi putaran mekanis di downhole.",
+    "compare": "Ia bukan terutama pembangkit data survey atau pemanas fluida."
+  },
+  "bha-04": {
+    "why": "Dengan kondisi desain sebanding, konfigurasi lobe lebih banyak cenderung memberi torque lebih besar dan RPM lebih rendah.",
+    "compare": "Torque dan speed merupakan trade-off; tidak keduanya otomatis meningkat bersama jumlah lobe."
+  },
+  "bha-05": {
+    "why": "Rotor/stator power section menghasilkan putaran dan torque dari energi fluida yang melewatinya.",
+    "compare": "Ini berbeda dari hanya memindahkan fluida tanpa menghasilkan kerja rotasi."
+  },
+  "bha-06": {
+    "why": "Jumlah lobe lebih tinggi pada perbandingan motor sejenis menggeser kemampuan ke torque tinggi dan RPM lebih rendah.",
+    "compare": "Perhatikan asumsi flow rate/desain sebanding, bukan aturan bahwa semua motor identik."
+  },
+  "bha-07": {
+    "why": "Motor RPM kira-kira sebanding rev/volume × flow rate, sehingga kenaikan flow pada kondisi yang diizinkan menaikkan speed.",
+    "compare": "Menambah WOB sendiri tidak otomatis meningkatkan RPM motor dan dapat justru menaikkan beban."
+  },
+  "bha-08": {
+    "why": "Rentang 50–70% pada materi adalah contoh pengurangan RPM saat back-reaming untuk mengendalikan loading dan dinamika string.",
+    "compare": "Setting aktual harus mempertimbangkan kondisi lubang serta batas alat, bukan disalin sebagai aturan universal."
+  },
+  "bha-09": {
+    "why": "RSS mempertahankan rotasi string saat mengarahkan bit sehingga mengurangi periode pipe diam seperti pada sliding.",
+    "compare": "Rotasi tidak menghapus semua stuck-pipe risk tetapi membantu mengurangi static contact dan menjaga hole quality."
+  },
+  "bha-10": {
+    "why": "Variable deflection/control memberi kemampuan mengarahkan bit secara lebih terkontrol sesuai desain RSS.",
+    "compare": "RSS tidak menghilangkan kebutuhan survey/MWD yang diperlukan untuk mengetahui posisi aktual."
+  },
+  "bha-11": {
+    "why": "MWD berarti Measurement While Drilling: pengukuran dilakukan ketika operasi drilling berlangsung.",
+    "compare": "Measurement bukan hanya logging setelah sumur selesai dibor."
+  },
+  "bha-12": {
+    "why": "Accelerometer memakai arah gravitasi untuk membantu menghitung inclination dari orientasi tool.",
+    "compare": "Magnetometer terutama memberi referensi medan magnet untuk azimuth."
+  },
+  "bha-13": {
+    "why": "Magnetometer merespons medan magnet bumi sehingga membantu pengukuran arah.",
+    "compare": "Accelerometer merespons percepatan/gravitasi, bukan komponen magnetik secara langsung."
+  },
+  "bha-14": {
+    "why": "Stabilizer mengatur titik kontak BHA terhadap dinding lubang, memengaruhi lateral support serta respons bit.",
+    "compare": "Fungsinya berbeda dari motor yang menyuplai putaran atau jar yang memberi impact."
+  },
+  "bha-15": {
+    "why": "Drilling jar menyimpan/melepaskan energi untuk menghasilkan impact guna membantu membebaskan stuck string.",
+    "compare": "Jar tidak menjamin pembebasan; besar gaya dan prosedur tetap harus berada dalam batas komponen."
+  },
+  "bha-16": {
+    "why": "Non-magnetic collars memberi jarak dan lingkungan magnetik lebih bersih bagi survey tools.",
+    "compare": "Mengurangi gangguan magnetik berbeda dari menghilangkan semua error survey."
+  },
+  "bha-17": {
+    "why": "HWDP sering ditempatkan di transisi antara drillpipe dan drill collars agar perubahan kekakuan/beban lebih bertahap.",
+    "compare": "Memindahkannya sembarang posisi tidak otomatis memberi fungsi transisi yang sama."
+  },
+  "bha-18": {
+    "why": "Fulcrum BHA memakai penempatan titik stabilisasi untuk menghasilkan kecenderungan bit membangun inclination.",
+    "compare": "Respons build/drop ditentukan konfigurasi support dan beban, bukan nama komponen tunggal."
+  },
+  "bha-19": {
+    "why": "Dalam klasifikasi sederhana materi, mud motor disebut mekanis dibanding sistem RSS yang memiliki fungsi kontrol/elektronik lebih kompleks.",
+    "compare": "Sumber tenaga PDM tetap hidraulik; label klasifikasi tidak mengubah prinsip konversi energinya."
+  },
+  "bha-20": {
+    "why": "Sleeve, integral-blade, welded-blade, dan adjustable-gauge adalah variasi konstruksi stabilizer.",
+    "compare": "Perbedaan konstruksi memengaruhi serviceability serta gauge, tetapi semuanya dapat menjalankan fungsi stabilisasi."
+  },
+  "fluids-01": {
+    "why": "Reactive clay menyerap/berinteraksi dengan air, dapat menjadi lunak dan lengket, lalu mendispersikan fines yang menaikkan viscosity mud.",
+    "compare": "Cuttings firm/hard bukan ciri reaktivitas yang ditanyakan pada pilihan ini."
+  },
+  "fluids-02": {
+    "why": "Bentonite terutama membangun viscosity/gel serta membantu filtration control; ia bukan weighting agent utama seperti bahan berdensitas tinggi.",
+    "compare": "Kata EXCEPT meminta fungsi yang bukan peran utama bentonite."
+  },
+  "fluids-03": {
+    "why": "Mud menjalankan fungsi transport cuttings dan membawa informasi return/sampel yang mendukung evaluasi kondisi downhole.",
+    "compare": "Pilihan gabungan pada soal mengakui lebih dari satu fungsi tersebut."
+  },
+  "fluids-04": {
+    "why": "Pada pembagian fluida kerja materi, drilling mud tidak menjadi slurry pengikat pada cementing; cement slurry menjalankan fungsi itu.",
+    "compare": "Mud bisa masih berada di sumur dan perlu didisplace saat cementing, jadi tidak berarti sama sekali tidak terkait prosesnya."
+  },
+  "fluids-05": {
+    "why": "Inhibitive mud mengurangi hidrasi, swelling, atau dispersi reactive clays.",
+    "compare": "Formasi yang tidak reaktif terhadap air tidak otomatis membutuhkan tingkat inhibisi yang sama."
+  },
+  "fluids-06": {
+    "why": "Bentonite meningkatkan viscosity melalui partikel clay yang terdispersi/terhidrasi.",
+    "compare": "Starch terutama dipakai untuk fluid-loss control dan calcium carbonate lazim dipakai untuk bridging/weighting sesuai ukuran serta konsentrasi."
+  },
+  "fluids-07": {
+    "why": "OBM dapat memberi inhibisi dan ketahanan temperatur, tetapi tetap memerlukan fasilitas serta pengelolaan yang sesuai.",
+    "compare": "Karena soal EXCEPT, klaim tidak memerlukan equipment tambahan bukan keuntungan yang dapat diasumsikan."
+  },
+  "fluids-08": {
+    "why": "High-performance WBM pada materi dirancang dengan paket inhibisi lebih kuat daripada sistem WBM sederhana yang dibandingkan.",
+    "compare": "Kinerja aktual bergantung formulasi lengkap, bukan label HPWBM saja."
+  },
+  "fluids-09": {
+    "why": "Ester dapat memiliki biodegradability lebih baik dibanding diesel/mineral oil pada perbandingan base-fluid yang dimaksud.",
+    "compare": "Kinerja lingkungan tetap memerlukan evaluasi toksisitas, discharge, dan keseluruhan sistem fluida."
+  },
+  "fluids-10": {
+    "why": "Continuous oil phase pada OBM membatasi kontak air dengan clay sehingga dapat memberi inhibisi kuat pada formasi sangat reaktif.",
+    "compare": "Pilihan akhir juga mempertimbangkan lingkungan, temperatur, biaya, dan kondisi operasi."
+  },
+  "intro-01": {
+    "why": "Drilling pada area/target yang belum terbukti dilakukan untuk menguji keberadaan serta karakter hidrokarbon, sehingga termasuk exploration.",
+    "compare": "Development drilling bertujuan mengembangkan akumulasi yang sudah diketahui."
+  },
+  "intro-02": {
+    "why": "Vertical, directional/horizontal, dan multilateral mendeskripsikan bentuk serta percabangan lintasan.",
+    "compare": "Klasifikasi geometri berbeda dari tujuan exploration atau production."
+  },
+  "intro-03": {
+    "why": "Top drive memutar drillstring dari bagian atas dan menyalurkan torque menuju bit.",
+    "compare": "Mud pump menghasilkan aliran, sedangkan drawworks menjalankan hoisting, bukan fungsi utama rotasi ini."
+  },
+  "intro-04": {
+    "why": "Hoisting system menjalankan fungsi running, pulling, dan menggantung drilling assembly melalui rangkaian pengangkatan.",
+    "compare": "Fungsi ini berbeda dari rotating dan circulating systems."
+  },
+  "intro-05": {
+    "why": "WOB adalah selisih hookload off-bottom dan on-bottom: 200.000 − 150.000 = 50.000 lb.",
+    "compare": "Menggunakan jumlah kedua hookload akan menghitung besaran yang bukan beban pada bit."
+  },
+  "intro-06": {
+    "why": "Gambar menunjukkan roller-cone dengan gigi baja yang terbentuk pada cone, ciri mill-tooth bit.",
+    "compare": "Insert bit memakai elemen insert terpisah; PDC memakai fixed cutters pada blade."
+  },
+  "intro-07": {
+    "why": "PDC mengikis batuan melalui shearing oleh cutter tetap yang bergerak saat bit berputar.",
+    "compare": "Crushing/indentation lebih khas pada mekanisme roller-cone."
+  },
+  "intro-08": {
+    "why": "Motor speed = 0,147 rev/gal × 320 gal/min = 47,04 RPM. Total bit speed = 220 + 47,04 ≈ 267 RPM.",
+    "compare": "Rev/gal harus dikalikan flow rate untuk mendapat RPM; jangan menjumlahkannya langsung dengan rotary speed."
+  },
+  "intro-09": {
+    "why": "Gambar membandingkan lobe ratio: motor dengan lebih sedikit lobe cenderung ber-RPM lebih tinggi; lebih banyak lobe cenderung memberi torque lebih tinggi.",
+    "compare": "Arah kedua panah berlawanan karena torque dan speed merupakan trade-off pada konfigurasi yang dibandingkan."
+  },
+  "intro-10": {
+    "why": "Kick adalah influx fluida formasi yang tidak diinginkan ke dalam wellbore.",
+    "compare": "Blowout berarti alirannya sudah tidak terkendali; tidak setiap kick otomatis merupakan blowout."
+  },
+  "intro-11": {
+    "why": "Ubah 2.000 m menjadi sekitar 6.561,7 ft. P = 0,052 × 12,7 × 6.561,7 ≈ 4.333 psi, dibulatkan ke pilihan sekitar 4.334 psi.",
+    "compare": "Konstanta 0,052 mengharuskan depth dalam ft, bukan langsung 2.000 m."
+  },
+  "intro-12": {
+    "why": "Urutan 13-3/8 casing → 12-1/4 hole → 9-5/8 casing → 8-1/2 hole menyediakan clearance untuk tahap berikutnya.",
+    "compare": "Ukuran nominal mengecil ke bawah agar rangkaian berikutnya dapat melewati casing sebelumnya."
+  },
+  "intro-13": {
+    "why": "Top plug dipasang sesudah slurry untuk memisahkan semen dari displacement fluid.",
+    "compare": "Bottom plug mendahului slurry, jadi bukan plug terakhir pada urutan konvensional ini."
+  },
+  "intro-14": {
+    "why": "Volume internal casing = 8,681² × 11.420 / 1.029,4 ≈ 836 bbl menggunakan ID inci dan panjang ft.",
+    "compare": "Gunakan ID untuk volume di dalam casing, bukan OD yang dipakai dalam sebagian perhitungan annulus."
+  },
+  "intro-15": {
+    "why": "Stab-in/stinger memompa slurry melalui inner string sehingga cocok untuk conductor atau casing besar pada konteks materi.",
+    "compare": "Metode ini mengurangi kebutuhan memakai seluruh volume internal casing besar sebagai jalur slurry."
+  },
+  "hse-01": {
+    "why": "Guard pada bagian berputar secara fisik memisahkan orang dari sumber bahaya sehingga termasuk engineering control.",
+    "compare": "Helmet adalah PPE; toolbox meeting dan SOP terutama administrative controls."
+  },
+  "hse-02": {
+    "why": "HIRA/JSA mengidentifikasi bahaya, menilai risiko, dan menetapkan pengendalian sebelum aktivitas dimulai.",
+    "compare": "Target produksi atau pengurangan tenaga kerja bukan pengganti penilaian bahaya."
+  },
+  "hse-03": {
+    "why": "Materi HOC menekankan unsafe acts sebagai kelompok yang sering ditemukan pada pengamatan perilaku.",
+    "compare": "Ini bukan alasan menyalahkan pekerja atau mengabaikan desain/sistem; investigasi tetap mencari faktor organisasi dan kondisi tidak aman."
+  },
+  "hse-04": {
+    "why": "Stop Work Authority digunakan untuk menghentikan exposure ketika kondisi tidak aman teramati, lalu mengomunikasikan bahaya untuk ditangani.",
+    "compare": "Mendokumentasikan tanpa menghentikan paparan belum mengendalikan bahaya yang sedang berlangsung."
+  },
+  "hse-05": {
+    "why": "PTW ditujukan pada pekerjaan dengan bahaya/koordinasi tertentu seperti confined space, hot work, dan heavy lift. Routine low-risk work adalah pengecualian pada daftar materi.",
+    "compare": "Kebutuhan permit aktual mengikuti sistem izin lokasi, bukan klaim bahwa semua pekerjaan rutin selalu bebas permit."
+  },
+  "hse-06": {
+    "why": "LOTO mengisolasi dan mengamankan sumber energi agar mesin tidak bergerak/berenergi saat maintenance.",
+    "compare": "Sekadar mematikan tombol operasi belum tentu mencegah energi tersimpan atau re-energization."
+  },
+  "hse-07": {
+    "why": "Pengendalian debu, lalu lintas, dan emisi mengurangi paparan masyarakat akibat aktivitas proyek.",
+    "compare": "Keselamatan komunitas tidak cukup ditangani dengan fokus hanya pada pekerja di dalam lokasi."
+  },
+  "hse-08": {
+    "why": "TRIR mengukur insiden yang sudah terjadi sehingga termasuk lagging indicator.",
+    "compare": "Safety meetings atau kegiatan pencegahan mengukur aktivitas sebelum insiden, bukan hasil insidennya."
+  },
+  "hse-09": {
+    "why": "HOC pada pilihan adalah aktivitas/observasi pencegahan sehingga dikategorikan leading indicator.",
+    "compare": "LTIFR dan indikator kejadian/cedera menghitung outcome yang sudah terjadi."
+  },
+  "hse-10": {
+    "why": "MCU adalah pemeriksaan kesehatan, bukan metode analisis risiko seperti HAZOP, Bow-Tie, atau JSA.",
+    "compare": "Soal EXCEPT meminta istilah dari kategori kegiatan yang berbeda."
+  },
+  "hse-11": {
+    "why": "Eliminasi menghilangkan bahaya, substitusi menggantinya, engineering membatasi paparan secara fisik, lalu administrative mengatur perilaku/proses.",
+    "compare": "PPE berada lebih rendah pada hierarki lengkap, tetapi tidak termasuk item urutan yang tersedia pada soal."
+  },
+  "hse-12": {
+    "why": "Pada pembagian peran emergency yang dicontohkan, fire warden, assembly marshal, dan first aider mempunyai fungsi tanggap darurat spesifik.",
+    "compare": "Security tidak menjadi kategori peran yang diminta di daftar ini; pada organisasi lain security tetap bisa mendapat tugas emergency."
+  },
+  "hse-13": {
+    "why": "SDS memuat informasi penanganan aman, paparan, APD, first aid, dan kondisi darurat.",
+    "compare": "Karena soal menyangkal keberadaan informasi tersebut, pernyataannya dinilai salah."
+  },
+  "hse-14": {
+    "why": "Signal word seperti Danger atau Warning menyatakan tingkat perhatian pada label GHS.",
+    "compare": "Ini berbeda dari hazard statement berupa kalimat dan pictogram berupa simbol grafis."
+  },
+  "hse-15": {
+    "why": "Hazard pictogram adalah simbol grafis untuk mengenali kelas bahaya pada label.",
+    "compare": "Nama produk dan signal word bukan gambar simbol bahaya tersebut."
+  },
+  "hse-16": {
+    "why": "Risk secara sederhana menggabungkan likelihood kejadian dan severity konsekuensinya.",
+    "compare": "Mengalikan dua istilah yang sama-sama menyatakan peluang tidak memasukkan besarnya konsekuensi."
+  },
+  "hse-17": {
+    "why": "Flammability, oxidizing property, dan gas bertekanan merupakan physical hazards pada klasifikasi materi. Asphyxiation terutama berkaitan dengan efek kekurangan oksigen pada manusia.",
+    "compare": "Kata EXCEPT meminta bahaya yang berada pada kategori efek berbeda."
+  },
+  "hse-18": {
+    "why": "CHSS pada materi berarti Community, Health, Safety and Security sehingga mencakup komunitas serta aspek kesehatan/keselamatan/keamanan.",
+    "compare": "Mengganti Community dengan Contractor mengubah cakupan singkatannya."
+  },
+  "hse-19": {
+    "why": "Low-risk routine job adalah pengecualian PTW pada daftar materi, sedangkan hot work, explosive handling, dan work at height memerlukan kontrol khusus.",
+    "compare": "Tetap periksa prosedur permit lokasi karena kategori izin ditentukan sistem setempat."
+  },
+  "subsurface-01": {
+    "why": "Conventional accumulation umumnya berada pada reservoir dengan mekanisme aliran/perangkap yang memungkinkan ekstraksi dengan pendekatan konvensional.",
+    "compare": "Unconventional resources dapat memerlukan teknologi tambahan; batas kategorinya bukan sekadar lokasi geografis."
+  },
+  "subsurface-02": {
+    "why": "Source rock, reservoir, dan seal merupakan elemen pokok petroleum system. Fault adalah struktur yang dapat membantu atau merusak trap, tetapi bukan elemen yang wajib ada pada setiap sistem.",
+    "compare": "Bedakan elemen wajib sistem dengan fitur geologi yang efeknya bergantung konteks."
+  },
+  "subsurface-03": {
+    "why": "Uplift dapat meningkatkan relief dan erosi di source area sehingga pasokan sedimen justru dapat meningkat.",
+    "compare": "Respons aktual juga bergantung iklim dan drainage; klaim menurunkan pasokan secara umum tidak tepat."
+  },
+  "subsurface-04": {
+    "why": "Hydrocarbon generation adalah perubahan bahan organik menjadi hidrokarbon melalui proses pematangan geologi.",
+    "compare": "Ini berbeda dari migration yang memindahkan hidrokarbon setelah terbentuk."
+  },
+  "subsurface-05": {
+    "why": "Porosity menyediakan ruang penyimpanan dan permeability menyediakan jalur aliran, sehingga kombinasi keduanya mendukung fungsi reservoir.",
+    "compare": "Source rock terutama didefinisikan oleh kemampuan menghasilkan hidrokarbon, bukan hanya alirannya."
+  },
+  "subsurface-06": {
+    "why": "Sample B pada gambar menunjukkan tekstur yang lebih sesuai dengan transport lebih pendek dari sumber, seperti butir relatif kasar/kurang matang.",
+    "compare": "Jarak transport tidak ditentukan ukuran butir saja; interpretasi memakai kombinasi tekstur dan konteks pengendapan pada gambar."
+  },
+  "subsurface-07": {
+    "why": "Stratigraphic trap terbentuk oleh perubahan litologi, pinch-out, unconformity, atau konfigurasi stratigrafi yang membatasi aliran.",
+    "compare": "Structural trap terutama terkait geometri deformasi seperti fold atau fault closure."
+  },
+  "subsurface-08": {
+    "why": "Reservoir yang baik membutuhkan kemampuan menyimpan dan mengalirkan fluida; kandungan organik tinggi bukan syarat wajibnya.",
+    "compare": "Organic richness lebih langsung relevan untuk menilai source rock."
+  },
+  "subsurface-09": {
+    "why": "Pore pressure adalah tekanan fluida pada ruang pori formasi, sehingga sering disebut formation pressure pada konteks drilling.",
+    "compare": "Istilah ini berbeda dari tekanan hidrostatik lumpur yang ditambahkan operator."
+  },
+  "subsurface-10": {
+    "why": "Pada kondisi normal dan referensi densitas/kedalaman yang sesuai, pore pressure mengikuti tekanan hidrostatik kolom fluida formasi.",
+    "compare": "Tekanan lebih tinggi atau lebih rendah dari referensi tersebut dikategorikan abnormal/subnormal, bukan normal."
+  },
+  "dpm-01": {
+    "why": "Triple constraint klasik terdiri dari scope, schedule, dan cost. Resource memengaruhi ketiganya tetapi bukan salah satu tiga label pada model tersebut.",
+    "compare": "Kata EXCEPT meminta hal di luar susunan model, bukan hal yang tidak penting bagi proyek."
+  },
+  "dpm-02": {
+    "why": "Initiation memutuskan dasar proyek; planning menyiapkan cara kerja; execution melaksanakan/monitoring; completion menutup dan mengevaluasi hasil.",
+    "compare": "Menjalankan pekerjaan sebelum basis dan rencana tersedia membalik dependency siklus proyek."
+  },
+  "dpm-03": {
+    "why": "Dalam pengelompokan materi, bridging document mendukung penyelarasan pelaksanaan serta interface saat execution/monitoring.",
+    "compare": "Dokumen tetap dapat disiapkan sebelumnya; kategori pada soal menunjukkan fungsi utamanya, bukan larangan menyiapkan lebih awal."
+  },
+  "dpm-04": {
+    "why": "Project economics diuji sejak initiation untuk menilai apakah tujuan/manfaat proyek layak diteruskan.",
+    "compare": "Evaluasi ekonomi bukan sesuatu yang baru diperlukan setelah proyek selesai dijalankan."
+  },
+  "dpm-05": {
+    "why": "Drilling Basis of Design menerjemahkan tujuan dan data menjadi dasar teknis program sehingga masuk planning pada materi.",
+    "compare": "BOD berbeda dari laporan hasil akhir atau sekadar keputusan memulai proyek."
+  },
+  "dpm-06": {
+    "why": "After Action Review mengolah pelajaran dari pelaksanaan sehingga ditempatkan pada completion dalam alur materi.",
+    "compare": "Review dapat pula dilakukan bertahap, tetapi bukan pengganti perencanaan awal proyek."
+  },
+  "dpm-07": {
+    "why": "Target, prognosis, offset risks, dan pore pressure langsung membentuk desain drilling. PVT analysis bukan selalu input kunci untuk paket awal yang dibahas.",
+    "compare": "PVT tetap penting untuk studi fluida/reservoir; konteksnya bukan bahwa data PVT tidak pernah berguna."
+  },
+  "dpm-08": {
+    "why": "NPT berarti Non-Productive Time; ILT berarti Invisible Lost Time, yakni kehilangan efisiensi yang tersembunyi dalam aktivitas yang tetap berlangsung.",
+    "compare": "Near-Productive atau Invisible Leading bukan kepanjangan istilah pada materi."
+  },
+  "dpm-09": {
+    "why": "Detailed budget/AFE dibentuk dalam planning agar kebutuhan biaya dapat disetujui sebelum aktivitas yang direncanakan dieksekusi.",
+    "compare": "Biaya aktual saat execution berbeda dari menyusun basis anggaran rencana."
+  },
+  "casing-depth-01": {
+    "why": "Drillpipe adalah bagian drillstring yang dipakai saat drilling, bukan casing string yang dipasang untuk konstruksi/isolation sumur.",
+    "compare": "Conductor, surface, intermediate, dan production casing mempunyai fungsi konstruksi yang berbeda dari drillpipe."
+  },
+  "casing-depth-02": {
+    "why": "Parameter desain casing menilai kebutuhan tekanan, beban, ukuran, dan setting depth. Delivery time adalah pertimbangan procurement/jadwal.",
+    "compare": "Lead time penting bagi proyek, tetapi bukan parameter kekuatan atau geometri casing yang diminta."
+  },
+  "casing-depth-03": {
+    "why": "Preliminary casing design menghasilkan ukuran string serta setting depth agar tiap interval dapat dibor dalam batas tekanan/konstruksi.",
+    "compare": "Jadwal pengiriman tidak menggantikan dua output teknis tersebut."
+  },
+  "casing-depth-04": {
+    "why": "Kick tolerance memeriksa apakah shoe sebelumnya dapat menahan skenario influx saat menentukan setting point secara bottom-up.",
+    "compare": "Penentuan casing bukan hanya memilih bit atau rig tanpa evaluasi pressure containment."
+  },
+  "casing-depth-05": {
+    "why": "Conductor menangani interval paling dangkal, lalu surface, intermediate bila diperlukan, dan production casing di bagian terdalam pada susunan umum.",
+    "compare": "Urutan mengikuti fungsi isolasi dan kebutuhan konstruksi dari atas ke bawah."
+  },
+  "casing-depth-06": {
+    "why": "Casing menopang lubang serta menjadi bagian sistem isolasi/containment sesuai desain.",
+    "compare": "Pipa ini bukan sekadar jalur sirkulasi sementara yang ditarik setiap selesai drilling."
+  },
+  "casing-depth-07": {
+    "why": "Pada plot equivalent mud weight/pressure yang dipakai materi, fracture limit berada di kanan pore-pressure curve karena nilainya lebih tinggi pada kedalaman yang sama.",
+    "compare": "Orientasi bergantung definisi sumbu; baca label plot sebelum menghafal kanan/kiri."
+  },
+  "casing-depth-08": {
+    "why": "Di kiri pore-pressure curve pada plot tersebut berarti wellbore pressure lebih rendah daripada tekanan pori, sehingga influx/kick dapat terjadi.",
+    "compare": "Melewati batas fracture di sisi bertekanan tinggi lebih terkait losses, bukan mekanisme underbalance yang ditanya."
+  },
+  "casing-depth-09": {
+    "why": "Bottom-up dimulai dari kebutuhan reservoir/string terdalam, lalu merancang ukuran serta setting point ke arah atas.",
+    "compare": "Pernyataan bahwa metode ini dimulai dari section dangkal membalik arah pendekatannya."
+  },
+  "casing-depth-10": {
+    "why": "12-1/4 hole → 9-5/8 casing menyediakan jalan untuk 8-1/2 hole, yang kemudian menerima liner 7 inci.",
+    "compare": "Clearance antartahap membuat urutan ukuran tersebut mungkin secara geometris."
+  },
+  "advanced-22-01": {
+    "why": "Pada conventional overbalanced drilling, kolom lumpur memberi tekanan hidrostatik untuk menahan fluida formasi.",
+    "compare": "BOP menyediakan fungsi pengendalian berikutnya; bukan pengganti kolom fluida pada kondisi operasi normal ini."
+  },
+  "advanced-22-02": {
+    "why": "UBD sengaja mempertahankan bottom-hole pressure di bawah pore pressure agar formasi dapat mengalir terkontrol ke sumur.",
+    "compare": "Membandingkan tekanan membutuhkan kedalaman/densitas ekuivalen yang sama; mud weight sendiri bukan satuan tekanan."
+  },
+  "advanced-22-03": {
+    "why": "Skema pada soal mengasumsikan tekanan sedikit di atas formasi. Itu contoh pressure balance pada materi, bukan definisi semua implementasi MPD.",
+    "compare": "Prinsip umum MPD adalah mengendalikan profil tekanan annulus, termasuk pengaruh backpressure dan kondisi sirkulasi."
+  },
+  "advanced-22-04": {
+    "why": "BHP lebih rendah daripada tekanan formasi memungkinkan influx dari zona permeabel, sehingga UBD memerlukan sistem penanganan return bertekanan.",
+    "compare": "Keberadaan permeability penting; tekanan underbalanced saja tidak menjamin setiap zona akan berproduksi."
+  },
+  "advanced-22-05": {
+    "why": "MPD pada konteks soal ditujukan mencegah influx yang tidak direncanakan; membiarkan formasi terus mengalir merupakan perbedaan dengan UBD yang dibahas.",
+    "compare": "Jangan menganggap semua teknologi pengaturan tekanan mempunyai tujuan operasi identik."
+  },
+  "advanced-22-06": {
+    "why": "Dalam klasifikasi fluida UBD pada materi, kelas 1 adalah gas; fase cair bertambah pada kelas-kelas sistem berikutnya.",
+    "compare": "Ini penamaan kategori, bukan perhitungan jumlah barrier atau tingkat risiko sumur."
+  },
+  "advanced-22-07": {
+    "why": "Mengurangi overbalance dapat membantu ROP, mengurangi sticking/kerusakan, dan memperpanjang interval bit; efisiensi itu berpotensi menurunkan biaya.",
+    "compare": "Manfaat biaya tidak dijamin di semua sumur karena peralatan dan kompleksitas tambahan juga berbiaya."
+  },
+  "advanced-22-08": {
+    "why": "Gaya differential sticking meningkat bersama beda tekanan yang menekan pipe ke mudcake pada zona permeabel.",
+    "compare": "Overbalance sangat besar memperbesar gaya kontak; underbalance tidak memberi gaya differential dengan arah yang sama."
+  },
+  "advanced-22-09": {
+    "why": "UBD dapat menghasilkan return mudah terbakar, paparan korosi, dan lubang yang kehilangan dukungan tekanan.",
+    "compare": "Mengurangi differential sticking tidak berarti semua risiko mekanis atau kimia hilang."
+  },
+  "advanced-22-10": {
+    "why": "Tiga NRV pada rancangan materi memberi redundansi pencegahan aliran balik melalui drillstring.",
+    "compare": "Jumlah pada program nyata ditentukan standar dan barrier design yang dipakai, bukan sembarang substitusi float valve."
+  },
+  "advanced-22-11": {
+    "why": "Gas meningkatkan kompresibilitas dan mengganggu propagasi mud-pressure pulses. Sekitar 28% adalah ambang contoh yang dikutip materi.",
+    "compare": "Angka itu bukan batas universal semua alat atau kondisi; telemetry elektromagnetik memakai mekanisme transmisi berbeda."
+  },
+  "advanced-22-12": {
+    "why": "Dalam aplikasi yang sesuai, PDC dapat memberi umur bit lebih panjang sehingga jumlah trip berkurang dibanding roller-cone yang dibandingkan.",
+    "compare": "Kinerja bergantung formasi dan dinamika; PDC tidak otomatis unggul pada setiap interval."
+  },
+  "advanced-22-14": {
+    "why": "Four-phase separator memisahkan solids, gas, oil, dan water menjadi jalur fase yang berbeda.",
+    "compare": "Memilih hanya liquid dan gas belum mencakup empat fase pada nama sistemnya."
+  },
+  "advanced-22-15": {
+    "why": "Kenaikan flow return terhadap baseline dapat menunjukkan tambahan influx dari formasi pada UBD.",
+    "compare": "Drillpipe pressure saja dapat dipengaruhi banyak variabel sehingga bukan indikator utama pada soal."
+  },
+  "advanced-22-16": {
+    "why": "Saat kolom fluida sengaja tidak menjadi satu-satunya penahan influx, rotating/sealing dan surface pressure-control equipment menjalankan kontrol operasi yang dirancang.",
+    "compare": "Ini tidak menghapus kebutuhan BOP dan barrier independen yang sesuai."
+  },
+  "advanced-22-17": {
+    "why": "Pada UBD, kompresibilitas campuran dan perubahan friksi dapat mengubah drillpipe pressure tanpa hubungan unik terhadap influx.",
+    "compare": "Karena itu flow return dan indikator lain perlu dikorelasikan, bukan mengandalkan drillpipe pressure tunggal."
+  },
+  "advanced-22-18": {
+    "why": "Pivot point pada grafik materi adalah perpotongan garis static dan dynamic equivalent mud weight, tempat hubungan kedua profil bertemu.",
+    "compare": "Bukan titik sembarang seperti casing shoe atau total depth tanpa membaca profil."
+  },
+  "advanced-22-19": {
+    "why": "Kontrol BHP membantu menghadapi narrow pressure window, losses, kick, serta sticking yang terkait kondisi tekanan.",
+    "compare": "MPD merupakan enabling technology, bukan jaminan semua masalah tersebut hilang tanpa desain operasi yang benar."
+  },
+  "advanced-22-20": {
+    "why": "Light annular fluid mengisi annulus pada PMCD dan membantu mengendalikan migrasi gas sesuai rancangan sistem.",
+    "compare": "Fungsinya dibedakan dari sacrificial fluid yang dipompa melalui jalur lain untuk operasi drilling."
+  },
+  "advanced-22a-01": {
+    "why": "UBD sengaja mempertahankan bottom-hole pressure di bawah pore pressure agar formasi dapat mengalir terkontrol ke sumur.",
+    "compare": "Membandingkan tekanan membutuhkan kedalaman/densitas ekuivalen yang sama; mud weight sendiri bukan satuan tekanan."
+  },
+  "advanced-22a-02": {
+    "why": "BHP lebih rendah daripada tekanan formasi memungkinkan influx dari zona permeabel, sehingga UBD memerlukan sistem penanganan return bertekanan.",
+    "compare": "Keberadaan permeability penting; tekanan underbalanced saja tidak menjamin setiap zona akan berproduksi."
+  },
+  "advanced-22a-03": {
+    "why": "Saat kolom fluida sengaja tidak menjadi satu-satunya penahan influx, rotating/sealing dan surface pressure-control equipment menjalankan kontrol operasi yang dirancang.",
+    "compare": "Ini tidak menghapus kebutuhan BOP dan barrier independen yang sesuai."
+  },
+  "advanced-22a-05": {
+    "why": "Mengurangi overbalance dapat membantu ROP, mengurangi sticking/kerusakan, dan memperpanjang interval bit; efisiensi itu berpotensi menurunkan biaya.",
+    "compare": "Manfaat biaya tidak dijamin di semua sumur karena peralatan dan kompleksitas tambahan juga berbiaya."
+  },
+  "advanced-22a-06": {
+    "why": "UBD dapat menghasilkan return mudah terbakar, paparan korosi, dan lubang yang kehilangan dukungan tekanan.",
+    "compare": "Mengurangi differential sticking tidak berarti semua risiko mekanis atau kimia hilang."
+  },
+  "advanced-22a-07": {
+    "why": "Dalam klasifikasi fluida UBD pada materi, kelas 1 adalah gas; fase cair bertambah pada kelas-kelas sistem berikutnya.",
+    "compare": "Ini penamaan kategori, bukan perhitungan jumlah barrier atau tingkat risiko sumur."
+  },
+  "advanced-22a-10": {
+    "why": "Tiga NRV pada rancangan materi memberi redundansi pencegahan aliran balik melalui drillstring.",
+    "compare": "Jumlah pada program nyata ditentukan standar dan barrier design yang dipakai, bukan sembarang substitusi float valve."
+  },
+  "advanced-22a-12": {
+    "why": "Gas meningkatkan kompresibilitas dan mengganggu propagasi mud-pressure pulses. Sekitar 28% adalah ambang contoh yang dikutip materi.",
+    "compare": "Angka itu bukan batas universal semua alat atau kondisi; telemetry elektromagnetik memakai mekanisme transmisi berbeda."
+  },
+  "advanced-22a-14": {
+    "why": "Kenaikan flow return terhadap baseline dapat menunjukkan tambahan influx dari formasi pada UBD.",
+    "compare": "Drillpipe pressure saja dapat dipengaruhi banyak variabel sehingga bukan indikator utama pada soal."
+  },
+  "advanced-22a-17": {
+    "why": "Pada UBD, kompresibilitas campuran dan perubahan friksi dapat mengubah drillpipe pressure tanpa hubungan unik terhadap influx.",
+    "compare": "Karena itu flow return dan indikator lain perlu dikorelasikan, bukan mengandalkan drillpipe pressure tunggal."
+  },
+  "advanced-22a-04": {
+    "why": "BOP disiapkan untuk pengendalian sekunder ketika kontrol operasi UBD tidak lagi memadai.",
+    "compare": "Rotating head dan return-processing menjalankan peran operasi utama pada konfigurasi yang dibahas, bukan menggantikan fungsi BOP."
+  },
+  "advanced-22a-08": {
+    "why": "Foam berada pada kelas 3 pada klasifikasi fluida UBD di materi, dibedakan dari gas dan sistem cair yang lebih dominan liquid.",
+    "compare": "Nomor kelas adalah kategori fase/fluida, bukan nilai pressure rating alat."
+  },
+  "advanced-22a-09": {
+    "why": "Berkurangnya overbalance mengurangi gaya yang menekan pipe ke mudcake sehingga risiko differential sticking dapat turun.",
+    "compare": "Mechanical sticking akibat cuttings bed atau geometri lubang tetap bisa terjadi."
+  },
+  "advanced-22a-11": {
+    "why": "Drillpipe, coiled tubing, dan hydraulic workover unit dapat menjadi metode conveyance untuk konfigurasi UBD yang sesuai.",
+    "compare": "Metodenya tetap perlu menyediakan pressure control untuk pergerakan string, bukan hanya kemampuan mendorong pipe."
+  },
+  "advanced-22a-13": {
+    "why": "Float valve biasa belum otomatis memenuhi duty, rating, verifikasi, dan redundansi NRV yang dibutuhkan UBD.",
+    "compare": "Fungsi menahan aliran balik yang terlihat mirip tidak menjadikan semua valve saling dapat menggantikan."
+  },
+  "advanced-22a-15": {
+    "why": "Higher ROP, pit gain, dan choke pressure naik tanpa perubahan setting dapat menjadi tanda tambahan perubahan kondisi/influx.",
+    "compare": "Masing-masing bukan bukti tunggal; perubahan flow return dan baseline operasi tetap perlu dikorelasikan."
+  },
+  "advanced-22a-16": {
+    "why": "180 fpm adalah liquid-velocity contoh untuk vertical aerated/mist hole pada materi guna membantu transport cuttings.",
+    "compare": "Kecepatan yang dibutuhkan berubah bersama annulus, sifat cuttings, fluida, dan regime aliran."
+  },
+  "advanced-22a-19": {
+    "why": "Dua choke menyediakan jalur redundan ketika choke mengalami erosional wear atau perlu dialihkan sesuai prosedur.",
+    "compare": "Satu choke tidak memberi redundansi yang sama bila jalur itu harus diisolasi."
+  },
+  "advanced-22a-20": {
+    "why": "Open/blooey line, semi-closed, dan closed systems membedakan cara return diarahkan serta ditangani di permukaan.",
+    "compare": "Pemilihannya mengikuti fluida, tekanan, lingkungan, dan risiko, bukan label satu sistem cocok untuk semua sumur."
+  },
+  "advanced-23-01": {
+    "why": "Mist mempunyai gas sebagai fase kontinu, sedangkan aerated liquid mempunyai cairan sebagai fase kontinu.",
+    "compare": "Fase kontinu menentukan karakter transport dan rheology; keduanya bukan hanya nama untuk fraksi gas yang sama."
+  },
+  "advanced-23-02": {
+    "why": "Saat gas fraction meningkat, dominasi fase bergeser dari liquid menuju foam, mist, lalu gas.",
+    "compare": "Urutan terbalik akan berarti cairan justru makin dominan, bertentangan dengan pertanyaannya."
+  },
+  "advanced-23-03": {
+    "why": "Foam quality lokal = Vg/(Vg+Vl), yakni volume gas dibagi total volume campuran pada P–T yang sama.",
+    "compare": "Vg/Vl adalah gas–liquid ratio, bukan definisi foam quality yang diminta."
+  },
+  "advanced-23-04": {
+    "why": "Gas memuai atau termampatkan saat tekanan dan temperatur berubah, sehingga standard volume tidak sama dengan volume downhole.",
+    "compare": "Memakai standard flow langsung untuk kecepatan lokal dapat menghasilkan penilaian transport yang salah."
+  },
+  "advanced-23-05": {
+    "why": "Gas menurunkan densitas, tetapi jumlah gas berlebihan dapat menaikkan friction dan acceleration losses sehingga total BHP kembali naik.",
+    "compare": "Karena beberapa komponen bekerja berlawanan, lebih banyak gas tidak selalu berarti BHP lebih rendah."
+  },
+  "advanced-23-06": {
+    "why": "Cuttings terangkat bila kecepatan fluida ke atas cukup mengatasi kecenderungan cuttings turun relatif terhadap fluida.",
+    "compare": "Pump rate tanpa luas annulus atau slip velocity belum membuktikan hole cleaning memadai."
+  },
+  "advanced-23-07": {
+    "why": "Equivalent Liquid Velocity membantu membandingkan throughflow motor dalam campuran dengan basis liquid yang relevan.",
+    "compare": "ELV bukan pengganti seluruh model annular transport atau semua batas BHP."
+  },
+  "advanced-23-08": {
+    "why": "RCD membentuk dynamic seal di sekitar pipe dan mengarahkan return ke jalur terkontrol.",
+    "compare": "Ia tidak memisahkan fase return seperti separator atau menghasilkan tekanan seperti pump."
+  },
+  "advanced-23-09": {
+    "why": "Banjo Box mengalihkan return yang erosif ke arah/jalur penanganan yang dirancang.",
+    "compare": "Fungsi diverter tidak sama dengan menjamin shut-in sumur pada semua tekanan."
+  },
+  "advanced-23-10": {
+    "why": "Compressor harus menyediakan flow yang dibutuhkan pada delivery pressure yang cukup.",
+    "compare": "Flow nameplate tinggi tidak berguna bila tekanan tidak mampu mendorong sistem pada kondisi operasi."
+  },
+  "advanced-23-11": {
+    "why": "Jika water level dijadikan reference surface baru, datum nol berada tepat pada water level tersebut.",
+    "compare": "Semua perhitungan depth/pressure harus konsisten terhadap datum, bukan berganti referensi diam-diam."
+  },
+  "advanced-23-12": {
+    "why": "Window operasi dibatasi secara bersamaan oleh tekanan, kemampuan transport, rating peralatan, dan penanganan return permukaan.",
+    "compare": "Memenuhi batas pressure saja belum memastikan compressor, motor, atau surface handling aman/cukup."
+  },
+  "advanced-23-13": {
+    "why": "Herschel–Bulkley adalah model rheology; model Guo pada materi digunakan untuk aerated hydraulics.",
+    "compare": "Bedakan model sifat/aliran fluida dengan model perhitungan sistem ber-aerasi."
+  },
+  "advanced-23-14": {
+    "why": "Stabilkan kondisi dan verifikasi datanya sebelum mengubah kontrol. Mengubah satu variabel membantu menafsirkan sebab–akibat respons.",
+    "compare": "Mengubah banyak kontrol sekaligus dapat menyembunyikan penyebab tren abnormal."
+  },
+  "advanced-23-15": {
+    "why": "Detektor yang dikalibrasi memberi pengukuran H₂S yang dapat diandalkan untuk sistem peringatan.",
+    "compare": "Bau tidak dapat diandalkan karena paparan dapat menurunkan kemampuan penciuman."
+  },
+  "advanced-25-01": {
+    "why": "Pit gain dan gas influx dapat menunjukkan tambahan fluida formasi terhadap keseimbangan sirkulasi normal.",
+    "compare": "Interpretasikan bersama flow dan operasi; satu lonjakan tanpa konteks belum menetapkan mekanisme."
+  },
+  "advanced-25-02": {
+    "why": "Mud logging memantau perubahan drilling/return sehingga dapat memberi early warning sebelum kondisi berkembang lebih jauh.",
+    "compare": "Warning tetap perlu diverifikasi, bukan otomatis dianggap diagnosis akhir."
+  },
+  "advanced-25-03": {
+    "why": "Sensor pada drawworks melacak gerak drum/block yang dipakai menghitung posisi/depth string sesuai kalibrasi.",
+    "compare": "Lokasi sensor tidak berarti semua perubahan depth dapat dibaca tanpa kompensasi operasi."
+  },
+  "advanced-25-04": {
+    "why": "RPM sensor mengukur jumlah putaran per menit, yakni rotary speed.",
+    "compare": "Torque mengukur momen gaya dan pressure sensor mengukur tekanan; satuannya berbeda."
+  },
+  "advanced-25-05": {
+    "why": "Torque abnormal dapat menandai peningkatan hambatan kontak atau kondisi yang menuju stuck pipe.",
+    "compare": "Torque naik tidak unik membuktikan sticking; korelasikan drag, cuttings, dan kondisi operasi."
+  },
+  "advanced-25-06": {
+    "why": "Gas trap mengekstrak/memisahkan gas dari mud return agar gas dapat dibawa ke analyzer.",
+    "compare": "Ia bukan alat yang menghasilkan gas formasi atau menggantikan pengukuran komposisi."
+  },
+  "advanced-25-07": {
+    "why": "Cuttings/gas perlu waktu bergerak dari bit ke permukaan; data itu baru terbaca setelah lag perjalanan.",
+    "compare": "Jangan mengaitkan hasil sampel terlambat langsung dengan posisi bit saat sampel diterima."
+  },
+  "advanced-25-08": {
+    "why": "Bottoms-up time secara sederhana = annular volume/flow rate. Jika volume lebih besar dan flow tetap, waktunya bertambah.",
+    "compare": "Kedalaman atau volume tanpa mempertimbangkan flow rate tidak cukup untuk menghitung lag."
+  },
+  "advanced-25-09": {
+    "why": "Washed sample dibersihkan, dikeringkan, dan diberi kemasan/label; sekitar 100–200 g adalah contoh kuantitas pada materi.",
+    "compare": "Pelabelan depth dan pencegahan kontaminasi sama pentingnya dengan massa sampel."
+  },
+  "advanced-25-10": {
+    "why": "Membersihkan area sampling mencegah material interval sebelumnya terbawa ke sampel berikutnya.",
+    "compare": "Tanpa pembersihan, perubahan litologi/indikasi dapat tampak pada depth yang salah."
+  },
+  "advanced-25-11": {
+    "why": "UV box menggunakan radiasi ultraviolet untuk mengamati fluorescence sampel.",
+    "compare": "Fluorescence harus ditafsirkan bersama jenis mineral, mud additive, dan kemungkinan kontaminasi."
+  },
+  "advanced-25-12": {
+    "why": "Agglomerate terdiri dari material vulkanik kasar yang cocok dengan lingkungan relatif dekat vent pada skenario materi.",
+    "compare": "Facies lebih jauh biasanya menunjukkan perubahan ukuran dan pengangkutan ulang material."
+  },
+  "advanced-25-13": {
+    "why": "Medial facies berada lebih jauh dari pusat sehingga material cenderung lebih halus dan dapat mengalami reworking.",
+    "compare": "Ini kecenderungan model facies, bukan satu ukuran butir wajib untuk semua endapan."
+  },
+  "advanced-25-14": {
+    "why": "Background gas adalah baseline rata-rata selama drilling dan dapat berasal dari lithology/mud, termasuk shale atau sandstone tanpa akumulasi gas produktif.",
+    "compare": "Gas terukur tidak otomatis membuktikan reservoir hidrokarbon komersial."
+  },
+  "advanced-25-15": {
+    "why": "Connection gas dikenali sebagai kenaikan di atas background yang terkait periode connection setelah memperhitungkan lag.",
+    "compare": "Tanpa korelasi waktu operasi dan lag, kenaikan gas bisa salah dikategorikan."
+  },
+  "advanced-26-01": {
+    "why": "Materi memberi kriteria string tidak dapat diambil dan operasi terhenti setidaknya satu jam untuk kategorisasi stuck-pipe event.",
+    "compare": "Angka satu jam bukan alasan menunda respons ketika kemampuan gerak string sudah hilang."
+  },
+  "advanced-26-02": {
+    "why": "0,433–0,465 psi/ft merepresentasikan gradien hidrostatik fluida formasi berair dengan variasi densitas normal.",
+    "compare": "Gradien dari mud operasional atau kondisi overpressure tidak otomatis merupakan normal formation pressure."
+  },
+  "advanced-26-03": {
+    "why": "Mud pressure terlalu rendah dapat gagal menopang batuan terhadap stress sehingga terjadi collapse atau shear failure.",
+    "compare": "Menaikkan MW tanpa batas juga berbahaya karena dapat melewati fracture/loss limit."
+  },
+  "advanced-26-04": {
+    "why": "Smectite dapat menyerap air dan mengembang karena struktur mineralnya, sehingga sangat reaktif.",
+    "compare": "Bukan semua clay mempunyai derajat swelling yang sama."
+  },
+  "advanced-26-05": {
+    "why": "API low-pressure filtration test pada soal menggunakan beda tekanan 100 psi selama 30 menit.",
+    "compare": "Itu kondisi uji standar, bukan tekanan/lamanya operasi downhole yang sedang dibor."
+  },
+  "advanced-26-06": {
+    "why": "Spiral drill collar mengurangi area kontak kontinu dengan mudcake/formasi, sehingga dapat membantu mengurangi gaya differential sticking.",
+    "compare": "Fitur tersebut tidak menghilangkan kebutuhan mengelola overbalance dan mudcake."
+  },
+  "advanced-26-07": {
+    "why": "Pipe yang tidak bergerak/berputar tetapi masih bersirkulasi dapat cocok dengan differential sticking, bukan bukti lost circulation.",
+    "compare": "Loss circulation berarti return hilang ke formasi; aliran yang bebas melewati string tidak sama dengan return yang hilang."
+  },
+  "advanced-26-08": {
+    "why": "MW tinggi menaikkan overbalance dan gaya yang dapat menekan pipe ke mudcake pada zona permeabel.",
+    "compare": "Keamanan bukan memilih MW tertinggi, melainkan menjaga pressure window dan kondisi hole."
+  },
+  "advanced-26-09": {
+    "why": "Hole cleaning mengurangi cuttings bed/penumpukan yang dapat menghambat string dan casing.",
+    "compare": "Laju sirkulasi perlu cukup untuk transport, bukan sekadar ada fluida yang dipompa."
+  },
+  "advanced-26-10": {
+    "why": "Fragmen shale/cavings pada gambar dapat terbentuk saat tekanan penopang tidak cukup terhadap stress sehingga batuan gagal secara shear.",
+    "compare": "Interpretasi tetap perlu dikorelasikan dengan bentuk cavings, mud, dan data drilling; satu sampel bukan diagnosis unik."
+  },
+  "advanced-27-01": {
+    "why": "T&D memakai friction factor efektif untuk merepresentasikan perilaku kontak sistem yang dikalibrasi, tidak selalu koefisien material µ murni dari laboratorium.",
+    "compare": "Menyamakan kedua istilah tanpa memahami basisnya dapat memberi model yang menyesatkan."
+  },
+  "advanced-27-02": {
+    "why": "Prediksi torque, drag, dan beban membantu memeriksa apakah rig serta tubular mampu menjalankan lintasan/operasi rencana.",
+    "compare": "Model bukan sekadar laporan; ia menguji limit dan feasibility sebelum pekerjaan."
+  },
+  "advanced-27-03": {
+    "why": "Ketidakakuratan trajectory, geometri, atau input fluida akan merambat ke hasil beban/friksi.",
+    "compare": "Komputasi yang presisi tidak membuat input yang keliru menjadi benar."
+  },
+  "advanced-27-04": {
+    "why": "Friction factor praktis mencakup pengaruh efektif kondisi kontak dan dikalibrasi terhadap pickup/slackoff/rotating loads.",
+    "compare": "Fudge factor bukan izin memilih angka arbitrer tanpa bukti atau kalibrasi."
+  },
+  "advanced-27-05": {
+    "why": "Soft-string mengabaikan kekakuan lentur detail dan mengasumsikan string mengikuti lintasan/kontak yang dimodelkan.",
+    "compare": "Stiff-string memasukkan pengaruh bending stiffness sehingga distribusi kontak dapat berbeda."
+  },
+  "advanced-27-06": {
+    "why": "Pada model gesek Coulomb sederhana, F = µ × N: friction coefficient/factor dikalikan normal force.",
+    "compare": "String tension saja bukan gaya friksi tanpa hubungan kontak dan normal load."
+  },
+  "advanced-27-07": {
+    "why": "Ketika pipe bergerak ke atas, friksi melawan gerak ke bawah sehingga pickup hookload yang diperlukan lebih tinggi.",
+    "compare": "Saat turun, arah hambatan relatif berbalik; jangan memakai tanda yang sama untuk semua operasi."
+  },
+  "advanced-27-08": {
+    "why": "Bending, shear, dan torsional adalah jenis beban/tegangan yang dapat dialami drillstring.",
+    "compare": "Multiple select meminta semua kategori stress yang sah pada daftar, bukan satu jenis saja."
+  },
+  "advanced-27-09": {
+    "why": "T dalam hubungan side force dengan perubahan arah lintasan menyatakan tension pada string.",
+    "compare": "T bukan otomatis torque walaupun huruf yang sama dapat dipakai di persamaan lain; baca definisi model."
+  },
+  "advanced-27-10": {
+    "why": "Kekakuan lentur dapat memaksa pipe menekan dinding saat mengikuti kurvatur sehingga side force bertambah.",
+    "compare": "Soft-string yang sangat lentur tidak menangkap semua reaksi bending tersebut."
+  },
+  "advanced-27-11": {
+    "why": "Axial load, side force, dan stresses adalah besaran yang dihitung dari lintasan, friksi, berat, serta konfigurasi string.",
+    "compare": "Trajectory dan mud properties adalah input, bukan hasil beban dari model."
+  },
+  "advanced-27-12": {
+    "why": "Mud properties mengubah berat efektif/friksi, sementara BHA, geometri lubang, dan trajectory mengatur kontak serta distribusi beban.",
+    "compare": "Input yang benar diperlukan sebelum output T&D dapat dipercaya."
+  },
+  "advanced-27-13": {
+    "why": "Side force bergantung geometri arah, tension, berat, dan kontak string; bit size bukan komponen gaya langsung pada formulasi yang ditanya.",
+    "compare": "Diameter dapat memengaruhi sistem secara tidak langsung, tetapi bukan istilah gaya yang diminta."
+  },
+  "advanced-27-14": {
+    "why": "Equivalent von Mises stress mengevaluasi efek gabungan normal/axial/bending dan shear dari torsion untuk membandingkan dengan yield criterion.",
+    "compare": "Menilai satu tegangan saja dapat melewatkan kombinasi pembebanan kritis."
+  },
+  "advanced-27-15": {
+    "why": "Pickup, slackoff, dan rotating-off-bottom loads memberi informasi berbeda untuk memisahkan berat efektif dan friksi.",
+    "compare": "Mencatat satu keadaan saja mengurangi kemampuan mengkalibrasi tren torque/drag."
+  },
+  "advanced-27-16": {
+    "why": "Menambahkan tortuosity yang realistis membuat model lebih mewakili belokan kecil pada lintasan aktual dan efek kontaknya.",
+    "compare": "Tortuosity bukan jaminan perbaikan bila data atau amplitudonya dipilih tanpa dasar."
+  },
+  "advanced-27-17": {
+    "why": "Interval setiap 3–5 joint adalah contoh frekuensi monitoring drag pada materi agar perubahan dapat dikenali sepanjang running casing.",
+    "compare": "Program nyata dapat meminta interval lebih sering sesuai risiko dan respons string."
+  },
+  "advanced-27-18": {
+    "why": "Grade E pada drillpipe mengacu minimum yield strength 75.000 psi menurut klasifikasi yang dibahas.",
+    "compare": "Yield strength bukan tensile ultimate strength atau diameter pipe."
+  },
+  "advanced-27-19": {
+    "why": "Normal stress adalah gaya per satuan luas dengan arah tegak lurus bidang penampang yang ditinjau.",
+    "compare": "Shear stress sejajar bidang, jadi perbedaan utamanya arah gaya terhadap bidang."
+  },
+  "advanced-27-20": {
+    "why": "Untuk normal contact load yang sama, friction force naik jika friction factor naik; kebutuhan torque/drag umumnya ikut naik.",
+    "compare": "Ini menjelaskan sensitivitas model, bukan bahwa friction factor menjadi satu-satunya pengaruh."
+  },
+  "advanced-28-01": {
+    "why": "Slim-core-hole memperoleh core serta data temperatur/subsurface dengan footprint dan skala lebih kecil pada eksplorasi.",
+    "compare": "Tujuannya bukan otomatis menggantikan seluruh pengujian deliverability sumur produksi."
+  },
+  "advanced-28-02": {
+    "why": "Conductor lebih dahulu menstabilkan bagian dangkal, lalu surface casing membentuk bagian konstruksi berikutnya.",
+    "compare": "Membalik keduanya mengabaikan fungsi awal penyanggaan/proteksi dekat permukaan."
+  },
+  "advanced-28-03": {
+    "why": "Coring pada contoh memakai RPM lebih tinggi agar core head memotong efisien dengan WOB yang terkendali.",
+    "compare": "Menambah WOB saja dapat merusak core atau meningkatkan jamming."
+  },
+  "advanced-28-04": {
+    "why": "Shallow hot water dapat menimbulkan influx dan bahaya termal pada geothermal, sehingga harus masuk evaluasi well control.",
+    "compare": "Bahaya tidak hanya muncul setelah reservoir dalam atau steam utama tercapai."
+  },
+  "advanced-28-05": {
+    "why": "Kru berpengalaman lebih mampu mengenali gejala, mengelola rod/core handling, dan mencegah failure yang menyebabkan NPT.",
+    "compare": "Pengalaman membantu kesiapan teknis, bukan jaminan bahwa semua NPT akan hilang."
+  },
+  "advanced-28-06": {
+    "why": "Small-footprint coring lebih cocok untuk lokasi berakses terbatas karena kebutuhan pad dan modul peralatannya dapat lebih ringkas.",
+    "compare": "Kapasitas pengangkutan tetap harus dihitung dari modul aktual dan kondisi lokasi."
+  },
+  "advanced-28-07": {
+    "why": "Blind drilling dapat mengonsumsi air besar saat losses; storage yang memadai mengurangi gangguan operasi karena pengisian ulang.",
+    "compare": "Kebutuhan volume mengikuti laju konsumsi, pasokan, dan durasi operasi, bukan satu angka untuk semua pad."
+  },
+  "advanced-28-08": {
+    "why": "Inspeksi rutin koneksi rod membantu menemukan wear/crack atau kerusakan sebelum putus dan memerlukan fishing.",
+    "compare": "Memaksa koneksi rusak tetap digunakan menambah risiko dibanding pemeliharaan preventif."
+  },
+  "advanced-28-09": {
+    "why": "Cellar atau sub-base yang ditinggikan menyediakan ruang fisik untuk stack BOP dan pressure-control equipment.",
+    "compare": "Footprint kecil tidak menghapus kebutuhan clearance dan akses barrier equipment."
+  },
+  "advanced-28-10": {
+    "why": "Temperature-gradient well mengukur indikasi panas terhadap kedalaman untuk mendukung evaluasi geothermal.",
+    "compare": "Data panas saja tidak otomatis membuktikan permeabilitas dan laju produksi komersial."
+  },
+  "advanced-28-11": {
+    "why": "Overlap pekerjaan dapat mengurangi jeda bila dependency, resource, dan keselamatan mengizinkan.",
+    "compare": "Menjalankan semua tahap bersamaan tanpa memeriksa ketergantungan justru dapat menaikkan risiko dan rework."
+  },
+  "advanced-28-12": {
+    "why": "Jika core head tidak maju, evaluasi/retrieve core barrel sesuai prosedur dapat menghindari pemaksaan beban pada sistem yang macet.",
+    "compare": "Menaikkan parameter tanpa memahami hambatan dapat merusak core head atau rod."
+  },
+  "advanced-28-14": {
+    "why": "Akses, geoteknik, lahan, lingkungan, dan peluang logistik berbeda antar lokasi sehingga dinilai case by case.",
+    "compare": "Memakai layout rata-rata tanpa site assessment dapat mengabaikan constraint yang menentukan feasibility."
+  },
+  "advanced-28-16": {
+    "why": "Slim-core-hole memberikan bukti core/temperatur dan subsurface yang mendukung penilaian sumber daya atau probable reserves pada konteks materi.",
+    "compare": "Penetapan cadangan tidak didasarkan satu core hole saja; bukti dan kriteria klasifikasi lain tetap diperlukan."
+  },
+  "advanced-28-17": {
+    "why": "High RPM dengan WOB lebih rendah mendukung pemotongan core secara terkendali dibanding rotary drilling yang dibandingkan.",
+    "compare": "WOB tinggi tidak otomatis meningkatkan recovery dan bisa memperburuk vibrasi/jamming."
+  },
+  "advanced-28-18": {
+    "why": "Susunan contoh bergerak dari conductor ke surface, production casing, lalu perforated liner untuk interval bawah.",
+    "compare": "Urutan mengikuti konstruksi dan akses ke zona target, bukan label yang dapat ditukar tanpa pengaruh geometris."
+  },
+  "advanced-28-20": {
+    "why": "SNI 6009:2017 adalah rujukan klasifikasi sumber daya/cadangan panas bumi yang diminta materi.",
+    "compare": "Nomor standar lain pada opsi tidak otomatis membahas scope klasifikasi yang sama."
+  },
+  "advanced-29-01": {
+    "why": "Coiled tubing berupa pipa kontinu yang disimpan pada reel sehingga conveyance tidak memerlukan penyambungan ulir per joint selama running.",
+    "compare": "Jointless di sini membedakan cara deployment dari jointed tubing, bukan klaim tak ada sambungan manufaktur sama sekali."
+  },
+  "advanced-29-02": {
+    "why": "Injector head menjepit serta memberi gaya dorong/tarik pada CT untuk menggerakkannya melalui wellhead.",
+    "compare": "Reel menyimpan dan mengatur spooling; power pack menyuplai tenaga hidraulik."
+  },
+  "advanced-29-03": {
+    "why": "Reel menyimpan CT dan mengelola penggulungan/pengulurannya saat operasi.",
+    "compare": "Fungsi utama gaya injeksi ke sumur berada pada injector, bukan penyimpanan reel."
+  },
+  "advanced-29-04": {
+    "why": "Power pack menyediakan hydraulic power bagi sistem CTU seperti injector dan kontrol terkait.",
+    "compare": "Ia bukan elemen penyekat di sekitar tubing atau ram pemotong."
+  },
+  "advanced-29-05": {
+    "why": "Slip ram menggigit/menahan tubing agar tidak jatuh atau bergerak tak terkendali sesuai ratingnya.",
+    "compare": "Blind ram menyekat bore kosong; shear ram terutama memberi fungsi pemotongan."
+  },
+  "advanced-29-06": {
+    "why": "Shear ram dirancang memotong tubing pada skenario emergency sesuai kemampuan/rating yang diverifikasi.",
+    "compare": "Slip ram menahan pipe tetapi bukan alat potong yang diminta."
+  },
+  "advanced-29-07": {
+    "why": "Nitrogen menurunkan densitas efektif kolom sehingga hydrostatic head berkurang dan fluida lebih mudah terangkat/unloaded.",
+    "compare": "Tujuannya bukan menaikkan tekanan hidrostatik atau membuat formasi retak secara otomatis."
+  },
+  "advanced-29-08": {
+    "why": "Matrix acidizing menempatkan treatment pada pore system dengan tekanan di bawah fracture pressure.",
+    "compare": "Jika sengaja melampaui fracture pressure, mekanismenya beralih ke fracture treatment, bukan matrix-only stimulation."
+  },
+  "advanced-29-10": {
+    "why": "Stripper mempertahankan seal di sekitar CT ketika tubing bergerak, sehingga disebut dynamic seal.",
+    "compare": "Blind ram tidak memberi fungsi penyekatan tubing bergerak yang sama."
+  },
+  "advanced-29-11": {
+    "why": "Blind ram menutup bore ketika tidak ada pipe pada bidang seal.",
+    "compare": "Menutup blind ram terhadap pipe yang melintasinya bukan fungsi sealing pipe yang dimaksud."
+  },
+  "advanced-29-12": {
+    "why": "Tekanan operasi/tekanan permukaan yang diperkirakan harus berada dalam allowable envelope yang disetujui. Tidak ada aturan bahwa allowable pressure harus selalu lebih rendah dari anticipated pressure.",
+    "compare": "Baca definisi MAOP/MASP pada program; pernyataan always tanpa kondisi desain membalik tujuan pemeriksaan batas tekanan."
+  },
+  "advanced-29-13": {
+    "why": "Unit intervensi terintegrasi dapat menggabungkan fungsi sehingga mengurangi paket terpisah dan footprint.",
+    "compare": "Karena itu klaim selalu memerlukan lebih banyak paket dibanding konfigurasi konvensional tidak mengikuti tujuan integrasi."
+  },
+  "advanced-29-14": {
+    "why": "Tubing keluar dari reel, diarahkan gooseneck, ditangani injector, lalu masuk ke wellhead.",
+    "compare": "Setiap elemen mengikuti jalur fisik CT; urutan bukan urutan ukuran atau pressure rating."
+  },
+  "advanced-29-15": {
+    "why": "Pada susunan gambar sumber, stripper berada di atas blind ram, lalu shear ram dan kill-line inlet.",
+    "compare": "Susunan ini dibaca dari diagram yang dipakai; konfigurasi aktual harus mengikuti stack/barrier design yang disetujui."
+  },
+  "advanced-30-01": {
+    "why": "Completion menyediakan jalur produksi dan barrier/control equipment agar aliran hidrokarbon aman serta terkontrol.",
+    "compare": "Mencapai total depth saja belum membuat sumur siap diproduksikan."
+  },
+  "advanced-30-02": {
+    "why": "Production tubing dipasang di dalam casing untuk membawa fluida menuju permukaan.",
+    "compare": "Casing menopang/mengisolasi konstruksi lubang; tubing menjadi jalur produksi yang dirancang."
+  },
+  "advanced-30-03": {
+    "why": "Production packer menyekat annulus tubing–casing pada lokasi setting sehingga aliran/tekanan dapat diisolasi sesuai desain.",
+    "compare": "Packer bukan katup permukaan dan tidak menggantikan seluruh well-control system."
+  },
+  "advanced-30-04": {
+    "why": "Valve pada Christmas tree membuka, menutup, atau mengendalikan jalur produksi di permukaan.",
+    "compare": "Peran ini berbeda dari fungsi casing atau packer yang tidak mengoperasikan flow path permukaan."
+  },
+  "advanced-30-05": {
+    "why": "Pressure, temperature, fluid properties, produktivitas, dan kondisi reservoir menentukan kebutuhan konfigurasi completion.",
+    "compare": "Memilih concept hanya dari peralatan yang tersedia mengabaikan tuntutan reservoir."
+  },
+  "advanced-30-06": {
+    "why": "Satu zona dan satu tubing string dapat dilayani single-string completion sebagai konfigurasi dasar sederhana.",
+    "compare": "Multi-zone/commingled atau intelligent completion menambahkan fungsi serta kompleksitas yang berbeda."
+  },
+  "advanced-30-07": {
+    "why": "Sensor pressure, temperature, dan flow permanen menyediakan monitoring downhole bagi intelligent well.",
+    "compare": "Sistem intelligent bukan hanya memasang tubing biasa tanpa pengukuran atau kontrol relevan."
+  },
+  "advanced-30-08": {
+    "why": "SCSSV bersifat fail-safe closed: kehilangan hydraulic control pressure membuat valve kembali menutup pada konfigurasi yang dibahas.",
+    "compare": "Normally closed tidak berarti valve selalu tertutup saat produksi normal; control pressure menahannya terbuka."
+  },
+  "advanced-30-09": {
+    "why": "Y-tool memberi jalur bypass untuk intervention di bawah ESP tanpa menarik seluruh completion string.",
+    "compare": "Mengangkat seluruh ESP bukan fungsi bypass yang ditanya."
+  },
+  "advanced-30-10": {
+    "why": "Production casing merupakan final casing string pada konstruksi konvensional yang dipakai soal.",
+    "compare": "Tubing yang dipasang setelahnya adalah jalur produksi, bukan casing string tambahan dalam definisi ini."
+  },
+  "advanced-30-11": {
+    "why": "SCSSV membutuhkan hydraulic control pressure untuk tetap terbuka; hilangnya tekanan memicu fungsi fail-safe close.",
+    "compare": "Pernyataan tetap terbuka tanpa tekanan berlawanan dengan desain fail-safe yang dimaksud."
+  },
+  "advanced-30-12": {
+    "why": "Commingling mencampur kontribusi zona di satu jalur, sehingga pemisahan performa masing-masing reservoir menjadi lebih sulit.",
+    "compare": "Kesederhanaan jalur tubing tidak otomatis membuat monitoring per zona mudah."
+  },
+  "advanced-30-13": {
+    "why": "Packer dapat menggunakan mekanisme setting hidraulik atau mekanis tergantung desain alat.",
+    "compare": "Cara setting bukan sama dengan fungsi penyekatan; keduanya dapat menjalankan tujuan seal yang serupa."
+  },
+  "advanced-30-14": {
+    "why": "Production casing dipasang/disemen terlebih dulu, kemudian tubing/packer, tree, lalu kontrol produksi melalui tree.",
+    "compare": "Urutan memastikan konstruksi, seal, dan kontrol tersedia sebelum aliran produksi dijalankan."
+  },
+  "advanced-30-15": {
+    "why": "Pada skenario yang dipakai, cleanout menyiapkan lubang, perforasi membuka komunikasi, completion string dipasang, lalu tree menyediakan kontrol permukaan.",
+    "compare": "Program nyata dapat mempunyai urutan berbeda; dependency barrier dan desain harus tetap dipenuhi."
+  },
+  "advanced-31-01": {
+    "why": "Stress membebani batuan; pore pressure memengaruhi effective stress; rock strength menentukan ketahanan terhadap failure.",
+    "compare": "Ketiganya saling berhubungan tetapi bukan besaran yang dapat dipertukarkan."
+  },
+  "advanced-31-02": {
+    "why": "Dalam normal-faulting Andersonian regime, vertical stress terbesar, kemudian SHmax, lalu Shmin.",
+    "compare": "Reverse atau strike-slip regime mempunyai ordering berbeda; kategori faulting menentukan hubungan principal stresses."
+  },
+  "advanced-31-03": {
+    "why": "MEM menggabungkan bukti stress, pressure, serta sifat batuan untuk memandu keputusan dengan ketidakpastian yang tetap dinyatakan.",
+    "compare": "Model bukan pengganti data atau pembenaran satu angka pasti tanpa validasi."
+  },
+  "advanced-31-04": {
+    "why": "Tekanan mud menopang dinding lubang, tetapi tekanan berlebihan dapat memicu tensile failure dan losses.",
+    "compare": "MW terlalu rendah dan terlalu tinggi dapat sama-sama bermasalah, lewat mekanisme berbeda."
+  },
+  "advanced-31-05": {
+    "why": "Untuk vertical well dan asumsi principal stresses sederhana pada soal, breakout berpusat pada arah Shmin dan DITF searah SHmax.",
+    "compare": "Pola tersebut bukan alasan mengabaikan well deviation atau asumsi stress saat menginterpretasi data nyata."
+  },
+  "advanced-31-06": {
+    "why": "Batas bawah harus memenuhi baik pencegahan influx maupun kestabilan kompresif; ambil yang lebih besar antara PP plus margin dan collapse pressure.",
+    "compare": "Mengambil yang lebih kecil dapat meninggalkan salah satu failure mechanism tanpa pengendalian."
+  },
+  "advanced-31-07": {
+    "why": "Batas atas ditentukan kejadian tak dapat diterima pertama, misalnya fracture/loss atau integrity limit.",
+    "compare": "Memilih batas alat tertinggi tidak membantu bila formasi atau komponen lain gagal lebih dahulu."
+  },
+  "advanced-31-08": {
+    "why": "Formation-pressure measurement yang dikontrol kualitas serta depth/time-nya memberi bukti tekanan yang lebih langsung pada target.",
+    "compare": "Prediksi dan proxy tetap berguna tetapi memiliki asumsi serta ketidakpastian berbeda dari pengukuran langsung."
+  },
+  "advanced-31-09": {
+    "why": "FIT menguji integritas sampai target tertentu; LOT mengamati awal leakoff; XLOT memperluas pengujian untuk karakterisasi perilaku fracture.",
+    "compare": "Ketiganya tidak menghasilkan jenis informasi identik hanya karena sama-sama menguji pressure response."
+  },
+  "advanced-31-10": {
+    "why": "Torque/drag meningkat bisa berasal dari cuttings bed, geometri, friksi, swelling, atau failure batuan.",
+    "compare": "Satu gejala tidak unik menentukan satu mekanisme geomekanik."
+  },
+  "advanced-31-11": {
+    "why": "BHP saat operasi memasukkan hidrostatik serta pengaruh ECD, surge, dan swab sesuai gerak/sirkulasi aktual.",
+    "compare": "Static MW saja dapat melewatkan transien yang melampaui batas window."
+  },
+  "advanced-31-12": {
+    "why": "DITF menunjukkan kondisi tensile failure di dinding lubang, tetapi tidak otomatis berarti rekahan terhubung dan menerima aliran hilang secara berkelanjutan.",
+    "compare": "Bukti sustained losses membutuhkan observasi aliran/volume dan konteks hidraulika."
+  },
+  "advanced-31-14": {
+    "why": "Korelasikan cavings, caliper, parameter drilling, mud, dan kondisi hole sebelum memilih penyesuaian MW atau cleaning.",
+    "compare": "Menambah MW atau gaya mekanis tanpa diagnosis dapat memperburuk mekanisme lain."
+  },
+  "advanced-31-15": {
+    "why": "Tingkat instability ditentukan interaksi stress, strength, tekanan, sifat/reaktivitas batuan, dan exposure time.",
+    "compare": "Tidak satu parameter tunggal menjelaskan semua kondisi kestabilan sumur."
+  },
+  "advanced-32-01": {
+    "why": "Coring memotong dan mengambil silinder batuan sehingga sampel mempertahankan kontinuitas yang lebih baik daripada cuttings.",
+    "compare": "Mencatat log atau mengumpulkan serpihan bukan proses mengambil core kontinu."
+  },
+  "advanced-32-02": {
+    "why": "Core mempertahankan hubungan antarbagian batuan, tekstur, dan struktur lebih baik; cuttings umumnya berupa fragmen yang dapat tercampur.",
+    "compare": "Kualitas core tetap bergantung recovery dan handling, bukan otomatis selalu utuh."
+  },
+  "advanced-32-03": {
+    "why": "Program coring menargetkan recovery tinggi dengan alteration minimal dan retrieval aman.",
+    "compare": "Menaikkan WOB/flow setinggi mungkin tanpa menjaga kualitas sampel tidak memenuhi tujuan tersebut."
+  },
+  "advanced-32-04": {
+    "why": "Porosity mengukur fraksi volume pori, yaitu kapasitas penyimpanan.",
+    "compare": "Permeability mengukur kemampuan mengalirkan fluida; kedua sifat penting tetapi bukan besaran yang sama."
+  },
+  "advanced-32-05": {
+    "why": "Wireline coring mengambil inner barrel dengan wireline sehingga banyak retrieval tidak memerlukan menarik seluruh drillstring.",
+    "compare": "Pengurangan trip berasal dari mekanisme retrieval, bukan menghilangkan kebutuhan semua handling."
+  },
+  "advanced-32-06": {
+    "why": "Oriented coring mempertahankan referensi arah/posisi agar struktur pada core dapat dihubungkan dengan orientasi in-situ.",
+    "compare": "Core tanpa referensi orientasi masih berguna tetapi tidak memberikan informasi arah yang sama."
+  },
+  "advanced-32-07": {
+    "why": "Vibrasi dan parameter terlalu agresif dapat merusak core atau membuatnya macet di barrel.",
+    "compare": "Karena itu klaim mengurangi jamming lewat vibrasi tinggi justru berlawanan dengan tujuan pengendalian dinamika."
+  },
+  "advanced-32-08": {
+    "why": "Swivel memungkinkan inner barrel tidak ikut berputar bersama outer barrel sehingga core lebih terlindungi.",
+    "compare": "Core catcher menahan sampel saat retrieval, bukan komponen utama pemisah rotasi."
+  },
+  "advanced-32-09": {
+    "why": "Steel dipilih untuk temperatur di atas 205 °C pada rekomendasi material di materi karena tuntutan termalnya.",
+    "compare": "Rating aktual harus diverifikasi terhadap produk; tidak semua polymer/fiberglass mempunyai kemampuan temperatur yang sama."
+  },
+  "advanced-32-10": {
+    "why": "Sampel dibersihkan, diukur/ditandai, dipotong/dicap, lalu dipreservasi/dikemas agar depth dan identitas tetap terlacak.",
+    "compare": "Memotong tanpa marking dapat menghilangkan orientasi dan urutan sampel."
+  },
+  "advanced-32-11": {
+    "why": "Core catcher menggenggam/menahan core agar tidak jatuh dari barrel saat pengangkatan.",
+    "compare": "Ia bukan pengatur mud density atau sensor radioaktivitas batuan."
+  },
+  "advanced-32-12": {
+    "why": "Core memberi bukti sifat batuan yang dapat dibandingkan dengan respons log untuk kalibrasi dan karakterisasi reservoir.",
+    "compare": "Log dan core saling melengkapi; satu sumber tidak otomatis menghapus kebutuhan yang lain."
+  },
+  "advanced-32-13": {
+    "why": "Fiberglass inner tube pada sistem yang sesuai dapat tetap mengurung core dan menjadi bagian packaging sampai laboratorium.",
+    "compare": "Fungsi kemasan tetap memerlukan prosedur sealing, labeling, dan handling yang benar."
+  },
+  "advanced-32-14": {
+    "why": "Pressure coring dirancang mempertahankan kondisi tekanan/fluida sampel sebisa mungkin.",
+    "compare": "Membiarkan seluruh gas dan fluida lolos sebelum surface akan menghilangkan tujuan preservasi tekanan tersebut."
+  },
+  "advanced-32-15": {
+    "why": "Preparation memastikan alat/program siap; coring memperoleh sampel; retrieval mengangkatnya; surface processing menjaga informasi dan kondisinya.",
+    "compare": "Urutan mengikuti alur fisik sampel dari formasi menuju laboratorium."
+  },
+  "advanced-33a-01": {
+    "why": "Wireline logging menurunkan tool sensor menggunakan kabel ke open atau cased hole untuk memperoleh pengukuran.",
+    "compare": "Coiled-tubing drilling atau running tubing tanpa sensor mempunyai tujuan/metode conveyance berbeda."
+  },
+  "advanced-33a-02": {
+    "why": "Lubricator merupakan ruang bertekanan untuk menampung toolstring saat transisi melalui pressure-control stack pada gambar.",
+    "compare": "Drum menyimpan kabel dan sheave mengarahkan kabel; keduanya bukan pressure chamber toolstring."
+  },
+  "advanced-33a-03": {
+    "why": "PCE mempertahankan pressure containment saat toolstring masuk/keluar sumur bertekanan.",
+    "compare": "Kebutuhan ini berbeda dari memberi daya listrik pada kabel atau menentukan porositas formasi."
+  },
+  "advanced-33a-04": {
+    "why": "Caliper mengukur diameter lubang, sehingga washout dapat dikenali dan volume annulus/cement diestimasi lebih baik.",
+    "compare": "PTS mengukur profil pressure/temperature/flow, bukan diameter lubang secara langsung."
+  },
+  "advanced-33a-05": {
+    "why": "Borehole image memetakan fitur dinding serta orientasi fracture untuk interpretasi struktur.",
+    "compare": "Density-only log tidak memberi citra azimuth detail yang sama."
+  },
+  "advanced-33a-06": {
+    "why": "Gross permeability/injection evaluation pada materi menghubungkan penerimaan fluida dan laju untuk menilai kemampuan sumur.",
+    "compare": "Pengukuran diameter casing atau top cement tidak langsung memberikan injectivity."
+  },
+  "advanced-33a-07": {
+    "why": "Respons pressure fall-off sesudah perubahan rate mengandung informasi transmissivity serta skin/kerusakan sekitar sumur.",
+    "compare": "Interpretasi membutuhkan riwayat rate dan model yang sesuai, bukan sekadar membaca satu nilai pressure."
+  },
+  "advanced-33a-08": {
+    "why": "Multi-finger caliper memakai beberapa lengan untuk menelusuri perubahan geometri permukaan internal pipe.",
+    "compare": "Borehole imager untuk formasi terbuka tidak otomatis menggantikan detail inspeksi internal tubing/casing ini."
+  },
+  "advanced-33a-09": {
+    "why": "Electromagnetic thickness measurement menilai respons logam sehingga dapat mengevaluasi beberapa lapisan pipe pada konfigurasi yang sesuai.",
+    "compare": "Mechanical caliper terutama menyentuh permukaan internal yang dapat diakses, bukan mengukur semua dinding konsentris."
+  },
+  "advanced-33a-10": {
+    "why": "Wireline menyediakan alat evaluasi, monitoring, diagnosis, enhancement, dan abandonment sesuai tool serta conveyance yang dipilih.",
+    "compare": "Layanan ini tidak hanya berguna pada satu tahap awal umur sumur."
+  },
+  "advanced-33a-11": {
+    "why": "Pressure, temperature, dan spinner membantu mengenali fluid level dan perubahan aliran pada feed zones.",
+    "compare": "Interpretasi membutuhkan korelasi profil; satu spinner anomaly saja tidak menjelaskan semua penyebab."
+  },
+  "advanced-33a-12": {
+    "why": "Persentase pada scale response/plot adalah ukuran yang harus dibaca menurut definisi pengukurannya, bukan otomatis persentase area bore yang tersumbat.",
+    "compare": "Untuk menyatakan blockage diperlukan informasi geometri dan kalibrasi yang sesuai."
+  },
+  "advanced-33a-13": {
+    "why": "Metal lebih tebal umumnya memperlambat decay respons elektromagnetik pada konteks MTD, bukan mempercepatnya.",
+    "compare": "Arah respons perlu dibedakan dari istilah corrosion loss, yakni pengurangan ketebalan."
+  },
+  "advanced-33a-14": {
+    "why": "Conventional CBL memberi indikasi kualitas bonding tetapi tidak memetakan lokasi azimuth serta geometri channel secara rinci.",
+    "compare": "Poor bonding indication tidak sama dengan pengukuran langsung lokasi/ukuran setiap aliran channel."
+  },
+  "advanced-33a-15": {
+    "why": "Zero-depth reference diset saat rig-up, tool dijalankan ke TD, survey/repeat direkam untuk QC, lalu tool ditarik dan rig-down.",
+    "compare": "Repeat section memeriksa konsistensi pengukuran, bukan tahap yang dapat dihilangkan tanpa pertimbangan kualitas."
+  },
+  "advanced-33b-01": {
+    "why": "Well test diperlukan saat exploration untuk menilai potensi dan saat development untuk mengevaluasi performa/rancangan lapangan.",
+    "compare": "Testing tidak terbatas hanya pada tahap pembangkitan listrik."
+  },
+  "advanced-33b-02": {
+    "why": "Deliverability curve mengaitkan WHP dengan kemampuan discharge, membantu memilih operating pressure dan basis desain plant.",
+    "compare": "Pernyataan-pernyataan yang tersedia saling melengkapi sehingga pilihan gabungan sesuai pada soal."
+  },
+  "advanced-33b-03": {
+    "why": "Chemical flow test menganalisis sampel steam dan water, termasuk tracer jika metode test menggunakan tracer.",
+    "compare": "Pressure data saja tidak memberi komposisi kimia atau kandungan tracer kedua fase."
+  },
+  "advanced-33b-04": {
+    "why": "Well testing memberi karakteristik sumur, informasi permeable zones/reservoir, serta discharge rate, enthalpy, dan chemistry.",
+    "compare": "Memilih satu kelompok saja belum mencakup seluruh tujuan pada daftar tersebut."
+  },
+  "advanced-33b-05": {
+    "why": "Flow testing mengamati kemampuan sumur mengalir pada kondisi yang dikendalikan untuk mengevaluasi performanya.",
+    "compare": "Cementing dan pemasangan wellhead menyiapkan konstruksi, bukan mengukur discharge performance secara langsung."
+  },
+  "advanced-33b-06": {
+    "why": "Water-loss, injectivity, dan pressure fall-off termasuk rangkaian completion testing geothermal di materi.",
+    "compare": "Production logging dapat mendukung diagnosis lain, tetapi bukan pilihan kunci kelompok test pada soal ini."
+  },
+  "advanced-33b-07": {
+    "why": "Flow test menilai discharge characteristics, mendukung plant/operating design, dan memberi dasar kebutuhan sumur produksi/injeksi.",
+    "compare": "Tujuannya lebih luas daripada hanya satu pembacaan flow rate."
+  },
+  "advanced-33b-08": {
+    "why": "Mass flow, enthalpy, dan chemistry dapat berubah terhadap wellhead pressure dan waktu karena respons aliran serta kontribusi zona.",
+    "compare": "Resistivity bukan salah satu discharge characteristics yang diminta pada daftar kunci ini."
+  },
+  "advanced-33b-09": {
+    "why": "Operating pressure serta kondisi fluida memengaruhi pipeline sizing, separation/inlet pressure, kapasitas pemrosesan, dan corrosion design.",
+    "compare": "Ketiga kelompok pertimbangan pada opsi diperlukan bersama, bukan saling menggantikan."
+  },
+  "advanced-33b-10": {
+    "why": "Pada konfigurasi yang dibandingkan materi, containerized muffler menggabungkan kemudahan mobilisasi/setup, noise handling, dan separation yang dituju.",
+    "compare": "Keunggulan ini bersifat perbandingan desain pada materi, bukan jaminan semua unit unggul pada setiap flow/pressure."
+  },
+  "advanced-33b-11": {
+    "why": "Lip-pressure method menaksir mass flow dari tekanan discharge dan geometri dengan korelasi yang sesuai.",
+    "compare": "Temperatur wellhead saja tidak cukup memberi laju massa; metode lain juga memerlukan instalasi dan asumsi berbeda."
+  },
+  "advanced-33b-12": {
+    "why": "Sampling geochemistry memberikan condensate composition dan NCG concentration yang relevan bagi operasi serta plant design.",
+    "compare": "Data tersebut tidak dapat diperoleh hanya dari torque atau ukuran casing."
+  },
+  "advanced-35-01": {
+    "why": "Definisikan masalah dan tujuan sebelum memilih metode agar pekerjaan benar-benar menjawab kebutuhan sumur.",
+    "compare": "Memilih alat karena tersedia dapat menghasilkan intervensi yang tidak memberi solusi yang diperlukan."
+  },
+  "advanced-35-02": {
+    "why": "Problem dirumuskan, evidence diperiksa, objective ditetapkan, lalu method dipilih untuk mencapainya.",
+    "compare": "Memilih metode sebelum bukti/tujuan membalik alur keputusan berbasis diagnosis."
+  },
+  "advanced-35-03": {
+    "why": "Dalam pengelompokan lima tujuan pada materi, diagnose/restore/improve termasuk kategori yang dibahas, sedangkan abandon ditempatkan pada scope berbeda.",
+    "compare": "Ini klasifikasi materi, bukan klaim bahwa abandonment tidak pernah memakai teknik intervensi."
+  },
+  "advanced-35-04": {
+    "why": "A-annulus pressure adalah indikasi integritas yang harus diverifikasi dengan riwayat dan pengujian yang sesuai.",
+    "compare": "Pressure tersebut tidak unik membuktikan tubing leak atau reservoir depletion."
+  },
+  "advanced-35-05": {
+    "why": "Coiled tubing menyediakan jalur kontinu untuk sirkulasi dan cleanout sambil menggerakkan string.",
+    "compare": "E-line kuat pada data/diagnostics, tetapi bukan jalur sirkulasi fluida kontinu seperti CT."
+  },
+  "advanced-35-06": {
+    "why": "E-line/wireline membawa tool logging/diagnostics seperti PLT, temperature, dan noise untuk mengumpulkan bukti kondisi sumur.",
+    "compare": "Memilih pumping saja tidak memberikan instrumen downhole yang sama."
+  },
+  "advanced-35-07": {
+    "why": "Pulling dan rerunning tubing mengubah atau mengakses completion string sehingga termasuk scope workover yang lebih invasif.",
+    "compare": "Menjalankan memory gauge atau shifting sleeve tidak otomatis memerlukan menarik seluruh tubing."
+  },
+  "advanced-35-08": {
+    "why": "Barrier harus didefinisikan, diterima terhadap kriteria, diverifikasi, dan dimonitor agar dapat dikreditkan.",
+    "compare": "Sekadar telah dibeli, dicat, atau dipasang tidak membuktikan fungsi barrier tersedia."
+  },
+  "advanced-35-09": {
+    "why": "Sebelum opening well, barrier dan kemampuan PCE harus diverifikasi untuk mencegah exposure tanpa containment yang siap.",
+    "compare": "Mencapai kedalaman tool atau menyelesaikan dokumen akhir bukan pengganti hold point pressure control."
+  },
+  "advanced-35-10": {
+    "why": "Killing membentuk kondisi tekanan yang dituju, tetapi losses, influx, dan degradasi barrier masih mungkin berkembang.",
+    "compare": "Status killed tidak mengubah sumur menjadi sistem tanpa risiko atau tanpa kebutuhan monitoring."
+  },
+  "advanced-35-11": {
+    "why": "Hentikan penambahan exposure saat tool stuck, lalu evaluasi kondisi dan opsi sesuai contingency.",
+    "compare": "Menarik lebih keras tanpa memahami limit dapat memutus alat/string dan memperburuk kejadian."
+  },
+  "advanced-35-12": {
+    "why": "Workover merupakan bagian dari spektrum well intervention dengan scope yang biasanya lebih invasif.",
+    "compare": "Perbedaan skala pekerjaan tidak menempatkannya di luar seluruh kategori intervensi."
+  },
+  "advanced-35-13": {
+    "why": "Unexpected pressure memerlukan pengendalian exposure terlebih dulu, kemudian diagnosis setelah kondisi terkendali.",
+    "compare": "Mencari penyebab sambil membiarkan exposure meningkat membalik prioritas keselamatan."
+  },
+  "advanced-35-14": {
+    "why": "Barrier status, kemampuan pressure control, dan contingency harus jelas sebelum pekerjaan dimulai.",
+    "compare": "Ketidakjelasan pada salah satunya berarti kesiapan pekerjaan belum terbukti."
+  },
+  "advanced-35-15": {
+    "why": "PCE dipilih menurut metode conveyance, pressure rating, tool geometry, fluida, dan fungsi barrier yang dibutuhkan.",
+    "compare": "Satu stack tidak otomatis sesuai bagi semua jenis intervensi."
+  },
+  "advanced-36-01": {
+    "why": "Bundling menggabungkan dua atau lebih jasa dalam satu paket sehingga jumlah antarmuka kontrak dapat berkurang.",
+    "compare": "Integrasi tidak otomatis berarti seluruh drilling risk pindah atau semua jasa menjadi satu turnkey scope."
+  },
+  "advanced-36-10": {
+    "why": "Turnkey pada konsep soal memakai lump-sum untuk lingkup proyek/sumur yang disepakati.",
+    "compare": "Pembagian risiko dan perubahan di luar scope tetap mengikuti ketentuan, bukan berarti semua kondisi tak terduga selalu tercakup."
+  },
+  "advanced-36-13": {
+    "why": "Progress meeting dan service-quality review membandingkan pelaksanaan dengan kewajiban serta indikator yang disepakati, lalu menindaklanjuti deviasi.",
+    "compare": "Pertemuan bermanfaat bila berbasis bukti dan tindakan, bukan hanya mencatat bahwa rapat telah dilakukan."
+  },
+  "advanced-36-concept-01": {
+    "why": "Risiko cost overrun ditentukan oleh scope, allocation, exclusions, dan payment terms yang benar-benar disepakati.",
+    "compare": "Nama jenis kontrak atau jumlah pekerja tidak membuktikan siapa menanggung setiap jenis biaya tambahan."
+  },
+  "advanced-36-concept-02": {
+    "why": "Cap hari perlu menjelaskan overrun, extension, exception, dan additional charges supaya konsekuensinya tidak ditebak setelah kejadian.",
+    "compare": "Daily rate, penalti, atau no-charge bukan konsekuensi otomatis tanpa klausul yang mendukungnya."
+  },
+  "advanced-36-concept-03": {
+    "why": "Penawaran dibandingkan pada scope dan asumsi setara, kemudian total evaluated cost, kemampuan teknis, serta risiko.",
+    "compare": "Harga awal terendah dapat berakhir lebih mahal bila durasi, exclusions, atau capability menambah biaya."
+  },
+  "advanced-36-concept-04": {
+    "why": "Paket dengan lead time serta dependency yang mengancam required-on-site date perlu dipersiapkan lebih awal.",
+    "compare": "Harga unit tertinggi atau scope terkecil tidak otomatis berada di jalur kritis."
+  },
+  "advanced-36-concept-05": {
+    "why": "Contingency menyediakan allowance bagi ketidakpastian sesuai basis estimasi dan evaluasi risiko.",
+    "compare": "Ia bukan profit tersembunyi atau pengganti seluruh risk assessment."
+  },
+  "advanced-36-concept-06": {
+    "why": "Time-related cost ditelusuri melalui durasi aktivitas dan penyebab NPT dibanding rencana.",
+    "compare": "Daily rate atau total invoice tanpa breakdown waktu tidak menjelaskan sumber perubahan biaya."
+  },
+  "advanced-36-concept-07": {
+    "why": "Bundling dapat mengurangi interface dan mempermudah koordinasi tetapi memerlukan scope serta akuntabilitas yang jelas.",
+    "compare": "Mengurangi jumlah kontrak tidak menghapus kebutuhan mengawasi kualitas atau mengalokasikan risiko."
+  },
+  "advanced-36-concept-08": {
+    "why": "Change control menilai dampak scope, schedule, cost, dan risiko lalu memperoleh approval yang disyaratkan kontrak.",
+    "compare": "Percakapan informal atau pelaksanaan tanpa pencatatan tidak otomatis menjadi amendment yang sah."
+  },
+  "advanced-36-concept-09": {
+    "why": "Service-quality review memakai indikator, deviasi, root cause, dan corrective actions untuk memperbaiki kinerja.",
+    "compare": "Jumlah rapat atau invoice yang sudah dibayar belum membuktikan mutu jasa tercapai."
+  },
+  "advanced-36-concept-10": {
+    "why": "Total well cost dipengaruhi rate × durasi serta mobilisasi, scope, NPT, dan biaya relevan lain.",
+    "compare": "Daily rate lebih rendah tidak menjamin total lebih rendah bila waktu atau exclusions bertambah."
+  },
+  "advanced-37-01": {
+    "why": "Mendengarkan lebih dulu membantu memahami kekhawatiran; verifikasi data dan dialog dua arah memberi dasar respons yang relevan.",
+    "compare": "Bantuan atau kampanye tanpa memahami isu tidak otomatis menyelesaikan sumber penolakan."
+  },
+  "advanced-37-02": {
+    "why": "Masyarakat menilai dampak lingkungan, keselamatan, dan kehidupan sehari-hari selain kelayakan teknis proyek.",
+    "compare": "Keberhasilan engineering tidak dengan sendirinya menjawab seluruh kekhawatiran sosial."
+  },
+  "advanced-37-03": {
+    "why": "Komunikasi jernih menyampaikan substansi teknis dengan bahasa yang dipahami sambil tetap jujur tentang risiko dan ketidakpastian.",
+    "compare": "Menambah jargon atau menghindari risiko justru dapat mengurangi pemahaman dan kepercayaan."
+  },
+  "advanced-37-04": {
+    "why": "Stakeholder meliputi pihak yang memengaruhi atau terdampak proyek: pemerintah, komunitas, perusahaan, akademisi, media, dan tokoh lokal.",
+    "compare": "Membatasi hanya pada pembayar proyek mengabaikan kelompok yang terkena dampak."
+  },
+  "advanced-37-05": {
+    "why": "Legal permit menyediakan dasar formal, sedangkan social acceptance bertumpu pada kepercayaan, hubungan, dan pengelolaan dampak.",
+    "compare": "Keberadaan izin tidak otomatis membuktikan semua pihak sudah memahami atau menerima proyek."
+  },
+  "advanced-37-06": {
+    "why": "CSR yang relevan dimulai dari kebutuhan masyarakat dan manfaat yang dapat dievaluasi.",
+    "compare": "Program yang mudah dipublikasikan atau diseragamkan belum tentu menyelesaikan kebutuhan lokal."
+  },
+  "advanced-37-07": {
+    "why": "Fungsi penghubung menerjemahkan data teknis ke publik sekaligus membawa aspirasi publik ke pengambilan keputusan teknis.",
+    "compare": "Komunikasi satu arah hanya menjalankan separuh proses, bahkan dapat mengabaikan informasi penting dari komunitas."
+  },
+  "advanced-37-08": {
+    "why": "Kepatuhan sosial/lingkungan dan tindak lanjut yang dapat dipercaya membantu menjaga kepercayaan serta keberlanjutan.",
+    "compare": "Kepatuhan bukan pengganti dialog, tetapi bagian penting bukti tanggung jawab proyek."
+  },
+  "advanced-37-09": {
+    "why": "Teknologi dan produksi penting, tetapi proyek juga memerlukan keselamatan, kelayakan ekonomi, perizinan, dan penerimaan sosial.",
+    "compare": "Kata hanya membuat pernyataan terlalu sempit terhadap faktor keberhasilan proyek."
+  },
+  "advanced-37-10": {
+    "why": "Petakan stakeholder, pahami kepentingan, verifikasi isu dengan data, lalu gunakan dialog untuk membangun kepercayaan/kolaborasi.",
+    "compare": "Menawarkan solusi sebelum memahami pihak dan bukti berisiko menjawab masalah yang salah."
+  },
+  "advanced-38-01": {
+    "why": "Electromagnetic MWD tidak mengandalkan mud-pressure pulses sehingga dapat berguna ketika sirkulasi/return terganggu total losses.",
+    "compare": "Kemampuan tetap dipengaruhi formasi dan sistem; mud-pulse memerlukan jalur transmisi fluida yang memadai."
+  },
+  "advanced-38-02": {
+    "why": "Hole 26 inci menyediakan clearance untuk casing 20 inci serta annular cement dalam program yang dicontohkan.",
+    "compare": "Menjalankan string produksi kecil langsung tidak mengikuti tahapan konstruksi/isolation section besar tersebut."
+  },
+  "advanced-38-03": {
+    "why": "Survey menetapkan posisi/arah aktual agar lintasan dapat dibandingkan dan dikendalikan terhadap rencana.",
+    "compare": "Mud weight atau cement volume bukan tujuan utama pengukuran arah/posisi survey."
+  },
+  "advanced-38-04": {
+    "why": "MD menentukan panjang ke station, inclination kemiringan, dan azimuth arahnya; ketiganya memungkinkan perhitungan lintasan.",
+    "compare": "ROP, WOB, dan RPM adalah parameter drilling, bukan tiga koordinat dasar survey station."
+  },
+  "advanced-38-05": {
+    "why": "Non-magnetic collars mengurangi gangguan medan dari BHA/drillpipe agar sensor magnetik lebih mewakili referensi bumi.",
+    "compare": "Tujuannya bukan menaikkan tool weight atau memperbaiki cement bonding."
+  },
+  "advanced-38-06": {
+    "why": "Accelerometer menggunakan respons terhadap gravitasi untuk menilai orientasi/inclination.",
+    "compare": "Magnetometer merujuk medan magnet; pressure gauge tidak mengukur arah gravitasi."
+  },
+  "advanced-38-07": {
+    "why": "Magnetic survey menggunakan medan magnet bumi sebagai referensi arah bersama sensor orientasi lainnya.",
+    "compare": "Gangguan logam dapat membias referensi itu sehingga spacing dan QC tetap diperlukan."
+  },
+  "advanced-38-08": {
+    "why": "Memory gyro menyimpan hasil downhole untuk dibaca kemudian; mode memory tidak otomatis mengirim real-time ke surface.",
+    "compare": "Gyro dapat tersedia dalam sistem real-time lain, tetapi fungsi itu tidak tersirat hanya dari kata memory."
+  },
+  "advanced-38-09": {
+    "why": "Gyro menyediakan referensi orientasi yang mengurangi ketergantungan pada pengukuran medan magnet eksternal.",
+    "compare": "Ini berguna saat gangguan magnetik tinggi, tanpa berarti gyro bebas dari semua error."
+  },
+  "advanced-38-10": {
+    "why": "Slip-type elevator menjepit profil tubular yang sesuai ketika integral-upset connection tidak menyediakan shoulder coupling konvensional untuk side-door.",
+    "compare": "Elevator harus cocok dengan profil dan rating, bukan dipilih hanya dari OD nominal."
+  },
+  "advanced-38-11": {
+    "why": "Test pressure harus berada dalam batas terendah yang berlaku pada casing, wellhead, dan BOP.",
+    "compare": "Memilih rating tertinggi satu komponen dapat membebani komponen lain di atas batasnya."
+  },
+  "advanced-38-12": {
+    "why": "Ukuran 3 × 3 m adalah contoh cellar umum pada materi; kedalaman mengikuti clearance wellhead/BOP dan layout.",
+    "compare": "Dimensi contoh tidak menggantikan pengecekan konfigurasi aktual di lokasi."
+  },
+  "advanced-38-13": {
+    "why": "Pre-driven conductor memerlukan kondisi yang memungkinkan penetrasi; hard formation dapat menghambat metode driving.",
+    "compare": "Metode instalasi dipilih dari geoteknik dan program konstruksi, bukan satu rekomendasi untuk semua formasi."
+  },
+  "advanced-38-14": {
+    "why": "Function dan pressure test memeriksa kesiapan fungsi serta containment BOP sebelum tahap drilling berikutnya sesuai program.",
+    "compare": "Alat terpasang belum membuktikan actuator dan seal-nya lolos kriteria uji."
+  },
+  "advanced-38-15": {
+    "why": "Surface location dipilih sebelum layout; layout memandu konstruksi; lokasi siap memungkinkan mobilisasi dan rig-up.",
+    "compare": "Membalik dependency dapat menyebabkan rework atau layout yang tidak dapat dilaksanakan."
+  },
+  "advanced-39-01": {
+    "why": "Batas di atas 600 m adalah kategori deepwater menurut rujukan yang dipakai materi.",
+    "compare": "Definisi kategori dapat berbeda antar referensi; angka ini bukan limit fisik yang membuat sistem berubah mendadak pada satu meter tertentu."
+  },
+  "advanced-39-02": {
+    "why": "Wet tree berada subsea dan memerlukan remote control, misalnya sistem electro-hydraulic, karena akses langsung manusia terbatas.",
+    "compare": "Dry-tree/surface-access system mempunyai konteks akses dan penempatan berbeda."
+  },
+  "advanced-39-03": {
+    "why": "Subsea BOP dan riser menambah interface pressure containment, gerak relatif, serta kebutuhan penanganan bawah laut.",
+    "compare": "Kompleksitas ini berbeda dari hanya kapasitas warehouse atau administrasi proyek."
+  },
+  "advanced-39-04": {
+    "why": "Dynamic positioning menjaga vessel pada posisi/heading yang ditentukan melawan pengaruh lingkungan.",
+    "compare": "DP bukan alat yang menaikkan reservoir pressure atau menggantikan semua sensor posisi."
+  },
+  "advanced-39-05": {
+    "why": "Umbilical dan production-control system menyalurkan daya/sinyal/fungsi kendali ke peralatan subsea.",
+    "compare": "Flowline/jumper terutama membawa fluida proses dan tidak sendirinya merupakan seluruh control system."
+  },
+  "advanced-39-06": {
+    "why": "Setelah surface casing dan cementing memenuhi kesiapan yang diperlukan, subsea BOP stack dapat dipasang pada konfigurasi contoh.",
+    "compare": "Tahap production completion tidak otomatis mendahului kesiapan pressure-control drilling ini."
+  },
+  "advanced-39-10": {
+    "why": "BOSIET berhubungan dengan kesiapan keselamatan dasar offshore; well-control certification berkaitan kompetensi pengendalian sumur.",
+    "compare": "Keduanya melayani kebutuhan berbeda dan tidak digantikan oleh sertifikasi pekerjaan lain yang tidak sesuai scope."
+  },
+  "advanced-39-11": {
+    "why": "Di klasifikasi materi, shallow-water disebut di bawah 100 m.",
+    "compare": "Ini label kategori rujukan, bukan klaim bahwa semua operator/standar memakai batas identik."
+  },
+  "advanced-39-12": {
+    "why": "Dry tree umumnya merujuk akses tree di atas air/permukaan, berbeda dari wet/subsea tree dengan remote subsea access.",
+    "compare": "Jadi deskripsi remote offshore pada soal tidak cukup menjadi definisi dry tree yang dimaksud."
+  },
+  "advanced-39-13": {
+    "why": "ROV diperlukan untuk banyak tugas inspeksi, intervensi, dan pengoperasian subsea, menambah resource serta dependency pekerjaan.",
+    "compare": "Ketergantungan tersebut memengaruhi planning dan contingency, bukan hanya jumlah tool di permukaan."
+  }
+}

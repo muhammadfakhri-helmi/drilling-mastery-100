@@ -73,13 +73,13 @@ test('ordering, numeric, and pin interactions enforce correct values and boundar
     if(q.type==='pin'){assert.equal(Boolean(grade(q,{x:0,y:0})),false);assert.equal(Boolean(grade(q,null)),false);}
   }
 });
-test('incorrect and uncertain answers stay in review until two consecutive confident successes',()=>{
-  const answer=(correct,confidence)=>({correct,confidence,answeredAt:123});
-  let m=updateMastery(null,answer(false,'sure'));assert.equal(m.needsReview,true);assert.equal(m.streak,0);
-  m=updateMastery(m,answer(true,'sure'));assert.equal(m.needsReview,true);assert.equal(m.streak,1);
-  m=updateMastery(m,answer(true,'unsure'));assert.equal(m.streak,0);assert.equal(m.needsReview,true);
-  m=updateMastery(m,answer(true,'sure'));m=updateMastery(m,answer(true,'sure'));assert.equal(m.needsReview,false);assert.equal(m.streak,2);
-  m=updateMastery(m,answer(false,'unsure'));assert.equal(m.streak,0);assert.equal(m.needsReview,true);assert.equal(m.attempts,6);
+test('incorrect answers stay in review until two consecutive correct answers, without confidence',()=>{
+  const answer=correct=>({correct,answeredAt:123});
+  let m=updateMastery(null,answer(false));assert.equal(m.needsReview,true);assert.equal(m.streak,0);
+  m=updateMastery(m,answer(true));assert.equal(m.needsReview,true);assert.equal(m.streak,1);
+  m=updateMastery(m,{...answer(true),confidence:'unsure'});assert.equal(m.streak,2);assert.equal(m.needsReview,false);
+  m=updateMastery(m,answer(false));assert.equal(m.streak,0);assert.equal(m.needsReview,true);assert.equal(m.attempts,4);
+  assert.equal(updateMastery(null,answer(true)).needsReview,false);
 });
 test('review sessions deduplicate and exclude unknown or quarantined questions',()=>{
   const s=createSession(advanced,'advanced',null,seeded(1),['advanced-28-19','advanced-38-01','advanced-38-01','missing','advanced-38-02']);
@@ -88,7 +88,7 @@ test('review sessions deduplicate and exclude unknown or quarantined questions',
 test('partial sessions and per-topic results use the actual 100-question denominator',()=>{
   const s=createSession(advanced,'advanced',null,seeded(1));
   for(const [i,id] of s.questionIds.entries()){const q=advanced.questions.find(q=>q.id===id);s.answers[id]={value:valueFor(q),correct:i<75,confidence:i<25?'unsure':'sure'};}
-  const r=summarize(s,advanced);assert.equal(r.score,75);assert.equal(r.correct,75);assert.equal(r.uncertain,25);assert.equal(r.topics.reduce((n,t)=>n+t.total,0),100);assert.equal(r.topics.reduce((n,t)=>n+t.correct,0),75);
+  const r=summarize(s,advanced);assert.equal(r.score,75);assert.equal(r.correct,75);assert.equal(r.incorrect,25);assert.equal(r.topics.reduce((n,t)=>n+t.total,0),100);assert.equal(r.topics.reduce((n,t)=>n+t.correct,0),75);
 });
 test('malformed storage cannot turn duplicates, invalid choices, or incomplete runs into valid sessions',()=>{
   const s=createSession(advanced,'advanced',null,seeded(7));assert.ok(isValidSession(JSON.parse(JSON.stringify(s)),advanced));
@@ -112,9 +112,9 @@ test('source keys and explanations retain case-study context and flag ambiguous 
 });
 
 test('curated packs exclude brands, organization trivia, named units, and historical cases',()=>{
-  assert.equal(foundation.questions.filter(isEligible).length,274);
+  assert.equal(foundation.questions.filter(isEligible).length,271);
   assert.equal(advanced.questions.filter(isEligible).length,263);
-  assert.equal(combined.questions.filter(isEligible).length,537);
+  assert.equal(combined.questions.filter(isEligible).length,534);
   const forbidden=/Power BI|Varco|Shaffer|Weatherford|Precision Northland|NESR|Bell 407|AMICS|South Sumatra|2017–2019|Diamond Sponsors|JDS|SPE-217910|promotional materials/i;
   for(const q of combined.questions.filter(isEligible))assert.doesNotMatch([q.prompt,q.explanation,...(q.options||[]).map(o=>o.text)].join(' '),forbidden,q.id);
   for(const lessons of [foundationLessons,advancedLessons])for(const l of lessons)for(const c of l.concepts){
@@ -149,4 +149,24 @@ test('old review queues are filtered, empty queues disappear, and completed scor
   const result=refreshSession(old,advanced);assert.deepEqual(result.session.questionIds,['advanced-38-01']);assert.ok(isValidSession(result.session,advanced));
   const empty=createSession(oldBank,'advanced',null,seeded(8),['advanced-36-07']);assert.equal(refreshSession(empty,advanced).session,null);
   const complete={...old,completedAt:123};assert.deepEqual(refreshSession(complete,advanced),{session:complete,changed:false});
+});
+
+test('every eligible question has its own reasoning, with formula and comparison content',()=>{
+  const reasoning=read('reasoning.json');
+  assert.equal(Object.keys(reasoning).length,534);
+  for(const q of combined.questions.filter(isEligible)){
+    const r=reasoning[q.id];assert.ok(r?.why.length>35,q.id);
+    if(q.type!=='boolean')assert.ok(r.compare?.length>15,q.id);
+    assert.doesNotMatch(r.why,/jawaban.*sesuai kunci|karena.*benar sesuai materi/i,q.id);
+  }
+  assert.match(reasoning['well-control-03'].why,/0,052.*9.*1.000.*468/);
+  assert.match(reasoning['intro-08'].why,/47,04.*220.*267/);
+  assert.match(reasoning['well-construction-20'].compare,/MD/);
+  assert.equal(foundation.questions.find(q=>q.id==='hse-20').reviewRequired,true);
+});
+test('sessions without confidence and older saved records both remain valid',()=>{
+  const s=createSession(advanced,'advanced',null,seeded(1));const q=advanced.questions.find(q=>q.id===s.questionIds[0]);
+  s.answers[q.id]={value:valueFor(q),correct:true,answeredAt:1};
+  s.drafts[q.id]={value:valueFor(q),reflection:'Pertahankan catatan.'};assert.ok(isValidSession(s,advanced));
+  s.answers[q.id].confidence='unsure';s.drafts[q.id].confidence=null;assert.ok(isValidSession(s,advanced));
 });

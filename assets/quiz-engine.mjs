@@ -106,10 +106,9 @@ export function correctText(q) {
   return q.type === 'order' ? answerText(q, q.correctOrder) : q.type === 'slider' ? answerText(q, q.slider.answer) : q.type === 'pin' ? q.pin.label : answerText(q, q.correctOptionIds);
 }
 export function updateMastery(previous, answer) {
-  const confident = answer.correct && answer.confidence === 'sure';
-  const streak = confident ? (previous?.streak || 0) + 1 : 0;
+  const streak = answer.correct ? (previous?.streak || 0) + 1 : 0;
   return { attempts: (previous?.attempts || 0) + 1, correct: (previous?.correct || 0) + Number(answer.correct),
-    streak, needsReview: !confident || (previous?.needsReview === true && streak < 2), lastAnsweredAt: answer.answeredAt };
+    streak, needsReview: !answer.correct || (previous?.needsReview === true && streak < 2), lastAnsweredAt: answer.answeredAt };
 }
 export function summarize(session, bank) {
   const topics = bank.modules.map(module => {
@@ -118,8 +117,8 @@ export function summarize(session, bank) {
     return { ...module, total: ids.length, correct, score: ids.length ? Math.round(correct/ids.length*100) : 0 };
   }).filter(m => m.total);
   const correct = session.questionIds.filter(id => session.answers[id]?.correct).length;
-  const uncertain = session.questionIds.filter(id => session.answers[id]?.confidence === 'unsure').length;
-  return { correct, uncertain, total: session.questionIds.length, score: Math.round(correct/session.questionIds.length*100), topics };
+  const incorrect = session.questionIds.filter(id => session.answers[id] && !session.answers[id].correct).length;
+  return { correct, incorrect, total: session.questionIds.length, score: Math.round(correct/session.questionIds.length*100), topics };
 }
 
 export function isValidSession(session, bank) {
@@ -144,9 +143,9 @@ export function isValidSession(session, bank) {
       return false;
     };
     const a = session.answers[id];
-    if (a && (!validValue(a.value) || !['sure','unsure'].includes(a.confidence) || typeof a.correct !== 'boolean' || Boolean(grade(q,a.value)) !== a.correct)) return false;
+    if (a && (!validValue(a.value) || typeof a.correct !== 'boolean' || Boolean(grade(q,a.value)) !== a.correct)) return false;
     const draft = session.drafts?.[id];
-    if (draft && (!validValue(draft.value, true) || ![null,'sure','unsure'].includes(draft.confidence) || typeof draft.reflection !== 'string')) return false;
+    if (draft && (!validValue(draft.value, true) || typeof draft.reflection !== 'string')) return false;
   }
   return Object.keys(session.answers).every(id => session.questionIds.includes(id)) && (!session.completedAt || session.questionIds.every(id => session.answers[id]));
 }

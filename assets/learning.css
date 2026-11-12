@@ -36,12 +36,6 @@ textarea:focus-visible, select:focus-visible { outline:3px solid var(--teal-dark
 .performance-section .secondary-button { margin-top:28px; }
 .quiz-rail .eyebrow { line-height:1.6; }
 .rail-home { font-size:11px; margin-top:24px; border-bottom:1px solid #f4f1e880; cursor:pointer; }
-.confidence-picker { margin:26px 0 0; padding:18px 0 0; border:0; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:8px; }
-.confidence-picker legend { padding:0 8px 0 0; font-size:12px; font-weight:800; }
-.confidence-button { border:1px solid var(--line); border-radius:4px; padding:12px 16px; font-size:12px; cursor:pointer; }
-.confidence-button[aria-pressed=true] { background:var(--ink); color:var(--cream); border-color:var(--ink); }
-.confidence-picker:disabled .confidence-button { opacity:.6; }
-.confidence-picker:disabled .confidence-button[aria-pressed=true] { opacity:1; }
 .question-meta { margin-bottom:28px; }
 .question-card h1 { font-size:clamp(26px,3vw,40px); line-height:1.16; }
 .answer-option { min-height:82px; }
@@ -109,8 +103,6 @@ dialog::backdrop { background:#0b1c24b8; }
   .hero h1 { font-size:44px; }
   .hero-lead { font-size:16px; }
   .learning-loop { left:44px; }
-  .confidence-picker { display:grid; grid-template-columns:1fr; }
-  .confidence-button { min-height:44px; text-align:left; }
   .question-card { padding:28px 20px; }
   .question-card h1 { font-size:28px; }
   .quiz-rail .rail-home { display:none; }
@@ -121,7 +113,6 @@ dialog::backdrop { background:#0b1c24b8; }
   .review-queue>div { grid-template-columns:1fr auto; gap:12px; }
   .review-queue>div button { justify-self:start; }
   .pin-coordinates { grid-template-columns:1fr; }
-  .confidence-picker legend { margin-bottom:10px; }
 }
 @media (max-width:380px) {
   .site-header { padding:16px 12px; }
@@ -135,3 +126,8 @@ dialog::backdrop { background:#0b1c24b8; }
   html { scroll-behavior:auto; }
   *, *::before, *::after { animation:none!important; transition:none!important; }
 }
+
+.reason-comparison { margin-top:18px; padding:14px 16px; border:1px solid var(--line); background:#fbfaf699; }
+.reason-comparison>strong { display:block; font-size:12px; margin-bottom:8px; }
+.answer-reasoning p { line-height:1.75; }
+.review-reason .answer-reasoning .reason-block { border-top:0; padding-top:0; margin-top:0; }
