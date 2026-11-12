@@ -268,7 +268,7 @@ async function init() {
   }));
   reasoning=reasoningData;
   banks={advanced,foundation:foundation.bank,combined:{modules:[...foundation.bank.modules,...advanced.modules],questions:[...foundation.bank.questions,...advanced.questions]}};
-  packNames={advanced:'Lanjutan · dari ZIP baru',foundation:'Dasar · paket sebelumnya',combined:'Gabungan · semua materi'};
+  packNames={advanced:'Soal baru',foundation:'Soal lama',combined:'Gabungan'};
   lessons=new Map([...foundation.lessons,...advancedLessons].map(l=>[l.moduleId,l]));
   concepts=new Map([...lessons.values()].flatMap(l=>l.concepts.flatMap(c=>c.questionIds.map(id=>[id,c]))));
   allQuestions=new Map(banks.combined.questions.map(q=>[q.id,q]));

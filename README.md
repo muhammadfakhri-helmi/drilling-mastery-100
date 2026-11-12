@@ -8,8 +8,8 @@ sesi baru. Situs tetap statis, tanpa backend, API key, atau proses build.
 
 | Paket | Materi | Soal siap latihan | Proporsi sesi 100 soal |
 | --- | ---: | ---: | --- |
-| Lanjutan (default, ZIP 12 November 2026) | 18 | 263 | 5 soal/materi + 1 untuk 10 materi acak |
-| Dasar (paket sebelumnya) | 18 | 271 | 5 soal/materi + 1 untuk 10 materi acak |
+| Soal baru (default, ZIP 12 November 2026) | 18 | 263 | 5 soal/materi + 1 untuk 10 materi acak |
+| Soal lama (paket sebelumnya) | 18 | 271 | 5 soal/materi + 1 untuk 10 materi acak |
 | Gabungan | 36 | 534 | 2 soal/materi + 1 untuk 28 materi acak |
 
 ZIP sumber sebenarnya memuat **275 soal**. Quiz 28 nomor 19 mengenai perbandingan
