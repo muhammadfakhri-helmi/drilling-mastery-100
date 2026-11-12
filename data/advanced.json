@@ -89,7 +89,7 @@
     {
       "id": "advanced-36",
       "title": "Drilling Cost Optimization",
-      "questionCount": 13,
+      "questionCount": 23,
       "sourceFile": "Quiz 36 - Drilling Cost Optimization - Details - Kahoot!.pdf"
     },
     {
@@ -419,7 +419,7 @@
       "correctOptionIds": [
         "d"
       ],
-      "explanation": "Materi menggunakan tiga NRV sebagai minimum pada rancangan yang dibahas dan menyebut Varco Shaffer PCWD pada contoh rotating equipment. Ini adalah rujukan materi, bukan bukti sertifikasi semua model saat ini. Separator empat fase memisahkan padatan, gas, minyak, dan air melalui jalur terpisah. Rancangan aktual tetap bergantung rating dan konfigurasi yang dipilih."
+      "explanation": "NRV menyediakan pencegahan aliran balik dengan redundansi yang dirancang sesuai operasi. Separator empat fase memisahkan padatan, gas, minyak, dan air melalui jalur terpisah. Pemilihan pressure-control equipment didasarkan pada fungsi, rating, kompatibilitas fluida, dan verifikasi konfigurasi, bukan nama merek."
     },
     {
       "id": "advanced-22-11",
@@ -507,7 +507,10 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Materi menggunakan tiga NRV sebagai minimum pada rancangan yang dibahas dan menyebut Varco Shaffer PCWD pada contoh rotating equipment. Ini adalah rujukan materi, bukan bukti sertifikasi semua model saat ini. Separator empat fase memisahkan padatan, gas, minyak, dan air melalui jalur terpisah. Rancangan aktual tetap bergantung rating dan konfigurasi yang dipilih."
+      "explanation": "Materi menggunakan tiga NRV sebagai minimum pada rancangan yang dibahas dan menyebut Varco Shaffer PCWD pada contoh rotating equipment. Ini adalah rujukan materi, bukan bukti sertifikasi semua model saat ini. Separator empat fase memisahkan padatan, gas, minyak, dan air melalui jalur terpisah. Rancangan aktual tetap bergantung rating dan konfigurasi yang dipilih.",
+      "excluded": true,
+      "exclusionCategory": "brand",
+      "exclusionReason": "Merek/model alat dan klaim sertifikasi produk tertentu."
     },
     {
       "id": "advanced-22-14",
@@ -542,7 +545,7 @@
         "c",
         "d"
       ],
-      "explanation": "Materi menggunakan tiga NRV sebagai minimum pada rancangan yang dibahas dan menyebut Varco Shaffer PCWD pada contoh rotating equipment. Ini adalah rujukan materi, bukan bukti sertifikasi semua model saat ini. Separator empat fase memisahkan padatan, gas, minyak, dan air melalui jalur terpisah. Rancangan aktual tetap bergantung rating dan konfigurasi yang dipilih."
+      "explanation": "NRV menyediakan pencegahan aliran balik dengan redundansi yang dirancang sesuai operasi. Separator empat fase memisahkan padatan, gas, minyak, dan air melalui jalur terpisah. Pemilihan pressure-control equipment didasarkan pada fungsi, rating, kompatibilitas fluida, dan verifikasi konfigurasi, bukan nama merek."
     },
     {
       "id": "advanced-22-15",
@@ -1225,7 +1228,7 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Angka sekitar 180 fpm adalah rekomendasi liquid velocity pada vertical aerated/mist hole dalam materi ini. Kebutuhan hole cleaning aktual juga bergantung cuttings, ukuran annulus, serta regime aliran. Nama Varco Shaffer PCWD merupakan contoh perangkat pada materi; verifikasi rating dan sertifikasi harus merujuk model yang digunakan."
+      "explanation": "Kecepatan cairan yang dibutuhkan untuk hole cleaning bergantung cuttings, ukuran annulus, regime aliran, dan kondisi sumur. Angka rekomendasi pada materi perlu dipahami bersama asumsi tersebut; nama atau model alat tidak menentukan fungsi keselamatan secara otomatis."
     },
     {
       "id": "advanced-22a-17",
@@ -1281,7 +1284,10 @@
       "correctOptionIds": [
         "d"
       ],
-      "explanation": "Angka sekitar 180 fpm adalah rekomendasi liquid velocity pada vertical aerated/mist hole dalam materi ini. Kebutuhan hole cleaning aktual juga bergantung cuttings, ukuran annulus, serta regime aliran. Nama Varco Shaffer PCWD merupakan contoh perangkat pada materi; verifikasi rating dan sertifikasi harus merujuk model yang digunakan."
+      "explanation": "Angka sekitar 180 fpm adalah rekomendasi liquid velocity pada vertical aerated/mist hole dalam materi ini. Kebutuhan hole cleaning aktual juga bergantung cuttings, ukuran annulus, serta regime aliran. Nama Varco Shaffer PCWD merupakan contoh perangkat pada materi; verifikasi rating dan sertifikasi harus merujuk model yang digunakan.",
+      "excluded": true,
+      "exclusionCategory": "brand",
+      "exclusionReason": "Merek/model alat dan klaim sertifikasi produk tertentu."
     },
     {
       "id": "advanced-22a-19",
@@ -2374,7 +2380,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Materi mengategorikan stuck pipe sebagai drillstring tidak dapat diambil dan operasi terhenti lebih dari satu jam; ketidakmampuan bergerak sendiri tetap perlu segera ditangani. Gradien normal sekitar 0.433–0.465 psi/ft merepresentasikan variasi densitas air formasi. MW terlalu rendah dapat kehilangan support terhadap batuan sehingga terjadi collapse atau shear cavings."
+      "explanation": "Materi mengategorikan stuck pipe sebagai drillstring tidak dapat diambil dan operasi terhenti setidaknya satu jam; ketidakmampuan bergerak sendiri tetap perlu segera ditangani. Gradien normal sekitar 0.433–0.465 psi/ft merepresentasikan variasi densitas air formasi. MW terlalu rendah dapat kehilangan support terhadap batuan sehingga terjadi collapse atau shear cavings."
     },
     {
       "id": "advanced-26-03",
@@ -2406,7 +2412,7 @@
       "correctOptionIds": [
         "d"
       ],
-      "explanation": "Materi mengategorikan stuck pipe sebagai drillstring tidak dapat diambil dan operasi terhenti lebih dari satu jam; ketidakmampuan bergerak sendiri tetap perlu segera ditangani. Gradien normal sekitar 0.433–0.465 psi/ft merepresentasikan variasi densitas air formasi. MW terlalu rendah dapat kehilangan support terhadap batuan sehingga terjadi collapse atau shear cavings."
+      "explanation": "Materi mengategorikan stuck pipe sebagai drillstring tidak dapat diambil dan operasi terhenti setidaknya satu jam; ketidakmampuan bergerak sendiri tetap perlu segera ditangani. Gradien normal sekitar 0.433–0.465 psi/ft merepresentasikan variasi densitas air formasi. MW terlalu rendah dapat kehilangan support terhadap batuan sehingga terjadi collapse atau shear cavings."
     },
     {
       "id": "advanced-26-04",
@@ -2599,7 +2605,7 @@
         "c"
       ],
       "media": "media/advanced-26-10.webp",
-      "explanation": "Materi mengategorikan stuck pipe sebagai drillstring tidak dapat diambil dan operasi terhenti lebih dari satu jam; ketidakmampuan bergerak sendiri tetap perlu segera ditangani. Gradien normal sekitar 0.433–0.465 psi/ft merepresentasikan variasi densitas air formasi. MW terlalu rendah dapat kehilangan support terhadap batuan sehingga terjadi collapse atau shear cavings."
+      "explanation": "Materi mengategorikan stuck pipe sebagai drillstring tidak dapat diambil dan operasi terhenti setidaknya satu jam; ketidakmampuan bergerak sendiri tetap perlu segera ditangani. Gradien normal sekitar 0.433–0.465 psi/ft merepresentasikan variasi densitas air formasi. MW terlalu rendah dapat kehilangan support terhadap batuan sehingga terjadi collapse atau shear cavings."
     },
     {
       "id": "advanced-27-01",
@@ -3353,7 +3359,7 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage mendukung blind drilling saat fluida hilang; kapasitas 12 jam adalah target contoh soal. Payload Bell 407 sebesar 600–750 kg pada materi adalah angka perencanaan yang bergantung kondisi terbang, bukan jaminan kapasitas setiap lokasi. Pekerjaan dapat overlap hanya jika dependency dan kondisi aman memungkinkan."
+      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage untuk blind drilling direncanakan dari kebutuhan air, lama operasi, laju pasokan, dan kemungkinan kehilangan fluida. Pekerjaan dapat overlap bila dependency dan kondisi aman memungkinkan, tanpa mengasumsikan kapasitas dari satu model transportasi."
     },
     {
       "id": "advanced-28-05",
@@ -3449,7 +3455,7 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage mendukung blind drilling saat fluida hilang; kapasitas 12 jam adalah target contoh soal. Payload Bell 407 sebesar 600–750 kg pada materi adalah angka perencanaan yang bergantung kondisi terbang, bukan jaminan kapasitas setiap lokasi. Pekerjaan dapat overlap hanya jika dependency dan kondisi aman memungkinkan."
+      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage untuk blind drilling direncanakan dari kebutuhan air, lama operasi, laju pasokan, dan kemungkinan kehilangan fluida. Pekerjaan dapat overlap bila dependency dan kondisi aman memungkinkan, tanpa mengasumsikan kapasitas dari satu model transportasi."
     },
     {
       "id": "advanced-28-08",
@@ -3577,7 +3583,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage mendukung blind drilling saat fluida hilang; kapasitas 12 jam adalah target contoh soal. Payload Bell 407 sebesar 600–750 kg pada materi adalah angka perencanaan yang bergantung kondisi terbang, bukan jaminan kapasitas setiap lokasi. Pekerjaan dapat overlap hanya jika dependency dan kondisi aman memungkinkan."
+      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage untuk blind drilling direncanakan dari kebutuhan air, lama operasi, laju pasokan, dan kemungkinan kehilangan fluida. Pekerjaan dapat overlap bila dependency dan kondisi aman memungkinkan, tanpa mengasumsikan kapasitas dari satu model transportasi."
     },
     {
       "id": "advanced-28-12",
@@ -3641,7 +3647,10 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage mendukung blind drilling saat fluida hilang; kapasitas 12 jam adalah target contoh soal. Payload Bell 407 sebesar 600–750 kg pada materi adalah angka perencanaan yang bergantung kondisi terbang, bukan jaminan kapasitas setiap lokasi. Pekerjaan dapat overlap hanya jika dependency dan kondisi aman memungkinkan."
+      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage mendukung blind drilling saat fluida hilang; kapasitas 12 jam adalah target contoh soal. Payload Bell 407 sebesar 600–750 kg pada materi adalah angka perencanaan yang bergantung kondisi terbang, bukan jaminan kapasitas setiap lokasi. Pekerjaan dapat overlap hanya jika dependency dan kondisi aman memungkinkan.",
+      "excluded": true,
+      "exclusionCategory": "unit-specification",
+      "exclusionReason": "Kapasitas model helikopter tertentu."
     },
     {
       "id": "advanced-28-14",
@@ -3692,7 +3701,10 @@
         "answer": 12,
         "unit": "hours"
       },
-      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage mendukung blind drilling saat fluida hilang; kapasitas 12 jam adalah target contoh soal. Payload Bell 407 sebesar 600–750 kg pada materi adalah angka perencanaan yang bergantung kondisi terbang, bukan jaminan kapasitas setiap lokasi. Pekerjaan dapat overlap hanya jika dependency dan kondisi aman memungkinkan."
+      "explanation": "Shallow hot water adalah bahaya well control pada geothermal. Water storage mendukung blind drilling saat fluida hilang; kapasitas 12 jam adalah target contoh soal. Payload Bell 407 sebesar 600–750 kg pada materi adalah angka perencanaan yang bergantung kondisi terbang, bukan jaminan kapasitas setiap lokasi. Pekerjaan dapat overlap hanya jika dependency dan kondisi aman memungkinkan.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Angka kapasitas penyimpanan pada contoh pad tertentu."
     },
     {
       "id": "advanced-28-16",
@@ -4129,7 +4141,10 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Kapasitas pull 60,000 lb berlaku pada NESR CT Unit #1 yang dicontohkan, bukan semua injector. Light Intervention Unit mengintegrasikan beberapa fungsi untuk mengurangi paket terpisah dan footprint; kesesuaian tetap bergantung scope serta rating peralatan."
+      "explanation": "Kapasitas pull 60,000 lb berlaku pada NESR CT Unit #1 yang dicontohkan, bukan semua injector. Light Intervention Unit mengintegrasikan beberapa fungsi untuk mengurangi paket terpisah dan footprint; kesesuaian tetap bergantung scope serta rating peralatan.",
+      "excluded": true,
+      "exclusionCategory": "unit-specification",
+      "exclusionReason": "Kapasitas CT unit milik penyedia tertentu."
     },
     {
       "id": "advanced-29-10",
@@ -4225,7 +4240,7 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Kapasitas pull 60,000 lb berlaku pada NESR CT Unit #1 yang dicontohkan, bukan semua injector. Light Intervention Unit mengintegrasikan beberapa fungsi untuk mengurangi paket terpisah dan footprint; kesesuaian tetap bergantung scope serta rating peralatan."
+      "explanation": "Unit intervensi yang mengintegrasikan beberapa fungsi dapat mengurangi jumlah paket terpisah dan footprint. Kesesuaian tetap dievaluasi dari scope, pressure rating, kemampuan penanganan tubing, dan kondisi lokasi, bukan merek atau kapasitas satu unit tertentu."
     },
     {
       "id": "advanced-29-14",
@@ -5061,7 +5076,7 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Mineralogi AMICS memberi konteks batuan tetapi tidak menggantikan mechanical testing untuk menghitung kekuatan dan collapse pressure."
+      "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Analisis mineralogi memberi konteks batuan tetapi tidak menggantikan pengujian mekanis."
     },
     {
       "id": "advanced-31-11",
@@ -5117,7 +5132,7 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Mineralogi AMICS memberi konteks batuan tetapi tidak menggantikan mechanical testing untuk menghitung kekuatan dan collapse pressure."
+      "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Analisis mineralogi memberi konteks batuan tetapi tidak menggantikan pengujian mekanis."
     },
     {
       "id": "advanced-31-13",
@@ -5141,7 +5156,10 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Mineralogi AMICS memberi konteks batuan tetapi tidak menggantikan mechanical testing untuk menghitung kekuatan dan collapse pressure."
+      "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Mineralogi AMICS memberi konteks batuan tetapi tidak menggantikan mechanical testing untuk menghitung kekuatan dan collapse pressure.",
+      "excluded": true,
+      "exclusionCategory": "brand",
+      "exclusionReason": "Nama produk analisis tertentu."
     },
     {
       "id": "advanced-31-14",
@@ -5173,7 +5191,7 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Mineralogi AMICS memberi konteks batuan tetapi tidak menggantikan mechanical testing untuk menghitung kekuatan dan collapse pressure."
+      "explanation": "Torque/drag naik atau muncul cavings tidak unik membuktikan satu mekanisme. Korelasikan cuttings, caliper, parameter drilling, dan kondisi hole sebelum memilih perubahan MW atau hole cleaning. DITF tidak otomatis berarti sustained losses. Analisis mineralogi memberi konteks batuan tetapi tidak menggantikan pengujian mekanis."
     },
     {
       "id": "advanced-31-15",
@@ -6987,7 +7005,7 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Bundled/Semi-IPM menggabungkan dua atau lebih drilling services, sedangkan discrete memisahkan paket. Pada pembagian risiko IPM dalam studi, company tetap menanggung drilling risk; turnkey memakai lump-sum per well sesuai kontrak. Nama skema saja tidak cukup: pembagian risiko, pengecualian, dan insentif harus dibaca dalam ketentuan kontrak."
+      "explanation": "Bundled contract menggabungkan dua atau lebih jasa; turnkey pada konsep dasarnya menggunakan harga lump-sum untuk scope yang ditentukan. Risiko, pengecualian, cap waktu, dan konsekuensi perubahan harus dibaca dari kontrak, bukan ditebak dari nama skemanya. Perubahan mengikuti evaluasi scope, biaya, jadwal, dan persetujuan."
     },
     {
       "id": "advanced-36-02",
@@ -7019,7 +7037,10 @@
       "correctOptionIds": [
         "d"
       ],
-      "explanation": "Bundled/Semi-IPM menggabungkan dua atau lebih drilling services, sedangkan discrete memisahkan paket. Pada pembagian risiko IPM dalam studi, company tetap menanggung drilling risk; turnkey memakai lump-sum per well sesuai kontrak. Nama skema saja tidak cukup: pembagian risiko, pengecualian, dan insentif harus dibaca dalam ketentuan kontrak."
+      "explanation": "Bundled/Semi-IPM menggabungkan dua atau lebih drilling services, sedangkan discrete memisahkan paket. Pada pembagian risiko IPM dalam studi, company tetap menanggung drilling risk; turnkey memakai lump-sum per well sesuai kontrak. Nama skema saja tidak cukup: pembagian risiko, pengecualian, dan insentif harus dibaca dalam ketentuan kontrak.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Pembagian risiko kontrak pada studi tertentu; tidak universal."
     },
     {
       "id": "advanced-36-03",
@@ -7051,7 +7072,10 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal."
+      "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Popularitas skema kontrak pada rentang tahun tertentu."
     },
     {
       "id": "advanced-36-04",
@@ -7084,7 +7108,10 @@
         "d"
       ],
       "media": "media/advanced-36-04.webp",
-      "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal."
+      "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Angka pencapaian/penghematan proyek tertentu."
     },
     {
       "id": "advanced-36-05",
@@ -7117,7 +7144,10 @@
         "c"
       ],
       "media": "media/advanced-36-05.webp",
-      "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal."
+      "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Persentase hasil survei vendor tertentu."
     },
     {
       "id": "advanced-36-06",
@@ -7150,7 +7180,10 @@
         "d"
       ],
       "media": "media/advanced-36-06.webp",
-      "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal."
+      "explanation": "Discrete dan bundled paling banyak dipakai dalam evaluasi 2017–2019 yang dirujuk. Kasus South Sumatra membandingkan penghematan USD 682/m atau sekitar USD 1.5 juta/well terhadap IPM 2019. Survei vendor menyebut kepemilikan service sekitar 9%, dan penambahan risk basket/profit sebesar 15–35%. Angka ini berasal dari sampel studi, bukan tarif atau proporsi universal.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Persentase markup pada evaluasi tertentu."
     },
     {
       "id": "advanced-36-07",
@@ -7182,7 +7215,10 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Pada IPM contoh, melewati capped maximum drilling days menimbulkan daily rate. Competitive bidding disebut memerlukan 12–25 minggu; casing, wellhead, liner adapter, dan drilling rig diprioritaskan karena lead/delivery time. Perencanaan tender perlu menghitung dependency jadwal, bukan hanya nilai kontrak."
+      "explanation": "Pada IPM contoh, melewati capped maximum drilling days menimbulkan daily rate. Competitive bidding disebut memerlukan 12–25 minggu; casing, wellhead, liner adapter, dan drilling rig diprioritaskan karena lead/delivery time. Perencanaan tender perlu menghitung dependency jadwal, bukan hanya nilai kontrak.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Kejadian kontrak South Sumatra 2019 pada tangkapan layar pengguna."
     },
     {
       "id": "advanced-36-08",
@@ -7214,7 +7250,10 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Pada IPM contoh, melewati capped maximum drilling days menimbulkan daily rate. Competitive bidding disebut memerlukan 12–25 minggu; casing, wellhead, liner adapter, dan drilling rig diprioritaskan karena lead/delivery time. Perencanaan tender perlu menghitung dependency jadwal, bukan hanya nilai kontrak."
+      "explanation": "Pada IPM contoh, melewati capped maximum drilling days menimbulkan daily rate. Competitive bidding disebut memerlukan 12–25 minggu; casing, wellhead, liner adapter, dan drilling rig diprioritaskan karena lead/delivery time. Perencanaan tender perlu menghitung dependency jadwal, bukan hanya nilai kontrak.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Durasi bidding contoh tertentu tanpa parameter umum."
     },
     {
       "id": "advanced-36-09",
@@ -7246,7 +7285,10 @@
       "correctOptionIds": [
         "d"
       ],
-      "explanation": "Pada IPM contoh, melewati capped maximum drilling days menimbulkan daily rate. Competitive bidding disebut memerlukan 12–25 minggu; casing, wellhead, liner adapter, dan drilling rig diprioritaskan karena lead/delivery time. Perencanaan tender perlu menghitung dependency jadwal, bukan hanya nilai kontrak."
+      "explanation": "Pada IPM contoh, melewati capped maximum drilling days menimbulkan daily rate. Competitive bidding disebut memerlukan 12–25 minggu; casing, wellhead, liner adapter, dan drilling rig diprioritaskan karena lead/delivery time. Perencanaan tender perlu menghitung dependency jadwal, bukan hanya nilai kontrak.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Urutan prioritas tender pada contoh tertentu."
     },
     {
       "id": "advanced-36-10",
@@ -7270,7 +7312,7 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Bundled/Semi-IPM menggabungkan dua atau lebih drilling services, sedangkan discrete memisahkan paket. Pada pembagian risiko IPM dalam studi, company tetap menanggung drilling risk; turnkey memakai lump-sum per well sesuai kontrak. Nama skema saja tidak cukup: pembagian risiko, pengecualian, dan insentif harus dibaca dalam ketentuan kontrak."
+      "explanation": "Bundled contract menggabungkan dua atau lebih jasa; turnkey pada konsep dasarnya menggunakan harga lump-sum untuk scope yang ditentukan. Risiko, pengecualian, cap waktu, dan konsekuensi perubahan harus dibaca dari kontrak, bukan ditebak dari nama skemanya. Perubahan mengikuti evaluasi scope, biaya, jadwal, dan persetujuan."
     },
     {
       "id": "advanced-36-11",
@@ -7294,7 +7336,10 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Pernyataan promosi IPM dan penetapan contract owner pada materi harus dibaca dalam konteks organisasi/studi tersebut, bukan aturan semua operator. Monthly progress meeting dan service quality meeting membantu meninjau deliverable, tren kinerja, serta tindakan perbaikan. Pemilik kontrak harus sesuai tanggung jawab yang benar, bukan otomatis semuanya drilling engineer."
+      "explanation": "Pernyataan promosi IPM dan penetapan contract owner pada materi harus dibaca dalam konteks organisasi/studi tersebut, bukan aturan semua operator. Monthly progress meeting dan service quality meeting membantu meninjau deliverable, tren kinerja, serta tindakan perbaikan. Pemilik kontrak harus sesuai tanggung jawab yang benar, bukan otomatis semuanya drilling engineer.",
+      "excluded": true,
+      "exclusionCategory": "promotional-claim",
+      "exclusionReason": "Hafalan klaim promosi IPM."
     },
     {
       "id": "advanced-36-12",
@@ -7319,7 +7364,10 @@
         "b"
       ],
       "media": "media/advanced-36-12.webp",
-      "explanation": "Pernyataan promosi IPM dan penetapan contract owner pada materi harus dibaca dalam konteks organisasi/studi tersebut, bukan aturan semua operator. Monthly progress meeting dan service quality meeting membantu meninjau deliverable, tren kinerja, serta tindakan perbaikan. Pemilik kontrak harus sesuai tanggung jawab yang benar, bukan otomatis semuanya drilling engineer."
+      "explanation": "Pernyataan promosi IPM dan penetapan contract owner pada materi harus dibaca dalam konteks organisasi/studi tersebut, bukan aturan semua operator. Monthly progress meeting dan service quality meeting membantu meninjau deliverable, tren kinerja, serta tindakan perbaikan. Pemilik kontrak harus sesuai tanggung jawab yang benar, bukan otomatis semuanya drilling engineer.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Pembagian contract owner organisasi tertentu."
     },
     {
       "id": "advanced-36-13",
@@ -7344,7 +7392,7 @@
         "a"
       ],
       "media": "media/advanced-36-13.webp",
-      "explanation": "Pernyataan promosi IPM dan penetapan contract owner pada materi harus dibaca dalam konteks organisasi/studi tersebut, bukan aturan semua operator. Monthly progress meeting dan service quality meeting membantu meninjau deliverable, tren kinerja, serta tindakan perbaikan. Pemilik kontrak harus sesuai tanggung jawab yang benar, bukan otomatis semuanya drilling engineer."
+      "explanation": "Bandingkan waktu serta biaya aktual terhadap rencana, selidiki penyebab deviasi dan NPT, lalu tetapkan tindakan korektif. Progress meeting dan service-quality review memakai indikator yang disepakati serta bukti operasional, bukan klaim promosi atau capaian proyek lain."
     },
     {
       "id": "advanced-37-01",
@@ -8278,7 +8326,7 @@
       "correctOptionIds": [
         "c"
       ],
-      "explanation": "Pada urutan contoh, surface casing dipasang/disemen sebelum BOP stack. Re-entry mendahului tahap upper completion yang dibahas. Analisis drilling riser mengacu API 16Q, sedangkan TBIRS/completion-workover riser mengacu API 17G pada studi; pemilihan standar mengikuti jenis serta scope sistem."
+      "explanation": "Rangkaian pekerjaan dan pemilihan standar mengikuti jenis sistem, scope, dan barrier plan. Kesiapan casing, wellhead, BOP, dan riser perlu diverifikasi sebelum tahapan berikutnya. Penentuan urutan menggunakan dependency teknis, bukan menghafal urutan dari satu studi."
     },
     {
       "id": "advanced-39-07",
@@ -8310,7 +8358,10 @@
       "correctOptionIds": [
         "d"
       ],
-      "explanation": "Pada urutan contoh, surface casing dipasang/disemen sebelum BOP stack. Re-entry mendahului tahap upper completion yang dibahas. Analisis drilling riser mengacu API 16Q, sedangkan TBIRS/completion-workover riser mengacu API 17G pada studi; pemilihan standar mengikuti jenis serta scope sistem."
+      "explanation": "Pada urutan contoh, surface casing dipasang/disemen sebelum BOP stack. Re-entry mendahului tahap upper completion yang dibahas. Analisis drilling riser mengacu API 16Q, sedangkan TBIRS/completion-workover riser mengacu API 17G pada studi; pemilihan standar mengikuti jenis serta scope sistem.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Daftar standar yang dipakai dalam analisis studi tertentu."
     },
     {
       "id": "advanced-39-08",
@@ -8342,7 +8393,10 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Kasus SPE-217910-MS menargetkan flow tinggi meski bore kecil. IWOCS adalah sistem kontrol sementara selama pekerjaan installation/workover. Acidizing dalam kasus memakai bullheading melalui annulus pada horizontal X-tree loop; metode tersebut adalah konfigurasi studi, bukan pilihan otomatis untuk setiap sumur."
+      "explanation": "Kasus SPE-217910-MS menargetkan flow tinggi meski bore kecil. IWOCS adalah sistem kontrol sementara selama pekerjaan installation/workover. Acidizing dalam kasus memakai bullheading melalui annulus pada horizontal X-tree loop; metode tersebut adalah konfigurasi studi, bukan pilihan otomatis untuk setiap sumur.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Pencapaian/desain dalam publikasi studi tertentu."
     },
     {
       "id": "advanced-39-09",
@@ -8374,7 +8428,10 @@
       "correctOptionIds": [
         "d"
       ],
-      "explanation": "Kasus SPE-217910-MS menargetkan flow tinggi meski bore kecil. IWOCS adalah sistem kontrol sementara selama pekerjaan installation/workover. Acidizing dalam kasus memakai bullheading melalui annulus pada horizontal X-tree loop; metode tersebut adalah konfigurasi studi, bukan pilihan otomatis untuk setiap sumur."
+      "explanation": "Kasus SPE-217910-MS menargetkan flow tinggi meski bore kecil. IWOCS adalah sistem kontrol sementara selama pekerjaan installation/workover. Acidizing dalam kasus memakai bullheading melalui annulus pada horizontal X-tree loop; metode tersebut adalah konfigurasi studi, bukan pilihan otomatis untuk setiap sumur.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Sistem yang dipakai dalam kejadian acidizing tertentu."
     },
     {
       "id": "advanced-39-10",
@@ -8502,7 +8559,10 @@
       "correctOptionIds": [
         "b"
       ],
-      "explanation": "Pada urutan contoh, surface casing dipasang/disemen sebelum BOP stack. Re-entry mendahului tahap upper completion yang dibahas. Analisis drilling riser mengacu API 16Q, sedangkan TBIRS/completion-workover riser mengacu API 17G pada studi; pemilihan standar mengikuti jenis serta scope sistem."
+      "explanation": "Pada urutan contoh, surface casing dipasang/disemen sebelum BOP stack. Re-entry mendahului tahap upper completion yang dibahas. Analisis drilling riser mengacu API 16Q, sedangkan TBIRS/completion-workover riser mengacu API 17G pada studi; pemilihan standar mengikuti jenis serta scope sistem.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Urutan tahapan pada studi tertentu."
     },
     {
       "id": "advanced-39-15",
@@ -8526,7 +8586,323 @@
       "correctOptionIds": [
         "a"
       ],
-      "explanation": "Kasus SPE-217910-MS menargetkan flow tinggi meski bore kecil. IWOCS adalah sistem kontrol sementara selama pekerjaan installation/workover. Acidizing dalam kasus memakai bullheading melalui annulus pada horizontal X-tree loop; metode tersebut adalah konfigurasi studi, bukan pilihan otomatis untuk setiap sumur."
+      "explanation": "Kasus SPE-217910-MS menargetkan flow tinggi meski bore kecil. IWOCS adalah sistem kontrol sementara selama pekerjaan installation/workover. Acidizing dalam kasus memakai bullheading melalui annulus pada horizontal X-tree loop; metode tersebut adalah konfigurasi studi, bukan pilihan otomatis untuk setiap sumur.",
+      "excluded": true,
+      "exclusionCategory": "case-trivia",
+      "exclusionReason": "Metode pada kejadian acidizing tertentu."
+    },
+    {
+      "id": "advanced-36-concept-01",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 1,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "How should responsibility for drilling cost overruns be determined?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume the service provider always pays"
+        },
+        {
+          "id": "b",
+          "text": "Read the agreed scope, risk allocation, exclusions, and payment terms"
+        },
+        {
+          "id": "c",
+          "text": "Choose the party with the largest workforce"
+        },
+        {
+          "id": "d",
+          "text": "Use the outcome of a previous project"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Bundled contract menggabungkan dua atau lebih jasa; turnkey pada konsep dasarnya menggunakan harga lump-sum untuk scope yang ditentukan. Risiko, pengecualian, cap waktu, dan konsekuensi perubahan harus dibaca dari kontrak, bukan ditebak dari nama skemanya. Perubahan mengikuti evaluasi scope, biaya, jadwal, dan persetujuan."
+    },
+    {
+      "id": "advanced-36-concept-02",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 2,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "Before agreeing to a maximum number of drilling days, what should the parties clarify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the invoice format"
+        },
+        {
+          "id": "b",
+          "text": "Only the contractor logo"
+        },
+        {
+          "id": "c",
+          "text": "How overruns, extensions, exceptions, and additional charges are handled"
+        },
+        {
+          "id": "d",
+          "text": "The number of people at the signing ceremony"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Bundled contract menggabungkan dua atau lebih jasa; turnkey pada konsep dasarnya menggunakan harga lump-sum untuk scope yang ditentukan. Risiko, pengecualian, cap waktu, dan konsekuensi perubahan harus dibaca dari kontrak, bukan ditebak dari nama skemanya. Perubahan mengikuti evaluasi scope, biaya, jadwal, dan persetujuan."
+    },
+    {
+      "id": "advanced-36-concept-03",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 3,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "Which approach best compares competing drilling-service proposals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Select the lowest headline price without checking scope"
+        },
+        {
+          "id": "b",
+          "text": "Compare equivalent scope, total evaluated cost, technical capability, and risk"
+        },
+        {
+          "id": "c",
+          "text": "Compare only the proposed mobilization date"
+        },
+        {
+          "id": "d",
+          "text": "Compare only a single daily rate"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Bandingkan penawaran dengan scope setara, total evaluated cost, kapabilitas teknis, dan risiko. Daily rate adalah satu komponen biaya; durasi, mobilisasi, dan NPT juga berpengaruh. Contingency merefleksikan ketidakpastian sesuai basis estimasi. Prioritas procurement mengikuti lead time dan kebutuhan jadwal."
+    },
+    {
+      "id": "advanced-36-concept-04",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 4,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "Which procurement package should generally be planned earlier?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always the package with the highest unit price"
+        },
+        {
+          "id": "b",
+          "text": "Always the package with the smallest scope"
+        },
+        {
+          "id": "c",
+          "text": "The package whose lead time and schedule dependency threaten the required delivery date"
+        },
+        {
+          "id": "d",
+          "text": "Every package at exactly the same time regardless of lead time"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Bandingkan penawaran dengan scope setara, total evaluated cost, kapabilitas teknis, dan risiko. Daily rate adalah satu komponen biaya; durasi, mobilisasi, dan NPT juga berpengaruh. Contingency merefleksikan ketidakpastian sesuai basis estimasi. Prioritas procurement mengikuti lead time dan kebutuhan jadwal."
+    },
+    {
+      "id": "advanced-36-concept-05",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 5,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "What is the purpose of a cost contingency in a drilling estimate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guarantee that no uncertainty remains"
+        },
+        {
+          "id": "b",
+          "text": "Provide an allowance for identified uncertainty within the approved estimating basis"
+        },
+        {
+          "id": "c",
+          "text": "Replace all technical risk assessment"
+        },
+        {
+          "id": "d",
+          "text": "Hide costs outside the stated project scope"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Bandingkan penawaran dengan scope setara, total evaluated cost, kapabilitas teknis, dan risiko. Daily rate adalah satu komponen biaya; durasi, mobilisasi, dan NPT juga berpengaruh. Contingency merefleksikan ketidakpastian sesuai basis estimasi. Prioritas procurement mengikuti lead time dan kebutuhan jadwal."
+    },
+    {
+      "id": "advanced-36-concept-06",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 6,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "Which measure most directly helps investigate an increase in time-related drilling cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Well depth alone, without comparing activity duration"
+        },
+        {
+          "id": "b",
+          "text": "Quoted daily rate alone, without checking elapsed time"
+        },
+        {
+          "id": "c",
+          "text": "Actual activity time and NPT causes compared with the plan"
+        },
+        {
+          "id": "d",
+          "text": "Final invoice totals without an activity breakdown"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Bandingkan waktu serta biaya aktual terhadap rencana, selidiki penyebab deviasi dan NPT, lalu tetapkan tindakan korektif. Progress meeting dan service-quality review memakai indikator yang disepakati serta bukti operasional, bukan klaim promosi atau capaian proyek lain."
+    },
+    {
+      "id": "advanced-36-concept-07",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 7,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "What is a key trade-off when bundling several drilling services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bundling automatically transfers every drilling risk"
+        },
+        {
+          "id": "b",
+          "text": "Fewer interfaces may simplify coordination, while scope boundaries and accountability still need definition"
+        },
+        {
+          "id": "c",
+          "text": "Bundling eliminates the need to evaluate suppliers"
+        },
+        {
+          "id": "d",
+          "text": "All bundled contracts must use the same price"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Bundled contract menggabungkan dua atau lebih jasa; turnkey pada konsep dasarnya menggunakan harga lump-sum untuk scope yang ditentukan. Risiko, pengecualian, cap waktu, dan konsekuensi perubahan harus dibaca dari kontrak, bukan ditebak dari nama skemanya. Perubahan mengikuti evaluasi scope, biaya, jadwal, dan persetujuan."
+    },
+    {
+      "id": "advanced-36-concept-08",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 8,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "How should a proposed change to contracted work be controlled?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perform the change first and avoid recording it"
+        },
+        {
+          "id": "b",
+          "text": "Use the agreed change-control process and assess scope, schedule, cost, and approval needs"
+        },
+        {
+          "id": "c",
+          "text": "Assume every change is free"
+        },
+        {
+          "id": "d",
+          "text": "Treat an informal conversation as a complete contract amendment"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Bundled contract menggabungkan dua atau lebih jasa; turnkey pada konsep dasarnya menggunakan harga lump-sum untuk scope yang ditentukan. Risiko, pengecualian, cap waktu, dan konsekuensi perubahan harus dibaca dari kontrak, bukan ditebak dari nama skemanya. Perubahan mengikuti evaluasi scope, biaya, jadwal, dan persetujuan."
+    },
+    {
+      "id": "advanced-36-concept-09",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 9,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "single",
+      "prompt": "What should a useful service-quality review focus on?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the number of progress meetings held"
+        },
+        {
+          "id": "b",
+          "text": "Only whether the final invoice was paid"
+        },
+        {
+          "id": "c",
+          "text": "Agreed performance indicators, deviations, root causes, and corrective actions"
+        },
+        {
+          "id": "d",
+          "text": "Only the number of services in the package"
+        }
+      ],
+      "correctOptionIds": [
+        "c"
+      ],
+      "explanation": "Bandingkan waktu serta biaya aktual terhadap rencana, selidiki penyebab deviasi dan NPT, lalu tetapkan tindakan korektif. Progress meeting dan service-quality review memakai indikator yang disepakati serta bukti operasional, bukan klaim promosi atau capaian proyek lain."
+    },
+    {
+      "id": "advanced-36-concept-10",
+      "moduleId": "advanced-36",
+      "moduleTitle": "Drilling Cost Optimization",
+      "sourceNumber": 10,
+      "sourceKind": "concept-extension",
+      "sourceBasis": "Konsep cost engineering, procurement, dan administrasi kontrak; bukan kunci kejadian proyek tertentu.",
+      "type": "boolean",
+      "prompt": "A lower quoted daily rate always guarantees a lower total well cost.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correctOptionIds": [
+        "b"
+      ],
+      "explanation": "Bandingkan penawaran dengan scope setara, total evaluated cost, kapabilitas teknis, dan risiko. Daily rate adalah satu komponen biaya; durasi, mobilisasi, dan NPT juga berpengaruh. Contingency merefleksikan ketidakpastian sesuai basis estimasi. Prioritas procurement mengikuti lead time dan kebutuhan jadwal."
     }
-  ]
+  ],
+  "contentPolicy": "Concepts and transferable engineering principles; no brands, sponsors, organizational trivia, named-unit specifications, achievements, or historical project recall."
 }

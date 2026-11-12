@@ -10,7 +10,7 @@
       },
       {
         "id": "jds",
-        "title": "JDS Batch 7 First Class",
+        "title": "Dasar Operasi Pengeboran",
         "questionCount": 15
       },
       {
@@ -102,7 +102,7 @@
         "sourceNumber": 1,
         "type": "boolean",
         "prompt": "AFE is based on a contract basis rather than a project basis.",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi AFE Components and Construction.",
+        "explanation": "AFE disusun untuk suatu proyek dan diperiksa berlapis: kelengkapan, evaluasi teknis, evaluasi biaya, lalu persetujuan sesuai kewenangan. Dokumen yang belum lengkap harus dikembalikan agar keputusan biaya tidak dibuat dari data parsial.",
         "options": [
           {
             "id": "a",
@@ -126,7 +126,7 @@
         "sourceNumber": 2,
         "type": "multiple",
         "prompt": "Which activities are performed by SKK Migas during AFE evaluation?",
-        "explanation": "Pilihan yang harus dipilih adalah Technical Evaluation; Cost Evaluation; Approval. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "AFE disusun untuk suatu proyek dan diperiksa berlapis: kelengkapan, evaluasi teknis, evaluasi biaya, lalu persetujuan sesuai kewenangan. Dokumen yang belum lengkap harus dikembalikan agar keputusan biaya tidak dibuat dari data parsial.",
         "options": [
           {
             "id": "a",
@@ -162,7 +162,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "When should the AFE Bundling be submitted?",
-        "explanation": "Jawaban yang benar adalah Before the WP&B discussion, sesuai materi AFE Components and Construction.",
+        "explanation": "AFE disusun untuk suatu proyek dan diperiksa berlapis: kelengkapan, evaluasi teknis, evaluasi biaya, lalu persetujuan sesuai kewenangan. Dokumen yang belum lengkap harus dikembalikan agar keputusan biaya tidak dibuat dari data parsial.",
         "options": [
           {
             "id": "a",
@@ -196,7 +196,7 @@
         "sourceNumber": 4,
         "type": "single",
         "prompt": "Which of the following information should be included in a Technical Proposal Form?",
-        "explanation": "Jawaban yang benar adalah Project Expenses, sesuai materi AFE Components and Construction.",
+        "explanation": "AFE disusun untuk suatu proyek dan diperiksa berlapis: kelengkapan, evaluasi teknis, evaluasi biaya, lalu persetujuan sesuai kewenangan. Dokumen yang belum lengkap harus dikembalikan agar keputusan biaya tidak dibuat dari data parsial.",
         "options": [
           {
             "id": "a",
@@ -230,7 +230,7 @@
         "sourceNumber": 5,
         "type": "order",
         "prompt": "Arrange the AFE approval process in the correct sequence.",
-        "explanation": "Urutan yang benar adalah Submit AFE Proposal → Checklist Verification → Technical Evaluation → AFE Approval.",
+        "explanation": "AFE disusun untuk suatu proyek dan diperiksa berlapis: kelengkapan, evaluasi teknis, evaluasi biaya, lalu persetujuan sesuai kewenangan. Dokumen yang belum lengkap harus dikembalikan agar keputusan biaya tidak dibuat dari data parsial.",
         "options": [
           {
             "id": "a",
@@ -267,7 +267,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "Who approves an AFE valued at more than US$100 million?",
-        "explanation": "Jawaban yang benar adalah Head of SKK Migas, sesuai materi AFE Components and Construction.",
+        "explanation": "AFE disusun untuk suatu proyek dan diperiksa berlapis: kelengkapan, evaluasi teknis, evaluasi biaya, lalu persetujuan sesuai kewenangan. Dokumen yang belum lengkap harus dikembalikan agar keputusan biaya tidak dibuat dari data parsial.",
         "options": [
           {
             "id": "a",
@@ -301,7 +301,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "Which Budget Schedules belong to study-related projects? except",
-        "explanation": "Jawaban yang benar adalah BS 23 Components List, sesuai materi AFE Components and Construction.",
+        "explanation": "Setiap Budget Schedule mempunyai tujuan tertentu, misalnya lifting forecast atau administrative expenses. Data historis AFE dapat dibandingkan melalui analisis data untuk menguji kewajaran proposal sebelum disetujui.",
         "options": [
           {
             "id": "a",
@@ -360,7 +360,10 @@
         ],
         "correctOptionIds": [
           "c"
-        ]
+        ],
+        "excluded": true,
+        "exclusionCategory": "brand",
+        "exclusionReason": "Menghafal merek perangkat lunak tertentu."
       },
       {
         "id": "afe-09",
@@ -369,7 +372,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "Which Budget Schedule contains the Lifting Forecast?",
-        "explanation": "Jawaban yang benar adalah BS 16, sesuai materi AFE Components and Construction.",
+        "explanation": "Setiap Budget Schedule mempunyai tujuan tertentu, misalnya lifting forecast atau administrative expenses. Data historis AFE dapat dibandingkan melalui analisis data untuk menguji kewajaran proposal sebelum disetujui.",
         "options": [
           {
             "id": "a",
@@ -403,7 +406,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Which Budget Schedule is used for Administrative Expenses?",
-        "explanation": "Jawaban yang benar adalah BS 11, sesuai materi AFE Components and Construction.",
+        "explanation": "Setiap Budget Schedule mempunyai tujuan tertentu, misalnya lifting forecast atau administrative expenses. Data historis AFE dapat dibandingkan melalui analisis data untuk menguji kewajaran proposal sebelum disetujui.",
         "options": [
           {
             "id": "a",
@@ -437,7 +440,7 @@
         "sourceNumber": 11,
         "type": "single",
         "prompt": "What happens if an AFE submission is incomplete?",
-        "explanation": "Jawaban yang benar adalah Returned for completion, sesuai materi AFE Components and Construction.",
+        "explanation": "AFE disusun untuk suatu proyek dan diperiksa berlapis: kelengkapan, evaluasi teknis, evaluasi biaya, lalu persetujuan sesuai kewenangan. Dokumen yang belum lengkap harus dikembalikan agar keputusan biaya tidak dibuat dari data parsial.",
         "options": [
           {
             "id": "a",
@@ -471,7 +474,7 @@
         "sourceNumber": 12,
         "type": "single",
         "prompt": "Which items are considered tangible goods in a drilling campaign? except",
-        "explanation": "Jawaban yang benar adalah Drill Bit, sesuai materi AFE Components and Construction.",
+        "explanation": "Tangible cost menghasilkan barang atau aset yang dapat diidentifikasi, sedangkan intangible cost berkaitan dengan jasa dan pekerjaan seperti rig, mud logging, directional drilling, serta persiapan lokasi. Klasifikasi ini menentukan penempatan biaya dalam AFE.",
         "options": [
           {
             "id": "a",
@@ -505,7 +508,7 @@
         "sourceNumber": 13,
         "type": "boolean",
         "prompt": "Cased hole electric wireline logging on AFE BS 19 is included in the dry hole basis",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi AFE Components and Construction.",
+        "explanation": "Setiap Budget Schedule mempunyai tujuan tertentu, misalnya lifting forecast atau administrative expenses. Data historis AFE dapat dibandingkan melalui analisis data untuk menguji kewajaran proposal sebelum disetujui.",
         "options": [
           {
             "id": "a",
@@ -529,7 +532,7 @@
         "sourceNumber": 14,
         "type": "boolean",
         "prompt": "Wellsite and access road preparation is categorized as an Intangible Cost.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi AFE Components and Construction.",
+        "explanation": "Tangible cost menghasilkan barang atau aset yang dapat diidentifikasi, sedangkan intangible cost berkaitan dengan jasa dan pekerjaan seperti rig, mud logging, directional drilling, serta persiapan lokasi. Klasifikasi ini menentukan penempatan biaya dalam AFE.",
         "options": [
           {
             "id": "a",
@@ -553,7 +556,7 @@
         "sourceNumber": 15,
         "type": "multiple",
         "prompt": "Which of the following are Intangible Costs?",
-        "explanation": "Pilihan yang harus dipilih adalah Contract Rig; Mud Logging Services; Directional Drilling and Surveys. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Tangible cost menghasilkan barang atau aset yang dapat diidentifikasi, sedangkan intangible cost berkaitan dengan jasa dan pekerjaan seperti rig, mud logging, directional drilling, serta persiapan lokasi. Klasifikasi ini menentukan penempatan biaya dalam AFE.",
         "options": [
           {
             "id": "a",
@@ -585,7 +588,7 @@
       {
         "id": "jds-01",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 1,
         "type": "single",
         "prompt": "What does JDS stand for?",
@@ -614,16 +617,19 @@
         ],
         "correctOptionIds": [
           "c"
-        ]
+        ],
+        "excluded": true,
+        "exclusionCategory": "organization-trivia",
+        "exclusionReason": "Identitas organisasi, bukan konsep pengeboran."
       },
       {
         "id": "jds-02",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 2,
         "type": "single",
         "prompt": "What is the term used to define the start of well drilling?",
-        "explanation": "Jawaban yang benar adalah Spud, sesuai materi JDS Batch 7 First Class.",
+        "explanation": "Spud menandai dimulainya pengeboran, sedangkan Company Man mewakili operator di lokasi. Secara umum operasi bergerak dari rig move/rig up, drilling, completion atau well test, kemudian rig down dan rig move.",
         "media": "/media/jds-02.webp",
         "options": [
           {
@@ -654,11 +660,11 @@
       {
         "id": "jds-03",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 3,
         "type": "single",
         "prompt": "Who is the representative of an Operator Company in the drilling site?",
-        "explanation": "Jawaban yang benar adalah Company Man, sesuai materi JDS Batch 7 First Class.",
+        "explanation": "Spud menandai dimulainya pengeboran, sedangkan Company Man mewakili operator di lokasi. Secara umum operasi bergerak dari rig move/rig up, drilling, completion atau well test, kemudian rig down dan rig move.",
         "media": "/media/jds-03.webp",
         "options": [
           {
@@ -689,11 +695,11 @@
       {
         "id": "jds-04",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 4,
         "type": "multiple",
         "prompt": "What is the target of petroleum drilling?",
-        "explanation": "Pilihan yang harus dipilih adalah Oil; Gas. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Pengeboran petroleum menargetkan minyak atau gas, sedangkan geothermal menargetkan panas. Casing dipasang dan disemen untuk menopang lubang; claystone sering bermasalah karena reaktif, mudah mengembang, dan memengaruhi sifat lumpur.",
         "media": "/media/jds-04.webp",
         "options": [
           {
@@ -725,11 +731,11 @@
       {
         "id": "jds-05",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 5,
         "type": "single",
         "prompt": "What is the target of geothermal drilling?",
-        "explanation": "Jawaban yang benar adalah Heat, sesuai materi JDS Batch 7 First Class.",
+        "explanation": "Pengeboran petroleum menargetkan minyak atau gas, sedangkan geothermal menargetkan panas. Casing dipasang dan disemen untuk menopang lubang; claystone sering bermasalah karena reaktif, mudah mengembang, dan memengaruhi sifat lumpur.",
         "media": "/media/jds-05.webp",
         "options": [
           {
@@ -760,11 +766,11 @@
       {
         "id": "jds-06",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 6,
         "type": "single",
         "prompt": "What does BOP stand for in drilling?",
-        "explanation": "Jawaban yang benar adalah Blow Out Preventer, sesuai materi JDS Batch 7 First Class.",
+        "explanation": "BOP adalah Blowout Preventer. Kick merupakan influx yang belum terkendali, sedangkan blowout adalah aliran tak terkendali setelah sistem pengendalian tekanan gagal; H2S menjadi bahaya toksik utama.",
         "media": "/media/jds-06.webp",
         "options": [
           {
@@ -795,11 +801,11 @@
       {
         "id": "jds-07",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 7,
         "type": "single",
         "prompt": "Which of the following gas is the most toxic gas during drilling?",
-        "explanation": "Jawaban yang benar adalah H S 2, sesuai materi JDS Batch 7 First Class.",
+        "explanation": "BOP adalah Blowout Preventer. Kick merupakan influx yang belum terkendali, sedangkan blowout adalah aliran tak terkendali setelah sistem pengendalian tekanan gagal; H2S menjadi bahaya toksik utama.",
         "media": "/media/jds-07.webp",
         "options": [
           {
@@ -830,7 +836,7 @@
       {
         "id": "jds-08",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 8,
         "type": "multiple",
         "prompt": "Which of the following taglines represent the spirit of JDS?",
@@ -862,16 +868,19 @@
           "a",
           "b",
           "c"
-        ]
+        ],
+        "excluded": true,
+        "exclusionCategory": "organization-trivia",
+        "exclusionReason": "Tagline komunitas, bukan konsep pengeboran."
       },
       {
         "id": "jds-09",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 9,
         "type": "single",
         "prompt": "What is the large-diameter pipe lowered into an open hole and cemented in place?",
-        "explanation": "Jawaban yang benar adalah Casing, sesuai materi JDS Batch 7 First Class.",
+        "explanation": "Pengeboran petroleum menargetkan minyak atau gas, sedangkan geothermal menargetkan panas. Casing dipasang dan disemen untuk menopang lubang; claystone sering bermasalah karena reaktif, mudah mengembang, dan memengaruhi sifat lumpur.",
         "media": "/media/jds-09.webp",
         "options": [
           {
@@ -902,11 +911,11 @@
       {
         "id": "jds-10",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Which of the following lithology is the most problematic during drilling?",
-        "explanation": "Jawaban yang benar adalah Claystone, sesuai materi JDS Batch 7 First Class.",
+        "explanation": "Pengeboran petroleum menargetkan minyak atau gas, sedangkan geothermal menargetkan panas. Casing dipasang dan disemen untuk menopang lubang; claystone sering bermasalah karena reaktif, mudah mengembang, dan memengaruhi sifat lumpur.",
         "media": "/media/jds-10.webp",
         "options": [
           {
@@ -937,11 +946,11 @@
       {
         "id": "jds-11",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 11,
         "type": "boolean",
         "prompt": "A blowout is the uncontrolled release of crude oil or natural gas from a well after pressure control systems fail.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi JDS Batch 7 First Class.",
+        "explanation": "BOP adalah Blowout Preventer. Kick merupakan influx yang belum terkendali, sedangkan blowout adalah aliran tak terkendali setelah sistem pengendalian tekanan gagal; H2S menjadi bahaya toksik utama.",
         "media": "/media/jds-11.webp",
         "options": [
           {
@@ -962,11 +971,11 @@
       {
         "id": "jds-12",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 12,
         "type": "order",
         "prompt": "Arrange the general sequences of drilling operations below from start to finish.",
-        "explanation": "Urutan yang benar adalah Rig Moving & Rig Up → Drilling → Completion/Well Test → Rig Down & Rig Moving.",
+        "explanation": "Spud menandai dimulainya pengeboran, sedangkan Company Man mewakili operator di lokasi. Secara umum operasi bergerak dari rig move/rig up, drilling, completion atau well test, kemudian rig down dan rig move.",
         "options": [
           {
             "id": "a",
@@ -999,11 +1008,11 @@
       {
         "id": "jds-13",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 13,
         "type": "single",
         "prompt": "What is the term for an unwanted influx of formation fluid into the wellbore?",
-        "explanation": "Jawaban yang benar adalah Kick, sesuai materi JDS Batch 7 First Class.",
+        "explanation": "BOP adalah Blowout Preventer. Kick merupakan influx yang belum terkendali, sedangkan blowout adalah aliran tak terkendali setelah sistem pengendalian tekanan gagal; H2S menjadi bahaya toksik utama.",
         "options": [
           {
             "id": "a",
@@ -1033,7 +1042,7 @@
       {
         "id": "jds-14",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 14,
         "type": "slider",
         "prompt": "When was JDS founded, and when did Batch 1 start?",
@@ -1044,12 +1053,15 @@
           "step": 1,
           "answer": 2019,
           "unit": "Year"
-        }
+        },
+        "excluded": true,
+        "exclusionCategory": "organization-trivia",
+        "exclusionReason": "Tahun pendirian dan batch komunitas."
       },
       {
         "id": "jds-15",
         "moduleId": "jds",
-        "moduleTitle": "JDS Batch 7 First Class",
+        "moduleTitle": "Dasar Operasi Pengeboran",
         "sourceNumber": 15,
         "type": "multiple",
         "prompt": "Which of the following companies are Diamond Sponsors of JDS Batch 7?",
@@ -1081,7 +1093,10 @@
           "b",
           "c",
           "d"
-        ]
+        ],
+        "excluded": true,
+        "exclusionCategory": "brand",
+        "exclusionReason": "Sponsor dan nama perusahaan tertentu."
       },
       {
         "id": "casing-design-01",
@@ -1090,7 +1105,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "In the context of kick tolerance, what factor is critical to avoid during a kick?",
-        "explanation": "Jawaban yang benar adalah Fracturing the previous casing shoe, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Kick tolerance membatasi influx yang masih dapat ditangani tanpa memecahkan formation di casing shoe sebelumnya. Pore pressure, shallow hazard, dan fracture limit dipakai untuk menempatkan casing seat pada kedalaman yang menjaga mud window.",
         "options": [
           {
             "id": "a",
@@ -1124,7 +1139,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "Which of the following hole sizes typically has the largest kick tolerance volume?",
-        "explanation": "Jawaban yang benar adalah 23\", sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Kick tolerance membatasi influx yang masih dapat ditangani tanpa memecahkan formation di casing shoe sebelumnya. Pore pressure, shallow hazard, dan fracture limit dipakai untuk menempatkan casing seat pada kedalaman yang menjaga mud window.",
         "options": [
           {
             "id": "a",
@@ -1158,7 +1173,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "Which of the following causes abnormal/subnormal formation pressure?",
-        "explanation": "Jawaban yang benar adalah Low permeable layer, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Kick tolerance membatasi influx yang masih dapat ditangani tanpa memecahkan formation di casing shoe sebelumnya. Pore pressure, shallow hazard, dan fracture limit dipakai untuk menempatkan casing seat pada kedalaman yang menjaga mud window.",
         "options": [
           {
             "id": "a",
@@ -1192,7 +1207,7 @@
         "sourceNumber": 4,
         "type": "boolean",
         "prompt": "API Butress Casing connection with spacer ring proposed \"No Gap\" in connection",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "media": "/media/casing-design-04.webp",
         "options": [
           {
@@ -1217,7 +1232,7 @@
         "sourceNumber": 5,
         "type": "boolean",
         "prompt": "API Butress Casing Connection suitable for gas well",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "options": [
           {
             "id": "a",
@@ -1241,7 +1256,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "What is the yield strength (psi) from the following casing description: 13-3/8\", 68 ppf, L-80, R-3, BTC",
-        "explanation": "Jawaban yang benar adalah 80,000, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Deskripsi casing memuat outside diameter, nominal weight per foot, steel grade, range panjang, dan thread. Angka pada grade seperti L-80 menunjukkan minimum yield strength 80.000 psi, sedangkan R-3 mengacu pada rentang panjang joint.",
         "options": [
           {
             "id": "a",
@@ -1275,7 +1290,7 @@
         "sourceNumber": 7,
         "type": "multiple",
         "prompt": "What is the casing length (ft) from the following casing description: 13-3/8\", 68 ppf, L-80, R-3, BTC",
-        "explanation": "Pilihan yang harus dipilih adalah 40; 34. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Deskripsi casing memuat outside diameter, nominal weight per foot, steel grade, range panjang, dan thread. Angka pada grade seperti L-80 menunjukkan minimum yield strength 80.000 psi, sedangkan R-3 mengacu pada rentang panjang joint.",
         "options": [
           {
             "id": "a",
@@ -1310,7 +1325,7 @@
         "sourceNumber": 8,
         "type": "boolean",
         "prompt": "Casing cross over utilized when the two casing's pin & box to be connected are having different thread",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "options": [
           {
             "id": "a",
@@ -1334,7 +1349,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "Which type of casing connection categorized as Integral Flush connection?",
-        "explanation": "Jawaban yang benar adalah B, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "media": "/media/casing-design-09.webp",
         "options": [
           {
@@ -1369,7 +1384,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Which type of casing connection categorized as Integral Upset connection?",
-        "explanation": "Jawaban yang benar adalah C, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "media": "/media/casing-design-10.webp",
         "options": [
           {
@@ -1404,7 +1419,7 @@
         "sourceNumber": 11,
         "type": "single",
         "prompt": "During casing handling, which type of casing connection suitable with Side Door Elevator?",
-        "explanation": "Jawaban yang benar adalah A, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "media": "/media/casing-design-11.webp",
         "options": [
           {
@@ -1439,7 +1454,7 @@
         "sourceNumber": 12,
         "type": "multiple",
         "prompt": "Which the following pressure considered in Burst Load casing calculation?",
-        "explanation": "Pilihan yang harus dipilih adalah Cementing & Pressure Test; Completion - Set Packer; Drilling LOT. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Burst mengevaluasi tekanan internal yang mendorong casing ke luar, termasuk skenario cementing, pressure test, completion, dan LOT. Long string tidak otomatis terbaik untuk setiap geothermal well karena desain harus mengikuti beban, temperatur, dan strategi konstruksi.",
         "options": [
           {
             "id": "a",
@@ -1475,7 +1490,7 @@
         "sourceNumber": 13,
         "type": "boolean",
         "prompt": "Strongly recommend to run Long String Design for Geothermal Well",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Burst mengevaluasi tekanan internal yang mendorong casing ke luar, termasuk skenario cementing, pressure test, completion, dan LOT. Long string tidak otomatis terbaik untuk setiap geothermal well karena desain harus mengikuti beban, temperatur, dan strategi konstruksi.",
         "options": [
           {
             "id": "a",
@@ -1499,7 +1514,7 @@
         "sourceNumber": 14,
         "type": "single",
         "prompt": "In casing design, what is the main basis of the bottom- up approach?",
-        "explanation": "Jawaban yang benar adalah Kick Tolerance, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Kick tolerance membatasi influx yang masih dapat ditangani tanpa memecahkan formation di casing shoe sebelumnya. Pore pressure, shallow hazard, dan fracture limit dipakai untuk menempatkan casing seat pada kedalaman yang menjaga mud window.",
         "options": [
           {
             "id": "a",
@@ -1533,7 +1548,7 @@
         "sourceNumber": 15,
         "type": "order",
         "prompt": "If the final reservoir section requires a 7” liner, arrange the correct hole size and casing program (top to bottom).",
-        "explanation": "Urutan yang benar adalah 12-1/4\" Hole → 9-5/8\" Casing → 8-1/2\" Hole → 7\" Liner.",
+        "explanation": "Setiap casing harus dapat melewati casing sebelumnya dan menyediakan hole size untuk string berikutnya. Karena itu 12-1/4 inch hole menerima 9-5/8 inch casing, kemudian 8-1/2 inch hole menerima 7 inch liner.",
         "media": "/media/casing-design-15.webp",
         "options": [
           {
@@ -1571,7 +1586,7 @@
         "sourceNumber": 16,
         "type": "single",
         "prompt": "A mechanical gripping tool used to hold and suspend the casing string on the rotary table during running casing ops.",
-        "explanation": "Jawaban yang benar adalah Casing slip, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "media": "/media/casing-design-16.webp",
         "options": [
           {
@@ -1606,7 +1621,7 @@
         "sourceNumber": 17,
         "type": "multiple",
         "prompt": "A “joint” of casing is identified by these parameters....",
-        "explanation": "Pilihan yang harus dipilih adalah Outside Diameter; Steel grade; Normal weight/ foot; Type of thread. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "options": [
           {
             "id": "a",
@@ -1643,7 +1658,7 @@
         "sourceNumber": 18,
         "type": "single",
         "prompt": "List three considerations in selecting casing setting points",
-        "explanation": "Jawaban yang benar adalah Pore pressure, Shallow hazard, Kick tolerance, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Kick tolerance membatasi influx yang masih dapat ditangani tanpa memecahkan formation di casing shoe sebelumnya. Pore pressure, shallow hazard, dan fracture limit dipakai untuk menempatkan casing seat pada kedalaman yang menjaga mud window.",
         "options": [
           {
             "id": "a",
@@ -1677,7 +1692,7 @@
         "sourceNumber": 19,
         "type": "single",
         "prompt": "Why does pore pressure prediction is critical in casing design?",
-        "explanation": "Jawaban yang benar adalah To determine casing setting depth, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Kick tolerance membatasi influx yang masih dapat ditangani tanpa memecahkan formation di casing shoe sebelumnya. Pore pressure, shallow hazard, dan fracture limit dipakai untuk menempatkan casing seat pada kedalaman yang menjaga mud window.",
         "options": [
           {
             "id": "a",
@@ -1711,7 +1726,7 @@
         "sourceNumber": 20,
         "type": "single",
         "prompt": "Which standard utlised for casing design specification guideline?",
-        "explanation": "Jawaban yang benar adalah API 5CT, sesuai materi Casing Design, Depth Selection & Handling.",
+        "explanation": "Pemilihan connection harus mempertimbangkan sealability, geometri pin-box, dan alat handling. Crossover menghubungkan thread berbeda, casing slip menahan string di rotary table, dan API 5CT menjadi acuan utama spesifikasi casing.",
         "options": [
           {
             "id": "a",
@@ -1745,7 +1760,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "What is the definition of Supply Chain?",
-        "explanation": "Jawaban yang benar adalah Total sequence of business processes to satisfy customer demand, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Supply chain adalah rangkaian proses untuk memenuhi permintaan pengguna. Purchasing dimulai dari identifikasi kebutuhan dan harus memastikan barang yang tepat, mutu dan jumlah yang tepat, dari sumber yang tepat, pada harga, tempat, dan waktu yang tepat.",
         "options": [
           {
             "id": "a",
@@ -1779,7 +1794,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "What is the main objective of Supply Chain Management?",
-        "explanation": "Jawaban yang benar adalah Manage events effectively while maintaining quality and reducing cost, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Supply chain adalah rangkaian proses untuk memenuhi permintaan pengguna. Purchasing dimulai dari identifikasi kebutuhan dan harus memastikan barang yang tepat, mutu dan jumlah yang tepat, dari sumber yang tepat, pada harga, tempat, dan waktu yang tepat.",
         "options": [
           {
             "id": "a",
@@ -1813,7 +1828,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "Which of the following is NOT part of material management activities?",
-        "explanation": "Jawaban yang benar adalah Marketing Strategy, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Supply chain adalah rangkaian proses untuk memenuhi permintaan pengguna. Purchasing dimulai dari identifikasi kebutuhan dan harus memastikan barang yang tepat, mutu dan jumlah yang tepat, dari sumber yang tepat, pada harga, tempat, dan waktu yang tepat.",
         "options": [
           {
             "id": "a",
@@ -1847,7 +1862,7 @@
         "sourceNumber": 4,
         "type": "multiple",
         "prompt": "What are the key “Purchasing Musts”?",
-        "explanation": "Pilihan yang harus dipilih adalah Speed and cost; Supplier selection; Right quality and quantity; Right stuff, price, time, place, source. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Supply chain adalah rangkaian proses untuk memenuhi permintaan pengguna. Purchasing dimulai dari identifikasi kebutuhan dan harus memastikan barang yang tepat, mutu dan jumlah yang tepat, dari sumber yang tepat, pada harga, tempat, dan waktu yang tepat.",
         "options": [
           {
             "id": "a",
@@ -1884,7 +1899,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "Which step comes first in the purchasing process?",
-        "explanation": "Jawaban yang benar adalah Identification of needs, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Supply chain adalah rangkaian proses untuk memenuhi permintaan pengguna. Purchasing dimulai dari identifikasi kebutuhan dan harus memastikan barang yang tepat, mutu dan jumlah yang tepat, dari sumber yang tepat, pada harga, tempat, dan waktu yang tepat.",
         "options": [
           {
             "id": "a",
@@ -1918,7 +1933,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "What is Contract Administration?",
-        "explanation": "Jawaban yang benar adalah Activity from contract award to closeout, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Contract administration berlangsung sejak award sampai closeout. Firm Fixed Price memindahkan lebih banyak risiko biaya ke supplier, Cost Reimbursement cocok saat ketidakpastian tinggi, sedangkan retroactive pricing baru ditentukan setelah pekerjaan selesai.",
         "options": [
           {
             "id": "a",
@@ -1952,7 +1967,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "Which contract type has prices determined AFTER work is completed?",
-        "explanation": "Jawaban yang benar adalah Retroactive Contract, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Contract administration berlangsung sejak award sampai closeout. Firm Fixed Price memindahkan lebih banyak risiko biaya ke supplier, Cost Reimbursement cocok saat ketidakpastian tinggi, sedangkan retroactive pricing baru ditentukan setelah pekerjaan selesai.",
         "options": [
           {
             "id": "a",
@@ -1986,7 +2001,7 @@
         "sourceNumber": 8,
         "type": "single",
         "prompt": "In a Firm Fixed Price contract, who bears the risk?",
-        "explanation": "Jawaban yang benar adalah Supplier, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Contract administration berlangsung sejak award sampai closeout. Firm Fixed Price memindahkan lebih banyak risiko biaya ke supplier, Cost Reimbursement cocok saat ketidakpastian tinggi, sedangkan retroactive pricing baru ditentukan setelah pekerjaan selesai.",
         "options": [
           {
             "id": "a",
@@ -2020,7 +2035,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "Which contract type is suitable when uncertainties are involved?",
-        "explanation": "Jawaban yang benar adalah Cost Reimbursement, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Contract administration berlangsung sejak award sampai closeout. Firm Fixed Price memindahkan lebih banyak risiko biaya ke supplier, Cost Reimbursement cocok saat ketidakpastian tinggi, sedangkan retroactive pricing baru ditentukan setelah pekerjaan selesai.",
         "options": [
           {
             "id": "a",
@@ -2054,7 +2069,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Which is a key characteristic of win-win negotiation?",
-        "explanation": "Jawaban yang benar adalah Focus on mutual problem solving, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Negosiasi win-win berfokus pada penyelesaian masalah bersama. BATNA adalah alternatif terbaik bila kesepakatan gagal, sedangkan ZOPA adalah rentang tempat kepentingan kedua pihak masih memungkinkan kesepakatan.",
         "options": [
           {
             "id": "a",
@@ -2088,7 +2103,7 @@
         "sourceNumber": 11,
         "type": "single",
         "prompt": "Which is a key characteristic of win-win negotiation?",
-        "explanation": "Jawaban yang benar adalah Focus on mutual problem solving, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Negosiasi win-win berfokus pada penyelesaian masalah bersama. BATNA adalah alternatif terbaik bila kesepakatan gagal, sedangkan ZOPA adalah rentang tempat kepentingan kedua pihak masih memungkinkan kesepakatan.",
         "options": [
           {
             "id": "a",
@@ -2122,7 +2137,7 @@
         "sourceNumber": 12,
         "type": "multiple",
         "prompt": "Which of the following function included into Drilling Support?",
-        "explanation": "Pilihan yang harus dipilih adalah Operational Support; Equipment Maintenance; Logistic and Supply; Cost Control. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Tim drilling mendefinisikan kebutuhan teknis, procurement mengelola proses komersial dan contract award. Integrasi mengurangi waktu pekerjaan kompleks, memperbaiki pemecahan masalah, dan mencegah scope teknis disusun oleh pihak yang tidak menguasai operasi.",
         "options": [
           {
             "id": "a",
@@ -2159,7 +2174,7 @@
         "sourceNumber": 13,
         "type": "multiple",
         "prompt": "Integration in Drilling Procurement is critical. Which one of the benefit of Integration?",
-        "explanation": "Pilihan yang harus dipilih adalah Reduce time for complex tasks; Synergy and improve problem solution. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Tim drilling mendefinisikan kebutuhan teknis, procurement mengelola proses komersial dan contract award. Integrasi mengurangi waktu pekerjaan kompleks, memperbaiki pemecahan masalah, dan mencegah scope teknis disusun oleh pihak yang tidak menguasai operasi.",
         "options": [
           {
             "id": "a",
@@ -2194,7 +2209,7 @@
         "sourceNumber": 14,
         "type": "boolean",
         "prompt": "Procurement Team responsible for Contract Award stage",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Tim drilling mendefinisikan kebutuhan teknis, procurement mengelola proses komersial dan contract award. Integrasi mengurangi waktu pekerjaan kompleks, memperbaiki pemecahan masalah, dan mencegah scope teknis disusun oleh pihak yang tidak menguasai operasi.",
         "options": [
           {
             "id": "a",
@@ -2218,7 +2233,7 @@
         "sourceNumber": 15,
         "type": "boolean",
         "prompt": "Drilling Team responsible to generate Procurement List",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Tim drilling mendefinisikan kebutuhan teknis, procurement mengelola proses komersial dan contract award. Integrasi mengurangi waktu pekerjaan kompleks, memperbaiki pemecahan masalah, dan mencegah scope teknis disusun oleh pihak yang tidak menguasai operasi.",
         "options": [
           {
             "id": "a",
@@ -2242,7 +2257,7 @@
         "sourceNumber": 16,
         "type": "boolean",
         "prompt": "Procurement Team responsible to generate Scope of Work",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Tim drilling mendefinisikan kebutuhan teknis, procurement mengelola proses komersial dan contract award. Integrasi mengurangi waktu pekerjaan kompleks, memperbaiki pemecahan masalah, dan mencegah scope teknis disusun oleh pihak yang tidak menguasai operasi.",
         "options": [
           {
             "id": "a",
@@ -2266,7 +2281,7 @@
         "sourceNumber": 17,
         "type": "single",
         "prompt": "What is BATNA in negotiation?",
-        "explanation": "Jawaban yang benar adalah Best alternative if negotiation fails, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Negosiasi win-win berfokus pada penyelesaian masalah bersama. BATNA adalah alternatif terbaik bila kesepakatan gagal, sedangkan ZOPA adalah rentang tempat kepentingan kedua pihak masih memungkinkan kesepakatan.",
         "options": [
           {
             "id": "a",
@@ -2300,7 +2315,7 @@
         "sourceNumber": 18,
         "type": "single",
         "prompt": "What is ZOPA?",
-        "explanation": "Jawaban yang benar adalah Zone where agreement can be reached, sesuai materi Drilling PSCM, Material Management & Negotiation.",
+        "explanation": "Negosiasi win-win berfokus pada penyelesaian masalah bersama. BATNA adalah alternatif terbaik bila kesepakatan gagal, sedangkan ZOPA adalah rentang tempat kepentingan kedua pihak masih memungkinkan kesepakatan.",
         "options": [
           {
             "id": "a",
@@ -2334,7 +2349,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "Which of the following best describes a horizontal well based on inclination?",
-        "explanation": "Jawaban yang benar adalah Inclination greater than 86°, sesuai materi Directional Drilling.",
+        "explanation": "Inclination menyatakan kemiringan dari vertikal dan azimuth menyatakan arah. Lintasan sebaiknya meminimalkan build, drop, dan turn rate agar dogleg, fatigue, serta beban mekanis turun; ellipsoid of uncertainty berasal dari error MD, inclination, dan azimuth.",
         "options": [
           {
             "id": "a",
@@ -2368,7 +2383,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "What directional measurement indicates the direction of a deviated well?",
-        "explanation": "Jawaban yang benar adalah Azimuth, sesuai materi Directional Drilling.",
+        "explanation": "Inclination menyatakan kemiringan dari vertikal dan azimuth menyatakan arah. Lintasan sebaiknya meminimalkan build, drop, dan turn rate agar dogleg, fatigue, serta beban mekanis turun; ellipsoid of uncertainty berasal dari error MD, inclination, dan azimuth.",
         "options": [
           {
             "id": "a",
@@ -2402,7 +2417,7 @@
         "sourceNumber": 3,
         "type": "boolean",
         "prompt": "Check the question on the image, true or false?",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Directional Drilling.",
+        "explanation": "Inclination menyatakan kemiringan dari vertikal dan azimuth menyatakan arah. Lintasan sebaiknya meminimalkan build, drop, dan turn rate agar dogleg, fatigue, serta beban mekanis turun; ellipsoid of uncertainty berasal dari error MD, inclination, dan azimuth.",
         "media": "/media/directional-03.webp",
         "options": [
           {
@@ -2427,7 +2442,7 @@
         "sourceNumber": 4,
         "type": "single",
         "prompt": "What are ECD and SPP associated with in well profile design?",
-        "explanation": "Jawaban yang benar adalah Hydraulic requirements and limitations, sesuai materi Directional Drilling.",
+        "explanation": "Inclination menyatakan kemiringan dari vertikal dan azimuth menyatakan arah. Lintasan sebaiknya meminimalkan build, drop, dan turn rate agar dogleg, fatigue, serta beban mekanis turun; ellipsoid of uncertainty berasal dari error MD, inclination, dan azimuth.",
         "options": [
           {
             "id": "a",
@@ -2461,7 +2476,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "Why should curvature (build, drop, and turn rates) be minimized in well design?",
-        "explanation": "Jawaban yang benar adalah To simplify the trajectory and reduce mechanical risk, sesuai materi Directional Drilling.",
+        "explanation": "Inclination menyatakan kemiringan dari vertikal dan azimuth menyatakan arah. Lintasan sebaiknya meminimalkan build, drop, dan turn rate agar dogleg, fatigue, serta beban mekanis turun; ellipsoid of uncertainty berasal dari error MD, inclination, dan azimuth.",
         "options": [
           {
             "id": "a",
@@ -2495,7 +2510,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "What is \"slip velocity\" in the context of drilling operations?",
-        "explanation": "Jawaban yang benar adalah The downward velocity of cuttings through the drilling fluid, sesuai materi Directional Drilling.",
+        "explanation": "Slip velocity adalah kecepatan cuttings turun relatif terhadap fluida. Hole cleaning yang memadai menuntut annular velocity mampu mengatasi kecenderungan cuttings mengendap.",
         "options": [
           {
             "id": "a",
@@ -2529,7 +2544,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "What should you do if you suspect a collision based on rough drilling and want to investigate further?",
-        "explanation": "Jawaban yang benar adalah Circulate bottoms-up and check for metal or cement cuttings, sesuai materi Directional Drilling.",
+        "explanation": "Rough drilling, serpihan logam atau semen, serta survei MWD yang tidak konsisten dapat menandakan kedekatan dengan wellbore atau obstruction. Bottoms-up circulation dan pemeriksaan cuttings membantu memverifikasi indikasi tersebut.",
         "options": [
           {
             "id": "a",
@@ -2563,7 +2578,7 @@
         "sourceNumber": 8,
         "type": "single",
         "prompt": "Which of the following may indicate magnetic interference due to a nearby wellbore or metal obstruction?",
-        "explanation": "Jawaban yang benar adalah MWD survey inconsistencies, sesuai materi Directional Drilling.",
+        "explanation": "Rough drilling, serpihan logam atau semen, serta survei MWD yang tidak konsisten dapat menandakan kedekatan dengan wellbore atau obstruction. Bottoms-up circulation dan pemeriksaan cuttings membantu memverifikasi indikasi tersebut.",
         "options": [
           {
             "id": "a",
@@ -2597,7 +2612,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "The ellipsoid of uncertainty (3D) includes errors in which three primary directional survey components?",
-        "explanation": "Jawaban yang benar adalah Inclination, azimuth, and measured depth, sesuai materi Directional Drilling.",
+        "explanation": "Inclination menyatakan kemiringan dari vertikal dan azimuth menyatakan arah. Lintasan sebaiknya meminimalkan build, drop, dan turn rate agar dogleg, fatigue, serta beban mekanis turun; ellipsoid of uncertainty berasal dari error MD, inclination, dan azimuth.",
         "options": [
           {
             "id": "a",
@@ -2631,7 +2646,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Which type of BHA relies on rotating the entire drillstring for directional control?",
-        "explanation": "Jawaban yang benar adalah Rotary BHA, sesuai materi Directional Drilling.",
+        "explanation": "Rotary BHA mengandalkan rotasi seluruh drillstring, sedangkan MWD mengirim data inclination, azimuth, dan toolface secara real time sehingga koreksi lintasan dapat dilakukan saat drilling.",
         "options": [
           {
             "id": "a",
@@ -2665,7 +2680,7 @@
         "sourceNumber": 11,
         "type": "single",
         "prompt": "What type of friction occurs when two surfaces are not moving relative to each other?",
-        "explanation": "Jawaban yang benar adalah Static friction, sesuai materi Directional Drilling.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2699,7 +2714,7 @@
         "sourceNumber": 12,
         "type": "multiple",
         "prompt": "Torsional friction (torque) acts in which direction relative to the drillstring?",
-        "explanation": "Pilihan yang harus dipilih adalah Opposite to the direction of pipe rotation; Along the axis of the pipe. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2734,7 +2749,7 @@
         "sourceNumber": 13,
         "type": "boolean",
         "prompt": "A lower friction factor is typically observed in cased holes with oil-based mud.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Directional Drilling.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2758,7 +2773,7 @@
         "sourceNumber": 14,
         "type": "single",
         "prompt": "What are the three stages of buckling in a drillstring?",
-        "explanation": "Jawaban yang benar adalah Sinusoidal, helical, and lock- up, sesuai materi Directional Drilling.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2792,7 +2807,7 @@
         "sourceNumber": 15,
         "type": "boolean",
         "prompt": "Increasing the stiffness of the drillstring helps in reducing the risk of buckling.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Directional Drilling.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2816,7 +2831,7 @@
         "sourceNumber": 16,
         "type": "single",
         "prompt": "Which friction factor range is typical for an open hole with water-based mud?",
-        "explanation": "Jawaban yang benar adalah 0.30–0.35, sesuai materi Directional Drilling.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2850,7 +2865,7 @@
         "sourceNumber": 17,
         "type": "single",
         "prompt": "Which of the following reduces the likelihood of buckling in the drillstring?",
-        "explanation": "Jawaban yang benar adalah Adding lubricants to reduce wellbore friction, sesuai materi Directional Drilling.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2884,7 +2899,7 @@
         "sourceNumber": 18,
         "type": "single",
         "prompt": "Which of the following is NOT a typical application of torque and drag calculations?",
-        "explanation": "Jawaban yang benar adalah Mud formulation selection, sesuai materi Directional Drilling.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2918,7 +2933,7 @@
         "sourceNumber": 19,
         "type": "single",
         "prompt": "One key benefit of MWD is:",
-        "explanation": "Jawaban yang benar adalah Delivers real-time directional and toolface data, sesuai materi Directional Drilling.",
+        "explanation": "Rotary BHA mengandalkan rotasi seluruh drillstring, sedangkan MWD mengirim data inclination, azimuth, dan toolface secara real time sehingga koreksi lintasan dapat dilakukan saat drilling.",
         "options": [
           {
             "id": "a",
@@ -2952,7 +2967,7 @@
         "sourceNumber": 20,
         "type": "boolean",
         "prompt": "Torque and drag models are used only during well planning and not during drilling",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Directional Drilling.",
+        "explanation": "Friction melawan gerak: torsional friction melawan rotasi dan axial friction memengaruhi pick-up/slack-off. Friction tinggi menaikkan compressive load dan risiko buckling dari sinusoidal ke helical lalu lock-up; model torque-and-drag dipakai saat planning maupun operasi.",
         "options": [
           {
             "id": "a",
@@ -2976,7 +2991,7 @@
         "sourceNumber": 1,
         "type": "multiple",
         "prompt": "The following are type of skiding system",
-        "explanation": "Pilihan yang harus dipilih adalah Pinior & Rack; Rig Walker; Claw & Jack. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Skidding atau walking memindahkan rig di dalam wellpad tanpa mobilisasi penuh. Pinion-rack, claw-jack, dan rig walker adalah mekanisme yang berbeda untuk menggeser struktur secara terkendali.",
         "options": [
           {
             "id": "a",
@@ -3012,7 +3027,7 @@
         "sourceNumber": 2,
         "type": "boolean",
         "prompt": "Annular Diverter is use to shut-in the well / Annulus",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Drilling Rig.",
+        "explanation": "Diverter mengalihkan aliran dangkal dan bukan sistem shut-in. Annular, blind ram, dan shear ram mempunyai kemampuan penutupan berbeda; elastomer dipilih berdasarkan kompatibilitas fluida, misalnya nitrile untuk banyak aplikasi oil-based mud.",
         "options": [
           {
             "id": "a",
@@ -3036,7 +3051,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "The following are type power generation of Electric Rig",
-        "explanation": "Jawaban yang benar adalah All correct, sesuai materi Drilling Rig.",
+        "explanation": "Rig mengintegrasikan power generation, hoisting, rotating, circulation, dan instrumentation. Semi-submersible serta drillship adalah floater; drilling recorder dan tong torque membantu memantau parameter operasi dan kualitas connection.",
         "options": [
           {
             "id": "a",
@@ -3070,7 +3085,7 @@
         "sourceNumber": 4,
         "type": "multiple",
         "prompt": "Offhore rig type that categorized as Floater",
-        "explanation": "Pilihan yang harus dipilih adalah Semi-Submersible; Drillship. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Rig mengintegrasikan power generation, hoisting, rotating, circulation, dan instrumentation. Semi-submersible serta drillship adalah floater; drilling recorder dan tong torque membantu memantau parameter operasi dan kualitas connection.",
         "options": [
           {
             "id": "a",
@@ -3105,7 +3120,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "The drilling structure in the following picture namely",
-        "explanation": "Jawaban yang benar adalah Dual Derrick, sesuai materi Drilling Rig.",
+        "explanation": "Rig mengintegrasikan power generation, hoisting, rotating, circulation, dan instrumentation. Semi-submersible serta drillship adalah floater; drilling recorder dan tong torque membantu memantau parameter operasi dan kualitas connection.",
         "media": "/media/rig-05.webp",
         "options": [
           {
@@ -3140,7 +3155,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "In hazardous classification, area that extend 10 feet in all direction from vapor liberation classified as?",
-        "explanation": "Jawaban yang benar adalah Class 1, Zone 2, sesuai materi Drilling Rig.",
+        "explanation": "Hazardous-area classification mengendalikan sumber ignition di sekitar pelepasan vapor. Inspection category, critical recommendation, dan standard API/NORSOK/SNI/NZS menjaga structural integrity serta mencegah konsekuensi terhadap manusia dan lingkungan.",
         "options": [
           {
             "id": "a",
@@ -3174,7 +3189,7 @@
         "sourceNumber": 7,
         "type": "multiple",
         "prompt": "Following Blowout Preventer that may Completely Shut Out (CSO) without any string",
-        "explanation": "Pilihan yang harus dipilih adalah Spherical BOP; Blind Ram; Shear Ram. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Diverter mengalihkan aliran dangkal dan bukan sistem shut-in. Annular, blind ram, dan shear ram mempunyai kemampuan penutupan berbeda; elastomer dipilih berdasarkan kompatibilitas fluida, misalnya nitrile untuk banyak aplikasi oil-based mud.",
         "options": [
           {
             "id": "a",
@@ -3210,7 +3225,7 @@
         "sourceNumber": 8,
         "type": "single",
         "prompt": "What's annular packing element that suit for oil based mud in Indonesia",
-        "explanation": "Jawaban yang benar adalah Nitrile Rubber, sesuai materi Drilling Rig.",
+        "explanation": "Diverter mengalihkan aliran dangkal dan bukan sistem shut-in. Annular, blind ram, dan shear ram mempunyai kemampuan penutupan berbeda; elastomer dipilih berdasarkan kompatibilitas fluida, misalnya nitrile untuk banyak aplikasi oil-based mud.",
         "options": [
           {
             "id": "a",
@@ -3244,7 +3259,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "What is the name of equipment below?",
-        "explanation": "Jawaban yang benar adalah Drilling Recorder, sesuai materi Drilling Rig.",
+        "explanation": "Rig mengintegrasikan power generation, hoisting, rotating, circulation, dan instrumentation. Semi-submersible serta drillship adalah floater; drilling recorder dan tong torque membantu memantau parameter operasi dan kualitas connection.",
         "media": "/media/rig-09.webp",
         "options": [
           {
@@ -3279,7 +3294,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Select which one of the following instrument utilised for measuring tubular connection",
-        "explanation": "Jawaban yang benar adalah Tong torque, sesuai materi Drilling Rig.",
+        "explanation": "Rig mengintegrasikan power generation, hoisting, rotating, circulation, dan instrumentation. Semi-submersible serta drillship adalah floater; drilling recorder dan tong torque membantu memantau parameter operasi dan kualitas connection.",
         "options": [
           {
             "id": "a",
@@ -3313,7 +3328,7 @@
         "sourceNumber": 11,
         "type": "multiple",
         "prompt": "Critical Recommendation in rig inspection may leads to?",
-        "explanation": "Pilihan yang harus dipilih adalah Loss of Life; Environmental Damage. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Hazardous-area classification mengendalikan sumber ignition di sekitar pelepasan vapor. Inspection category, critical recommendation, dan standard API/NORSOK/SNI/NZS menjaga structural integrity serta mencegah konsekuensi terhadap manusia dan lingkungan.",
         "options": [
           {
             "id": "a",
@@ -3348,7 +3363,7 @@
         "sourceNumber": 12,
         "type": "single",
         "prompt": "Based on DS-1, which category covered drillpipe inspection for drilling well between 5,000 -10,000 ft?",
-        "explanation": "Jawaban yang benar adalah DS-1 Cat 3, sesuai materi Drilling Rig.",
+        "explanation": "Hazardous-area classification mengendalikan sumber ignition di sekitar pelepasan vapor. Inspection category, critical recommendation, dan standard API/NORSOK/SNI/NZS menjaga structural integrity serta mencegah konsekuensi terhadap manusia dan lingkungan.",
         "options": [
           {
             "id": "a",
@@ -3382,7 +3397,7 @@
         "sourceNumber": 13,
         "type": "single",
         "prompt": "By using rule-of-thumb, the most cost effective rig for drilling 8,500 ft well is.....",
-        "explanation": "Jawaban yang benar adalah 1000 HP, sesuai materi Drilling Rig.",
+        "explanation": "Rig dipilih dari rated depth, hookload, drawworks, TDS, mud pump, dan kebutuhan operasi—bukan hanya angka horsepower. Rule-of-thumb memberi titik awal, sedangkan connection harus cocok dengan ukuran tool joint yang digunakan.",
         "options": [
           {
             "id": "a",
@@ -3416,7 +3431,7 @@
         "sourceNumber": 14,
         "type": "single",
         "prompt": "Equivalent 4-1/2” drill pipe connection",
-        "explanation": "Jawaban yang benar adalah NC-50, sesuai materi Drilling Rig.",
+        "explanation": "Rig dipilih dari rated depth, hookload, drawworks, TDS, mud pump, dan kebutuhan operasi—bukan hanya angka horsepower. Rule-of-thumb memberi titik awal, sedangkan connection harus cocok dengan ukuran tool joint yang digunakan.",
         "options": [
           {
             "id": "a",
@@ -3450,7 +3465,7 @@
         "sourceNumber": 15,
         "type": "multiple",
         "prompt": "Below are the reference of Drilling System standard",
-        "explanation": "Pilihan yang harus dipilih adalah API; NORSOK; SNI; NZS. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Hazardous-area classification mengendalikan sumber ignition di sekitar pelepasan vapor. Inspection category, critical recommendation, dan standard API/NORSOK/SNI/NZS menjaga structural integrity serta mencegah konsekuensi terhadap manusia dan lingkungan.",
         "options": [
           {
             "id": "a",
@@ -3487,7 +3502,7 @@
         "sourceNumber": 1,
         "type": "multiple",
         "prompt": "The following are consideration when choosing a Top Drive",
-        "explanation": "Pilihan yang harus dipilih adalah Surface Drilling Torque; Make Up Torque. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "TDS harus memenuhi hoisting load, continuous drilling torque, make-up torque, RPM, dan horsepower. Unit yang terlalu besar menambah berat serta konsumsi daya, sedangkan unit terlalu kecil membatasi drilling dan reaming.",
         "options": [
           {
             "id": "a",
@@ -3522,7 +3537,7 @@
         "sourceNumber": 2,
         "type": "boolean",
         "prompt": "An overhead BOP crane helps to reduce flat time for BOP pressure test",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Geothermal Rig Sizing.",
+        "explanation": "Horsepower yang lebih besar umumnya menaikkan rental, fuel, footprint, dan crew requirement. Data sheet perlu dibaca bersama rated depth, hookload, TDS, mud pumps, rig movement, dan fitur productivity; BOP test stump, bukan sekadar overhead crane, yang memungkinkan pressure test offline.",
         "options": [
           {
             "id": "a",
@@ -3546,7 +3561,7 @@
         "sourceNumber": 3,
         "type": "multiple",
         "prompt": "Which of the following are advantages of a 2-joint rig?",
-        "explanation": "Pilihan yang harus dipilih adalah Faster moving time; Smaller rig footprint. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Horsepower yang lebih besar umumnya menaikkan rental, fuel, footprint, dan crew requirement. Data sheet perlu dibaca bersama rated depth, hookload, TDS, mud pumps, rig movement, dan fitur productivity; BOP test stump, bukan sekadar overhead crane, yang memungkinkan pressure test offline.",
         "options": [
           {
             "id": "a",
@@ -3581,7 +3596,7 @@
         "sourceNumber": 4,
         "type": "multiple",
         "prompt": "There are the factors require to be considered inchoose an onshore rig size selection",
-        "explanation": "Pilihan yang harus dipilih adalah Fuel consumption; Maximum Hookload; Number of rig crew. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Horsepower yang lebih besar umumnya menaikkan rental, fuel, footprint, dan crew requirement. Data sheet perlu dibaca bersama rated depth, hookload, TDS, mud pumps, rig movement, dan fitur productivity; BOP test stump, bukan sekadar overhead crane, yang memungkinkan pressure test offline.",
         "options": [
           {
             "id": "a",
@@ -3617,7 +3632,7 @@
         "sourceNumber": 5,
         "type": "boolean",
         "prompt": "Rig horsepower is inversely proportional to rig price",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Geothermal Rig Sizing.",
+        "explanation": "Horsepower yang lebih besar umumnya menaikkan rental, fuel, footprint, dan crew requirement. Data sheet perlu dibaca bersama rated depth, hookload, TDS, mud pumps, rig movement, dan fitur productivity; BOP test stump, bukan sekadar overhead crane, yang memungkinkan pressure test offline.",
         "options": [
           {
             "id": "a",
@@ -3641,7 +3656,7 @@
         "sourceNumber": 6,
         "type": "multiple",
         "prompt": "Typical Rig Technical Data Sheet specification....",
-        "explanation": "Pilihan yang harus dipilih adalah Rated Drilling Depth; Top Drive System; Rig Horse Power; Mud Pump. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Horsepower yang lebih besar umumnya menaikkan rental, fuel, footprint, dan crew requirement. Data sheet perlu dibaca bersama rated depth, hookload, TDS, mud pumps, rig movement, dan fitur productivity; BOP test stump, bukan sekadar overhead crane, yang memungkinkan pressure test offline.",
         "options": [
           {
             "id": "a",
@@ -3678,7 +3693,7 @@
         "sourceNumber": 7,
         "type": "boolean",
         "prompt": "The maximum PICK UP load is limited by Drill Pipe Tensile Strength.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Geothermal Rig Sizing.",
+        "explanation": "Maximum hookload dibatasi oleh drill-pipe tensile capacity serta kapasitas mast, travelling block, dan TDS. Pick-up trend dari offset well diekstrapolasi dengan overpull margin; buoyancy mengurangi berat BHA di dalam mud sebelum beban block dan TDS ditambahkan.",
         "options": [
           {
             "id": "a",
@@ -3702,7 +3717,7 @@
         "sourceNumber": 8,
         "type": "multiple",
         "prompt": "Maximum Hook Load depends on....",
-        "explanation": "Pilihan yang harus dipilih adalah Drill Pipe Tensle Strength; Top Drive System; Traveling Block. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Maximum hookload dibatasi oleh drill-pipe tensile capacity serta kapasitas mast, travelling block, dan TDS. Pick-up trend dari offset well diekstrapolasi dengan overpull margin; buoyancy mengurangi berat BHA di dalam mud sebelum beban block dan TDS ditambahkan.",
         "options": [
           {
             "id": "a",
@@ -3738,7 +3753,7 @@
         "sourceNumber": 9,
         "type": "boolean",
         "prompt": "Rig Pick Up capability indicates the Rig Rated Drilling Depth",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Geothermal Rig Sizing.",
+        "explanation": "Maximum hookload dibatasi oleh drill-pipe tensile capacity serta kapasitas mast, travelling block, dan TDS. Pick-up trend dari offset well diekstrapolasi dengan overpull margin; buoyancy mengurangi berat BHA di dalam mud sebelum beban block dan TDS ditambahkan.",
         "options": [
           {
             "id": "a",
@@ -3762,7 +3777,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Determine the Hookload, given: BHA weight in air = 120 Klbs, TDS = 17 Klbs, Traveling Block = 22 Klbs, MW = 10.3 ppg.",
-        "explanation": "Jawaban yang benar adalah 140 Klbs, sesuai materi Geothermal Rig Sizing.",
+        "explanation": "Maximum hookload dibatasi oleh drill-pipe tensile capacity serta kapasitas mast, travelling block, dan TDS. Pick-up trend dari offset well diekstrapolasi dengan overpull margin; buoyancy mengurangi berat BHA di dalam mud sebelum beban block dan TDS ditambahkan.",
         "media": "/media/geothermal-10.webp",
         "options": [
           {
@@ -3797,7 +3812,7 @@
         "sourceNumber": 11,
         "type": "order",
         "prompt": "How to determine Max Hook Load?",
-        "explanation": "Urutan yang benar adalah Gathering Pick Up Load data from different area and plotted → Select the graph that show the biggest Pick Up Load → Do Extrapolated for the deeper drilling depth.",
+        "explanation": "Maximum hookload dibatasi oleh drill-pipe tensile capacity serta kapasitas mast, travelling block, dan TDS. Pick-up trend dari offset well diekstrapolasi dengan overpull margin; buoyancy mengurangi berat BHA di dalam mud sebelum beban block dan TDS ditambahkan.",
         "options": [
           {
             "id": "a",
@@ -3828,7 +3843,7 @@
         "sourceNumber": 12,
         "type": "boolean",
         "prompt": "In Drill String Speed Methodology, downward direction is NOT affecting drawwork horse power calculation.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Geothermal Rig Sizing.",
+        "explanation": "Downward movement terutama dikendalikan braking sehingga tidak menjadi dasar horsepower pengangkatan. Drill pipe dapat gagal karena tensile overload, excessive make-up/yield torque, atau thread damage; mud-pump capacity ditentukan oleh kombinasi flow rate dan pressure pada hole section paling menuntut.",
         "options": [
           {
             "id": "a",
@@ -3852,7 +3867,7 @@
         "sourceNumber": 13,
         "type": "multiple",
         "prompt": "Common cause of Drill Pipe failure criteria",
-        "explanation": "Pilihan yang harus dipilih adalah Thread damage; Exeeding Tensile Strength; Exeeding Yield Torque. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Downward movement terutama dikendalikan braking sehingga tidak menjadi dasar horsepower pengangkatan. Drill pipe dapat gagal karena tensile overload, excessive make-up/yield torque, atau thread damage; mud-pump capacity ditentukan oleh kombinasi flow rate dan pressure pada hole section paling menuntut.",
         "options": [
           {
             "id": "a",
@@ -3888,7 +3903,7 @@
         "sourceNumber": 14,
         "type": "boolean",
         "prompt": "Rig Mud Pump rate is determined by the bigest hole section to be drilled",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Geothermal Rig Sizing.",
+        "explanation": "Downward movement terutama dikendalikan braking sehingga tidak menjadi dasar horsepower pengangkatan. Drill pipe dapat gagal karena tensile overload, excessive make-up/yield torque, atau thread damage; mud-pump capacity ditentukan oleh kombinasi flow rate dan pressure pada hole section paling menuntut.",
         "options": [
           {
             "id": "a",
@@ -3912,7 +3927,7 @@
         "sourceNumber": 15,
         "type": "single",
         "prompt": "Choose the most relevent of Rig Equipment and it's Specification",
-        "explanation": "Jawaban yang benar adalah TDS -> Surface Torque, sesuai materi Geothermal Rig Sizing.",
+        "explanation": "TDS harus memenuhi hoisting load, continuous drilling torque, make-up torque, RPM, dan horsepower. Unit yang terlalu besar menambah berat serta konsumsi daya, sedangkan unit terlalu kecil membatasi drilling dan reaming.",
         "options": [
           {
             "id": "a",
@@ -3946,7 +3961,7 @@
         "sourceNumber": 1,
         "type": "multiple",
         "prompt": "What are the objectives of cementing in drilling operations?",
-        "explanation": "Pilihan yang harus dipilih adalah Provide Zonal Isolation; Provide Casing Support and Protection; Support the Borehole. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Survey, caliper, temperatur, formation pressure, dan mud properties menentukan volume, centralization, displacement, thickening time, serta density window. Data yang salah dapat menyebabkan WOC terlalu lama, premature set, losses, atau well-security issue.",
         "media": "/media/cementing-01.webp",
         "options": [
           {
@@ -3983,7 +3998,7 @@
         "sourceNumber": 2,
         "type": "multiple",
         "prompt": "Which well data are required for designing a cementing job?",
-        "explanation": "Pilihan yang harus dipilih adalah Survey Data; Caliper Data; Well Temperature and Formation Pressure; Mud Properties. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Survey, caliper, temperatur, formation pressure, dan mud properties menentukan volume, centralization, displacement, thickening time, serta density window. Data yang salah dapat menyebabkan WOC terlalu lama, premature set, losses, atau well-security issue.",
         "options": [
           {
             "id": "a",
@@ -4020,7 +4035,7 @@
         "sourceNumber": 3,
         "type": "boolean",
         "prompt": "Inaccurate well temperature and formation pressure can cause excessive WOC, premature setting, and well security issues.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Cementing Operation.",
+        "explanation": "Survey, caliper, temperatur, formation pressure, dan mud properties menentukan volume, centralization, displacement, thickening time, serta density window. Data yang salah dapat menyebabkan WOC terlalu lama, premature set, losses, atau well-security issue.",
         "options": [
           {
             "id": "a",
@@ -4044,7 +4059,7 @@
         "sourceNumber": 4,
         "type": "single",
         "prompt": "In which casing section is the stab-in cementing method commonly used?",
-        "explanation": "Jawaban yang benar adalah Conductor Casing, sesuai materi Cementing Operation.",
+        "explanation": "Stab-in lazim untuk conductor atau large casing karena stinger mengurangi displacement volume. Two-stage cementing membatasi hydrostatic pressure dan losses; float shoe/collar mengontrol backflow, sedangkan bottom dan top plug memisahkan fluida serta menandai tahap displacement.",
         "options": [
           {
             "id": "a",
@@ -4078,7 +4093,7 @@
         "sourceNumber": 5,
         "type": "boolean",
         "prompt": "Surface casing cementing jobs face significant challenges due to low temperatures.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Cementing Operation.",
+        "explanation": "Stab-in lazim untuk conductor atau large casing karena stinger mengurangi displacement volume. Two-stage cementing membatasi hydrostatic pressure dan losses; float shoe/collar mengontrol backflow, sedangkan bottom dan top plug memisahkan fluida serta menandai tahap displacement.",
         "options": [
           {
             "id": "a",
@@ -4102,7 +4117,7 @@
         "sourceNumber": 6,
         "type": "multiple",
         "prompt": "Why is a two-stage cementing job used in drilling operations?",
-        "explanation": "Pilihan yang harus dipilih adalah To Manage Hydrostatic Pressure; Reduce Risk of Cement Loss; Improve Cement Placement Above Loss Zones. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Stab-in lazim untuk conductor atau large casing karena stinger mengurangi displacement volume. Two-stage cementing membatasi hydrostatic pressure dan losses; float shoe/collar mengontrol backflow, sedangkan bottom dan top plug memisahkan fluida serta menandai tahap displacement.",
         "options": [
           {
             "id": "a",
@@ -4138,7 +4153,7 @@
         "sourceNumber": 7,
         "type": "multiple",
         "prompt": "What casing accessories are used to control flow and ensure proper placement during cementing?",
-        "explanation": "Pilihan yang harus dipilih adalah Float Collar; Float Shoe. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Stab-in lazim untuk conductor atau large casing karena stinger mengurangi displacement volume. Two-stage cementing membatasi hydrostatic pressure dan losses; float shoe/collar mengontrol backflow, sedangkan bottom dan top plug memisahkan fluida serta menandai tahap displacement.",
         "media": "/media/cementing-07.webp",
         "options": [
           {
@@ -4174,7 +4189,7 @@
         "sourceNumber": 8,
         "type": "boolean",
         "prompt": "A wiper plug is used to separate cement slurry from drilling and displacement fluids.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Cementing Operation.",
+        "explanation": "Stab-in lazim untuk conductor atau large casing karena stinger mengurangi displacement volume. Two-stage cementing membatasi hydrostatic pressure dan losses; float shoe/collar mengontrol backflow, sedangkan bottom dan top plug memisahkan fluida serta menandai tahap displacement.",
         "options": [
           {
             "id": "a",
@@ -4198,7 +4213,7 @@
         "sourceNumber": 9,
         "type": "order",
         "prompt": "Arrange the Sequence for Single-Stage Cementing Job",
-        "explanation": "Urutan yang benar adalah Drop Bottom Plug → Pump Slurry → Drop Top Plug → Pump Displacement Fluid.",
+        "explanation": "Stab-in lazim untuk conductor atau large casing karena stinger mengurangi displacement volume. Two-stage cementing membatasi hydrostatic pressure dan losses; float shoe/collar mengontrol backflow, sedangkan bottom dan top plug memisahkan fluida serta menandai tahap displacement.",
         "options": [
           {
             "id": "a",
@@ -4235,7 +4250,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "What fluids are used to separate cement slurry from drilling fluid during cementing operations?",
-        "explanation": "Jawaban yang benar adalah Spacer, sesuai materi Cementing Operation.",
+        "explanation": "Wash fluid membersihkan, spacer memisahkan mud dari cement, lalu lead slurry yang lebih ringan mengisi volume utama dan tail slurry yang lebih kuat ditempatkan di zona kritis. Urutan ini mengurangi contamination dan memperbaiki bonding.",
         "options": [
           {
             "id": "a",
@@ -4269,7 +4284,7 @@
         "sourceNumber": 11,
         "type": "boolean",
         "prompt": "Tail slurry is the last cement slurry pumped during primary cementing.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Cementing Operation.",
+        "explanation": "Wash fluid membersihkan, spacer memisahkan mud dari cement, lalu lead slurry yang lebih ringan mengisi volume utama dan tail slurry yang lebih kuat ditempatkan di zona kritis. Urutan ini mengurangi contamination dan memperbaiki bonding.",
         "options": [
           {
             "id": "a",
@@ -4293,7 +4308,7 @@
         "sourceNumber": 12,
         "type": "boolean",
         "prompt": "Lead slurry is often lighter in density and strength than the tail slurry.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Cementing Operation.",
+        "explanation": "Wash fluid membersihkan, spacer memisahkan mud dari cement, lalu lead slurry yang lebih ringan mengisi volume utama dan tail slurry yang lebih kuat ditempatkan di zona kritis. Urutan ini mengurangi contamination dan memperbaiki bonding.",
         "options": [
           {
             "id": "a",
@@ -4317,7 +4332,7 @@
         "sourceNumber": 13,
         "type": "multiple",
         "prompt": "Based on API classification, which of the following are the classes of Portland cement?",
-        "explanation": "Pilihan yang harus dipilih adalah Class G; Class H. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Class G dan H adalah common oilwell cement. Retarder memperpanjang thickening time, dispersant menurunkan viscosity dan friction pressure, fluid-loss agent menahan filtrate, sementara gelling agent mengatur rheology dan suspension.",
         "options": [
           {
             "id": "a",
@@ -4352,7 +4367,7 @@
         "sourceNumber": 14,
         "type": "single",
         "prompt": "Which cementing additive is used to delay the setting time, providing more time for cement to be placed and adjusted?",
-        "explanation": "Jawaban yang benar adalah Retarders, sesuai materi Cementing Operation.",
+        "explanation": "Class G dan H adalah common oilwell cement. Retarder memperpanjang thickening time, dispersant menurunkan viscosity dan friction pressure, fluid-loss agent menahan filtrate, sementara gelling agent mengatur rheology dan suspension.",
         "options": [
           {
             "id": "a",
@@ -4386,7 +4401,7 @@
         "sourceNumber": 15,
         "type": "boolean",
         "prompt": "A shorter thickening time prevented cement slurry from reaching the designed annulus, resulting in cement inside casing.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Cementing Operation.",
+        "explanation": "Class G dan H adalah common oilwell cement. Retarder memperpanjang thickening time, dispersant menurunkan viscosity dan friction pressure, fluid-loss agent menahan filtrate, sementara gelling agent mengatur rheology dan suspension.",
         "options": [
           {
             "id": "a",
@@ -4410,7 +4425,7 @@
         "sourceNumber": 16,
         "type": "multiple",
         "prompt": "What additives are required to improve mud removal, reduce friction pressure, and enhance pumpability of cement slurry?",
-        "explanation": "Pilihan yang harus dipilih adalah Dispersants; Gelling Agents. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Class G dan H adalah common oilwell cement. Retarder memperpanjang thickening time, dispersant menurunkan viscosity dan friction pressure, fluid-loss agent menahan filtrate, sementara gelling agent mengatur rheology dan suspension.",
         "options": [
           {
             "id": "a",
@@ -4445,7 +4460,7 @@
         "sourceNumber": 17,
         "type": "single",
         "prompt": "Why is it necessary to use excess cement slurry during cementing operations in drilling wells?",
-        "explanation": "Jawaban yang benar adalah Ensure Complete Coverage of Hole Irregularity and Enlargement, sesuai materi Cementing Operation.",
+        "explanation": "Open hole tidak berbentuk silinder sempurna. Washout, rugosity, dan enlargement membuat volume aktual lebih besar daripada nominal, sehingga excess cement diperlukan agar annulus tetap tertutup penuh.",
         "options": [
           {
             "id": "a",
@@ -4479,7 +4494,7 @@
         "sourceNumber": 18,
         "type": "single",
         "prompt": "The following is cementing additive to reduce filtration",
-        "explanation": "Jawaban yang benar adalah Fluid loss control agents, sesuai materi Cementing Operation.",
+        "explanation": "Class G dan H adalah common oilwell cement. Retarder memperpanjang thickening time, dispersant menurunkan viscosity dan friction pressure, fluid-loss agent menahan filtrate, sementara gelling agent mengatur rheology dan suspension.",
         "options": [
           {
             "id": "a",
@@ -4513,7 +4528,7 @@
         "sourceNumber": 19,
         "type": "order",
         "prompt": "Please select the correct of sequence in a Cementing working fluid",
-        "explanation": "Urutan yang benar adalah Wash Fluid → Spacer → Lead Cement → Tail Cement.",
+        "explanation": "Wash fluid membersihkan, spacer memisahkan mud dari cement, lalu lead slurry yang lebih ringan mengisi volume utama dan tail slurry yang lebih kuat ditempatkan di zona kritis. Urutan ini mengurangi contamination dan memperbaiki bonding.",
         "options": [
           {
             "id": "a",
@@ -4565,7 +4580,10 @@
         ],
         "correctOptionIds": [
           "a"
-        ]
+        ],
+        "excluded": true,
+        "exclusionCategory": "non-concept",
+        "exclusionReason": "Soal bonus tanpa konsep yang diuji."
       },
       {
         "id": "bit-01",
@@ -4574,7 +4592,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "Which drill bit type breaks rock primarily by continuous shearing?",
-        "explanation": "Jawaban yang benar adalah PDC (Fixed Cutter) Bit, sesuai materi Drill Bit.",
+        "explanation": "PDC fixed-cutter memotong batuan dengan continuous shearing, sedangkan roller cone menggunakan crushing, abrasion, dan cyclic compression. Blade adalah komponen PDC, bukan komponen dasar roller-cone; journal angle yang lebih besar mendukung beban pada formasi keras.",
         "options": [
           {
             "id": "a",
@@ -4608,7 +4626,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "What is the primary function of drilling hydraulics?",
-        "explanation": "Jawaban yang benar adalah Cool the cutters and remove cuttings from the hole, sesuai materi Drill Bit.",
+        "explanation": "Hydraulics mendinginkan cutters dan membawa cuttings keluar dari bottom hole. Plugged nozzle membatasi jet, sedangkan bit balling menutup cutting structure; keduanya menurunkan cleaning efficiency dan ROP.",
         "options": [
           {
             "id": "a",
@@ -4642,7 +4660,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "Which cutter size is commonly used across most PDC drilling applications?",
-        "explanation": "Jawaban yang benar adalah 16 mm, sesuai materi Drill Bit.",
+        "explanation": "Cutter 16 mm banyak dipakai sebagai ukuran serbaguna. Formasi lunak dapat memakai cutter lebih besar dan blade lebih sedikit untuk aggressivity, sedangkan lebih banyak cutter berukuran kecil menyebarkan beban dan meningkatkan durability.",
         "options": [
           {
             "id": "a",
@@ -4676,7 +4694,7 @@
         "sourceNumber": 4,
         "type": "single",
         "prompt": "Which of the following is NOT a basic component of a Roller Cone bit?",
-        "explanation": "Jawaban yang benar adalah Blade, sesuai materi Drill Bit.",
+        "explanation": "PDC fixed-cutter memotong batuan dengan continuous shearing, sedangkan roller cone menggunakan crushing, abrasion, dan cyclic compression. Blade adalah komponen PDC, bukan komponen dasar roller-cone; journal angle yang lebih besar mendukung beban pada formasi keras.",
         "options": [
           {
             "id": "a",
@@ -4710,7 +4728,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "Which drill bit would you recommend for drill a long interval of soft clay formation?",
-        "explanation": "Jawaban yang benar adalah 5-blade PDC bit with 19 mm cutters, sesuai materi Drill Bit.",
+        "explanation": "Cutter 16 mm banyak dipakai sebagai ukuran serbaguna. Formasi lunak dapat memakai cutter lebih besar dan blade lebih sedikit untuk aggressivity, sedangkan lebih banyak cutter berukuran kecil menyebarkan beban dan meningkatkan durability.",
         "options": [
           {
             "id": "a",
@@ -4744,7 +4762,7 @@
         "sourceNumber": 6,
         "type": "multiple",
         "prompt": "Name are the major categories of drill bits?",
-        "explanation": "Pilihan yang harus dipilih adalah Roller Cone Bit; PDC (Fixed Cutter) Bit. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "PDC fixed-cutter memotong batuan dengan continuous shearing, sedangkan roller cone menggunakan crushing, abrasion, dan cyclic compression. Blade adalah komponen PDC, bukan komponen dasar roller-cone; journal angle yang lebih besar mendukung beban pada formasi keras.",
         "options": [
           {
             "id": "a",
@@ -4779,7 +4797,7 @@
         "sourceNumber": 7,
         "type": "multiple",
         "prompt": "Which characteristics increase the durability of a PDC bit?",
-        "explanation": "Pilihan yang harus dipilih adalah More cutters; Smaller cutters. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Cutter 16 mm banyak dipakai sebagai ukuran serbaguna. Formasi lunak dapat memakai cutter lebih besar dan blade lebih sedikit untuk aggressivity, sedangkan lebih banyak cutter berukuran kecil menyebarkan beban dan meningkatkan durability.",
         "options": [
           {
             "id": "a",
@@ -4814,7 +4832,7 @@
         "sourceNumber": 8,
         "type": "multiple",
         "prompt": "Which items are considered good offset data for bit selection?",
-        "explanation": "Pilihan yang harus dipilih adalah Bit Record; Master Logs. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Bit record, dull photos, master log, lithology, interval, BHA, mud, dan vibration data membantu memisahkan efek desain dari efek operasi. Steel body memberi fleksibilitas desain dan tidak otomatis lebih mahal daripada matrix body.",
         "options": [
           {
             "id": "a",
@@ -4849,7 +4867,7 @@
         "sourceNumber": 9,
         "type": "multiple",
         "prompt": "Which Two conditions are commonly associated with hydraulic problems?",
-        "explanation": "Pilihan yang harus dipilih adalah Plugged Nozzle (PN); Balled Up (BU). Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Hydraulics mendinginkan cutters dan membawa cuttings keluar dari bottom hole. Plugged nozzle membatasi jet, sedangkan bit balling menutup cutting structure; keduanya menurunkan cleaning efficiency dan ROP.",
         "options": [
           {
             "id": "a",
@@ -4884,7 +4902,7 @@
         "sourceNumber": 10,
         "type": "boolean",
         "prompt": "Steel PDC body material is commonly more expensive than PDC body material",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Drill Bit.",
+        "explanation": "Bit record, dull photos, master log, lithology, interval, BHA, mud, dan vibration data membantu memisahkan efek desain dari efek operasi. Steel body memberi fleksibilitas desain dan tidak otomatis lebih mahal daripada matrix body.",
         "options": [
           {
             "id": "a",
@@ -4908,7 +4926,7 @@
         "sourceNumber": 11,
         "type": "boolean",
         "prompt": "PDC bits remove rock mainly by shearing rather than crushing.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Drill Bit.",
+        "explanation": "PDC fixed-cutter memotong batuan dengan continuous shearing, sedangkan roller cone menggunakan crushing, abrasion, dan cyclic compression. Blade adalah komponen PDC, bukan komponen dasar roller-cone; journal angle yang lebih besar mendukung beban pada formasi keras.",
         "options": [
           {
             "id": "a",
@@ -4932,7 +4950,7 @@
         "sourceNumber": 12,
         "type": "boolean",
         "prompt": "Increasing the number of cutters generally improves bit durability.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Drill Bit.",
+        "explanation": "Cutter 16 mm banyak dipakai sebagai ukuran serbaguna. Formasi lunak dapat memakai cutter lebih besar dan blade lebih sedikit untuk aggressivity, sedangkan lebih banyak cutter berukuran kecil menyebarkan beban dan meningkatkan durability.",
         "options": [
           {
             "id": "a",
@@ -4956,7 +4974,7 @@
         "sourceNumber": 13,
         "type": "boolean",
         "prompt": "Larger journal angles are generally preferred for softer formations.",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Drill Bit.",
+        "explanation": "PDC fixed-cutter memotong batuan dengan continuous shearing, sedangkan roller cone menggunakan crushing, abrasion, dan cyclic compression. Blade adalah komponen PDC, bukan komponen dasar roller-cone; journal angle yang lebih besar mendukung beban pada formasi keras.",
         "options": [
           {
             "id": "a",
@@ -4980,7 +4998,7 @@
         "sourceNumber": 14,
         "type": "single",
         "prompt": "Which one is not considered as part of bit selection",
-        "explanation": "Jawaban yang benar adalah Visibility, sesuai materi Drill Bit.",
+        "explanation": "Bit record, dull photos, master log, lithology, interval, BHA, mud, dan vibration data membantu memisahkan efek desain dari efek operasi. Steel body memberi fleksibilitas desain dan tidak otomatis lebih mahal daripada matrix body.",
         "options": [
           {
             "id": "a",
@@ -5014,7 +5032,7 @@
         "sourceNumber": 15,
         "type": "multiple",
         "prompt": "Match the dull grading code with its meaning",
-        "explanation": "Pilihan yang harus dipilih adalah BU - Balled Up; ER - Erosion; BT - BrokenTeeth; PN - Plugged Nozzle. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Dull code mengubah kerusakan visual menjadi diagnosis konsisten: BU untuk balled up, ER untuk erosion, BT untuk broken teeth, dan PN untuk plugged nozzle. Diagnosis ini menjadi feedback bagi bit berikutnya.",
         "options": [
           {
             "id": "a",
@@ -5051,7 +5069,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "What is the Hydrostatic Pressure of 500 ft well full of 10 ppg mud?",
-        "explanation": "Jawaban yang benar adalah 260 psi, sesuai materi Well Control Principle and Equipment.",
+        "explanation": "Dalam field units, pressure gradient = 0,052 × mud weight dan hydrostatic pressure = gradient × TVD. Gas yang bermigrasi dalam closed well mempertahankan bubble pressure bila volumenya tidak berubah, tetapi menaikkan surface dan bottom-hole pressure.",
         "media": "/media/well-control-01.webp",
         "options": [
           {
@@ -5086,7 +5104,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "What is the pressure gradient of the 9 ppg fluid in the 500 ft TVD well?",
-        "explanation": "Jawaban yang benar adalah 0.468 psi/ft, sesuai materi Well Control Principle and Equipment.",
+        "explanation": "Dalam field units, pressure gradient = 0,052 × mud weight dan hydrostatic pressure = gradient × TVD. Gas yang bermigrasi dalam closed well mempertahankan bubble pressure bila volumenya tidak berubah, tetapi menaikkan surface dan bottom-hole pressure.",
         "options": [
           {
             "id": "a",
@@ -5120,7 +5138,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "How much would the hydrostatic pressure be reduced?",
-        "explanation": "Jawaban yang benar adalah 468 psi, sesuai materi Well Control Principle and Equipment.",
+        "explanation": "Dalam field units, pressure gradient = 0,052 × mud weight dan hydrostatic pressure = gradient × TVD. Gas yang bermigrasi dalam closed well mempertahankan bubble pressure bila volumenya tidak berubah, tetapi menaikkan surface dan bottom-hole pressure.",
         "media": "/media/well-control-03.webp",
         "options": [
           {
@@ -5170,7 +5188,7 @@
         "correctOptionIds": [
           "b"
         ],
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Well Control Principle and Equipment."
+        "explanation": "Short fill saat POOH adalah positive warning karena volume pengisian tidak menggantikan volume steel yang keluar. Walau flow check tampak tenang, penyebab discrepancy harus diselesaikan; saat kick ketika tripping, pasang dan tutup full-opening safety valve untuk membangun barrier."
       },
       {
         "id": "well-control-05",
@@ -5179,7 +5197,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "Constant BHP methods are used to maintain BHP at a level equal to or slightly greater than which pressure?",
-        "explanation": "Jawaban yang benar adalah Formation Pressure, sesuai materi Well Control Principle and Equipment.",
+        "explanation": "Kill method menjaga BHP setara atau sedikit di atas formation pressure tanpa melebihi fracture limit. Driller's Method memakai dua circulation: influx keluar dengan original mud, lalu kill-weight mud mematikan sumur; zero SIDPP dan SICP mengonfirmasi pressure balance.",
         "options": [
           {
             "id": "a",
@@ -5238,7 +5256,7 @@
         "correctOptionIds": [
           "d"
         ],
-        "explanation": "Jawaban yang benar adalah Gas bubble pressure, sesuai materi Well Control Principle and Equipment."
+        "explanation": "Dalam field units, pressure gradient = 0,052 × mud weight dan hydrostatic pressure = gradient × TVD. Gas yang bermigrasi dalam closed well mempertahankan bubble pressure bila volumenya tidak berubah, tetapi menaikkan surface dan bottom-hole pressure."
       },
       {
         "id": "well-control-07",
@@ -5272,7 +5290,7 @@
         "correctOptionIds": [
           "d"
         ],
-        "explanation": "Jawaban yang benar adalah Install full open safety valve and close same, sesuai materi Well Control Principle and Equipment."
+        "explanation": "Short fill saat POOH adalah positive warning karena volume pengisian tidak menggantikan volume steel yang keluar. Walau flow check tampak tenang, penyebab discrepancy harus diselesaikan; saat kick ketika tripping, pasang dan tutup full-opening safety valve untuk membangun barrier."
       },
       {
         "id": "well-control-08",
@@ -5281,7 +5299,7 @@
         "sourceNumber": 8,
         "type": "boolean",
         "prompt": "Driller's Method kills the well with kill fluid on the first of two circulations.",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Well Control Principle and Equipment.",
+        "explanation": "Kill method menjaga BHP setara atau sedikit di atas formation pressure tanpa melebihi fracture limit. Driller's Method memakai dua circulation: influx keluar dengan original mud, lalu kill-weight mud mematikan sumur; zero SIDPP dan SICP mengonfirmasi pressure balance.",
         "media": "/media/well-control-08.webp",
         "options": [
           {
@@ -5331,7 +5349,7 @@
         "correctOptionIds": [
           "d"
         ],
-        "explanation": "Jawaban yang benar adalah Shut in pressures both in the drill pipe and casing are 0 psi, sesuai materi Well Control Principle and Equipment."
+        "explanation": "Kill method menjaga BHP setara atau sedikit di atas formation pressure tanpa melebihi fracture limit. Driller's Method memakai dua circulation: influx keluar dengan original mud, lalu kill-weight mud mematikan sumur; zero SIDPP dan SICP mengonfirmasi pressure balance."
       },
       {
         "id": "well-control-10",
@@ -5365,7 +5383,7 @@
         "correctOptionIds": [
           "c"
         ],
-        "explanation": "Jawaban yang benar adalah Stripping, sesuai materi Well Control Principle and Equipment."
+        "explanation": "Stripping berarti memindahkan pipe melalui closed preventer saat well bertekanan. Four-way valve mengarahkan hydraulic fluid untuk membuka atau menutup BOP, sedangkan rotating head menyediakan dynamic seal untuk aerated drilling atau managed-pressure operation."
       },
       {
         "id": "well-control-11",
@@ -5374,7 +5392,7 @@
         "sourceNumber": 11,
         "type": "single",
         "prompt": "Which valve that controls the hydraulic fluids in the BOP control unit to operate the BOP function [open/close]?",
-        "explanation": "Jawaban yang benar adalah 3-position/4-way valve, sesuai materi Well Control Principle and Equipment.",
+        "explanation": "Stripping berarti memindahkan pipe melalui closed preventer saat well bertekanan. Four-way valve mengarahkan hydraulic fluid untuk membuka atau menutup BOP, sedangkan rotating head menyediakan dynamic seal untuk aerated drilling atau managed-pressure operation.",
         "options": [
           {
             "id": "a",
@@ -5433,7 +5451,7 @@
         "correctOptionIds": [
           "c"
         ],
-        "explanation": "Jawaban yang benar adalah Rotating head, sesuai materi Well Control Principle and Equipment."
+        "explanation": "Stripping berarti memindahkan pipe melalui closed preventer saat well bertekanan. Four-way valve mengarahkan hydraulic fluid untuk membuka atau menutup BOP, sedangkan rotating head menyediakan dynamic seal untuk aerated drilling atau managed-pressure operation."
       },
       {
         "id": "well-construction-01",
@@ -5442,7 +5460,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "Which of the following information is not required for well trajectory design?",
-        "explanation": "Jawaban yang benar adalah Weather Condition, sesuai materi Well Construction Principle.",
+        "explanation": "Trajectory ditentukan oleh target, KOP, inclination, azimuth, dogleg, dan constraints bawah permukaan—bukan cuaca. Measured Depth mengikuti lintasan sehingga pada deviated well nilainya sama atau lebih besar daripada True Vertical Depth.",
         "options": [
           {
             "id": "a",
@@ -5476,7 +5494,7 @@
         "sourceNumber": 2,
         "type": "multiple",
         "prompt": "Which of the following are types of drilling based on well geometry?",
-        "explanation": "Pilihan yang harus dipilih adalah Vertical; Slant (J) Type; \"S\" Type; Horizontal. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Trajectory ditentukan oleh target, KOP, inclination, azimuth, dogleg, dan constraints bawah permukaan—bukan cuaca. Measured Depth mengikuti lintasan sehingga pada deviated well nilainya sama atau lebih besar daripada True Vertical Depth.",
         "options": [
           {
             "id": "a",
@@ -5513,7 +5531,7 @@
         "sourceNumber": 3,
         "type": "boolean",
         "prompt": "The kick-off point (KOP) is the depth where a well first begins to deviate from vertical.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Well Construction Principle.",
+        "explanation": "Trajectory ditentukan oleh target, KOP, inclination, azimuth, dogleg, dan constraints bawah permukaan—bukan cuaca. Measured Depth mengikuti lintasan sehingga pada deviated well nilainya sama atau lebih besar daripada True Vertical Depth.",
         "options": [
           {
             "id": "a",
@@ -5537,7 +5555,7 @@
         "sourceNumber": 4,
         "type": "boolean",
         "prompt": "In a directional well, True Vertical Depth (TVD) is greater than Measured Depth (MD).",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Well Construction Principle.",
+        "explanation": "Trajectory ditentukan oleh target, KOP, inclination, azimuth, dogleg, dan constraints bawah permukaan—bukan cuaca. Measured Depth mengikuti lintasan sehingga pada deviated well nilainya sama atau lebih besar daripada True Vertical Depth.",
         "options": [
           {
             "id": "a",
@@ -5561,7 +5579,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "Calculate the bottom hole pressure with a mud weight (MW) of 12.7 ppg at a true vertical depth (TVD) of 6562 ft.",
-        "explanation": "Jawaban yang benar adalah 4,334 psi, sesuai materi Well Construction Principle.",
+        "explanation": "Pressure gradient = 0,052 × MW dan hydrostatic pressure = gradient × TVD. Overbalanced drilling menempatkan wellbore pressure di atas pore pressure untuk mencegah influx, tetapi tetap di bawah fracture pressure agar tidak memecahkan formation.",
         "options": [
           {
             "id": "a",
@@ -5595,7 +5613,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "What would be the pressure gradient if the mud weight is 9.0 ppg?",
-        "explanation": "Jawaban yang benar adalah 0.468 psi/ft, sesuai materi Well Construction Principle.",
+        "explanation": "Pressure gradient = 0,052 × MW dan hydrostatic pressure = gradient × TVD. Overbalanced drilling menempatkan wellbore pressure di atas pore pressure untuk mencegah influx, tetapi tetap di bawah fracture pressure agar tidak memecahkan formation.",
         "options": [
           {
             "id": "a",
@@ -5629,7 +5647,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "How should the pressure stratum be arranged in an overbalance drilling operation to ensure safe and efficient drilling?",
-        "explanation": "Jawaban yang benar adalah Pore Pressure < Wellbore Pressure < Fracture Pressure, sesuai materi Well Construction Principle.",
+        "explanation": "Pressure gradient = 0,052 × MW dan hydrostatic pressure = gradient × TVD. Overbalanced drilling menempatkan wellbore pressure di atas pore pressure untuk mencegah influx, tetapi tetap di bawah fracture pressure agar tidak memecahkan formation.",
         "options": [
           {
             "id": "a",
@@ -5663,7 +5681,7 @@
         "sourceNumber": 8,
         "type": "order",
         "prompt": "Arrange the typical hole and casing sizes used in standard drilling activity.",
-        "explanation": "Urutan yang benar adalah Casing 13-3/8\" → Hole 12-1/4\" → Casing 9-5/8\" → Hole 8-1/2\".",
+        "explanation": "Hole-casing sequence menyisakan clearance untuk cement. Grade, weight, range, dan thread mempunyai arti berbeda; casing head adalah komponen wellhead terbawah, sedangkan Christmas tree berada di atas tubing head adapter dan mengendalikan produksi.",
         "options": [
           {
             "id": "a",
@@ -5700,7 +5718,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "What is the grade of steel for the casing described as 18-5/8\", 115 ppf, K-55, R-3, BTC?",
-        "explanation": "Jawaban yang benar adalah K-55, sesuai materi Well Construction Principle.",
+        "explanation": "Hole-casing sequence menyisakan clearance untuk cement. Grade, weight, range, dan thread mempunyai arti berbeda; casing head adalah komponen wellhead terbawah, sedangkan Christmas tree berada di atas tubing head adapter dan mengendalikan produksi.",
         "media": "/media/well-construction-09.webp",
         "options": [
           {
@@ -5735,7 +5753,7 @@
         "sourceNumber": 10,
         "type": "boolean",
         "prompt": "Burst load is the internal pressure that can rupture casing outward.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Well Construction Principle.",
+        "explanation": "Hole-casing sequence menyisakan clearance untuk cement. Grade, weight, range, dan thread mempunyai arti berbeda; casing head adalah komponen wellhead terbawah, sedangkan Christmas tree berada di atas tubing head adapter dan mengendalikan produksi.",
         "options": [
           {
             "id": "a",
@@ -5759,7 +5777,7 @@
         "sourceNumber": 11,
         "type": "single",
         "prompt": "What is the lowest part of the wellhead assembly?",
-        "explanation": "Jawaban yang benar adalah Casing Head, sesuai materi Well Construction Principle.",
+        "explanation": "Hole-casing sequence menyisakan clearance untuk cement. Grade, weight, range, dan thread mempunyai arti berbeda; casing head adalah komponen wellhead terbawah, sedangkan Christmas tree berada di atas tubing head adapter dan mengendalikan produksi.",
         "media": "/media/well-construction-11.webp",
         "options": [
           {
@@ -5794,7 +5812,7 @@
         "sourceNumber": 12,
         "type": "boolean",
         "prompt": "X-tree is equipment located between the uppermost portion of the surface casing and the tubing head adapter connection.",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Well Construction Principle.",
+        "explanation": "Hole-casing sequence menyisakan clearance untuk cement. Grade, weight, range, dan thread mempunyai arti berbeda; casing head adalah komponen wellhead terbawah, sedangkan Christmas tree berada di atas tubing head adapter dan mengendalikan produksi.",
         "media": "/media/well-construction-12.webp",
         "options": [
           {
@@ -5819,7 +5837,7 @@
         "sourceNumber": 13,
         "type": "multiple",
         "prompt": "What are the objectives of cementing in drilling operations?",
-        "explanation": "Pilihan yang harus dipilih adalah Provide Zonal Isolation; Provide Casing Support and Protection; Support the Borehole. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Cement memberikan zonal isolation dan structural support. Top plug dipompa setelah slurry untuk memisahkan displacement fluid; annular volume dihitung dari selisih area hole dan casing dikalikan panjang interval.",
         "options": [
           {
             "id": "a",
@@ -5855,7 +5873,7 @@
         "sourceNumber": 14,
         "type": "boolean",
         "prompt": "The top plug is the last plug dropped into the casing during a cementing operation.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Well Construction Principle.",
+        "explanation": "Cement memberikan zonal isolation dan structural support. Top plug dipompa setelah slurry untuk memisahkan displacement fluid; annular volume dihitung dari selisih area hole dan casing dikalikan panjang interval.",
         "options": [
           {
             "id": "a",
@@ -5879,7 +5897,7 @@
         "sourceNumber": 15,
         "type": "single",
         "prompt": "Calculate the total volume of the annular space between a 492 ft 12-1/4\" open hole and a 9-5/8\" casing.",
-        "explanation": "Jawaban yang benar adalah 27.44 bbls, sesuai materi Well Construction Principle.",
+        "explanation": "Cement memberikan zonal isolation dan structural support. Top plug dipompa setelah slurry untuk memisahkan displacement fluid; annular volume dihitung dari selisih area hole dan casing dikalikan panjang interval.",
         "options": [
           {
             "id": "a",
@@ -5913,7 +5931,7 @@
         "sourceNumber": 16,
         "type": "single",
         "prompt": "Which one is not a type of offshore drilling rig?",
-        "explanation": "Jawaban yang benar adalah Truck Mounted Rig, sesuai materi Well Construction Principle.",
+        "explanation": "Truck-mounted unit adalah land rig, bukan offshore rig. Hoisting mengangkat string, solids-control equipment memisahkan cuttings dari mud, dan drilling fluid mengontrol pressure, mengangkut cuttings, menstabilkan hole, serta mendinginkan bit.",
         "media": "/media/well-construction-16.webp",
         "options": [
           {
@@ -5948,7 +5966,7 @@
         "sourceNumber": 17,
         "type": "single",
         "prompt": "In a rotary drilling rig system, what is the system used for lifting, lowering, and hanging equipment called?",
-        "explanation": "Jawaban yang benar adalah Hoisting System, sesuai materi Well Construction Principle.",
+        "explanation": "Truck-mounted unit adalah land rig, bukan offshore rig. Hoisting mengangkat string, solids-control equipment memisahkan cuttings dari mud, dan drilling fluid mengontrol pressure, mengangkut cuttings, menstabilkan hole, serta mendinginkan bit.",
         "media": "/media/well-construction-17.webp",
         "options": [
           {
@@ -5983,7 +6001,7 @@
         "sourceNumber": 18,
         "type": "single",
         "prompt": "Which of the following is not a type of solids control equipment in a circulation system?",
-        "explanation": "Jawaban yang benar adalah Derrick Mast, sesuai materi Well Construction Principle.",
+        "explanation": "Truck-mounted unit adalah land rig, bukan offshore rig. Hoisting mengangkat string, solids-control equipment memisahkan cuttings dari mud, dan drilling fluid mengontrol pressure, mengangkut cuttings, menstabilkan hole, serta mendinginkan bit.",
         "media": "/media/well-construction-18.webp",
         "options": [
           {
@@ -6018,7 +6036,7 @@
         "sourceNumber": 19,
         "type": "multiple",
         "prompt": "What is the function of drilling fluid in a well?",
-        "explanation": "Pilihan yang harus dipilih adalah Remove Cuttings from the Bottom of the Hole; Control the Pressure in the Well; Maintain Wellbore Stability; Helps Cool and Lubricate the Drill Bit. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Truck-mounted unit adalah land rig, bukan offshore rig. Hoisting mengangkat string, solids-control equipment memisahkan cuttings dari mud, dan drilling fluid mengontrol pressure, mengangkut cuttings, menstabilkan hole, serta mendinginkan bit.",
         "options": [
           {
             "id": "a",
@@ -6055,7 +6073,7 @@
         "sourceNumber": 20,
         "type": "single",
         "prompt": "What is the hydrostatic pressure at the bottom of a well with an 8,250 ftTVD/9,890 ftMD, fluid gradient of 0.59 psi/ft.",
-        "explanation": "Jawaban yang benar adalah 4,867.5 psi, sesuai materi Well Construction Principle.",
+        "explanation": "Pressure gradient = 0,052 × MW dan hydrostatic pressure = gradient × TVD. Overbalanced drilling menempatkan wellbore pressure di atas pore pressure untuk mencegah influx, tetapi tetap di bawah fracture pressure agar tidak memecahkan formation.",
         "options": [
           {
             "id": "a",
@@ -6089,7 +6107,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "What does BHA stand for in drilling operations?",
-        "explanation": "Jawaban yang benar adalah Bottom Hole Assembly, sesuai materi Drilling BHA.",
+        "explanation": "BHA berada dari bit sampai transisi ke drill pipe. PDM mengubah energi hydraulic mud menjadi torque dan RPM; lebih banyak lobes memberikan displacement per revolution lebih besar sehingga torque naik dan RPM turun, sedangkan flow rate menaikkan RPM.",
         "options": [
           {
             "id": "a",
@@ -6123,7 +6141,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "Where is the BHA located in the drill string?",
-        "explanation": "Jawaban yang benar adalah From the bit to the drill pipe, sesuai materi Drilling BHA.",
+        "explanation": "BHA berada dari bit sampai transisi ke drill pipe. PDM mengubah energi hydraulic mud menjadi torque dan RPM; lebih banyak lobes memberikan displacement per revolution lebih besar sehingga torque naik dan RPM turun, sedangkan flow rate menaikkan RPM.",
         "options": [
           {
             "id": "a",
@@ -6157,7 +6175,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "What is the primary function of a Positive Displacement Motor (PDM)?",
-        "explanation": "Jawaban yang benar adalah Convert hydraulic energy into mechanical energy, sesuai materi Drilling BHA.",
+        "explanation": "BHA berada dari bit sampai transisi ke drill pipe. PDM mengubah energi hydraulic mud menjadi torque dan RPM; lebih banyak lobes memberikan displacement per revolution lebih besar sehingga torque naik dan RPM turun, sedangkan flow rate menaikkan RPM.",
         "options": [
           {
             "id": "a",
@@ -6191,7 +6209,7 @@
         "sourceNumber": 4,
         "type": "boolean",
         "prompt": "A higher number of motor lobes results in higher torque and lower RPM",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Drilling BHA.",
+        "explanation": "BHA berada dari bit sampai transisi ke drill pipe. PDM mengubah energi hydraulic mud menjadi torque dan RPM; lebih banyak lobes memberikan displacement per revolution lebih besar sehingga torque naik dan RPM turun, sedangkan flow rate menaikkan RPM.",
         "options": [
           {
             "id": "a",
@@ -6215,7 +6233,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "The power section of a PDM converts drilling fluid energy into:",
-        "explanation": "Jawaban yang benar adalah Torque and RPM, sesuai materi Drilling BHA.",
+        "explanation": "BHA berada dari bit sampai transisi ke drill pipe. PDM mengubah energi hydraulic mud menjadi torque dan RPM; lebih banyak lobes memberikan displacement per revolution lebih besar sehingga torque naik dan RPM turun, sedangkan flow rate menaikkan RPM.",
         "options": [
           {
             "id": "a",
@@ -6249,7 +6267,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "Increasing the number of lobes in a motor power section generally results in:",
-        "explanation": "Jawaban yang benar adalah Lower RPM and higher torque, sesuai materi Drilling BHA.",
+        "explanation": "BHA berada dari bit sampai transisi ke drill pipe. PDM mengubah energi hydraulic mud menjadi torque dan RPM; lebih banyak lobes memberikan displacement per revolution lebih besar sehingga torque naik dan RPM turun, sedangkan flow rate menaikkan RPM.",
         "options": [
           {
             "id": "a",
@@ -6283,7 +6301,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "Which factor directly increases motor RPM?",
-        "explanation": "Jawaban yang benar adalah Increased flow rate, sesuai materi Drilling BHA.",
+        "explanation": "BHA berada dari bit sampai transisi ke drill pipe. PDM mengubah energi hydraulic mud menjadi torque dan RPM; lebih banyak lobes memberikan displacement per revolution lebih besar sehingga torque naik dan RPM turun, sedangkan flow rate menaikkan RPM.",
         "options": [
           {
             "id": "a",
@@ -6317,7 +6335,7 @@
         "sourceNumber": 8,
         "type": "single",
         "prompt": "During back-reaming operations, drilling RPM should be reduced to:",
-        "explanation": "Jawaban yang benar adalah 50–70% of drilling RPM, sesuai materi Drilling BHA.",
+        "explanation": "Back-reaming memakai RPM lebih rendah untuk membatasi vibration dan mechanical damage. RSS mempertahankan rotasi drillstring sehingga mengurangi static pipe condition dan memberi deflection yang dapat dikontrol untuk steering presisi.",
         "options": [
           {
             "id": "a",
@@ -6351,7 +6369,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "Rotary Steerable Systems (RSS) primarily reduce:",
-        "explanation": "Jawaban yang benar adalah Static pipe conditions, sesuai materi Drilling BHA.",
+        "explanation": "Back-reaming memakai RPM lebih rendah untuk membatasi vibration dan mechanical damage. RSS mempertahankan rotasi drillstring sehingga mengurangi static pipe condition dan memberi deflection yang dapat dikontrol untuk steering presisi.",
         "options": [
           {
             "id": "a",
@@ -6385,7 +6403,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Which of the following is an RSS benefit?",
-        "explanation": "Jawaban yang benar adalah Variable deflection for precise control, sesuai materi Drilling BHA.",
+        "explanation": "Back-reaming memakai RPM lebih rendah untuk membatasi vibration dan mechanical damage. RSS mempertahankan rotasi drillstring sehingga mengurangi static pipe condition dan memberi deflection yang dapat dikontrol untuk steering presisi.",
         "options": [
           {
             "id": "a",
@@ -6419,7 +6437,7 @@
         "sourceNumber": 11,
         "type": "single",
         "prompt": "MWD stands for:",
-        "explanation": "Jawaban yang benar adalah Measurement While Drilling, sesuai materi Drilling BHA.",
+        "explanation": "MWD mengukur saat drilling: accelerometer merespons gravitasi untuk inclination, magnetometer membaca medan magnet bumi untuk azimuth. NMDC memberi jarak non-magnetik agar survey tidak terdistorsi steel di sekitarnya.",
         "options": [
           {
             "id": "a",
@@ -6453,7 +6471,7 @@
         "sourceNumber": 12,
         "type": "single",
         "prompt": "MWD determines inclination primarily using:",
-        "explanation": "Jawaban yang benar adalah Accelerometers, sesuai materi Drilling BHA.",
+        "explanation": "MWD mengukur saat drilling: accelerometer merespons gravitasi untuk inclination, magnetometer membaca medan magnet bumi untuk azimuth. NMDC memberi jarak non-magnetik agar survey tidak terdistorsi steel di sekitarnya.",
         "options": [
           {
             "id": "a",
@@ -6487,7 +6505,7 @@
         "sourceNumber": 13,
         "type": "single",
         "prompt": "Which sensor measures the Earth's magnetic field?",
-        "explanation": "Jawaban yang benar adalah Magnetometer, sesuai materi Drilling BHA.",
+        "explanation": "MWD mengukur saat drilling: accelerometer merespons gravitasi untuk inclination, magnetometer membaca medan magnet bumi untuk azimuth. NMDC memberi jarak non-magnetik agar survey tidak terdistorsi steel di sekitarnya.",
         "options": [
           {
             "id": "a",
@@ -6521,7 +6539,7 @@
         "sourceNumber": 14,
         "type": "single",
         "prompt": "What is the primary function of a stabilizer?",
-        "explanation": "Jawaban yang benar adalah Control the contact point between the hole and BHA, sesuai materi Drilling BHA.",
+        "explanation": "Stabilizer menentukan contact point BHA terhadap hole sehingga memengaruhi tendency build/drop. Drilling jar menyimpan lalu melepaskan impact force untuk membantu membebaskan stuck pipe; bentuk stabilizer dipilih sesuai kebutuhan gauge dan serviceability.",
         "options": [
           {
             "id": "a",
@@ -6555,7 +6573,7 @@
         "sourceNumber": 15,
         "type": "single",
         "prompt": "What is the primary purpose of a drilling jar?",
-        "explanation": "Jawaban yang benar adalah Free stuck pipe using impact force, sesuai materi Drilling BHA.",
+        "explanation": "Stabilizer menentukan contact point BHA terhadap hole sehingga memengaruhi tendency build/drop. Drilling jar menyimpan lalu melepaskan impact force untuk membantu membebaskan stuck pipe; bentuk stabilizer dipilih sesuai kebutuhan gauge dan serviceability.",
         "options": [
           {
             "id": "a",
@@ -6589,7 +6607,7 @@
         "sourceNumber": 16,
         "type": "single",
         "prompt": "Non-Magnetic Drill Collars (NMDC) are used primarily to:",
-        "explanation": "Jawaban yang benar adalah Provide spacing for magnetic survey tools, sesuai materi Drilling BHA.",
+        "explanation": "MWD mengukur saat drilling: accelerometer merespons gravitasi untuk inclination, magnetometer membaca medan magnet bumi untuk azimuth. NMDC memberi jarak non-magnetik agar survey tidak terdistorsi steel di sekitarnya.",
         "options": [
           {
             "id": "a",
@@ -6623,7 +6641,7 @@
         "sourceNumber": 17,
         "type": "single",
         "prompt": "Heavy Weight Drill Pipe (HWDP) is commonly installed:",
-        "explanation": "Jawaban yang benar adalah Between Drill Pipe and Drill Collar, sesuai materi Drilling BHA.",
+        "explanation": "HWDP menjadi transisi stiffness antara drill collar dan drill pipe. Pada fulcrum BHA, stabilizer dekat bit bertindak sebagai pivot sehingga side force mendorong bit membangun inclination.",
         "options": [
           {
             "id": "a",
@@ -6657,7 +6675,7 @@
         "sourceNumber": 18,
         "type": "single",
         "prompt": "Which BHA type is designed to build inclination?",
-        "explanation": "Jawaban yang benar adalah Fulcrum BHA, sesuai materi Drilling BHA.",
+        "explanation": "HWDP menjadi transisi stiffness antara drill collar dan drill pipe. Pada fulcrum BHA, stabilizer dekat bit bertindak sebagai pivot sehingga side force mendorong bit membangun inclination.",
         "options": [
           {
             "id": "a",
@@ -6691,7 +6709,7 @@
         "sourceNumber": 19,
         "type": "single",
         "prompt": "Compared with RSS, a mud motor is classified as:",
-        "explanation": "Jawaban yang benar adalah Mechanical tool, sesuai materi Drilling BHA.",
+        "explanation": "BHA berada dari bit sampai transisi ke drill pipe. PDM mengubah energi hydraulic mud menjadi torque dan RPM; lebih banyak lobes memberikan displacement per revolution lebih besar sehingga torque naik dan RPM turun, sedangkan flow rate menaikkan RPM.",
         "options": [
           {
             "id": "a",
@@ -6725,7 +6743,7 @@
         "sourceNumber": 20,
         "type": "multiple",
         "prompt": "Which types of stabilizers?",
-        "explanation": "Pilihan yang harus dipilih adalah Sleeve Stabilizer; Integral-Blade Stabilizer (IBS); Welded-Blade Stabilizer; Adjustable Gauge Stabilizer. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Stabilizer menentukan contact point BHA terhadap hole sehingga memengaruhi tendency build/drop. Drilling jar menyimpan lalu melepaskan impact force untuk membantu membebaskan stuck pipe; bentuk stabilizer dipilih sesuai kebutuhan gauge dan serviceability.",
         "options": [
           {
             "id": "a",
@@ -6783,7 +6801,7 @@
           "a",
           "c"
         ],
-        "explanation": "Pilihan yang harus dipilih adalah Soft and sticky; Causing high viscosity. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan."
+        "explanation": "Reactive clay menyerap air, menjadi lunak dan lengket, lalu menaikkan viscosity serta risiko bit balling. Inhibitive mud menekan hydration; OBM biasanya memberi inhibition terkuat, sementara high-performance WBM menjadi alternatif water-based."
       },
       {
         "id": "fluids-02",
@@ -6812,7 +6830,7 @@
         "correctOptionIds": [
           "a"
         ],
-        "explanation": "Jawaban yang benar adalah Weighting agent, sesuai materi Drilling Fluids."
+        "explanation": "Bentonite adalah viscosifier dan membantu filtration control pada WBM, tetapi bukan weighting agent. Weighting memerlukan material berdensitas tinggi seperti barite."
       },
       {
         "id": "fluids-03",
@@ -6841,7 +6859,7 @@
         "correctOptionIds": [
           "c"
         ],
-        "explanation": "Jawaban yang benar adalah All correct, sesuai materi Drilling Fluids."
+        "explanation": "Bentonite adalah viscosifier dan membantu filtration control pada WBM, tetapi bukan weighting agent. Weighting memerlukan material berdensitas tinggi seperti barite."
       },
       {
         "id": "fluids-04",
@@ -6870,7 +6888,7 @@
         "correctOptionIds": [
           "c"
         ],
-        "explanation": "Jawaban yang benar adalah Cementing, sesuai materi Drilling Fluids."
+        "explanation": "Drilling mud dipakai selama pengeboran, bukan menggantikan cement slurry pada cementing. OBM membutuhkan equipment dan handling tambahan; base oil seperti ester dipilih untuk menurunkan dampak lingkungan dibanding conventional mineral oil."
       },
       {
         "id": "fluids-05",
@@ -6899,7 +6917,7 @@
         "correctOptionIds": [
           "b"
         ],
-        "explanation": "Jawaban yang benar adalah Reactive clays, sesuai materi Drilling Fluids."
+        "explanation": "Reactive clay menyerap air, menjadi lunak dan lengket, lalu menaikkan viscosity serta risiko bit balling. Inhibitive mud menekan hydration; OBM biasanya memberi inhibition terkuat, sementara high-performance WBM menjadi alternatif water-based."
       },
       {
         "id": "fluids-06",
@@ -6928,7 +6946,7 @@
         "correctOptionIds": [
           "a"
         ],
-        "explanation": "Jawaban yang benar adalah Bentonite, sesuai materi Drilling Fluids."
+        "explanation": "Bentonite adalah viscosifier dan membantu filtration control pada WBM, tetapi bukan weighting agent. Weighting memerlukan material berdensitas tinggi seperti barite."
       },
       {
         "id": "fluids-07",
@@ -6957,7 +6975,7 @@
         "correctOptionIds": [
           "c"
         ],
-        "explanation": "Jawaban yang benar adalah No need of additional rig equipment, sesuai materi Drilling Fluids."
+        "explanation": "Drilling mud dipakai selama pengeboran, bukan menggantikan cement slurry pada cementing. OBM membutuhkan equipment dan handling tambahan; base oil seperti ester dipilih untuk menurunkan dampak lingkungan dibanding conventional mineral oil."
       },
       {
         "id": "fluids-08",
@@ -6986,7 +7004,7 @@
         "correctOptionIds": [
           "b"
         ],
-        "explanation": "Jawaban yang benar adalah High Performance WBM, sesuai materi Drilling Fluids."
+        "explanation": "Reactive clay menyerap air, menjadi lunak dan lengket, lalu menaikkan viscosity serta risiko bit balling. Inhibitive mud menekan hydration; OBM biasanya memberi inhibition terkuat, sementara high-performance WBM menjadi alternatif water-based."
       },
       {
         "id": "fluids-09",
@@ -7015,7 +7033,7 @@
         "correctOptionIds": [
           "a"
         ],
-        "explanation": "Jawaban yang benar adalah Ester, sesuai materi Drilling Fluids."
+        "explanation": "Drilling mud dipakai selama pengeboran, bukan menggantikan cement slurry pada cementing. OBM membutuhkan equipment dan handling tambahan; base oil seperti ester dipilih untuk menurunkan dampak lingkungan dibanding conventional mineral oil."
       },
       {
         "id": "fluids-10",
@@ -7044,7 +7062,7 @@
         "correctOptionIds": [
           "a"
         ],
-        "explanation": "Jawaban yang benar adalah OBM, sesuai materi Drilling Fluids."
+        "explanation": "Reactive clay menyerap air, menjadi lunak dan lengket, lalu menaikkan viscosity serta risiko bit balling. Inhibitive mud menekan hydration; OBM biasanya memberi inhibition terkuat, sementara high-performance WBM menjadi alternatif water-based."
       },
       {
         "id": "intro-01",
@@ -7053,7 +7071,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "What is the term used to describe drilling unproven field?",
-        "explanation": "Jawaban yang benar adalah Exploration, sesuai materi Introduction to Drilling Engineering.",
+        "explanation": "Exploration mengebor area yang belum terbukti, sedangkan geometri sumur dapat vertical, directional, horizontal, atau multilateral. Kategori tujuan dan geometri adalah dua klasifikasi yang berbeda.",
         "media": "/media/intro-01.webp",
         "options": [
           {
@@ -7088,7 +7106,7 @@
         "sourceNumber": 2,
         "type": "multiple",
         "prompt": "Which of the following are types of drilling based on well geometry?",
-        "explanation": "Pilihan yang harus dipilih adalah Vertical; Horizontal; Directional; Multi-Lateral. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Exploration mengebor area yang belum terbukti, sedangkan geometri sumur dapat vertical, directional, horizontal, atau multilateral. Kategori tujuan dan geometri adalah dua klasifikasi yang berbeda.",
         "options": [
           {
             "id": "a",
@@ -7125,7 +7143,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "Which rig component is responsible for rotating the drill string and bit?",
-        "explanation": "Jawaban yang benar adalah Top Drive System, sesuai materi Introduction to Drilling Engineering.",
+        "explanation": "Top drive memutar drillstring dan bit, sedangkan hoisting system mengangkat atau menurunkannya. Weight on bit adalah selisih off-bottom hookload dan on-bottom hookload karena sebagian berat string dipindahkan ke bit.",
         "media": "/media/intro-03.webp",
         "options": [
           {
@@ -7160,7 +7178,7 @@
         "sourceNumber": 4,
         "type": "boolean",
         "prompt": "The hoisting system performs the function of running and pulling the drilling assembly.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Introduction to Drilling Engineering.",
+        "explanation": "Top drive memutar drillstring dan bit, sedangkan hoisting system mengangkat atau menurunkannya. Weight on bit adalah selisih off-bottom hookload dan on-bottom hookload karena sebagian berat string dipindahkan ke bit.",
         "media": "/media/intro-04.webp",
         "options": [
           {
@@ -7185,7 +7203,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "Given an off-bottom hook load of 200,000 lbs and an on-bottom hook load of 150,000 lbs, what is the weight on bit?",
-        "explanation": "Jawaban yang benar adalah 50,000 lbs, sesuai materi Introduction to Drilling Engineering.",
+        "explanation": "Top drive memutar drillstring dan bit, sedangkan hoisting system mengangkat atau menurunkannya. Weight on bit adalah selisih off-bottom hookload dan on-bottom hookload karena sebagian berat string dipindahkan ke bit.",
         "options": [
           {
             "id": "a",
@@ -7219,7 +7237,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "What type of drilling bit is shown in the picture below?",
-        "explanation": "Jawaban yang benar adalah Mill Tooth, sesuai materi Introduction to Drilling Engineering.",
+        "explanation": "Mill-tooth adalah roller-cone dengan gigi baja, sedangkan PDC memotong dengan shearing. Total bit RPM merupakan penjumlahan rotary RPM dan motor RPM; motor RPM diperoleh dari rev/gal dikalikan flow rate.",
         "media": "/media/intro-06.webp",
         "options": [
           {
@@ -7254,7 +7272,7 @@
         "sourceNumber": 7,
         "type": "boolean",
         "prompt": "A PDC (Polycrystalline Diamond Compact) bit works by continuously shearing the rock.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Introduction to Drilling Engineering.",
+        "explanation": "Mill-tooth adalah roller-cone dengan gigi baja, sedangkan PDC memotong dengan shearing. Total bit RPM merupakan penjumlahan rotary RPM dan motor RPM; motor RPM diperoleh dari rev/gal dikalikan flow rate.",
         "options": [
           {
             "id": "a",
@@ -7278,7 +7296,7 @@
         "sourceNumber": 8,
         "type": "slider",
         "prompt": "Based on the following data, calculate the total bit revolution. Rev/Gal = 0.147, 320 GPM, Rotary Speed = 220 RPM.",
-        "explanation": "Nilai yang benar adalah 267 RPM.",
+        "explanation": "Mill-tooth adalah roller-cone dengan gigi baja, sedangkan PDC memotong dengan shearing. Total bit RPM merupakan penjumlahan rotary RPM dan motor RPM; motor RPM diperoleh dari rev/gal dikalikan flow rate.",
         "slider": {
           "min": 230,
           "max": 280,
@@ -7294,7 +7312,7 @@
         "sourceNumber": 9,
         "type": "boolean",
         "prompt": "Mud Motor: Number of “ Lobes ”",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Introduction to Drilling Engineering.",
+        "explanation": "Mill-tooth adalah roller-cone dengan gigi baja, sedangkan PDC memotong dengan shearing. Total bit RPM merupakan penjumlahan rotary RPM dan motor RPM; motor RPM diperoleh dari rev/gal dikalikan flow rate.",
         "media": "/media/intro-09.webp",
         "options": [
           {
@@ -7319,7 +7337,7 @@
         "sourceNumber": 10,
         "type": "boolean",
         "prompt": "A kick is an undesirable and unintentional flow of formation fluid into the wellbore.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Introduction to Drilling Engineering.",
+        "explanation": "Kick adalah influx formation fluid yang tidak diinginkan. Hydrostatic pressure dihitung dengan 0,052 × MW(ppg) × TVD(ft); kedalaman meter harus dikonversi ke feet bila memakai field-unit constant tersebut.",
         "options": [
           {
             "id": "a",
@@ -7343,7 +7361,7 @@
         "sourceNumber": 11,
         "type": "single",
         "prompt": "Calculate the bottom hole pressure with a mud weight (MW) of 12.7 ppg at a true vertical depth (TVD) of 2000 m.",
-        "explanation": "Jawaban yang benar adalah 4,334 psi, sesuai materi Introduction to Drilling Engineering.",
+        "explanation": "Kick adalah influx formation fluid yang tidak diinginkan. Hydrostatic pressure dihitung dengan 0,052 × MW(ppg) × TVD(ft); kedalaman meter harus dikonversi ke feet bila memakai field-unit constant tersebut.",
         "options": [
           {
             "id": "a",
@@ -7377,7 +7395,7 @@
         "sourceNumber": 12,
         "type": "order",
         "prompt": "Arrange the typical hole and casing sizes used in standard drilling activity.",
-        "explanation": "Urutan yang benar adalah Casing 13-3/8\" → Hole 12-1/4\" → Casing 9-5/8\" → Hole 8-1/2\".",
+        "explanation": "Hole-casing program disusun dari diameter besar ke kecil. Casing displacement berasal dari internal cross-sectional area dikalikan panjang, dan stab-in/stinger cementing mengurangi volume displacement pada large casing.",
         "options": [
           {
             "id": "a",
@@ -7414,7 +7432,7 @@
         "sourceNumber": 13,
         "type": "boolean",
         "prompt": "The top plug is the last plug dropped into the casing during a cementing operation.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Introduction to Drilling Engineering.",
+        "explanation": "Hole-casing program disusun dari diameter besar ke kecil. Casing displacement berasal dari internal cross-sectional area dikalikan panjang, dan stab-in/stinger cementing mengurangi volume displacement pada large casing.",
         "options": [
           {
             "id": "a",
@@ -7438,7 +7456,7 @@
         "sourceNumber": 14,
         "type": "single",
         "prompt": "Calculate the displacement volume for a 9-5/8\" casing (ID 8.681\") with a total length of 11,420 feet.",
-        "explanation": "Jawaban yang benar adalah 836 barrels, sesuai materi Introduction to Drilling Engineering.",
+        "explanation": "Hole-casing program disusun dari diameter besar ke kecil. Casing displacement berasal dari internal cross-sectional area dikalikan panjang, dan stab-in/stinger cementing mengurangi volume displacement pada large casing.",
         "options": [
           {
             "id": "a",
@@ -7472,7 +7490,7 @@
         "sourceNumber": 15,
         "type": "single",
         "prompt": "What are the common cementing methods used for large-hole sizes?",
-        "explanation": "Jawaban yang benar adalah Stab-In/Stinger Cementing, sesuai materi Introduction to Drilling Engineering.",
+        "explanation": "Hole-casing program disusun dari diameter besar ke kecil. Casing displacement berasal dari internal cross-sectional area dikalikan panjang, dan stab-in/stinger cementing mengurangi volume displacement pada large casing.",
         "options": [
           {
             "id": "a",
@@ -7506,7 +7524,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "An example of an “Engineering Control” in drilling operations is …",
-        "explanation": "Jawaban yang benar adalah Install guard in rotating equipment, sesuai materi Drilling HSE.",
+        "explanation": "Risk menggabungkan likelihood dan severity. HIRA/JSA mengenali hazard sebelum kerja dan menentukan control dengan urutan efektivitas: elimination, substitution, engineering, administrative, lalu PPE; guard pada rotating equipment adalah engineering control.",
         "media": "/media/hse-01.webp",
         "options": [
           {
@@ -7546,7 +7564,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "What is the main purpose of conducting HIRA / JSA before starting work?",
-        "explanation": "Jawaban yang benar adalah Identify hazards and determine risk controls, sesuai materi Drilling HSE.",
+        "explanation": "Risk menggabungkan likelihood dan severity. HIRA/JSA mengenali hazard sebelum kerja dan menentukan control dengan urutan efektivitas: elimination, substitution, engineering, administrative, lalu PPE; guard pada rotating equipment adalah engineering control.",
         "options": [
           {
             "id": "a",
@@ -7585,7 +7603,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "Based on HOC (Hazard Observation Card) material, most workplace accidents are caused by…",
-        "explanation": "Jawaban yang benar adalah Unsafe acts, sesuai materi Drilling HSE.",
+        "explanation": "HOC menangkap unsafe act, unsafe condition, safe observation, dan near miss sehingga menjadi leading indicator. TRIR mencatat kejadian yang sudah terjadi sehingga bersifat lagging.",
         "options": [
           {
             "id": "a",
@@ -7624,7 +7642,7 @@
         "sourceNumber": 4,
         "type": "single",
         "prompt": "A worker observes a potential danger during a lifting ops. Based on SWA principles, the most appropriate action is",
-        "explanation": "Jawaban yang benar adalah Stop the work and communicate the hazard, sesuai materi Drilling HSE.",
+        "explanation": "Stop Work Authority memberi setiap orang hak dan kewajiban menghentikan pekerjaan berbahaya. PTW dipakai untuk pekerjaan non-rutin atau berisiko, sedangkan LOTO mengisolasi semua sumber energi agar equipment tidak hidup saat maintenance.",
         "options": [
           {
             "id": "a",
@@ -7663,7 +7681,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "The following activities require a Permit to Work (PTW), except…",
-        "explanation": "Jawaban yang benar adalah Routine low-risk work, sesuai materi Drilling HSE.",
+        "explanation": "Stop Work Authority memberi setiap orang hak dan kewajiban menghentikan pekerjaan berbahaya. PTW dipakai untuk pekerjaan non-rutin atau berisiko, sedangkan LOTO mengisolasi semua sumber energi agar equipment tidak hidup saat maintenance.",
         "options": [
           {
             "id": "a",
@@ -7702,7 +7720,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "What is the main purpose of implementing LOTO (Lock Out Tag Out)?",
-        "explanation": "Jawaban yang benar adalah Isolate energy sources so equipment cannot operate during maintenance, sesuai materi Drilling HSE.",
+        "explanation": "Stop Work Authority memberi setiap orang hak dan kewajiban menghentikan pekerjaan berbahaya. PTW dipakai untuk pekerjaan non-rutin atau berisiko, sedangkan LOTO mengisolasi semua sumber energi agar equipment tidak hidup saat maintenance.",
         "options": [
           {
             "id": "a",
@@ -7741,7 +7759,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "In Community Safety & Responsibility, which action BEST reflects safe behavior?",
-        "explanation": "Jawaban yang benar adalah Controlling dust, traffic, and emissions during project activities, sesuai materi Drilling HSE.",
+        "explanation": "Emergency organization menetapkan fungsi response yang spesifik, sementara CHSS memperluas tanggung jawab ke masyarakat melalui pengendalian dust, traffic, emissions, transport, dan dampak project lainnya.",
         "options": [
           {
             "id": "a",
@@ -7780,7 +7798,7 @@
         "sourceNumber": 8,
         "type": "single",
         "prompt": "Which of the KPIs on this list are classified as Lagging indicators?",
-        "explanation": "Jawaban yang benar adalah Total recordable incident rate, sesuai materi Drilling HSE.",
+        "explanation": "HOC menangkap unsafe act, unsafe condition, safe observation, dan near miss sehingga menjadi leading indicator. TRIR mencatat kejadian yang sudah terjadi sehingga bersifat lagging.",
         "options": [
           {
             "id": "a",
@@ -7814,7 +7832,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "Which of the KPIs on this list are classified as Leading indicators?",
-        "explanation": "Jawaban yang benar adalah HOC, sesuai materi Drilling HSE.",
+        "explanation": "HOC menangkap unsafe act, unsafe condition, safe observation, dan near miss sehingga menjadi leading indicator. TRIR mencatat kejadian yang sudah terjadi sehingga bersifat lagging.",
         "options": [
           {
             "id": "a",
@@ -7848,7 +7866,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "Here are the list of common risk anlaysis method, except…",
-        "explanation": "Jawaban yang benar adalah MCU, sesuai materi Drilling HSE.",
+        "explanation": "Risk menggabungkan likelihood dan severity. HIRA/JSA mengenali hazard sebelum kerja dan menentukan control dengan urutan efektivitas: elimination, substitution, engineering, administrative, lalu PPE; guard pada rotating equipment adalah engineering control.",
         "options": [
           {
             "id": "a",
@@ -7882,7 +7900,7 @@
         "sourceNumber": 11,
         "type": "order",
         "prompt": "Rank the hierarchy of control below from most effective to least effective",
-        "explanation": "Urutan yang benar adalah Elimination → Substitution → Engineering Control → Administrative control.",
+        "explanation": "Risk menggabungkan likelihood dan severity. HIRA/JSA mengenali hazard sebelum kerja dan menentukan control dengan urutan efektivitas: elimination, substitution, engineering, administrative, lalu PPE; guard pada rotating equipment adalah engineering control.",
         "options": [
           {
             "id": "a",
@@ -7919,7 +7937,7 @@
         "sourceNumber": 12,
         "type": "single",
         "prompt": "The following are roles in an emergency, except…",
-        "explanation": "Jawaban yang benar adalah Security, sesuai materi Drilling HSE.",
+        "explanation": "Emergency organization menetapkan fungsi response yang spesifik, sementara CHSS memperluas tanggung jawab ke masyarakat melalui pengendalian dust, traffic, emissions, transport, dan dampak project lainnya.",
         "options": [
           {
             "id": "a",
@@ -7953,7 +7971,7 @@
         "sourceNumber": 13,
         "type": "boolean",
         "prompt": "Each SDS (Safety data Sheet) is not decribes essential appropriate equipment for handling and in emergency",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Drilling HSE.",
+        "explanation": "SDS menjelaskan hazard, handling, PPE, first aid, spill response, dan emergency equipment. GHS label menggunakan signal word serta hazard pictogram; physical hazard berbeda dari health hazard seperti asphyxiation.",
         "options": [
           {
             "id": "a",
@@ -7977,7 +7995,7 @@
         "sourceNumber": 14,
         "type": "single",
         "prompt": "Specify the missing part in the question mark below...",
-        "explanation": "Jawaban yang benar adalah Signal Word, sesuai materi Drilling HSE.",
+        "explanation": "SDS menjelaskan hazard, handling, PPE, first aid, spill response, dan emergency equipment. GHS label menggunakan signal word serta hazard pictogram; physical hazard berbeda dari health hazard seperti asphyxiation.",
         "media": "/media/hse-14.webp",
         "options": [
           {
@@ -8012,7 +8030,7 @@
         "sourceNumber": 15,
         "type": "single",
         "prompt": "Specify the missing part in the question mark below...",
-        "explanation": "Jawaban yang benar adalah Hazard Pictogram, sesuai materi Drilling HSE.",
+        "explanation": "SDS menjelaskan hazard, handling, PPE, first aid, spill response, dan emergency equipment. GHS label menggunakan signal word serta hazard pictogram; physical hazard berbeda dari health hazard seperti asphyxiation.",
         "media": "/media/hse-15.webp",
         "options": [
           {
@@ -8047,7 +8065,7 @@
         "sourceNumber": 16,
         "type": "single",
         "prompt": "Risk is combination of...",
-        "explanation": "Jawaban yang benar adalah Likelihood x Severity, sesuai materi Drilling HSE.",
+        "explanation": "Risk menggabungkan likelihood dan severity. HIRA/JSA mengenali hazard sebelum kerja dan menentukan control dengan urutan efektivitas: elimination, substitution, engineering, administrative, lalu PPE; guard pada rotating equipment adalah engineering control.",
         "options": [
           {
             "id": "a",
@@ -8081,7 +8099,7 @@
         "sourceNumber": 17,
         "type": "single",
         "prompt": "Below are categorized into physical hazard, except...",
-        "explanation": "Jawaban yang benar adalah Asphyxiation gas, sesuai materi Drilling HSE.",
+        "explanation": "SDS menjelaskan hazard, handling, PPE, first aid, spill response, dan emergency equipment. GHS label menggunakan signal word serta hazard pictogram; physical hazard berbeda dari health hazard seperti asphyxiation.",
         "options": [
           {
             "id": "a",
@@ -8115,7 +8133,7 @@
         "sourceNumber": 18,
         "type": "single",
         "prompt": "CHSS is stand for?",
-        "explanation": "Jawaban yang benar adalah Community, Health, Safety and Security, sesuai materi Drilling HSE.",
+        "explanation": "Emergency organization menetapkan fungsi response yang spesifik, sementara CHSS memperluas tanggung jawab ke masyarakat melalui pengendalian dust, traffic, emissions, transport, dan dampak project lainnya.",
         "options": [
           {
             "id": "a",
@@ -8149,7 +8167,7 @@
         "sourceNumber": 19,
         "type": "single",
         "prompt": "The PTW is required prior to commence the works, except…",
-        "explanation": "Jawaban yang benar adalah Low-risk routine job, sesuai materi Drilling HSE.",
+        "explanation": "Stop Work Authority memberi setiap orang hak dan kewajiban menghentikan pekerjaan berbahaya. PTW dipakai untuk pekerjaan non-rutin atau berisiko, sedangkan LOTO mengisolasi semua sumber energi agar equipment tidak hidup saat maintenance.",
         "options": [
           {
             "id": "a",
@@ -8183,7 +8201,7 @@
         "sourceNumber": 20,
         "type": "boolean",
         "prompt": "HAZARD",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Drilling HSE.",
+        "explanation": "SDS menjelaskan hazard, handling, PPE, first aid, spill response, dan emergency equipment. GHS label menggunakan signal word serta hazard pictogram; physical hazard berbeda dari health hazard seperti asphyxiation.",
         "options": [
           {
             "id": "a",
@@ -8207,7 +8225,7 @@
         "sourceNumber": 1,
         "type": "boolean",
         "prompt": "Conventional oil or gas comes from formations that are considered normal or straightforward to extract product from",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Petroleum Subsurface for Drillers.",
+        "explanation": "Conventional hydrocarbon berada pada reservoir yang relatif mudah diproduksikan. Petroleum system memerlukan source, generation, migration, reservoir, trap, dan seal; fault dapat membantu trap atau migration tetapi bukan elemen wajib pada setiap sistem.",
         "options": [
           {
             "id": "a",
@@ -8231,7 +8249,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "The following are petroleum system elements, except..",
-        "explanation": "Jawaban yang benar adalah Fault, sesuai materi Petroleum Subsurface for Drillers.",
+        "explanation": "Conventional hydrocarbon berada pada reservoir yang relatif mudah diproduksikan. Petroleum system memerlukan source, generation, migration, reservoir, trap, dan seal; fault dapat membantu trap atau migration tetapi bukan elemen wajib pada setiap sistem.",
         "options": [
           {
             "id": "a",
@@ -8265,7 +8283,7 @@
         "sourceNumber": 3,
         "type": "boolean",
         "prompt": "Tectonic uplift in source areas decreases the sediment supply to the basin",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Petroleum Subsurface for Drillers.",
+        "explanation": "Uplift menciptakan relief dan meningkatkan erosion sehingga memasok sedimen ke basin. Kedekatan dengan source area biasanya menghasilkan butir lebih kasar atau kurang matang dibanding sedimen yang tertransport lebih jauh.",
         "options": [
           {
             "id": "a",
@@ -8289,7 +8307,7 @@
         "sourceNumber": 4,
         "type": "single",
         "prompt": "The process of forming oil and natural gas from the remains of organisms trapped beneath the earth's surface is called?",
-        "explanation": "Jawaban yang benar adalah hydrocarbon generation, sesuai materi Petroleum Subsurface for Drillers.",
+        "explanation": "Conventional hydrocarbon berada pada reservoir yang relatif mudah diproduksikan. Petroleum system memerlukan source, generation, migration, reservoir, trap, dan seal; fault dapat membantu trap atau migration tetapi bukan elemen wajib pada setiap sistem.",
         "options": [
           {
             "id": "a",
@@ -8323,7 +8341,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "In general, subsurface rock bodies that have high porosity and permeability are..",
-        "explanation": "Jawaban yang benar adalah reservoir, sesuai materi Petroleum Subsurface for Drillers.",
+        "explanation": "Reservoir yang baik memerlukan porosity untuk storage dan permeability untuk flow; high organic content lebih relevan bagi source rock. Stratigraphic trap terbentuk dari perubahan facies, pinch-out, atau unconformity, lalu seal yang impermeable menahan fluida.",
         "options": [
           {
             "id": "a",
@@ -8357,7 +8375,7 @@
         "sourceNumber": 6,
         "type": "pin",
         "prompt": "Refer to the thin section images, which sample was most likely deposited relatively near the sediment supply source?",
-        "explanation": "Sample B menunjukkan tekstur yang paling sesuai untuk endapan yang relatif dekat dengan sumber sedimen.",
+        "explanation": "Uplift menciptakan relief dan meningkatkan erosion sehingga memasok sedimen ke basin. Kedekatan dengan source area biasanya menghasilkan butir lebih kasar atau kurang matang dibanding sedimen yang tertransport lebih jauh.",
         "media": "/media/subsurface-06.webp",
         "pin": {
           "target": {
@@ -8375,7 +8393,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "What is type of hydrocarbon traps that result from changes in rock type, unconformities, or other sedimentary features?",
-        "explanation": "Jawaban yang benar adalah stratigraphic trap, sesuai materi Petroleum Subsurface for Drillers.",
+        "explanation": "Reservoir yang baik memerlukan porosity untuk storage dan permeability untuk flow; high organic content lebih relevan bagi source rock. Stratigraphic trap terbentuk dari perubahan facies, pinch-out, atau unconformity, lalu seal yang impermeable menahan fluida.",
         "options": [
           {
             "id": "a",
@@ -8409,7 +8427,7 @@
         "sourceNumber": 8,
         "type": "single",
         "prompt": "Which of the following is not necessarily a key characteristic of a good reservoir rock?",
-        "explanation": "Jawaban yang benar adalah High organic content, sesuai materi Petroleum Subsurface for Drillers.",
+        "explanation": "Reservoir yang baik memerlukan porosity untuk storage dan permeability untuk flow; high organic content lebih relevan bagi source rock. Stratigraphic trap terbentuk dari perubahan facies, pinch-out, atau unconformity, lalu seal yang impermeable menahan fluida.",
         "options": [
           {
             "id": "a",
@@ -8443,7 +8461,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "What is pore pressure also commonly referred to as in drilling operations?",
-        "explanation": "Jawaban yang benar adalah Formation pressure, sesuai materi Petroleum Subsurface for Drillers.",
+        "explanation": "Pore pressure adalah formation pressure, yaitu tekanan fluida di ruang pori. Pada normal-pressure environment nilainya mengikuti hydrostatic pressure; deviasi di atasnya menunjukkan overpressure dan mempersempit safe mud window.",
         "options": [
           {
             "id": "a",
@@ -8477,7 +8495,7 @@
         "sourceNumber": 10,
         "type": "single",
         "prompt": "In a normal pressure environment, what is the relationship between pore pressure (PP) and hydrostatic pressure (HP)?",
-        "explanation": "Jawaban yang benar adalah PP equals HP, sesuai materi Petroleum Subsurface for Drillers.",
+        "explanation": "Pore pressure adalah formation pressure, yaitu tekanan fluida di ruang pori. Pada normal-pressure environment nilainya mengikuti hydrostatic pressure; deviasi di atasnya menunjukkan overpressure dan mempersempit safe mud window.",
         "media": "/media/subsurface-10.webp",
         "options": [
           {
@@ -8512,7 +8530,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "The statement below is an integrated component of Project Triple Constraint, except….",
-        "explanation": "Jawaban yang benar adalah Resource, sesuai materi DPM Module 1.",
+        "explanation": "Triple constraint klasik terdiri dari scope, time, dan cost; resource memengaruhi ketiganya tetapi bukan sisi utama model tersebut. Project bergerak dari initiation ke planning, execution/monitoring, lalu completion.",
         "options": [
           {
             "id": "a",
@@ -8546,7 +8564,7 @@
         "sourceNumber": 2,
         "type": "order",
         "prompt": "Project Life Cycle",
-        "explanation": "Urutan yang benar adalah Initiation → Planning → Execution → Completion.",
+        "explanation": "Triple constraint klasik terdiri dari scope, time, dan cost; resource memengaruhi ketiganya tetapi bukan sisi utama model tersebut. Project bergerak dari initiation ke planning, execution/monitoring, lalu completion.",
         "options": [
           {
             "id": "a",
@@ -8583,7 +8601,7 @@
         "sourceNumber": 3,
         "type": "single",
         "prompt": "Which part of Project Life Cycle consisting Bridging Document?",
-        "explanation": "Jawaban yang benar adalah Project Execution/ Monitoring, sesuai materi DPM Module 1.",
+        "explanation": "Bridging document menyelaraskan sistem dan tanggung jawab para pihak selama execution. Setelah pekerjaan selesai, After Action Review menangkap lesson learned untuk memperbaiki project berikutnya.",
         "options": [
           {
             "id": "a",
@@ -8617,7 +8635,7 @@
         "sourceNumber": 4,
         "type": "single",
         "prompt": "Which part of Project Life Cycle consisting Project Economical?",
-        "explanation": "Jawaban yang benar adalah Project Initation, sesuai materi DPM Module 1.",
+        "explanation": "Initiation menguji tujuan dan keekonomian awal. Planning menerjemahkan keputusan menjadi Basis of Design, scope, schedule, detailed budget/AFE, procurement plan, dan deliverables yang dapat dieksekusi.",
         "options": [
           {
             "id": "a",
@@ -8651,7 +8669,7 @@
         "sourceNumber": 5,
         "type": "single",
         "prompt": "Which part of Project Life Cycle consisting Drilling BOD?",
-        "explanation": "Jawaban yang benar adalah Project Planning, sesuai materi DPM Module 1.",
+        "explanation": "Initiation menguji tujuan dan keekonomian awal. Planning menerjemahkan keputusan menjadi Basis of Design, scope, schedule, detailed budget/AFE, procurement plan, dan deliverables yang dapat dieksekusi.",
         "options": [
           {
             "id": "a",
@@ -8685,7 +8703,7 @@
         "sourceNumber": 6,
         "type": "single",
         "prompt": "Which part of Project Life Cycle consisting After Action Review?",
-        "explanation": "Jawaban yang benar adalah Project Completion, sesuai materi DPM Module 1.",
+        "explanation": "Bridging document menyelaraskan sistem dan tanggung jawab para pihak selama execution. Setelah pekerjaan selesai, After Action Review menangkap lesson learned untuk memperbaiki project berikutnya.",
         "options": [
           {
             "id": "a",
@@ -8719,7 +8737,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "The list below is become a part of key subsurface input for Drilling Project Management, except…",
-        "explanation": "Jawaban yang benar adalah PVT Analysis, sesuai materi DPM Module 1.",
+        "explanation": "Project drilling membutuhkan target, prognosis, PPFG, offset-well risks, dan well objectives; PVT analysis bukan selalu input kunci untuk desain drilling awal. NPT adalah waktu tanpa progress akibat masalah, sedangkan ILT adalah kehilangan efisiensi yang tersembunyi di dalam aktivitas yang tetap berjalan.",
         "options": [
           {
             "id": "a",
@@ -8753,7 +8771,7 @@
         "sourceNumber": 8,
         "type": "single",
         "prompt": "Which one of the statement below is correct about NPT and ILT in Project",
-        "explanation": "Jawaban yang benar adalah Non-Productive Time (NPT) & Invisible Lost Time (ILT), sesuai materi DPM Module 1.",
+        "explanation": "Project drilling membutuhkan target, prognosis, PPFG, offset-well risks, dan well objectives; PVT analysis bukan selalu input kunci untuk desain drilling awal. NPT adalah waktu tanpa progress akibat masalah, sedangkan ILT adalah kehilangan efisiensi yang tersembunyi di dalam aktivitas yang tetap berjalan.",
         "options": [
           {
             "id": "a",
@@ -8787,7 +8805,7 @@
         "sourceNumber": 9,
         "type": "single",
         "prompt": "Which part of Project Life Cycle consisting Detailed Budget/ AFE?",
-        "explanation": "Jawaban yang benar adalah Project Plannning, sesuai materi DPM Module 1.",
+        "explanation": "Initiation menguji tujuan dan keekonomian awal. Planning menerjemahkan keputusan menjadi Basis of Design, scope, schedule, detailed budget/AFE, procurement plan, dan deliverables yang dapat dieksekusi.",
         "options": [
           {
             "id": "a",
@@ -8821,7 +8839,7 @@
         "sourceNumber": 10,
         "type": "boolean",
         "prompt": "The statement on the picture below is Major Deliverable during defining Project Scope",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi DPM Module 1.",
+        "explanation": "Initiation menguji tujuan dan keekonomian awal. Planning menerjemahkan keputusan menjadi Basis of Design, scope, schedule, detailed budget/AFE, procurement plan, dan deliverables yang dapat dieksekusi.",
         "media": "/media/dpm-10.webp",
         "options": [
           {
@@ -8846,7 +8864,7 @@
         "sourceNumber": 1,
         "type": "single",
         "prompt": "Which of the following is not a type of casing?",
-        "explanation": "Jawaban yang benar adalah Drill Pipe, sesuai materi Casing Setting Depth and Well Sizing.",
+        "explanation": "Conductor, surface, intermediate, dan production casing menopang wellbore serta mengisolasi interval. Drill pipe adalah bagian drillstring, bukan casing; output preliminary design adalah casing size dan setting depth, bukan delivery time.",
         "options": [
           {
             "id": "a",
@@ -8880,7 +8898,7 @@
         "sourceNumber": 2,
         "type": "single",
         "prompt": "Which of the following is not a key parameter for casing design?",
-        "explanation": "Jawaban yang benar adalah Delivery Time, sesuai materi Casing Setting Depth and Well Sizing.",
+        "explanation": "Conductor, surface, intermediate, dan production casing menopang wellbore serta mengisolasi interval. Drill pipe adalah bagian drillstring, bukan casing; output preliminary design adalah casing size dan setting depth, bukan delivery time.",
         "options": [
           {
             "id": "a",
@@ -8914,7 +8932,7 @@
         "sourceNumber": 3,
         "type": "multiple",
         "prompt": "What are the two main outputs of preliminary casing design?",
-        "explanation": "Pilihan yang harus dipilih adalah Casing Size; Setting Depth. Pada multiple select, semua pilihan benar harus dipilih tanpa tambahan.",
+        "explanation": "Conductor, surface, intermediate, dan production casing menopang wellbore serta mengisolasi interval. Drill pipe adalah bagian drillstring, bukan casing; output preliminary design adalah casing size dan setting depth, bukan delivery time.",
         "options": [
           {
             "id": "a",
@@ -8949,7 +8967,7 @@
         "sourceNumber": 4,
         "type": "single",
         "prompt": "In casing design, what is the main basis of the bottom-up approach?",
-        "explanation": "Jawaban yang benar adalah Kick Tolerance, sesuai materi Casing Setting Depth and Well Sizing.",
+        "explanation": "Bottom-up design dimulai dari kebutuhan reservoir dan string terdalam, lalu bergerak ke atas. Kick tolerance memastikan influx dapat dikendalikan tanpa memecahkan shoe sebelumnya; diameter hole dan casing harus tetap memiliki clearance yang cukup.",
         "options": [
           {
             "id": "a",
@@ -8983,7 +9001,7 @@
         "sourceNumber": 5,
         "type": "order",
         "prompt": "Arrange the casing strings from top to bottom.",
-        "explanation": "Urutan yang benar adalah Conductor → Surface Casing → Intermediate Casing → Production Casing.",
+        "explanation": "Conductor, surface, intermediate, dan production casing menopang wellbore serta mengisolasi interval. Drill pipe adalah bagian drillstring, bukan casing; output preliminary design adalah casing size dan setting depth, bukan delivery time.",
         "options": [
           {
             "id": "a",
@@ -9020,7 +9038,7 @@
         "sourceNumber": 6,
         "type": "boolean",
         "prompt": "Casing provides structural support to the wellbore.",
-        "explanation": "Pernyataan ini dinilai True berdasarkan materi Casing Setting Depth and Well Sizing.",
+        "explanation": "Conductor, surface, intermediate, dan production casing menopang wellbore serta mengisolasi interval. Drill pipe adalah bagian drillstring, bukan casing; output preliminary design adalah casing size dan setting depth, bukan delivery time.",
         "options": [
           {
             "id": "a",
@@ -9044,7 +9062,7 @@
         "sourceNumber": 7,
         "type": "single",
         "prompt": "On a pressure–depth plot, which curve is located on the right side?",
-        "explanation": "Jawaban yang benar adalah Fracture Pressure, sesuai materi Casing Setting Depth and Well Sizing.",
+        "explanation": "Pada plot equivalent mud weight, fracture-pressure curve berada di kanan pore-pressure curve. Mud weight di kiri pore-pressure curve menghasilkan underbalance dan risiko kick; melewati fracture curve menimbulkan losses.",
         "media": "/media/casing-depth-07.webp",
         "options": [
           {
@@ -9079,7 +9097,7 @@
         "sourceNumber": 8,
         "type": "single",
         "prompt": "What happens if drilling moves left of the pore curve?",
-        "explanation": "Jawaban yang benar adalah Kick (Influx), sesuai materi Casing Setting Depth and Well Sizing.",
+        "explanation": "Pada plot equivalent mud weight, fracture-pressure curve berada di kanan pore-pressure curve. Mud weight di kiri pore-pressure curve menghasilkan underbalance dan risiko kick; melewati fracture curve menimbulkan losses.",
         "media": "/media/casing-depth-08.webp",
         "options": [
           {
@@ -9114,7 +9132,7 @@
         "sourceNumber": 9,
         "type": "boolean",
         "prompt": "Bottom-up method starts from shallow sections.",
-        "explanation": "Pernyataan ini dinilai False berdasarkan materi Casing Setting Depth and Well Sizing.",
+        "explanation": "Bottom-up design dimulai dari kebutuhan reservoir dan string terdalam, lalu bergerak ke atas. Kick tolerance memastikan influx dapat dikendalikan tanpa memecahkan shoe sebelumnya; diameter hole dan casing harus tetap memiliki clearance yang cukup.",
         "options": [
           {
             "id": "a",
@@ -9138,7 +9156,7 @@
         "sourceNumber": 10,
         "type": "order",
         "prompt": "If the final reservoir section requires a 7” liner, arrange the correct hole size and casing program (top to bottom).",
-        "explanation": "Urutan yang benar adalah 12-1/4\" Hole → 9-5/8\" Casing → 8-1/2\" Hole → 7\" Liner.",
+        "explanation": "Bottom-up design dimulai dari kebutuhan reservoir dan string terdalam, lalu bergerak ke atas. Kick tolerance memastikan influx dapat dikendalikan tanpa memecahkan shoe sebelumnya; diameter hole dan casing harus tetap memiliki clearance yang cukup.",
         "media": "/media/casing-depth-10.webp",
         "options": [
           {
@@ -9169,7 +9187,8 @@
           "d"
         ]
       }
-    ]
+    ],
+    "contentPolicy": "Concepts and transferable engineering principles; no brands, sponsors, organizational trivia, named-unit specifications, achievements, or historical project recall."
   },
   "lessons": [
     {
@@ -9197,10 +9216,9 @@
         {
           "id": "afe-budget-schedules",
           "title": "Budget Schedule dan analisis biaya",
-          "explanation": "Setiap Budget Schedule mempunyai tujuan tertentu, misalnya lifting forecast atau administrative expenses. Data historis AFE dapat dibandingkan dengan Power BI untuk menguji kewajaran proposal sebelum disetujui.",
+          "explanation": "Setiap Budget Schedule mempunyai tujuan tertentu, misalnya lifting forecast atau administrative expenses. Data historis AFE dapat dibandingkan melalui analisis data untuk menguji kewajaran proposal sebelum disetujui.",
           "questionIds": [
             "afe-07",
-            "afe-08",
             "afe-09",
             "afe-10",
             "afe-13"
@@ -9220,23 +9238,12 @@
     },
     {
       "moduleId": "jds",
-      "overview": "Modul pengantar JDS membangun kosakata dasar, tujuan pengeboran, peran di lokasi, dan urutan umum operasi sumur.",
+      "overview": "Kosakata dasar, tujuan pengeboran, peran di lokasi, dan urutan umum operasi sumur.",
       "sourceKind": "bank-soal",
       "sources": [
         "Quiz JDS Batch 7 First Class"
       ],
       "concepts": [
-        {
-          "id": "jds-community",
-          "title": "Identitas dan semangat JDS",
-          "explanation": "Jakarta Drilling Society berfokus pada education, collaboration, dan contribution. Informasi pendirian, sponsor, serta tagline merupakan bagian dari orientasi peserta Batch 7.",
-          "questionIds": [
-            "jds-01",
-            "jds-08",
-            "jds-14",
-            "jds-15"
-          ]
-        },
         {
           "id": "jds-operations",
           "title": "Peran dan urutan operasi",
@@ -9589,8 +9596,7 @@
           "questionIds": [
             "cementing-01",
             "cementing-02",
-            "cementing-03",
-            "cementing-20"
+            "cementing-03"
           ]
         },
         {

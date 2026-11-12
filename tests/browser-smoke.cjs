@@ -69,7 +69,7 @@ try{
  console.log('PASS combined pack covers all 36 modules and learning navigation');
  // Exercise every interaction type through normal UI in a short, valid review fixture.
  const engine=await import('../assets/quiz-engine.mjs');
- const fixtureIds=['afe-02','advanced-29-15','advanced-28-15','subsurface-06','advanced-33a-02'];
+ const fixtureIds=['afe-02','advanced-29-15','intro-08','subsurface-06','advanced-33a-02'];
  const combined={modules:[...foundation.modules,...advanced.modules],questions:[...foundation.questions,...advanced.questions]};
  const fixture=engine.createSession(combined,'combined',null,Math.random,fixtureIds);
  await p.evaluate(s=>{const v=JSON.parse(localStorage.getItem('drilling-mastery-v2'));v.reviews.combined=s;localStorage.setItem('drilling-mastery-v2',JSON.stringify(v));},fixture);
@@ -91,6 +91,28 @@ try{
  const migr=await browser.newContext();await migr.addInitScript(v=>{localStorage.setItem('drilling-mastery-session-v1',JSON.stringify(v));localStorage.setItem('drilling-mastery-stats-v1',JSON.stringify({bestScore:87,totalAttempts:6,recentScores:[]}));},legacy);
  const m=await migr.newPage();await m.goto(url);await m.locator('[data-action="new"]').first().waitFor();const ms=await readState(m);assert.equal(ms.sessions.foundation.id,legacy.id);assert.equal(ms.stats.foundation.bestScore,87);assert.equal(ms.stats.foundation.totalAttempts,6);await migr.close();
  console.log('PASS existing foundation session and score history migrate');
+ // The user's screenshot can be an already-saved question, not just a fresh draw.
+ const oldBank={...advanced,questions:advanced.questions.map(q=>({...q,excluded:false}))};
+ const oldSession=engine.createSession(oldBank,'advanced');
+ const caseId='advanced-36-07', caseQ=byId.get(caseId);
+ if(!oldSession.questionIds.includes(caseId)){
+   const slot=oldSession.questionIds.findIndex(id=>byId.get(id).moduleId===caseQ.moduleId);
+   oldSession.questionIds[slot]=caseId;oldSession.optionOrders[caseId]=caseQ.options.map(o=>o.id);
+ }
+ oldSession.currentIndex=oldSession.questionIds.indexOf(caseId);
+ const safeId=oldSession.questionIds.find(id=>engine.isEligible(byId.get(id))&&byId.get(id).correctOptionIds);
+ oldSession.answers[safeId]={value:byId.get(safeId).correctOptionIds,correct:true,confidence:'sure',answeredAt:123};
+ oldSession.drafts[safeId]={value:byId.get(safeId).correctOptionIds,confidence:'sure',reflection:'Catatan lama yang tetap disimpan.'};
+ const oldReview=engine.createSession(oldBank,'advanced',null,Math.random,[caseId]);
+ const previousState={version:2,packId:'advanced',sessions:{advanced:oldSession},reviews:{advanced:oldReview},mastery:{[caseId]:{attempts:1,correct:0,streak:0,needsReview:true}},history:[{id:'old-result',packId:'advanced',mode:'quiz',score:80,correct:80,total:100,completedAt:123}],stats:{advanced:{bestScore:80,totalAttempts:1}}};
+ const upgraded=await browser.newContext();await upgraded.addInitScript(v=>{if(!localStorage.getItem('drilling-mastery-v2'))localStorage.setItem('drilling-mastery-v2',JSON.stringify(v));},previousState);
+ const u=await upgraded.newPage();await u.goto(url);await u.locator('[data-action="resume"]').first().click();let us=await readState(u);
+ assert.equal(us.sessions.advanced.questionIds.length,100);assert.ok(us.sessions.advanced.questionIds.every(id=>engine.isEligible(byId.get(id))));
+ assert.deepEqual(us.sessions.advanced.answers[safeId],oldSession.answers[safeId]);assert.equal(us.sessions.advanced.drafts[safeId].reflection,'Catatan lama yang tetap disimpan.');
+ assert.equal(us.reviews.advanced,undefined);assert.equal(us.stats.advanced.bestScore,80);assert.equal(us.history[0].id,'old-result');
+ assert.doesNotMatch(await u.locator('body').innerText(),/South Sumatra|Varco|Bell 407|NESR/);
+ await u.reload();await u.locator('[data-action="resume"]').first().click();us=await readState(u);assert.equal(us.sessions.advanced.id,oldSession.id);
+ await upgraded.close();console.log('PASS old screenshot question is replaced on refresh, other answers/notes/history survive, old review is removed');
  await context.close();
 }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1)});

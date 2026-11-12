@@ -8,14 +8,18 @@ sesi baru. Situs tetap statis, tanpa backend, API key, atau proses build.
 
 | Paket | Materi | Soal siap latihan | Proporsi sesi 100 soal |
 | --- | ---: | ---: | --- |
-| Lanjutan (default, ZIP 12 November 2026) | 18 | 274 | 5 soal/materi + 1 untuk 10 materi acak |
-| Dasar (paket sebelumnya) | 18 | 280 | 5 soal/materi + 1 untuk 10 materi acak |
-| Gabungan | 36 | 554 | 2 soal/materi + 1 untuk 28 materi acak |
+| Lanjutan (default, ZIP 12 November 2026) | 18 | 263 | 5 soal/materi + 1 untuk 10 materi acak |
+| Dasar (paket sebelumnya) | 18 | 274 | 5 soal/materi + 1 untuk 10 materi acak |
+| Gabungan | 36 | 537 | 2 soal/materi + 1 untuk 28 materi acak |
 
 ZIP sumber sebenarnya memuat **275 soal**. Quiz 28 nomor 19 mengenai perbandingan
 anggaran ditandai `reviewRequired` dan tidak dinilai karena konteks angka tidak
-cukup untuk mendukung kunci False. Penjelasan soal spesifikasi alat, klasifikasi,
-dan studi kasus diberi konteks agar tidak dibaca sebagai aturan universal.
+cukup untuk mendukung kunci False. Merek/model produk, sponsor, sejarah organisasi, spesifikasi unit tertentu,
+pencapaian, promosi, serta hafalan angka/kejadian studi kasus tidak diujikan.
+Sebanyak 27 soal sumber ditandai `excluded` (6 dasar dan 21 lanjutan).
+Paket lanjutan menambahkan 10 soal konsep umum cost engineering agar proporsi
+materi tetap terpenuhi. Soal tambahan ditandai `sourceKind: concept-extension`;
+soal ini tidak diklaim sebagai kutipan/kunci dari PDF.
 Metadata file PDF, halaman, dan nomor soal tersimpan pada paket lanjutan.
 PDF asli tidak disertakan dalam situs yang diterbitkan.
 
@@ -36,6 +40,11 @@ di `localStorage` browser perangkat ini. Penyimpanan tidak tersinkron antardevic
 Mode privat, penghapusan data browser, atau perubahan domain dapat menghilangkan
 akses ke progres. Kegagalan penyimpanan ditampilkan pada halaman.
 Sesi dan statistik `v1` paket dasar dipertahankan melalui migrasi ke `v2`.
+Jika sesi aktif lama memuat soal yang dikeluarkan, soal diganti dengan konsep
+lain dalam materi yang sama. Jumlah 100 dan proporsinya tetap, sementara jawaban
+dan catatan soal lain dipertahankan. Antrean ulang lama juga disaring. Hasil sesi
+yang sudah selesai tetap menjadi riwayat; soal yang dikeluarkan tidak muncul
+dalam review jawaban atau latihan baru.
 
 ## Jalankan lokal
 
@@ -92,5 +101,6 @@ python scripts/import-kahoot.py /path/to/pdfs --output /tmp/advanced-reimport.js
 Bandingkan hasil dan periksa kunci sebelum mengganti data aktif. Importer membaca
 teks/penanda jawaban dan mempertahankan koreksi editorial yang sumber aslinya
 masih cocok. Perubahan teks sumber pada soal yang dikoreksi akan menghentikan
-impor untuk ditinjau. Gambar WebP yang sudah ada dipakai kembali. Dokumen hanya
+impor untuk ditinjau. Kebijakan pengecualian dan soal konsep tambahan juga
+dipertahankan ketika impor ulang. Gambar WebP yang sudah ada dipakai kembali. Dokumen hanya
 dipakai sebagai materi, tidak pernah dijalankan sebagai instruksi atau kode.

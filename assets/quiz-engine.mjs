@@ -1,6 +1,7 @@
 /** Pure quiz rules. Data and browser storage are deliberately separate. */
 export const SESSION_SIZE = 100;
 export const VERSION = 2;
+export const isEligible = question => Boolean(question && !question.reviewRequired && !question.excluded);
 
 export function shuffle(items, rng = Math.random) {
   const result = [...items];
@@ -23,7 +24,7 @@ export function selectQuestions(bank, previousIds = [], rng = Math.random) {
   const extras = new Set(shuffle(modules, rng).slice(0, SESSION_SIZE % modules.length).map(m => m.id));
   const previous = new Set(previousIds);
   const selected = modules.flatMap(module => {
-    const pool = questions.filter(q => q.moduleId === module.id && !q.reviewRequired);
+    const pool = questions.filter(q => q.moduleId === module.id && isEligible(q));
     const quota = base + Number(extras.has(module.id));
     if (pool.length < quota) throw new Error(`Bank soal ${module.title} belum cukup.`);
     // Prioritize questions absent from the last session; reuse only when needed for the quota.
@@ -35,7 +36,7 @@ export function selectQuestions(bank, previousIds = [], rng = Math.random) {
 export function createSession(bank, packId, previous = null, rng = Math.random, reviewIds = null) {
   const known = new Map(bank.questions.map(q => [q.id, q]));
   const questionIds = reviewIds
-    ? differentOrder([...new Set(reviewIds)].filter(id => known.has(id) && !known.get(id).reviewRequired), previous?.questionIds, rng)
+    ? differentOrder([...new Set(reviewIds)].filter(id => isEligible(known.get(id))), previous?.questionIds, rng)
     : selectQuestions(bank, previous?.questionIds, rng);
   if (!questionIds.length) throw new Error('Tidak ada soal untuk diulang.');
   const optionOrders = {}, orderStates = {};
@@ -57,6 +58,41 @@ export function grade(q, value) {
   if (q.type === 'slider') return typeof value === 'number' && Number.isFinite(value) && Math.abs(value - q.slider.answer) <= (q.slider.tolerance || 0);
   if (q.type === 'pin') return value && typeof value.x === 'number' && typeof value.y === 'number' && Math.hypot(value.x-q.pin.target.x, value.y-q.pin.target.y) <= q.pin.target.radius;
   return false;
+}
+
+/** Refresh unfinished sessions after editorial exclusions, preserving other work. */
+export function refreshSession(session, bank, rng = Math.random) {
+  if (!session || session.completedAt) return { session, changed: false };
+  const known = new Map(bank.questions.map(q => [q.id, q]));
+  const removed = session.questionIds.filter(id => !isEligible(known.get(id)));
+  if (!removed.length) return { session, changed: false };
+  const next = structuredClone(session);
+  const currentId = next.questionIds[next.currentIndex];
+  const used = new Set(next.questionIds);
+  const replacements = new Map();
+  if (next.mode === 'quiz') {
+    for (const id of removed) {
+      const pool = bank.questions.filter(q => q.moduleId === known.get(id).moduleId && isEligible(q) && !used.has(q.id));
+      const replacement = shuffle(pool, rng)[0];
+      if (!replacement) throw new Error('Bank konsep belum cukup untuk memperbarui sesi.');
+      used.add(replacement.id); replacements.set(id, replacement.id);
+    }
+    const prepared = createSession(bank, next.packId, null, rng, [...replacements.values()]);
+    Object.assign(next.optionOrders, prepared.optionOrders);
+    Object.assign(next.orderStates, prepared.orderStates);
+    next.questionIds = next.questionIds.map(id => replacements.get(id) || id);
+  } else {
+    next.questionIds = next.questionIds.filter(id => isEligible(known.get(id)));
+  }
+  for (const id of removed) {
+    delete next.answers[id]; delete next.drafts?.[id];
+    delete next.optionOrders[id]; delete next.orderStates[id];
+  }
+  if (!next.questionIds.length) return { session: null, changed: true };
+  const pending = next.questionIds.findIndex(id => !next.answers[id]);
+  next.currentIndex = pending >= 0 ? pending : Math.max(0, next.questionIds.indexOf(currentId));
+  if (pending < 0) next.completedAt = Date.now();
+  return { session: next, changed: true };
 }
 
 export function answerText(q, value) {

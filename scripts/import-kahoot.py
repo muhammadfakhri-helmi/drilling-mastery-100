@@ -94,7 +94,7 @@ if __name__=='__main__':
     reviewed={q['id']:q for q in existing.get('questions',[])}
     for q in bank['questions']:
         old=reviewed.get(q['id'],{})
-        for key in ['explanation','reviewRequired','reviewNote']:
+        for key in ['explanation','reviewRequired','reviewNote','excluded','exclusionCategory','exclusionReason']:
             if key in old:q[key]=old[key]
         if 'originalPrompt' in old:
             assert q['prompt']==old['originalPrompt'], f"Source prompt changed: {q['id']}. Review correction first."
@@ -104,6 +104,10 @@ if __name__=='__main__':
             if 'originalText' in old_option:
                 assert option['text']==old_option['originalText'], f"Source option changed: {q['id']}. Review correction first."
                 option['originalText']=old_option['originalText'];option['text']=old_option['text']
+    bank['questions'].extend(q for q in existing.get('questions',[]) if q.get('sourceKind')=='concept-extension')
+    if 'contentPolicy' in existing:bank['contentPolicy']=existing['contentPolicy']
+    for module in bank['modules']:
+        module['questionCount']=sum(q['moduleId']==module['id'] for q in bank['questions'])
     target.write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n')
     print(f"Imported {len(bank['questions'])} questions from {len(bank['modules'])} modules")
     for q in bank['questions']:

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
-import { createSession, selectQuestions, shuffle, grade, updateMastery, summarize, isValidSession, answerText, correctText } from '../assets/quiz-engine.mjs';
+import { createSession, selectQuestions, shuffle, grade, updateMastery, summarize, isValidSession, answerText, correctText, isEligible, refreshSession } from '../assets/quiz-engine.mjs';
 const read = name => JSON.parse(readFileSync(new URL('../data/'+name,import.meta.url),'utf8'));
 const {bank:foundation,lessons:foundationLessons}=read('foundation.json');
 const advanced=read('advanced.json'), advancedLessons=read('advanced-lessons.json');
@@ -9,15 +9,15 @@ const combined={modules:[...foundation.modules,...advanced.modules],questions:[.
 function seeded(seed) { return () => {seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296;}; }
 function valueFor(q) {return q.type==='slider'?q.slider.answer:q.type==='pin'?{...q.pin.target}:q.type==='order'?[...q.correctOrder]:[...q.correctOptionIds];}
 
-test('all 555 source questions have unique IDs, valid keys, media, and concept explanations',()=>{
-  assert.equal(foundation.questions.length,280);assert.equal(advanced.questions.length,275);
-  assert.equal(new Set(combined.questions.map(q=>q.id)).size,555);
+test('all 565 archived and concept questions have unique IDs, valid keys, media, and concept explanations',()=>{
+  assert.equal(foundation.questions.length,280);assert.equal(advanced.questions.length,285);
+  assert.equal(new Set(combined.questions.map(q=>q.id)).size,565);
   const concepts=new Map([...foundationLessons,...advancedLessons].flatMap(l=>l.concepts.flatMap(c=>c.questionIds.map(id=>[id,c]))));
   for(const bank of [foundation,advanced]){
     assert.equal(bank.modules.length,18);
     for(const module of bank.modules)assert.equal(bank.questions.filter(q=>q.moduleId===module.id).length,module.questionCount);
     for(const q of bank.questions){
-      assert.ok(q.prompt.length>5,q.id);assert.ok(q.explanation.length>10,q.id);assert.ok(concepts.has(q.id),q.id);
+      assert.ok(q.prompt.length>5,q.id);assert.ok(q.explanation.length>10,q.id);if(isEligible(q))assert.ok(concepts.has(q.id),q.id);
       assert.equal(Boolean(grade(q,valueFor(q))),true,q.id);
       if(q.options){assert.ok(q.options.every(o=>o.text.trim()),q.id);assert.equal(new Set(q.options.map(o=>o.id)).size,q.options.length);}
       if(q.media)assert.ok(existsSync(new URL('../'+q.media.replace(/^\//,''),import.meta.url)),q.id);
@@ -31,7 +31,7 @@ for(const [name,bank]of Object.entries({foundation,advanced,combined})){
       const s=createSession(bank,name,previous,seeded(seed));
       assert.equal(s.questionIds.length,100);assert.equal(new Set(s.questionIds).size,100);assert.ok(isValidSession(s,bank));
       const quotas=new Map(bank.modules.map(m=>[m.id,0]));
-      for(const id of s.questionIds){const q=byId.get(id);assert.ok(!q.reviewRequired);quotas.set(q.moduleId,quotas.get(q.moduleId)+1);
+      for(const id of s.questionIds){const q=byId.get(id);assert.ok(isEligible(q));quotas.set(q.moduleId,quotas.get(q.moduleId)+1);
         if(q.options?.length)assert.deepEqual([...s.optionOrders[id]].sort(),q.options.map(o=>o.id).sort());
         if(q.type==='order')assert.notDeepEqual(s.orderStates[id],q.correctOrder);
       }
@@ -46,7 +46,7 @@ for(const [name,bank]of Object.entries({foundation,advanced,combined})){
 test('new sessions use available questions outside the preceding session first',()=>{
   const first=createSession(advanced,'advanced',null,seeded(2));const second=createSession(advanced,'advanced',first,seeded(3));
   for(const m of advanced.modules){
-    const pool=advanced.questions.filter(q=>q.moduleId===m.id&&!q.reviewRequired);
+    const pool=advanced.questions.filter(q=>q.moduleId===m.id&&isEligible(q));
     const unseen=pool.filter(q=>!first.questionIds.includes(q.id));
     const selected=second.questionIds.filter(id=>pool.some(q=>q.id===id));
     assert.equal(selected.filter(id=>unseen.some(q=>q.id===id)).length,Math.min(selected.length,unseen.length));
@@ -109,4 +109,44 @@ test('source keys and explanations retain case-study context and flag ambiguous 
   assert.equal(q('advanced-28-15').slider.answer,12);
   assert.match(q('advanced-22-03').prompt,/not a universal definition/);
   assert.equal(answerText(q('advanced-29-14'),q('advanced-29-14').correctOrder),'Reel → Gooseneck → Injector Head → Wellhead');
+});
+
+test('curated packs exclude brands, organization trivia, named units, and historical cases',()=>{
+  assert.equal(foundation.questions.filter(isEligible).length,274);
+  assert.equal(advanced.questions.filter(isEligible).length,263);
+  assert.equal(combined.questions.filter(isEligible).length,537);
+  const forbidden=/Power BI|Varco|Shaffer|Weatherford|Precision Northland|NESR|Bell 407|AMICS|South Sumatra|2017–2019|Diamond Sponsors|JDS|SPE-217910|promotional materials/i;
+  for(const q of combined.questions.filter(isEligible))assert.doesNotMatch([q.prompt,q.explanation,...(q.options||[]).map(o=>o.text)].join(' '),forbidden,q.id);
+  for(const lessons of [foundationLessons,advancedLessons])for(const l of lessons)for(const c of l.concepts){
+    assert.doesNotMatch(c.explanation,forbidden,c.id);
+    assert.ok(c.questionIds.every(id=>isEligible(combined.questions.find(q=>q.id===id))),c.id);
+  }
+  const review=createSession(advanced,'advanced',null,seeded(9),['advanced-36-07','advanced-22-13','advanced-29-09','advanced-38-01']);
+  assert.deepEqual(review.questionIds,['advanced-38-01']);
+});
+
+test('unfinished old sessions replace excluded questions in the same topics and preserve eligible work',()=>{
+  const oldBank={...advanced,questions:advanced.questions.map(q=>({...q,excluded:false}))};
+  const original=createSession(oldBank,'advanced',null,seeded(7));
+  const excluded=original.questionIds.filter(id=>!isEligible(advanced.questions.find(q=>q.id===id)));
+  assert.ok(excluded.length>0);
+  const safeId=original.questionIds.find(id=>isEligible(advanced.questions.find(q=>q.id===id)));
+  const safe=advanced.questions.find(q=>q.id===safeId);
+  original.answers[safeId]={value:valueFor(safe),correct:true,confidence:'sure',answeredAt:1};
+  original.drafts[safeId]={value:valueFor(safe),confidence:'sure',reflection:'Catatan yang harus tetap ada.'};
+  original.currentIndex=original.questionIds.indexOf(excluded[0]);
+  const {session:s,changed}=refreshSession(original,advanced,seeded(99));
+  assert.equal(changed,true);assert.equal(s.id,original.id);assert.equal(s.questionIds.length,100);assert.equal(new Set(s.questionIds).size,100);
+  assert.ok(s.questionIds.every(id=>isEligible(advanced.questions.find(q=>q.id===id))));assert.ok(isValidSession(s,advanced));
+  assert.deepEqual(s.answers[safeId],original.answers[safeId]);assert.deepEqual(s.drafts[safeId],original.drafts[safeId]);
+  for(let i=0;i<100;i++)assert.equal(advanced.questions.find(q=>q.id===s.questionIds[i]).moduleId,oldBank.questions.find(q=>q.id===original.questionIds[i]).moduleId);
+  assert.equal(refreshSession(s,advanced).changed,false);
+});
+
+test('old review queues are filtered, empty queues disappear, and completed score records stay unchanged',()=>{
+  const oldBank={...advanced,questions:advanced.questions.map(q=>({...q,excluded:false}))};
+  const old=createSession(oldBank,'advanced',null,seeded(8),['advanced-36-07','advanced-38-01']);
+  const result=refreshSession(old,advanced);assert.deepEqual(result.session.questionIds,['advanced-38-01']);assert.ok(isValidSession(result.session,advanced));
+  const empty=createSession(oldBank,'advanced',null,seeded(8),['advanced-36-07']);assert.equal(refreshSession(empty,advanced).session,null);
+  const complete={...old,completedAt:123};assert.deepEqual(refreshSession(complete,advanced),{session:complete,changed:false});
 });

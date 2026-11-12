@@ -1,4 +1,4 @@
-import { createSession, grade, correctText, answerText, updateMastery, summarize, isValidSession } from './quiz-engine.mjs';
+import { createSession, grade, correctText, answerText, updateMastery, summarize, isValidSession, isEligible, refreshSession } from './quiz-engine.mjs?v=concepts-2';
 
 const root = document.getElementById('root');
 const STORAGE_KEY = 'drilling-mastery-v2';
@@ -32,7 +32,7 @@ function draftFor(q = question()) {
   return s.drafts[q.id];
 }
 function queue(packId = state.packId) {
-  return banks[packId].questions.filter(q => !q.reviewRequired && state.mastery[q.id]?.needsReview).map(q => q.id);
+  return banks[packId].questions.filter(q => isEligible(q) && state.mastery[q.id]?.needsReview).map(q => q.id);
 }
 function go(next, focus = true) {
   view = next; render();
@@ -89,11 +89,14 @@ function canSubmit(q, d) {
 }
 function next() {
   const s = session(); if (!s.answers[question().id]) return;
-  if (s.currentIndex === s.questionIds.length - 1) { finish(); return; }
-  s.currentIndex++; save(); go('quiz');
+  const pending = s.questionIds.findIndex((id, i) => i > s.currentIndex && !s.answers[id]);
+  const earlier = s.questionIds.findIndex(id => !s.answers[id]);
+  if (pending < 0 && earlier < 0) { finish(); return; }
+  s.currentIndex = pending >= 0 ? pending : earlier; save(); go('quiz');
 }
 
 function source(q) {
+  if (q.sourceKind === 'concept-extension') return 'Soal konsep tambahan · prinsip cost engineering dan administrasi kontrak';
   return q.sourceFile ? `${q.sourceFile.replace(' - Details - Kahoot!.pdf','')} · halaman ${q.sourcePage}, soal ${q.sourceNumber}` : `Paket dasar · ${q.moduleTitle} · soal ${q.sourceNumber}`;
 }
 function explanation(q) { return concepts.get(q.id)?.explanation || q.explanation; }
@@ -112,7 +115,7 @@ function header() {
 }
 function home() {
   const b = bank(), s = state.sessions[state.packId], r = state.reviews[state.packId];
-  const count = b.questions.filter(q => !q.reviewRequired).length;
+  const count = b.questions.filter(isEligible).length;
   const base = Math.floor(100/b.modules.length), extra = 100 % b.modules.length;
   const stats = state.stats[state.packId];
   const best = stats.bestScore;
@@ -120,7 +123,7 @@ function home() {
     <div class="hero-copy"><p class="eyebrow">Knowledge training system</p>
       <h1 tabindex="-1">Bukan cuma hafal.<br><em>Pahami setiap keputusan.</em></h1>
       <p class="hero-lead">100 soal, proporsi seimbang, dan tantangan yang berubah setiap sesi. Temukan alasan di balik jawabanmu, lalu latih lagi bagian yang belum kamu kuasai.</p>
-      <fieldset class="pack-picker"><legend>Pilih paket latihan</legend>${Object.entries(packNames).map(([id,name]) => `<label class="pack-option ${state.packId === id ? 'is-active' : ''}"><input type="radio" name="pack" value="${id}" ${state.packId === id ? 'checked' : ''}><strong>${esc(name)}</strong><small>${banks[id].modules.length} materi · ${banks[id].questions.filter(q=>!q.reviewRequired).length} soal siap latihan</small></label>`).join('')}</fieldset>
+      <fieldset class="pack-picker"><legend>Pilih paket latihan</legend>${Object.entries(packNames).map(([id,name]) => `<label class="pack-option ${state.packId === id ? 'is-active' : ''}"><input type="radio" name="pack" value="${id}" ${state.packId === id ? 'checked' : ''}><strong>${esc(name)}</strong><small>${banks[id].modules.length} materi · ${banks[id].questions.filter(isEligible).length} soal siap latihan</small></label>`).join('')}</fieldset>
       <div class="hero-actions">${s && !s.completedAt ? btn(`Lanjutkan · ${Object.keys(s.answers).length}/100 terjawab →`,'resume','', 'primary-button') : btn(s ? 'Mulai 100 soal baru →' : 'Mulai 100 soal →','new','', 'primary-button')}
       ${s && !s.completedAt ? btn('Buat sesi baru','new') : btn('Jelajahi materi','learn')}
       ${s?.completedAt ? btn('Lihat hasil terakhir','resume','','text-button') : ''}</div>
@@ -135,8 +138,8 @@ function home() {
     </div></section>
     <section class="overview-section">${heading('Proporsi sesi', 'Semua materi punya tempat.', `${base} soal dari setiap materi + 1 soal tambahan untuk ${extra} materi yang dipilih acak = tepat 100 soal unik. Materi penerima tambahan ikut berubah setiap sesi.`)}
       <div class="distribution-note"><strong>Paket ${esc(packNames[state.packId])}</strong><span>Setiap materi ${base}–${base+1}% dari sesi · soal dan pilihan jawaban diacak · soal di luar sesi terakhir diprioritaskan</span></div>
-      <div class="module-grid">${b.modules.map((m,i)=> `<button class="module-card" type="button" data-action="module" data-id="${m.id}"><span>${String(i+1).padStart(2,'0')} <b class="quota-label">${base}–${base+1} soal / sesi</b></span><h3>${esc(m.title)}</h3><p>${b.questions.filter(q=>q.moduleId===m.id&&!q.reviewRequired).length} soal tersedia · Pelajari materi →</p></button>`).join('')}</div>
-      ${b.questions.some(q=>q.reviewRequired) ? '<details class="editorial-note"><summary>Catatan kualitas bank soal</summary><p>ZIP berisi 275 soal. Satu soal perbandingan anggaran (Quiz 28, nomor 19) ditahan dari penilaian karena kunci pada PDF belum memiliki konteks angka yang cukup. Soal dan contoh spesifikasi lainnya dijelaskan sesuai konteks sumber.</p></details>' : ''}
+      <div class="module-grid">${b.modules.map((m,i)=> `<button class="module-card" type="button" data-action="module" data-id="${m.id}"><span>${String(i+1).padStart(2,'0')} <b class="quota-label">${base}–${base+1} soal / sesi</b></span><h3>${esc(m.title)}</h3><p>${b.questions.filter(q=>q.moduleId===m.id&&isEligible(q)).length} soal tersedia · Pelajari materi →</p></button>`).join('')}</div>
+      ${b.questions.some(q=>q.reviewRequired) ? '<details class="editorial-note"><summary>Catatan kualitas bank soal</summary><p>ZIP berisi 275 soal. Satu soal perbandingan anggaran (Quiz 28, nomor 19) ditahan dari penilaian karena kunci pada PDF belum memiliki konteks angka yang cukup. Soal merek, sponsor, pencapaian, spesifikasi unit tertentu, dan hafalan studi kasus dikeluarkan dari latihan. Proporsi 100 soal tetap dipertahankan dengan soal konsep umum.</p></details>' : ''}
     </section>
     <section class="performance-section"><div><p class="eyebrow">Progres paket ini</p><h2>Pelajari. Coba lagi. Lihat kemajuannya.</h2></div><div><div class="performance-cards"><div><span>Skor terbaik</span><strong>${best}%</strong></div><div><span>Sesi 100 soal selesai</span><strong>${stats.totalAttempts}</strong></div><div><span>Perlu diulang</span><strong>${queue().length}</strong></div></div>${queue().length ? btn('Latih jawaban salah & ragu →','review','', 'secondary-button') : '<p class="local-note">Jawaban salah dan jawaban benar yang masih ragu akan masuk antrean latihan.</p>'}</div></section></div>`;
 }
@@ -174,7 +177,7 @@ function quiz() {
 
 function results() {
   const s=session(); if(!s?.completedAt) return quiz();
-  const r=summarize(s,bank()), reviewIds=s.questionIds.filter(id=>!s.answers[id]?.correct||s.answers[id]?.confidence==='unsure');
+  const r=summarize(s,bank()), reviewIds=s.questionIds.filter(id=>isEligible(allQuestions.get(id))&&(!s.answers[id]?.correct||s.answers[id]?.confidence==='unsure'));
   const remaining=queue();
   return `<section class="results-page" id="main-content"><div class="result-hero"><div><p class="eyebrow">${s.mode==='review'?'Latihan ulang selesai':'100 keputusan. Satu langkah maju.'}</p><h1 tabindex="-1">Lihat yang sudah kuat.<br>Latih yang belum mantap.</h1><p>${r.correct} dari ${r.total} jawaban benar. ${r.uncertain} jawaban masih kamu ragukan. Skor ini mengukur sesi ini; pemahaman dibangun lewat alasan yang benar dan latihan terpisah.</p><div class="hero-actions">${btn('Mulai 100 soal baru →','new','','primary-button')}${remaining.length?btn(`Latihan ulang (${remaining.length})`,'review') : btn('Pelajari materi','learn')}</div></div><div class="score-dial" style="--score:${r.score}%" aria-label="Skor ${r.score} persen"><div><strong>${r.score}</strong><span>/100</span></div></div></div>
     <div class="result-summary"><div><span>Jawaban benar</span><strong>${r.correct}/${r.total}</strong></div><div><span>Masih ragu di sesi ini</span><strong>${r.uncertain}</strong></div><div><span>Antrean latihan paket ini</span><strong>${remaining.length}</strong></div></div>
@@ -187,12 +190,12 @@ function learning() {
   const b=bank();
   if (!b.modules.some(m=>m.id===activeModule)) activeModule=b.modules[0].id;
   const m=b.modules.find(m=>m.id===activeModule), lesson=lessons.get(m.id);
-  const qs=b.questions.filter(q=>q.moduleId===m.id), answered=qs.filter(q=>state.mastery[q.id]), strong=answered.filter(q=>state.mastery[q.id].streak>=2);
+  const qs=b.questions.filter(q=>q.moduleId===m.id&&isEligible(q)), answered=qs.filter(q=>state.mastery[q.id]), strong=answered.filter(q=>state.mastery[q.id].streak>=2);
   const active=state.sessions[state.packId];
   return `<section class="learning-page" id="main-content"><div class="learning-hero"><div><p class="eyebrow">Learn the reason. Recall the concept.</p><h1 tabindex="-1">Pahami prinsipnya.<br>Jawaban akan mengikuti.</h1><p>Baca konsep, tutup materi, lalu coba jelaskan kembali. Gunakan soal untuk menguji alasanmu, bukan menghafal posisi pilihan.</p></div><div class="learning-actions">${active&&!active.completedAt?btn('Lanjutkan sesi →','resume','','primary-button'):btn('Mulai 100 soal →','new','','primary-button')}${btn('Kembali ke beranda','home')}</div></div>
-    <div class="learning-layout"><nav class="learning-nav" aria-label="Daftar materi"><p class="eyebrow">${esc(packNames[state.packId])}</p>${b.modules.map((mod,i)=>`<button type="button" class="learning-nav-button ${mod.id===m.id?'is-active':''}" data-action="module" data-id="${mod.id}" ${mod.id===m.id?'aria-current="page"':''}><span>${String(i+1).padStart(2,'0')}</span>${esc(mod.title)}</button>`).join('')}</nav><article class="learning-content"><div class="learning-title"><div><p class="eyebrow">Modul belajar</p><h2>${esc(m.title)}</h2></div><span class="source-badge" data-kind="bank-soal">${qs.filter(q=>!q.reviewRequired).length} soal latihan</span></div>
-    <p class="learning-overview">${esc(lesson?.overview || '')}</p><div class="module-progress"><strong>${answered.length}/${qs.filter(q=>!q.reviewRequired).length} soal pernah dicoba</strong><span>${strong.length} soal benar & yakin setidaknya dua kali berturut-turut.</span></div>
-    <div class="concept-list">${(lesson?.concepts || []).map((c,i)=>`<section class="concept-card"><div><span>Konsep ${String(i+1).padStart(2,'0')}</span><small>${c.questionIds.length} soal terkait</small></div><h3>${esc(c.title)}</h3><p>${esc(c.explanation)}</p><details class="recall-prompt"><summary>Cek pemahamanmu</summary><p>Tanpa melihat paragraf di atas, jelaskan prinsip “${esc(c.title)}” dan berikan satu contoh penerapannya. Jika belum bisa menjelaskan alasannya, baca kembali lalu coba setelah jeda.</p></details></section>`).join('')}</div><div class="source-note"><strong>Rujukan materi & konteks</strong><ul>${(lesson?.sources||[]).map(s=>`<li>${esc(s)}</li>`).join('')}</ul><p class="local-note">Pembahasan dirangkum untuk latihan. Angka studi kasus, spesifikasi unit, dan susunan peralatan dijelaskan dalam konteks sumbernya.</p></div>${qs.some(q=>q.reviewRequired)?`<details class="editorial-note"><summary>Soal yang menunggu verifikasi</summary>${qs.filter(q=>q.reviewRequired).map(q=>`<p>${esc(q.prompt)}</p><p>${esc(q.reviewNote)}</p>`).join('')}</details>`:''}</article></div></section>`;
+    <div class="learning-layout"><nav class="learning-nav" aria-label="Daftar materi"><p class="eyebrow">${esc(packNames[state.packId])}</p>${b.modules.map((mod,i)=>`<button type="button" class="learning-nav-button ${mod.id===m.id?'is-active':''}" data-action="module" data-id="${mod.id}" ${mod.id===m.id?'aria-current="page"':''}><span>${String(i+1).padStart(2,'0')}</span>${esc(mod.title)}</button>`).join('')}</nav><article class="learning-content"><div class="learning-title"><div><p class="eyebrow">Modul belajar</p><h2>${esc(m.title)}</h2></div><span class="source-badge" data-kind="bank-soal">${qs.filter(isEligible).length} soal latihan</span></div>
+    <p class="learning-overview">${esc(lesson?.overview || '')}</p><div class="module-progress"><strong>${answered.length}/${qs.filter(isEligible).length} soal pernah dicoba</strong><span>${strong.length} soal benar & yakin setidaknya dua kali berturut-turut.</span></div>
+    <div class="concept-list">${(lesson?.concepts || []).map((c,i)=>`<section class="concept-card"><div><span>Konsep ${String(i+1).padStart(2,'0')}</span><small>${c.questionIds.length} soal terkait</small></div><h3>${esc(c.title)}</h3><p>${esc(c.explanation)}</p><details class="recall-prompt"><summary>Cek pemahamanmu</summary><p>Tanpa melihat paragraf di atas, jelaskan prinsip “${esc(c.title)}” dan berikan satu contoh penerapannya. Jika belum bisa menjelaskan alasannya, baca kembali lalu coba setelah jeda.</p></details></section>`).join('')}</div><div class="source-note"><strong>Rujukan materi & konteks</strong><ul>${(lesson?.sources||[]).map(s=>`<li>${esc(s)}</li>`).join('')}</ul><p class="local-note">Pembahasan berfokus pada konsep dan prinsip yang dapat diterapkan lintas proyek. Merek, sponsor, pencapaian, dan hafalan kejadian proyek tidak diujikan.</p></div>${qs.some(q=>q.reviewRequired)?`<details class="editorial-note"><summary>Soal yang menunggu verifikasi</summary>${qs.filter(q=>q.reviewRequired).map(q=>`<p>${esc(q.prompt)}</p><p>${esc(q.reviewNote)}</p>`).join('')}</details>`:''}</article></div></section>`;
 }
 function reviewPage() {
   const ids=queue(), pending=state.reviews[state.packId];
@@ -259,7 +262,7 @@ root.addEventListener('input',e=>{
 
 async function init() {
   const [foundation,advanced,advancedLessons]=await Promise.all(['foundation.json','advanced.json','advanced-lessons.json'].map(async name=>{
-    const response=await fetch(new URL('../data/'+name,import.meta.url));if(!response.ok)throw new Error(`Tidak dapat memuat ${name}`);return response.json();
+    const response=await fetch(new URL('../data/'+name+'?v=concepts-2',import.meta.url));if(!response.ok)throw new Error(`Tidak dapat memuat ${name}`);return response.json();
   }));
   banks={advanced,foundation:foundation.bank,combined:{modules:[...foundation.bank.modules,...advanced.modules],questions:[...foundation.bank.questions,...advanced.questions]}};
   packNames={advanced:'Lanjutan · dari ZIP baru',foundation:'Dasar · paket sebelumnya',combined:'Gabungan · semua materi'};
@@ -302,6 +305,14 @@ async function init() {
       const history = state.history.filter(h => h.packId === id && h.mode === 'quiz');
       const legacy = id === 'foundation' ? state.legacyStats : null;
       state.stats[id] = { bestScore: Math.max(legacy?.bestScore || 0, ...history.map(h => h.score)), totalAttempts: history.length + (legacy?.totalAttempts || 0) };
+    }
+    for (const key of ['sessions', 'reviews']) {
+      const refreshed = refreshSession(state[key][id], banks[id]);
+      if (refreshed.changed) {
+        if (refreshed.session) state[key][id] = refreshed.session;
+        else delete state[key][id];
+        notice = 'Soal merek, pencapaian, dan hafalan studi kasus sudah dikeluarkan. Sesi aktif diperbarui; jawaban lain dan riwayat skor tetap tersimpan.';
+      }
     }
   }
   save();render();
